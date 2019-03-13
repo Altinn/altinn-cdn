@@ -2,9 +2,6 @@
 
 Static assets used by Altinn solutions and apps.
 
-https://github.com/Altinn/altinn-cdn
-
-
 ## Structure
 
 - [/altinn-apps](https://github.com/Altinn/altinn-cdn/tree/master/altinn-apps) - Common versioned resources used across Altinn Apps
