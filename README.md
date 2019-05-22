@@ -1,6 +1,7 @@
 # Altinn CDN
 
-Static assets used by Altinn solutions and apps.
+Static assets used across Altinn solutions or apps.  
+The assets served by https://altinncdn.no are structured and versioned in the [altinn/altinn-cdn](https://github.com/Altinn/altinn-cdn) repo.
 
 ## Structure
 
