@@ -1,0 +1,80 @@
+{
+    "orgs": [
+        {
+            "id": "BRG",
+            "name": {
+                "en": "Brønnøysund Register Centre",
+                "nb": "Brønnøysundregistrene",
+                "nn": "Brønnøysundregistera"
+            },
+            "logo": "https://altinncdn.no/orgs/brg/brreg.png",
+            "orgnr": "974760673",
+            "url": "https://www.brreg.no"
+        },
+        {
+            "id": "DIBK",
+            "name": {
+                "nb": "Direktoratet for byggkvalitet",
+                "nn": "Direktoratet for byggkvalitet"
+            },
+            "logo": "https://altinncdn.no/orgs/dibk/dibk.png",
+            "orgnr": "974760223",
+            "url": "https://dibk.no"
+        },
+        {
+            "id": "NB",
+            "name": {
+                "en": "National Library of Norway",
+                "nb": "Nasjonalbiblioteket",
+                "nn": "Nasjonalbiblioteket"
+            },
+            "logo": "https://altinncdn.no/orgs/nb/nasjonalbiblioteket.png",
+            "orgnr": "976029100",
+            "url": "https://www.nb.no"
+        },
+        {
+            "id": "NKR",
+            "name": {
+                "en": "Arts Council Norway",
+                "nb": "Kulturrådet",
+                "nn": "Kulturrådet"
+            },
+            "logo": "https://altinncdn.no/orgs/nkr/kulturradet.png",
+            "orgnr": "971527412",
+            "url": "https://www.kulturradet.no"
+        },
+        {
+            "id": "NAV",
+            "name": {
+                "en": "Norwegian Labour and Welfare Administration",
+                "nb": "Arbeids- og velferdsetaten",
+                "nn": "Arbeids- og velferdsetaten"
+            },
+            "logo": "https://altinncdn.no/orgs/nav/nav.png",
+            "orgnr": "889640782",
+            "url": "https://www.nav.no"
+        },
+        {
+            "id": "SKD",
+            "name": {
+                "en": "Norwegian Tax Administration",
+                "nb": "Skatteetaten",
+                "nn": "Skatteetaten"
+            },
+            "logo": "https://altinncdn.no/orgs/skd/skd.png",
+            "orgnr": "974761076",
+            "url": "https://www.skatteetaten.no"
+        },
+        {
+            "id": "SSB",
+            "name": {
+                "en": "Statistics Norway",
+                "nb": "Statistisk sentralbyrå",
+                "nn": "Statistisk sentralbyrå"
+            },
+            "logo": "https://altinncdn.no/orgs/ssb/ssb.png",
+            "orgnr": "971526920",
+            "url": "https://www.ssb.no"
+        }
+    ]
+}
