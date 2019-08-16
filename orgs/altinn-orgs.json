@@ -1,7 +1,6 @@
 {
-    "orgs": [
-        {
-            "id": "BRG",
+    "orgs": {
+        "brg": {
             "name": {
                 "en": "Brønnøysund Register Centre",
                 "nb": "Brønnøysundregistrene",
@@ -9,20 +8,18 @@
             },
             "logo": "https://altinncdn.no/orgs/brg/brreg.png",
             "orgnr": "974760673",
-            "url": "https://www.brreg.no"
+            "homepage": "https://www.brreg.no"
         },
-        {
-            "id": "DIBK",
+        "dibk": {
             "name": {
                 "nb": "Direktoratet for byggkvalitet",
                 "nn": "Direktoratet for byggkvalitet"
             },
             "logo": "https://altinncdn.no/orgs/dibk/dibk.png",
             "orgnr": "974760223",
-            "url": "https://dibk.no"
+            "homepage": "https://dibk.no"
         },
-        {
-            "id": "NB",
+        "nb": {
             "name": {
                 "en": "National Library of Norway",
                 "nb": "Nasjonalbiblioteket",
@@ -30,10 +27,9 @@
             },
             "logo": "https://altinncdn.no/orgs/nb/nasjonalbiblioteket.png",
             "orgnr": "976029100",
-            "url": "https://www.nb.no"
+            "homepage": "https://www.nb.no"
         },
-        {
-            "id": "NKR",
+        "nkr": {
             "name": {
                 "en": "Arts Council Norway",
                 "nb": "Kulturrådet",
@@ -41,10 +37,9 @@
             },
             "logo": "https://altinncdn.no/orgs/nkr/kulturradet.png",
             "orgnr": "971527412",
-            "url": "https://www.kulturradet.no"
+            "homepage": "https://www.kulturradet.no"
         },
-        {
-            "id": "NAV",
+        "nav": {
             "name": {
                 "en": "Norwegian Labour and Welfare Administration",
                 "nb": "Arbeids- og velferdsetaten",
@@ -52,10 +47,9 @@
             },
             "logo": "https://altinncdn.no/orgs/nav/nav.png",
             "orgnr": "889640782",
-            "url": "https://www.nav.no"
+            "homepage": "https://www.nav.no"
         },
-        {
-            "id": "SKD",
+        "skd": {
             "name": {
                 "en": "Norwegian Tax Administration",
                 "nb": "Skatteetaten",
@@ -63,10 +57,9 @@
             },
             "logo": "https://altinncdn.no/orgs/skd/skd.png",
             "orgnr": "974761076",
-            "url": "https://www.skatteetaten.no"
+            "homepage": "https://www.skatteetaten.no"
         },
-        {
-            "id": "SSB",
+        "ssb": {
             "name": {
                 "en": "Statistics Norway",
                 "nb": "Statistisk sentralbyrå",
@@ -74,7 +67,7 @@
             },
             "logo": "https://altinncdn.no/orgs/ssb/ssb.png",
             "orgnr": "971526920",
-            "url": "https://www.ssb.no"
+            "homepage": "https://www.ssb.no"
         }
-    ]
+    }
 }
