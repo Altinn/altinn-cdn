@@ -7,3 +7,4 @@ The assets served by https://altinncdn.no are structured and versioned in the [a
 - [/fonts](https://github.com/Altinn/altinn-cdn/tree/master/fonts) - Open source fonts
 - [/orgs](https://github.com/Altinn/altinn-cdn/tree/master/orgs) - Resources used by one organization across apps. For example logo images.
 - [/toolkits](https://github.com/Altinn/altinn-cdn/tree/master/toolkits) - Toolkits such as Bootstrap and jQuery
+- [/schemas](https://github.com/Altinn/altinn-cdn/tree/master/schemas) - JSON or XML schemas
