@@ -1,0 +1,168 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Altinn Prefill",
+    "description": "Schema that describes the prefill configuration for Altinn applications.",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "allowOverwrite": {
+            "type": "boolean",
+            "description": "Flag to determine if existing values in the app data model can be overwritten by prefill data."
+        },
+        "UserProfile": {
+            "type": "object",
+            "$ref": "#/definitions/UserProfile"
+        },
+        "ER": {
+            "type": "object",
+            "$ref": "#/definitions/ER"
+        },
+        "DSF": {
+            "type": "object",
+            "$ref": "#/definitions/DSF"
+        }
+    },
+    "definitions": {
+        "UserProfile": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Data from the Altinn user profile.",
+            "properties": {
+                "UserId": {
+                    "type": "string"
+                },
+                "UserName": {
+                    "type": "string"
+                },
+                "PhoneNumber": {
+                    "type": "string"
+                },
+                "Email": {
+                    "type": "string"
+                },
+                "PartyId": {
+                    "type": "string"
+                },
+                "UserType": {
+                    "type": "string"
+                },
+                "ProfileSettingPreference.Language": {
+                    "type": "string"
+                },
+                "ProfileSettingPreference.PreSelectedPartyId": {
+                    "type": "string"
+                },
+                "ProfileSettingsPreference.DoNotPromptForParty": {
+                    "type": "string"
+                }
+            }
+        },
+        "ER": {
+            "additionalProperties": true,
+            "description": "Data from ER (Enhetsregisteret).",
+            "type": "object",
+            "properties": {
+                "OrgNumber": {
+                    "type": "string"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "UnitType": {
+                    "type": "string"
+                },
+                "TelephoneNumber": {
+                    "type": "string"
+                },
+                "MobileNumber": {
+                    "type": "string"
+                },
+                "FaxNumber": {
+                    "type": "string"
+                },
+                "EMailAddress": {
+                    "type": "string"
+                },
+                "InternetAddress": {
+                    "type": "string"
+                },
+                "MailingAddress": {
+                    "type": "string"
+                },
+                "MailingPostalCode": {
+                    "type": "string"
+                },
+                "MailingPostalCity": {
+                    "type": "string"
+                },
+                "BusinessAddress": {
+                    "type": "string"
+                },
+                "BusinessPostalCode": {
+                    "type": "string"
+                },
+                "BusinessPostalCity": {
+                    "type": "string"
+                }
+            }
+        },
+        "DSF": {
+            "additionalProperties": true,
+            "description": "Data from DSF (Det Sentrale Folkeregisteret).",
+            "type": "object",
+            "properties": {
+                "SSN": {
+                    "type": "string"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "FirstName": {
+                    "type": "string"
+                },
+                "MiddleName": {
+                    "type": "string"
+                },
+                "LastName": {
+                    "type": "string"
+                },
+                "TelephoneNumber": {
+                    "type": "string"
+                },
+                "MobileNumber": {
+                    "type": "string"
+                },
+                "MailingAddress": {
+                    "type": "string"
+                },
+                "MailingPostalCode": {
+                    "type": "string"
+                },
+                "MailingPostalCity": {
+                    "type": "string"
+                },
+                "AddressMunicipalNumber": {
+                    "type": "string"
+                },
+                "AddressMunicipalName": {
+                    "type": "string"
+                },
+                "AddressStreetName": {
+                    "type": "string"
+                },
+                "AddressHouseNumber": {
+                    "type": "string"
+                },
+                "AddressHouseLetter": {
+                    "type": "string"
+                },
+                "AddressPostalCode": {
+                    "type": "string"
+                },
+                "AddressCity": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
