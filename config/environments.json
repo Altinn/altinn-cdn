@@ -1,0 +1,32 @@
+{
+  "environments": [
+      {
+          "hostname": "at21.altinn.cloud",
+          "appPrefix": "apps",
+          "platformPrefix": "platform",
+          "name": "at21",
+          "type": "test"
+      },
+      {
+        "hostname": "at22.altinn.cloud",
+        "appPrefix": "apps",
+        "platformPrefix": "platform",
+        "name": "at22",
+        "type": "test"
+      },
+      {
+          "hostname": "tt.altinn.cloud",
+          "appPrefix": "apps",
+          "platformPrefix": "platform",
+          "name": "tt",
+          "type": "test"
+      },
+      {
+          "hostname": "altinn.no",
+          "appPrefix": "apps",
+          "platformPrefix": "platform",
+          "name": "production",
+          "type": "production"
+      }
+  ]
+}
