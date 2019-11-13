@@ -78,7 +78,7 @@
             "logo": "",
             "orgnr": "",
             "homepage": "",
-            "environments": ["at21", "at22", "tt", "production"]
+            "environments": ["at21", "at22", "at23", "tt", "production"]
         },
         "ttd": {
             "name": {
@@ -89,7 +89,7 @@
             "logo": "",
             "orgnr": "",
             "homepage": "",
-            "environments": ["at21", "at22", "tt", "production"]
+            "environments": ["at21", "at22", "at23", "tt", "production"]
         }
     }
 }
