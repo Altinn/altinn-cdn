@@ -22,10 +22,10 @@
       "type": "test"
     },
     {
-      "hostname": "tt.altinn.cloud",
+      "hostname": "tt02.altinn.cloud",
       "appPrefix": "apps",
       "platformPrefix": "platform",
-      "name": "tt",
+      "name": "tt02",
       "type": "test"
     },
     {
