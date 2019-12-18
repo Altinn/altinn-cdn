@@ -22,7 +22,7 @@
       "type": "test"
     },
     {
-      "hostname": "tt02.altinn.cloud",
+      "hostname": "tt02.altinn.no",
       "appPrefix": "apps",
       "platformPrefix": "platform",
       "name": "tt02",
