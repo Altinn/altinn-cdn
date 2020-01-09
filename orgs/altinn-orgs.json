@@ -69,17 +69,6 @@
             "orgnr": "971526920",
             "homepage": "https://www.ssb.no"
         },
-        "tdd": {
-            "name": {
-                "en": "Test Ministry",
-                "nb": "Testdepartementet",
-                "nn": "Testdepartementet"
-            },
-            "logo": "",
-            "orgnr": "",
-            "homepage": "",
-            "environments": ["at21", "at22", "at23", "tt02", "production"]
-        },
         "ttd": {
             "name": {
                 "en": "Test Ministry",
