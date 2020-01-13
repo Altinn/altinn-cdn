@@ -78,7 +78,7 @@
             "logo": "",
             "orgnr": "",
             "homepage": "",
-            "environments": ["at21", "at22", "at23", "tt02", "production"]
+            "environments": ["at21", "at22", "at23", "at24", "tt02", "production"]
         }
     }
 }
