@@ -1,13 +1,6 @@
 {
   "environments": [
     {
-      "hostname": "at21.altinn.cloud",
-      "appPrefix": "apps",
-      "platformPrefix": "platform",
-      "name": "at21",
-      "type": "test"
-    },
-    {
       "hostname": "at22.altinn.cloud",
       "appPrefix": "apps",
       "platformPrefix": "platform",
