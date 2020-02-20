@@ -57,7 +57,8 @@
             },
             "logo": "https://altinncdn.no/orgs/skd/skd.png",
             "orgnr": "974761076",
-            "homepage": "https://www.skatteetaten.no"
+            "homepage": "https://www.skatteetaten.no",
+            "environments": ["tt02"]
         },
         "ssb": {
             "name": {
