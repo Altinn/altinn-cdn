@@ -80,7 +80,7 @@
             "logo": "",
             "orgnr": "",
             "homepage": "",
-            "environments": ["at22", "at23", "at24", "tt02", "production"]
+            "environments": ["at22", "at23", "at24", "yt01", "tt02", "production"]
         }
     }
 }
