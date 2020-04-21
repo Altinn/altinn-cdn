@@ -69,7 +69,8 @@
             },
             "logo": "https://altinncdn.no/orgs/ssb/ssb.png",
             "orgnr": "971526920",
-            "homepage": "https://www.ssb.no"
+            "homepage": "https://www.ssb.no",
+            "environments": ["tt02"]
         },
         "ttd": {
             "name": {
