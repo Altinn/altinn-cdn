@@ -19,6 +19,17 @@
             "orgnr": "974760223",
             "homepage": "https://dibk.no"
         },
+        "digdir": {
+            "name": {
+                "en": "Norwegian Digitalisation Agency",
+                "nb": "Digitaliseringsdirektoratet",
+                "nn": "Digitaliseringsdirektoratet"
+            },
+            "logo": "",
+            "orgnr": "991825827",
+            "homepage": "https://www.digdir.no",
+            "environments": ["tt02"]
+        },
         "nb": {
             "name": {
                 "en": "National Library of Norway",
