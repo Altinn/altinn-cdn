@@ -28,7 +28,7 @@
             "logo": "",
             "orgnr": "991825827",
             "homepage": "https://www.digdir.no",
-            "environments": ["tt02"]
+            "environments": ["tt02", "production"]
         },
         "nb": {
             "name": {
