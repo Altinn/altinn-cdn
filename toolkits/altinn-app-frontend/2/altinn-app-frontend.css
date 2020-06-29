@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v2.0.18, https://github.com/Altinn/altinn-studio/tree/e8115e6b040904a9256d03e3327305333670d6a6/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v2.0.19, https://github.com/Altinn/altinn-studio/tree/19aef7cf5cf594879a820ea3456310a5a976c8ab/src/react-apps/applications/altinn-app-frontend */
 .input-group input:focus ~.a-icon-right {
   border-color: #0062ba !important;
 }
@@ -253,7 +253,6 @@ option {
   font-size: 1.4rem;
   font-weight: 400;
   color: #6A6A6A;
-  padding-left: 0.6rem;
 }
 
 .a-form-group .form-control {
