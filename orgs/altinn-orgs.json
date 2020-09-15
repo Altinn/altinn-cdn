@@ -10,6 +10,17 @@
             "orgnr": "974760673",
             "homepage": "https://www.brreg.no"
         },
+        "dat": {
+            "name": {
+                "en": "Norwegian Labour Inspection Authority",
+                "nb": "Arbeidstilsynet",
+                "nn": "Arbeidstilsynet"
+            },
+            "logo": "",
+            "orgnr": "974761211",
+            "homepage": "https://www.arbeidstilsynet.no",
+            "environments": ["tt02"]
+        },
         "dibk": {
             "name": {
                 "nb": "Direktoratet for byggkvalitet",
@@ -29,6 +40,17 @@
             "orgnr": "991825827",
             "homepage": "https://www.digdir.no",
             "environments": ["tt02", "production"]
+        },
+        "hdir": {
+	        "name": {
+		        "en": "Norwegian Directorate of Health",
+		        "nb": "Helsedirektoratet",
+		        "nn": "Helsedirektoratet"
+	        },
+	        "logo": "",
+	        "orgnr": "983544622",
+	        "homepage": "https://www.helsedirektoratet.no",
+	        "environments": ["tt02"]
         },
         "nb": {
             "name": {
