@@ -42,15 +42,15 @@
             "environments": ["tt02", "production"]
         },
         "hdir": {
-	        "name": {
-		        "en": "Norwegian Directorate of Health",
-		        "nb": "Helsedirektoratet",
-		        "nn": "Helsedirektoratet"
-	        },
-	        "logo": "",
-	        "orgnr": "983544622",
-	        "homepage": "https://www.helsedirektoratet.no",
-	        "environments": ["tt02"]
+	    "name": {
+		"en": "Norwegian Directorate of Health",
+		"nb": "Helsedirektoratet",
+		"nn": "Helsedirektoratet"
+	    },
+	    "logo": "",
+	    "orgnr": "983544622",
+	    "homepage": "https://www.helsedirektoratet.no",
+	    "environments": ["tt02"]
         },
         "nb": {
             "name": {
