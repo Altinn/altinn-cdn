@@ -16,10 +16,12 @@
                 "nb": "Arbeidstilsynet",
                 "nn": "Arbeidstilsynet"
             },
-            "logo": "",
+            "logo": "https://altinncdn.no/orgs/dat/arbeidstilsynet.png",
             "orgnr": "974761211",
             "homepage": "https://www.arbeidstilsynet.no",
-            "environments": ["tt02"]
+            "environments": [
+                "tt02"
+            ]
         },
         "dibk": {
             "name": {
@@ -40,18 +42,23 @@
             "logo": "",
             "orgnr": "991825827",
             "homepage": "https://www.digdir.no",
-            "environments": ["tt02", "production"]
+            "environments": [
+                "tt02",
+                "production"
+            ]
         },
         "hdir": {
-	    "name": {
-		"en": "Norwegian Directorate of Health",
-		"nb": "Helsedirektoratet",
-		"nn": "Helsedirektoratet"
-	    },
-	    "logo": "",
-	    "orgnr": "983544622",
-	    "homepage": "https://www.helsedirektoratet.no",
-	    "environments": ["tt02"]
+            "name": {
+                "en": "Norwegian Directorate of Health",
+                "nb": "Helsedirektoratet",
+                "nn": "Helsedirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/hdir/helsedirektoratet.png",
+            "orgnr": "983544622",
+            "homepage": "https://www.helsedirektoratet.no",
+            "environments": [
+                "tt02"
+            ]
         },
         "nb": {
             "name": {
@@ -72,7 +79,9 @@
             "logo": "https://altinncdn.no/orgs/nkr/kulturradet.png",
             "orgnr": "971527412",
             "homepage": "https://www.kulturradet.no",
-            "environments": ["tt02"]
+            "environments": [
+                "tt02"
+            ]
         },
         "nav": {
             "name": {
@@ -93,7 +102,9 @@
             "logo": "https://altinncdn.no/orgs/skd/skd.png",
             "orgnr": "974761076",
             "homepage": "https://www.skatteetaten.no",
-            "environments": ["tt02"]
+            "environments": [
+                "tt02"
+            ]
         },
         "ssb": {
             "name": {
@@ -104,7 +115,10 @@
             "logo": "https://altinncdn.no/orgs/ssb/ssb.png",
             "orgnr": "971526920",
             "homepage": "https://www.ssb.no",
-            "environments": ["tt02", "production"]
+            "environments": [
+                "tt02",
+                "production"
+            ]
         },
         "ttd": {
             "name": {
@@ -115,7 +129,15 @@
             "logo": "",
             "orgnr": "",
             "homepage": "",
-            "environments": ["at21", "at22", "at23", "at24", "tt02", "yt01", "production"]
+            "environments": [
+                "at21",
+                "at22",
+                "at23",
+                "at24",
+                "tt02",
+                "yt01",
+                "production"
+            ]
         }
     }
 }
