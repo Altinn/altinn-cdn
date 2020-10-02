@@ -68,7 +68,10 @@
             },
             "logo": "https://altinncdn.no/orgs/nb/nasjonalbiblioteket.png",
             "orgnr": "976029100",
-            "homepage": "https://www.nb.no"
+            "homepage": "https://www.nb.no",
+            "environments": [
+                "tt02"
+            ]
         },
         "nkr": {
             "name": {
