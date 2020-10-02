@@ -31,7 +31,10 @@
             },
             "logo": "https://altinncdn.no/orgs/dibk/dibk.png",
             "orgnr": "974760223",
-            "homepage": "https://dibk.no"
+            "homepage": "https://dibk.no",
+            "environments": [
+                "tt02"
+            ]
         },
         "digdir": {
             "name": {
