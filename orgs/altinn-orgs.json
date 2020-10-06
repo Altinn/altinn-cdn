@@ -63,6 +63,19 @@
                 "tt02"
             ]
         },
+        "kv": {
+            "name": {
+                "en": "Norwegian Mapping Authority",
+                "nb": "Kartverket",
+                "nn": "Kartverket"
+            },
+            "logo": "https://altinncdn.no/orgs/kv/kartverket.png",
+            "orgnr": "971040238",
+            "homepage": "https://www.kartverket.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "nb": {
             "name": {
                 "en": "National Library of Norway",
