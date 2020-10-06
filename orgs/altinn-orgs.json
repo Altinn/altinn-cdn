@@ -63,13 +63,26 @@
                 "tt02"
             ]
         },
-        "nb": {
+        "kv": {
+            "name": {
+                "en": "Norwegian Mapping Authority",
+                "nb": "Kartverket",
+                "nn": "Kartverket"
+            },
+            "logo": "https://altinncdn.no/orgs/kv/kartverket.png",
+            "orgnr": "971040238",
+            "homepage": "https://www.kartverket.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
+        "nbib": {
             "name": {
                 "en": "National Library of Norway",
                 "nb": "Nasjonalbiblioteket",
                 "nn": "Nasjonalbiblioteket"
             },
-            "logo": "https://altinncdn.no/orgs/nb/nasjonalbiblioteket.png",
+            "logo": "https://altinncdn.no/orgs/nbib/nasjonalbiblioteket.png",
             "orgnr": "976029100",
             "homepage": "https://www.nb.no",
             "environments": [
