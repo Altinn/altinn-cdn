@@ -76,13 +76,13 @@
                 "tt02"
             ]
         },
-        "nb": {
+        "nbib": {
             "name": {
                 "en": "National Library of Norway",
                 "nb": "Nasjonalbiblioteket",
                 "nn": "Nasjonalbiblioteket"
             },
-            "logo": "https://altinncdn.no/orgs/nb/nasjonalbiblioteket.png",
+            "logo": "https://altinncdn.no/orgs/nbib/nasjonalbiblioteket.png",
             "orgnr": "976029100",
             "homepage": "https://www.nb.no",
             "environments": [
