@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v2.1.30, https://github.com/Altinn/altinn-studio/tree/c062dfbe8d3fe0236f00b6566066900ea1c60404/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v2.1.31, https://github.com/Altinn/altinn-studio/tree/963f97bcf2235e0230f6783e9355fde054f07a02/src/react-apps/applications/altinn-app-frontend */
 .input-group input:focus ~.a-icon-right {
   border-color: #0062ba !important;
 }
@@ -103,7 +103,9 @@ input.form-control:focus:not(.a-hasButton) {
 }
 
 .file-upload-invalid:focus {
-  outline-color: #E23B53;
+  border-style: solid !important;
+  outline-color: #E23B53 !important;
+  border-color: #E23B53 !important;
 }
 
 .file-upload:hover {
@@ -111,8 +113,8 @@ input.form-control:focus:not(.a-hasButton) {
 }
 
 .file-upload:focus {
-  border-color: #0062ba !important;
-  border-style: solid !important;
+  border-color: #0062ba;
+  border-style: solid;
   outline: 2px solid #0062ba;
   outline-offset: 0px;
 }
