@@ -1,0 +1,106 @@
+{
+  "$id": "https://altinncdn.no/schemas/json/policy/policy.schema.v1.json",
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$comment": "IN DEVELOPMENT, WILL CHANGE!",
+  "title": "Altinn App Policy",
+  "description": "JSON Schema describing a simplified access control policy format for Altinn applications.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "Policy": {
+      "type": "object",
+      "$ref": "#/definitions/Policy"
+    }
+  },
+  "definitions": {
+    "Policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Rules": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/Rule"
+          },
+          "description": "Required array containing one or more rules."
+        }
+      },
+      "required": [
+        "Rules"
+      ],
+      "title": "Application Policy",
+      "description": "Policy for defining rules for who (subjects) can do actions on resources in an app."
+    },
+    "Rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Effect": {
+          "type": "string",
+          "enum": [
+            "Permit",
+            "Deny"
+          ],
+          "description": "The intended consequence of a satisfied rule (either \"Permit\" or \"Deny\")."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Optional description of the rule."
+        },
+        "Subjects": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^(role:[A-Z]{4,6})|(org:[a-z]{2,14})$",
+            "examples": [
+              "role:REGNA",
+              "org:skd"
+            ],
+            "description": "Who should this rule apply for? Typically a role."
+          },
+          "title": "Subjects",
+          "description": "Array containing one or more subjects."
+        },
+        "Resources": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^(app:[a-z]{2,8}\/([a-z][a-z0-9-]{1,28}[a-z0-9]){3,30}(\/([a-z][a-z0-9-]{1,28}[a-z0-9])){0,30})$",
+            "description": "An app resource that this rule should affect."
+          },
+          "title": "Application resources",
+          "description": "Array containing one or more resources."
+        },
+        "Actions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "instantiate",
+              "read",
+              "write",
+              "confirm",
+              "complete"
+            ],
+            "description": "An action that can be performed on the resources."
+          },
+          "title": "Actions",
+          "description": "Array containing one or more actions that can be performed on the resources."
+        }
+      },
+      "required": [
+        "Effect",
+        "Subjects",
+        "Resources",
+        "Actions"
+      ],
+      "title": "App Access Control Rule",
+      "description": "Rule describing who (subjects) can do actions on resources in the app."
+    }
+  }
+}
