@@ -112,6 +112,19 @@
             "orgnr": "889640782",
             "homepage": "https://www.nav.no"
         },
+        "nsm": {
+            "name": {
+                "en": "National Security Agency",
+                "nb": "Nasjonal sikkerhetsmyndighet",
+                "nn": "Nasjonal sikkerhetsmyndighet"
+            },
+            "logo": "https://altinncdn.no/orgs/nsm/nsm.png",
+            "orgnr": "985165262",
+            "homepage": "https://www.nsm.no",
+            "environments": [
+                "tt02"
+            ]
+        },
         "skd": {
             "name": {
                 "en": "Norwegian Tax Administration",
