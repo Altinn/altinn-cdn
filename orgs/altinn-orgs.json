@@ -114,9 +114,9 @@
         },
         "nsm": {
             "name": {
-                "en": "National Security Agency (NSM)",
-                "nb": "Nasjonal sikkerhetsmyndighet (NSM)",
-                "nn": "Nasjonal sikkerhetsmyndighet (NSM)"
+                "en": "National Security Agency",
+                "nb": "Nasjonal sikkerhetsmyndighet)",
+                "nn": "Nasjonal sikkerhetsmyndighet"
             },
             "logo": "https://altinncdn.no/orgs/nsm/nsm.png",
             "orgnr": "985165262",
