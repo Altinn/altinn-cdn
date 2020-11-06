@@ -60,7 +60,8 @@
             "orgnr": "983544622",
             "homepage": "https://www.helsedirektoratet.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "kv": {
@@ -73,7 +74,8 @@
             "orgnr": "971040238",
             "homepage": "https://www.kartverket.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nbib": {
