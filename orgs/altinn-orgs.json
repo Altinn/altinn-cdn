@@ -50,6 +50,19 @@
                 "production"
             ]
         },
+        "gk": {
+            "name": {
+                "en": "The Criminal Cases Review Commission",
+                "nb": "Gjenopptakelseskommisjonen",
+                "nn": "Gjenopptakingskommisjonen"
+            },
+            "logo": "https://altinncdn.no/orgs/gk/gjenopptakelseskommisjonen.png",
+            "orgnr": "985847215",
+            "homepage": "https://www.gjenopptakelse.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "hdir": {
             "name": {
                 "en": "Norwegian Directorate of Health",
