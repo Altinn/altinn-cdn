@@ -1,0 +1,213 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Altinn layout",
+    "description": "Schema that describes the layout configuration for Altinn applications.",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+      "data": {
+        "$ref": "#/definitions/data"
+      }
+    },
+    "definitions": {
+      "data": {
+        "title": "data",
+        "description": "Contains data describing the layout configuration.",
+        "type": "object",
+        "properties": {
+          "layout": {
+            "$ref": "#/definitions/layout"
+          }
+        }
+      },
+      "layout": {
+        "title": "layout",
+        "description": "Contain components to be included in the layout.",
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/component"
+        }
+      },
+      "component": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "id",
+            "description": "The component ID. Must be unique within a given layout."
+          },
+          "type": {
+            "type": "string",
+            "title": "type",
+            "description": "The component type.",
+            "enum": ["AddressComponent", "Paragraph", "Header", "Input", "TextArea", "Checkboxes", "RadioButtons", "Dropdown", "FileUpload", "Datepicker", "NavigationButtons", "Button", "Group"]
+          },
+          "required": {
+            "type": "boolean",
+            "title": "required",
+            "description": "Boolean value indicating if the component is required when filling in the form. Defaults to false."
+          },
+          "readOnly": {
+            "type": "boolean",
+            "title": "readOnly",
+            "description": "Boolean value indicating if the component should be presented as read only. Defaults to false."
+          },
+          "textResourceBindings": {
+            "type": "object",
+            "title": "textResourceBindings",
+            "description": "Text resource bindings for a component.",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "dataModelBindings": {
+            "type": "object",
+            "title": "dataModelBindings",
+            "description": "Data model bindings for a component.",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["id", "type"],
+        "allOf": [
+          { "if": {"properties": {"type": { "const": "Datepicker"}}}, "then": { "$ref": "#/definitions/datepickerComponent"}},
+          { "if": {"properties": {"type": { "const": "FileUpload"}}}, "then": { "$ref": "#/definitions/fileUploadComponent"}},
+          { "if": {"properties": {"type": { "const": "NavigationButtons"}}}, "then": { "$ref": "#/definitions/navigationButtonsComponent"}},
+          { "if": {"properties": {"type": { "const": "Group"}}}, "then": { "$ref": "#/definitions/groupComponent"}},
+          { "if": {"properties": {"type": { "const": "Dropdown"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
+          { "if": {"properties": {"type": { "const": "RadioButtons"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
+          { "if": {"properties": {"type": { "const": "Checkboxes"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
+          { "if": {"properties": {"type": { "const": "AddressComponent"}}}, "then": { "$ref": "#/definitions/addressComponent"}}
+        ]
+      },
+      "fileUploadComponent": {
+        "properties": {
+          "maxFileSizeInMB": {
+            "title": "maxFileSizeInMB",
+            "description": "Sets the maximum file size allowed in megabytes.",
+            "type": "integer"
+          },
+          "maxNumberOfAttachments": {
+            "title": "maxNumberOfAttachments",
+            "description": "Sets the maximum number of attachments allowed to upload.",
+            "type": "integer"
+          },
+          "minNumberOfAttachments": {
+            "title": "minNumberOfAttachments",
+            "description": "Sets the minimum number of attachments to upload",
+            "type": "integer"
+          },
+          "displayMode": {
+            "title": "displayMode",
+            "description": "Sets the display mode for the file upload component.",
+            "type":"string",
+            "enum": ["simple", "list"]
+          },
+          "hasCustomFileEndings": {
+            "title": "hasCustomFileEndings",
+            "description": "Boolean value indicating if the component has valid file endings",
+            "type": "boolean"
+          },
+          "validFileEndings": {
+            "title": "validFileEndings",
+            "description": "A seperated string of valid file endings to upload. If not set all endings are accepted.",
+            "type": "string"
+          }
+        },
+        "required": ["maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments", "displayMode" ]
+      },
+      "datepickerComponent": {
+        "properties": {
+          "minDate": {
+            "type": "string",
+            "title": "minDate",
+            "description": "Sets the minimum allowed date. Defaults to 1900-01-01T12:00:00.000Z'."
+          },
+          "maxDate": {
+            "type": "string",
+            "title": "maxDate",
+            "description": "Sets the maxiumum allowed date. Defaults to 2100-01-01T12:00:00.000Z.'"
+          },
+          "timeStamp": {
+            "type": "boolean",
+            "title": "timeStamp",
+            "description": "Boolean value indicating if the date time should be stored as a timeStamp. Defaults to false."
+          }
+        },
+        "required": []
+      },
+      "navigationButtonsComponent": {
+        "properties": {
+          "showBackButton": {
+            "type": "boolean",
+            "title": "showBackButton",
+            "description": "Shows two buttons (back/next) instead of just 'next'."
+          }
+        }
+      },
+      "groupComponent": {
+        "properties": {
+          "children": {
+            "title": "children",
+            "description": "An array of child components belonging to the group.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "maxCount": {
+              "type": "integer",
+              "title": "maxCount",
+              "description": "The maximum number of iterations of a group. Only relevant if group is repeating."
+          }
+        }
+      },
+      "options": {
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "value",
+            "description": "The option label. Can be plain text or a text resource binding."
+          },
+          "value": {
+            "type": "string",
+            "title": "value",
+            "description": "The option value."
+          }
+        },
+        "required": ["label", "value"]
+      },
+      "selectionComponents": {
+        "properties": {
+          "optionsId": {
+            "type": "string",
+            "title": "optionsId",
+            "description": "Reference to connected options by id."
+          },
+          "options": {
+            "type": "array",
+            "title": "options",
+            "description": "An array of options. Only relevant if no optionsId is set.",
+            "items": {
+              "$ref": "#/definitions/options"
+            }
+          },
+          "preselectedOptionIndex": {
+            "type": "integer",
+            "title": "preselectedOptionIndex",
+            "description": "Sets a preselected index."
+          }
+        }
+      },
+      "addressComponent": {
+        "properties": {
+          "simplified": {
+            "type": "boolean",
+            "title": "simplified",
+            "description": "Boolean value indicating if the address component should be shown in simple mode."
+          }
+        }
+      }
+    }
+}
