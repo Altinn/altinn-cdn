@@ -1,4 +1,5 @@
 {
+  "$id": "https://altinncdn.no/schemas/json/layout/layoutSettings.schema.v1.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Altinn layout settings",
   "description": "Schema that describes settings for the layout configuration for Altinn applications.",

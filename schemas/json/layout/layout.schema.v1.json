@@ -1,4 +1,5 @@
 {
+    "$id": "https://altinncdn.no/schemas/json/layout/layout.schema.v1.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Altinn layout",
     "description": "Schema that describes the layout configuration for Altinn applications.",
@@ -11,7 +12,7 @@
     },
     "definitions": {
       "data": {
-        "title": "data",
+        "title": "The layout data",
         "description": "Contains data describing the layout configuration.",
         "type": "object",
         "properties": {
@@ -21,8 +22,8 @@
         }
       },
       "layout": {
-        "title": "layout",
-        "description": "Contain components to be included in the layout.",
+        "title": "The layout",
+        "description": "Array of components to be presented in the layout.",
         "type": "array",
         "items": {
           "$ref": "#/definitions/component"
@@ -38,35 +39,39 @@
           },
           "type": {
             "type": "string",
-            "title": "type",
+            "title": "Type",
             "description": "The component type.",
-            "enum": ["AddressComponent", "Paragraph", "Header", "Input", "TextArea", "Checkboxes", "RadioButtons", "Dropdown", "FileUpload", "Datepicker", "NavigationButtons", "Button", "Group"]
+            "enum": ["AddressComponent", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "Group", "Header", "Input", "NavigationButtons", "Paragraph", "RadioButtons", "TextArea"]
           },
           "required": {
             "type": "boolean",
-            "title": "required",
-            "description": "Boolean value indicating if the component is required when filling in the form. Defaults to false."
+            "title": "Required",
+            "description": "Boolean value indicating if the component is required when filling in the form. Defaults to false.",
+            "default": false
           },
           "readOnly": {
             "type": "boolean",
-            "title": "readOnly",
-            "description": "Boolean value indicating if the component should be presented as read only. Defaults to false."
+            "title": "Read only",
+            "description": "Boolean value indicating if the component should be presented as read only. Defaults to false.",
+            "default": false
           },
           "textResourceBindings": {
             "type": "object",
-            "title": "textResourceBindings",
+            "title": "Text resource bindings",
             "description": "Text resource bindings for a component.",
             "additionalProperties": {
               "type": "string"
-            }
+            },
+            "examples": [{"title": "some.text.binding", "helpText": "some.other.text.binding" }]
           },
           "dataModelBindings": {
             "type": "object",
-            "title": "dataModelBindings",
+            "title": "Data model bindings",
             "description": "Data model bindings for a component.",
             "additionalProperties": {
               "type": "string"
-            }
+            },
+            "examples": [{"simpleBinding": "some.data.binding"}]
           }
         },
         "required": ["id", "type"],
@@ -84,55 +89,62 @@
       "fileUploadComponent": {
         "properties": {
           "maxFileSizeInMB": {
-            "title": "maxFileSizeInMB",
+            "title": "Maximum file size in MB",
             "description": "Sets the maximum file size allowed in megabytes.",
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
           "maxNumberOfAttachments": {
-            "title": "maxNumberOfAttachments",
+            "title": "Maximum allowed attachments",
             "description": "Sets the maximum number of attachments allowed to upload.",
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
           "minNumberOfAttachments": {
-            "title": "minNumberOfAttachments",
+            "title": "Minimum allowed attachments",
             "description": "Sets the minimum number of attachments to upload",
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
           "displayMode": {
-            "title": "displayMode",
+            "title": "Display mode",
             "description": "Sets the display mode for the file upload component.",
             "type":"string",
             "enum": ["simple", "list"]
           },
           "hasCustomFileEndings": {
-            "title": "hasCustomFileEndings",
+            "title": "Has custrom file endings",
             "description": "Boolean value indicating if the component has valid file endings",
             "type": "boolean"
           },
           "validFileEndings": {
-            "title": "validFileEndings",
+            "title": "Valid file endings",
             "description": "A seperated string of valid file endings to upload. If not set all endings are accepted.",
-            "type": "string"
+            "type": "string",
+            "examples": ["csv", "doc", "docx", "gif", "jpeg", "pdf", "txt"]
           }
         },
-        "required": ["maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments", "displayMode" ]
+        "required": ["displayMode", "maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments"]
       },
       "datepickerComponent": {
         "properties": {
           "minDate": {
             "type": "string",
-            "title": "minDate",
-            "description": "Sets the minimum allowed date. Defaults to 1900-01-01T12:00:00.000Z'."
+            "title": "Minimum allowed date",
+            "description": "Sets the minimum allowed date. Defaults to 1900-01-01T12:00:00.000Z'.",
+            "default": "1900-01-01T12:00:00.000Z"
           },
           "maxDate": {
             "type": "string",
-            "title": "maxDate",
-            "description": "Sets the maxiumum allowed date. Defaults to 2100-01-01T12:00:00.000Z.'"
+            "title": "Maximum allowed date",
+            "description": "Sets the maxiumum allowed date. Defaults to 2100-01-01T12:00:00.000Z.'",
+            "default": "2100-01-01T12:00:00.000Z."
           },
           "timeStamp": {
             "type": "boolean",
-            "title": "timeStamp",
-            "description": "Boolean value indicating if the date time should be stored as a timeStamp. Defaults to false."
+            "title": "Time stamp",
+            "description": "Boolean value indicating if the date time should be stored as a timeStamp. Defaults to false.",
+            "default": false
           }
         },
         "required": []
@@ -141,7 +153,7 @@
         "properties": {
           "showBackButton": {
             "type": "boolean",
-            "title": "showBackButton",
+            "title": "Show back button",
             "description": "Shows two buttons (back/next) instead of just 'next'."
           }
         }
@@ -149,7 +161,7 @@
       "groupComponent": {
         "properties": {
           "children": {
-            "title": "children",
+            "title": "Children",
             "description": "An array of child components belonging to the group.",
             "type": "array",
             "items": {
@@ -158,8 +170,9 @@
           },
           "maxCount": {
               "type": "integer",
-              "title": "maxCount",
-              "description": "The maximum number of iterations of a group. Only relevant if group is repeating."
+              "title": "Maximum count",
+              "description": "The maximum number of iterations of a group. Only relevant if group is repeating.",
+              "minimum": 0
           }
         }
       },
@@ -167,12 +180,12 @@
         "properties": {
           "label": {
             "type": "string",
-            "title": "value",
+            "title": "Label",
             "description": "The option label. Can be plain text or a text resource binding."
           },
           "value": {
             "type": "string",
-            "title": "value",
+            "title": "Value",
             "description": "The option value."
           }
         },
@@ -182,12 +195,12 @@
         "properties": {
           "optionsId": {
             "type": "string",
-            "title": "optionsId",
+            "title": "Options ID",
             "description": "Reference to connected options by id."
           },
           "options": {
             "type": "array",
-            "title": "options",
+            "title": "Options",
             "description": "An array of options. Only relevant if no optionsId is set.",
             "items": {
               "$ref": "#/definitions/options"
@@ -195,8 +208,9 @@
           },
           "preselectedOptionIndex": {
             "type": "integer",
-            "title": "preselectedOptionIndex",
-            "description": "Sets a preselected index."
+            "title": "Preselected option index",
+            "description": "Sets a preselected index.",
+            "minimum": 0
           }
         }
       },
@@ -204,8 +218,9 @@
         "properties": {
           "simplified": {
             "type": "boolean",
-            "title": "simplified",
-            "description": "Boolean value indicating if the address component should be shown in simple mode."
+            "title": "Simplified",
+            "description": "Boolean value indicating if the address component should be shown in simple mode.",
+            "default": false
           }
         }
       }
