@@ -20,7 +20,8 @@
             "orgnr": "974761211",
             "homepage": "https://www.arbeidstilsynet.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "dibk": {
@@ -101,7 +102,8 @@
             "orgnr": "976029100",
             "homepage": "https://www.nb.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nkr": {
@@ -137,7 +139,8 @@
             "orgnr": "985165262",
             "homepage": "https://www.nsm.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "skd": {
