@@ -30,7 +30,7 @@
       "dataModelBindings": {}
     }
   ],
-  "displayName": "widget.message",
+  "displayName": "ux_editor.widget_message",
   "texts": [
     {
       "language": "nb",
