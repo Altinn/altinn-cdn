@@ -37,7 +37,7 @@
       "resources": [
         {
           "id": "messageTitle",
-          "value": "{0}",
+          "value": "## {0}",
           "variables": [
             {
               "key": "Correspondence.messageTitle",
