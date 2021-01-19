@@ -41,7 +41,7 @@
             "type": "string",
             "title": "Type",
             "description": "The component type.",
-            "enum": ["AddressComponent", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "Group", "Header", "Input", "NavigationButtons", "Paragraph", "RadioButtons", "Summary", "TextArea"]
+            "enum": ["AddressComponent", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "Group", "Header", "Input", "NavigationButtons", "Paragraph", "RadioButtons", "Summary", "TextArea", "AttachmentList"]
           },
           "required": {
             "type": "boolean",
