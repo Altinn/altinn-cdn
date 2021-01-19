@@ -16,7 +16,7 @@
     },
     {
       "id": "message-attachments",
-      "type": "Paragraph",
+      "type": "AttachmentList",
       "textResourceBindings": {
         "title": "messageAttachments"
       }
@@ -40,7 +40,7 @@
           "value": "## {0}",
           "variables": [
             {
-              "key": "Correspondence.messageTitle",
+              "key": "MessageTitle",
               "dataSource": "dataModel.message"
             }
           ]
@@ -50,10 +50,14 @@
           "value": "{0}",
           "variables": [
             {
-              "key": "Correspondence.messageBody",
+              "key": "MessageBody",
               "dataSource": "dataModel.message"
             }
           ]
+        },
+        {
+          "id": "messageAttachments",
+          "value": "Vedlegg"
         }
       ]
     }
