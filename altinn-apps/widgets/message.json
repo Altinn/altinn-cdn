@@ -1,0 +1,65 @@
+{
+  "components": [
+    {
+      "id": "message-title",
+      "type": "Paragraph",
+      "textResourceBindings": {
+        "title": "messageTitle"
+      }
+    },
+    {
+      "id": "message-body",
+      "type": "Paragraph",
+      "textResourceBindings": {
+        "title": "messageBody"
+      }
+    },
+    {
+      "id": "message-attachments",
+      "type": "AttachmentList",
+      "textResourceBindings": {
+        "title": "messageAttachments"
+      }
+    },
+    {
+      "id": "message-button",
+      "type": "Button",
+      "textResourceBindings": {
+        "title": "Send inn"
+      },
+      "dataModelBindings": {}
+    }
+  ],
+  "displayName": "ux_editor.widget_message",
+  "texts": [
+    {
+      "language": "nb",
+      "resources": [
+        {
+          "id": "messageTitle",
+          "value": "## {0}",
+          "variables": [
+            {
+              "key": "MessageTitle",
+              "dataSource": "dataModel.message"
+            }
+          ]
+        },
+        {
+          "id": "messageBody",
+          "value": "{0}",
+          "variables": [
+            {
+              "key": "MessageBody",
+              "dataSource": "dataModel.message"
+            }
+          ]
+        },
+        {
+          "id": "messageAttachments",
+          "value": "Vedlegg"
+        }
+      ]
+    }
+  ]
+}
