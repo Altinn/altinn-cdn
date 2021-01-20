@@ -41,7 +41,7 @@
             "type": "string",
             "title": "Type",
             "description": "The component type.",
-            "enum": ["AddressComponent", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "Group", "Header", "Input", "NavigationButtons", "Paragraph", "RadioButtons", "Summary", "TextArea", "AttachmentList"]
+            "enum": ["AddressComponent", "AttachmentList", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "Group", "Header", "Input", "NavigationButtons", "Paragraph", "RadioButtons", "Summary", "TextArea"]
           },
           "required": {
             "type": "boolean",
@@ -253,6 +253,9 @@
         "properties": {
           "dataTypeIds": {
             "type": "array",
+            "items": {
+              "type": "string"
+            },
             "title": "Data type IDs",
             "description": "List of data type IDs for the attachment list to show.",
             "examples": [["SomeDataType", "SomeOtherDataType"]]
