@@ -188,6 +188,19 @@
                 "yt01",
                 "production"
             ]
+        },
+        "udir": {
+            "name": {
+                "en": "Norwegian Directorate for Education and Training",
+                "nb": "Utdanningsdirektoratet",
+                "nn": "Utdanningsdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/udir/udir.png",
+            "orgnr": "970018131",
+            "homepage": "https://www.udir.no",
+            "environments": [
+                "tt02"
+            ]
         }
     }
 }
