@@ -29,12 +29,12 @@
               "description": "The datatype to use this layoyut."
             },
   
-            "task": {
-              "$ref": "#/definitions/task"
+            "tasks": {
+              "$ref": "#/definitions/tasks"
             }
           }
       },
-      "task": {
+      "tasks": {
         "additionalProperties": false,
         "description": "An array specifying which task to use a layoutset",
         "type": "array",
