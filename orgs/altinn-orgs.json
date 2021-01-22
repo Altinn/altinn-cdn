@@ -8,7 +8,10 @@
             },
             "logo": "https://altinncdn.no/orgs/brg/brreg.png",
             "orgnr": "974760673",
-            "homepage": "https://www.brreg.no"
+            "homepage": "https://www.brreg.no",
+            "environments": [
+                "tt02"
+            ]
         },
         "dat": {
             "name": {
@@ -78,6 +81,19 @@
                 "production"
             ]
         },
+        "hmrhf": {
+            "name": {
+                "en": "Helse Møre og Romsdal",
+                "nb": "Helse Møre og Romsdal",
+                "nn": "Helse Møre og Romsdal"
+            },
+            "logo": "https://altinncdn.no/orgs/hmrhf/hmrhf.png",
+            "orgnr": "997005562",
+            "homepage": "https://helse-mr.no",
+            "environments": [
+                "tt02"
+            ]
+        },        
         "kv": {
             "name": {
                 "en": "Norwegian Mapping Authority",
