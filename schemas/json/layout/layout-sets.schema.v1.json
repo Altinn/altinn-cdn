@@ -27,8 +27,7 @@
               "type": "string",
               "title": "dataType",
               "description": "The datatype to use this layoyut."
-            },
-  
+            }, 
             "tasks": {
               "$ref": "#/definitions/tasks"
             }
