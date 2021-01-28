@@ -7,7 +7,7 @@
     "additionalProperties": true,
     "properties": {
       "components": {
-        "$ref": "#/definitions/domponents"
+        "$ref": "#/definitions/components"
       },
       "displayName": {
         "$ref": "#/definitions/displayName"
