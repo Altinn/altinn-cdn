@@ -41,7 +41,7 @@
           "value": "## {0}",
           "variables": [
             {
-              "key": "MessageTitle",
+              "key": "Title",
               "dataSource": "dataModel.message"
             }
           ]
@@ -51,7 +51,7 @@
           "value": "{0}",
           "variables": [
             {
-              "key": "MessageBody",
+              "key": "Body",
               "dataSource": "dataModel.message"
             }
           ]
