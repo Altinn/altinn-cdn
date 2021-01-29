@@ -20,7 +20,8 @@
       "type": "AttachmentList",
       "textResourceBindings": {
         "title": "messageAttachments"
-      }
+      },
+      "dataTypeIds": ["<dataType ID>"]
     },
     {
       "id": "message-button",
@@ -42,7 +43,7 @@
           "variables": [
             {
               "key": "Title",
-              "dataSource": "dataModel.message"
+              "dataSource": "dataModel.message.schema.v1"
             }
           ]
         },
@@ -52,7 +53,7 @@
           "variables": [
             {
               "key": "Body",
-              "dataSource": "dataModel.message"
+              "dataSource": "dataModel.message.schema.v1"
             }
           ]
         },
