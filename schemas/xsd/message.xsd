@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xsd:element name="Correspondence" type="CorrespondenceV1"/>
-	<xsd:complexType name="CorrespondenceV1">
+	<xsd:element name="Message" type="MessageV1"/>
+	<xsd:complexType name="MessageV1">
 		<xsd:sequence>
-			<xsd:element name="Task" nillable="true" type="xsd:string"/>
-			<xsd:element name="MessageTitle" nillable="true" type="xsd:string"/>
-			<xsd:element name="MessageBody" nillable="true" type="xsd:string"/>
+			<xsd:element name="ProcessTask" nillable="true" type="xsd:string"/>
+			<xsd:element name="Title" nillable="true" type="xsd:string"/>
+			<xsd:element name="Body" nillable="true" type="xsd:string"/>
 			<xsd:element name="Reference" nillable="true" type="xsd:string"/>
-			<xsd:element name="MessageSender" nillable="true" type="xsd:string"/>
+			<xsd:element name="Sender" nillable="true" type="xsd:string"/>
 		</xsd:sequence>
 	</xsd:complexType>
 </xsd:schema>
