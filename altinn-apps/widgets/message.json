@@ -1,4 +1,5 @@
 {
+  "$schema": "https://altinncdn.no/schemas/json/widget/widget.schema.v1.json",
   "components": [
     {
       "id": "message-title",
@@ -19,7 +20,8 @@
       "type": "AttachmentList",
       "textResourceBindings": {
         "title": "messageAttachments"
-      }
+      },
+      "dataTypeIds": ["<dataType ID>"]
     },
     {
       "id": "message-button",
@@ -40,8 +42,8 @@
           "value": "## {0}",
           "variables": [
             {
-              "key": "MessageTitle",
-              "dataSource": "dataModel.message"
+              "key": "Title",
+              "dataSource": "dataModel.message.schema.v1"
             }
           ]
         },
@@ -50,8 +52,8 @@
           "value": "{0}",
           "variables": [
             {
-              "key": "MessageBody",
-              "dataSource": "dataModel.message"
+              "key": "Body",
+              "dataSource": "dataModel.message.schema.v1"
             }
           ]
         },

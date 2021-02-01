@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v2.8.3, https://github.com/Altinn/altinn-studio/tree/5463d620433fe5e537320396b7127a1bbb2fac70/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v2.7.7, https://github.com/Altinn/altinn-studio/tree/5c4ba11d76364922cad08fff0090564d39fa10ae/src/react-apps/applications/altinn-app-frontend */
 .input-group input:focus ~.a-icon-right {
   border-color: #0062ba !important;
 }
@@ -263,11 +263,6 @@ option {
 
 .a-form-group .input-group .input-group-prepend {
   border: 2px solid #008FD6;
-}
-
-.attachmentList-title p {
-  font-size: 2rem;
-  font-weight: 500;
 }
 
 .cursorPointer {

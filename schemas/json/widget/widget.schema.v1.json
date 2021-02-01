@@ -1,0 +1,116 @@
+{
+  "$id": "https://altinncdn.no/schemas/json/widget/widget.schema.v1.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Altinn Studio widget",
+    "description": "Schema that describes a widget for use in Altinn Studio",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+      "components": {
+        "$ref": "#/definitions/components"
+      },
+      "displayName": {
+        "$ref": "#/definitions/displayName"
+      },
+      "texts": {
+        "$ref": "#/definitions/texts"
+      }
+    },
+    "required": ["components", "displayName"],
+    "definitions": {
+      "components": {
+        "title": "The layout components associated with the widget",
+        "description": "Contains data describing the components that are part of the widget",
+        "type": "array",
+        "items": {
+          "$ref": "https://altinncdn.no/schemas/json/layout/layout.schema.v1.json#/definitions/component"
+        }
+      },
+      "displayName": {
+        "title": "The widget disply name",
+        "description": "The text that is shown in the component menu in Altinn Studio",
+        "type": "string",
+        "default": "Widget"
+      },
+      "texts": {
+        "title": "Texts associated with the widget",
+        "description": "Contains an array of text resources that are associates with the widget. Each item in the array represents one language",
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/textResources"
+        }
+      },
+      "textResources": {
+        "title": "Text resources",
+        "description": "A collection of text resources for a given language",
+        "type": "object",
+        "properties": {
+          "language": {
+            "$ref": "#/definitions/language"
+          },
+          "resources": {
+            "$ref": "#/definitions/resources"
+          }
+        },
+        "required": ["language", "resources"]
+      },
+      "language": {
+        "title": "The language",
+        "description": "Defines the language for the text resources",
+        "type": "string",
+        "enum": ["nb", "nn", "en"]
+      },
+      "resources": {
+        "title": "The resource texts",
+        "description": "Contains the collection of resource text definitions",
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/resourceText"
+        }
+      },
+      "resourceText": {
+        "title": "Resource text definition",
+        "description": "Contains the details of a resource text definition",
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "Resource text ID",
+            "description": "The unique ID for the resource text",
+            "type": "string"
+          },
+          "value": {
+            "title": "Resource text value",
+            "description": "The text value of the resource text",
+            "type": "string"
+          },
+          "variables": {
+            "title": "Resource text variables",
+            "description": "Collection of variables to be used in resource text",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/resourceTextVariable"
+            }
+          }
+        },
+        "required": ["id", "value"]
+      },
+      "resourceTextVariable": {
+        "title": "Resource text variable",
+        "description": "Definition of a variable to be used within a resource text",
+        "type": "object",
+        "properties": {
+          "key": {
+            "title": "Variable key",
+            "description": "Key specifying which data to use",
+            "type": "string"
+          },
+          "dataSource": {
+            "title": "Data source",
+            "description": "Specifies which data source to use. F.ex. dataModel.<name of data model>",
+            "type": "string"
+          }
+        },
+        "required": ["key", "dataSource"]
+      }
+    }
+}
