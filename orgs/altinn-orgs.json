@@ -143,7 +143,10 @@
             },
             "logo": "https://altinncdn.no/orgs/nav/nav.png",
             "orgnr": "889640782",
-            "homepage": "https://www.nav.no"
+            "homepage": "https://www.nav.no",
+            "environments": [
+                "tt02"
+            ]
         },
         "nsm": {
             "name": {
