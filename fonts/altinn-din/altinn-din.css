@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Altinn-DIN Condensed';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINCondensed-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Bold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Exp';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINExp-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINExp-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Italic.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Exp';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINExp.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINExp.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Condensed';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINCondensed.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Exp';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINExp-Italic.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINExp-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Condensed';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINCondensed.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Italic.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Exp';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINExp-Italic.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINExp-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Condensed';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINCondensed-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Exp';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINExp-Bold.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINExp-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altinn-DIN Exp';
+  src: url('https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DINExp.woff2') format('woff2'),
+      url('https://altinncdn.no/fonts/altinn-din/woff/Altinn-DINExp.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
