@@ -191,8 +191,8 @@
     },
     "gridValue": {
         "type": "integer",
-        "maximum": 13,
-        "minimum": 0,
+        "maximum": 12,
+        "minimum": 1,
         "examples": [12]
     },
     "gridSettings": {
