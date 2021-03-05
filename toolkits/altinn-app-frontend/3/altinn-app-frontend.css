@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v3.0.3, https://github.com/Altinn/altinn-studio/tree/aaa5036df311aef69052eba2da14cb4a2e930571/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v3.0.4, https://github.com/Altinn/altinn-studio/tree/b3e011518bc4d5760587069e8bd1ba07f3f4de86/src/react-apps/applications/altinn-app-frontend */
 .input-group input:focus ~.a-icon-right {
   border-color: #0062ba !important;
 }
@@ -230,7 +230,7 @@ option {
   font-weight: 300;
   line-height: 2.4rem;
   margin-bottom: 1.2rem;
-  word-break: break-all;
+  word-break: break-word;
   text-overflow: ellipsis;
 }
 
@@ -248,7 +248,7 @@ option {
 .a-form-label.title-label {
   font-weight: 500;
   margin-bottom: 1.2rem;
-  word-break: break-all;
+  word-break: break-word;
   text-overflow: ellipsis;
 }
 
