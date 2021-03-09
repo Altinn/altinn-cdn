@@ -185,7 +185,8 @@
             "orgnr": "974761076",
             "homepage": "https://www.skatteetaten.no",
             "environments": [
-                "tt02"           
+                "tt02",
+                "production"          
             ]
         },
         "ssb": {
