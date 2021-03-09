@@ -186,7 +186,7 @@
             "homepage": "https://www.skatteetaten.no",
             "environments": [
                 "tt02",
-                "production"          
+                "production"
             ]
         },
         "ssb": {
