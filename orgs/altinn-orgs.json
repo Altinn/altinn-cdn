@@ -163,7 +163,7 @@
                 "tt02",
                 "production"
             ]
-        },        
+        },
         "hmrhf": {
             "name": {
                 "en": "Helse Møre og Romsdal",
@@ -323,7 +323,7 @@
             "environments": [
                 "tt02"
             ]
-        },        
+        },
         "pat": {
             "name": {
                 "en": "Norwegian Industrial Property Office",
