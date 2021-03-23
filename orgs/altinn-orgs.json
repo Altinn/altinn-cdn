@@ -90,8 +90,7 @@
             "orgnr": "983544622",
             "homepage": "https://www.helsedirektoratet.no",
             "environments": [
-                "tt02",
-                "production"
+                "tt02"
             ]
         },
         "hmrhf": {
@@ -171,8 +170,7 @@
             "orgnr": "985165262",
             "homepage": "https://www.nsm.no",
             "environments": [
-                "tt02",
-                "production"
+                "tt02"
             ]
         },
         "skd": {
