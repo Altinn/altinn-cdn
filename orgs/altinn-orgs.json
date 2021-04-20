@@ -156,7 +156,9 @@
             "logo": "https://altinncdn.no/orgs/nkr/kulturradet.png",
             "orgnr": "971527412",
             "homepage": "https://www.kulturradet.no",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "nav": {
             "name": {
