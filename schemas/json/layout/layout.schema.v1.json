@@ -99,16 +99,18 @@
       },
       "required": ["id", "type"],
       "allOf": [
-        { "if": {"properties": {"type": { "const": "Datepicker"}}}, "then": { "$ref": "#/definitions/datepickerComponent"}},
-        { "if": {"properties": {"type": { "const": "FileUpload"}}}, "then": { "$ref": "#/definitions/fileUploadComponent"}},
-        { "if": {"properties": {"type": { "const": "NavigationButtons"}}}, "then": { "$ref": "#/definitions/navigationButtonsComponent"}},
-        { "if": {"properties": {"type": { "const": "Group"}}}, "then": { "$ref": "#/definitions/groupComponent"}},
-        { "if": {"properties": {"type": { "const": "Dropdown"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
-        { "if": {"properties": {"type": { "const": "RadioButtons"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
-        { "if": {"properties": {"type": { "const": "Checkboxes"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
         { "if": {"properties": {"type": { "const": "AddressComponent"}}}, "then": { "$ref": "#/definitions/addressComponent"}},
-        { "if": {"properties": {"type": { "const": "Summary"}}}, "then": {"$ref": "#/definitions/summaryComponent"}},
-        { "if": {"properties": {"type": { "const": "AttachmentList"}}}, "then": { "ref": "#/definitions/attachmentListComponent"}}
+        { "if": {"properties": {"type": { "const": "AttachmentList"}}}, "then": { "ref": "#/definitions/attachmentListComponent"}},
+        { "if": {"properties": {"type": { "const": "Checkboxes"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
+        { "if": {"properties": {"type": { "const": "Datepicker"}}}, "then": { "$ref": "#/definitions/datepickerComponent"}},
+        { "if": {"properties": {"type": { "const": "Dropdown"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
+        { "if": {"properties": {"type": { "const": "FileUpload"}}}, "then": { "$ref": "#/definitions/fileUploadComponent"}},
+        { "if": {"properties": {"type": { "const": "Group"}}}, "then": { "$ref": "#/definitions/groupComponent"}},
+        { "if": {"properties": {"type": { "const": "Input"}}}, "then": { "$ref": "#/definitions/inputComponent"}},
+        { "if": {"properties": {"type": { "const": "NavigationButtons"}}}, "then": { "$ref": "#/definitions/navigationButtonsComponent"}},
+        { "if": {"properties": {"type": { "const": "RadioButtons"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
+        { "if": {"properties": {"type": { "const": "Summary"}}}, "then": {"$ref": "#/definitions/summaryComponent"}}
+        
       ]
     },
     "fileUploadComponent": {
@@ -331,5 +333,29 @@
         }
       }
     }
+  },
+  "inputComponent": {
+    "properties": {
+      "formatting": {
+        "title": "Input formatting",
+        "description": "Set of options for formatting input fields. For number formatting, use `number` option together with number formatting options documented here: https://github.com/s-yadav/react-number-format#props",
+        "examples": [{
+          "number": true,
+          "thousandSeparator": true,
+          "prefix": "$"
+        }],
+        "$ref": "#/definitions/inputFormatting"
+      }
+    }
+  },
+  "inputFormatting": {
+    "properties": {
+      "number": {
+        "type": "boolean",
+        "title": "Format as number",
+        "description": "Indicates if input value should use number formatting or not. Defaults to false if not set. Use in combination with number formatting options documented here: https://github.com/s-yadav/react-number-format#props"
+      }
+    },
+    "additionalProperties": true
   }
 }
