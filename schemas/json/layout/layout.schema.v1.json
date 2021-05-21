@@ -332,26 +332,26 @@
           "examples": [["SomeDataType", "SomeOtherDataType"]]
         }
       }
-    }
-  },
-  "inputComponent": {
-    "properties": {
-      "formatting": {
-        "title": "Input formatting",
-        "description": "Set of options for formatting input fields. For number formatting, use `number` option together with number formatting options documented here: https://github.com/s-yadav/react-number-format#props",
-        "examples": [{
-          "number": true,
-          "thousandSeparator": true,
-          "prefix": "$"
-        }],
-        "$ref": "#/definitions/inputFormatting"
+    },
+    "inputComponent": {
+      "properties": {
+        "formatting": {
+          "title": "Input formatting",
+          "description": "Set of options for formatting input fields. For number formatting, use `number` option together with number formatting options documented here: https://github.com/s-yadav/react-number-format#props",
+          "examples": [{
+            "number": true,
+            "thousandSeparator": true,
+            "prefix": "$"
+          }],
+          "$ref": "#/definitions/inputFormatting"
+        }
       }
-    }
-  },
-  "inputFormatting": {
-    "properties": {
-      "number": {
-        "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/feature/5972-input-formatting/schemas/json/component/number-format.schema.v1.json"
+    },
+    "inputFormatting": {
+      "properties": {
+        "number": {
+          "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/feature/5972-input-formatting/schemas/json/component/number-format.schema.v1.json"
+        }
       }
     }
   }
