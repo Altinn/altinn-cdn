@@ -350,7 +350,7 @@
     "inputFormatting": {
       "properties": {
         "number": {
-          "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/feature/5972-input-formatting/schemas/json/component/number-format.schema.v1.json"
+          "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/c9acc889a5649b8d4fdcdd7f390df67dae198b01/schemas/json/component/number-format.schema.v1.json"
         }
       }
     }
