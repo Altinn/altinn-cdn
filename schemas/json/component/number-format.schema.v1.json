@@ -19,33 +19,39 @@
     "allowEmptyFormatting": {
       "title": "Allow empty formatting",
       "description": "Apply formatting to empty inputs",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "allowLeadingZeros": {
       "title": "Allow leading zeros",
       "description": "Allow leading zeros at beginning of number",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "allowNegative": {
       "title": "Allow negative",
       "description": "Allow negative numbers (Only when format option is not provided)",
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "decimalScale": {
       "title": "Decimal scale",
       "description": "If defined it limits to given decimal scale.",
-      "type": "number"
+      "type": "number",
+      "examples": [1, 2, 3]
     },
     "decimalSeparator": {
       "title": "Decimal separator",
       "description": "Support decimal point on a number. Single character string.",
       "type": "string",
-      "maxLength": 1
+      "maxLength": 1,
+      "default": "."
     },
     "fixedDecimalScale": {
       "title": "Fixed decimal scale",
       "description": "Used together with decimalScale. If true it adds 0s to match given decimal scale.",
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "format": {
       "title": "Format",
@@ -57,7 +63,8 @@
       "title": "Mask",
       "description": "Mask to show in place of non-entered values",
       "type": "string",
-      "examples": ["_"]
+      "examples": ["_"],
+      "default": " "
     },
     "prefix": {
       "title": "Prefix",
