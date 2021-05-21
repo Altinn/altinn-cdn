@@ -87,6 +87,14 @@
       "then": { 
         "required": ["decimalScale"]
       }
-    }
+    },
+    {
+      "if": {
+        "required": ["formatting"]
+        },
+        "then": { 
+          "not": { "required": ["decimalScale"] }
+        }
+      }
   ]
 }
