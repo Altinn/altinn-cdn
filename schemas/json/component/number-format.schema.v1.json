@@ -80,6 +80,6 @@
     }
   },
   "allOf": [
-    { "if": {"properties": {"fixedDecimalScale": true}}, "then": { "required": ["decimalScale"]}}
+    { "if": {"properties": {"fixedDecimalScale": {"const": true}}}, "then": { "required": ["decimalScale"]}}
   ]
 }
