@@ -337,12 +337,7 @@
       "properties": {
         "formatting": {
           "title": "Input formatting",
-          "description": "Set of options for formatting input fields. For number formatting, use `number` option together with number formatting options documented here: https://github.com/s-yadav/react-number-format#props",
-          "examples": [{
-            "number": true,
-            "thousandSeparator": true,
-            "prefix": "$"
-          }],
+          "description": "Set of options for formatting input fields.",
           "$ref": "#/definitions/inputFormatting"
         }
       }
@@ -350,7 +345,7 @@
     "inputFormatting": {
       "properties": {
         "number": {
-          "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/c9acc889a5649b8d4fdcdd7f390df67dae198b01/schemas/json/component/number-format.schema.v1.json"
+          "$ref": "https://altinncdn.no/schemas/json/component/number-format.schema.v1.json"
         }
       }
     }
