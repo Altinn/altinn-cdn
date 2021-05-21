@@ -351,11 +351,8 @@
   "inputFormatting": {
     "properties": {
       "number": {
-        "type": "boolean",
-        "title": "Format as number",
-        "description": "Indicates if input value should use number formatting or not. Defaults to false if not set. Use in combination with number formatting options documented here: https://github.com/s-yadav/react-number-format#props"
+        "$ref": "https://altinncdn.no/schemas/json/component/number-format.schema.v1.json"
       }
-    },
-    "additionalProperties": true
+    }
   }
 }
