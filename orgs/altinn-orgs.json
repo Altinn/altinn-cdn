@@ -221,13 +221,27 @@
                 "production"
             ]
         },
-        "udir": {
+        "udi": {
             "name": {
-                "en": "Norwegian Directorate for Education and Training",
+                "en": "The Norwegian Directorate of Immigration’s",
                 "nb": "Utdanningsdirektoratet",
                 "nn": "Utdanningsdirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/udir/udir.png",
+            "logo": "https://altinncdn.no/orgs/udi/udi.png",
+            "orgnr": "974760746",
+            "homepage": "https://www.udi.no",
+            "environments": [
+                "tt02",
+                "prod"
+            ]
+        },
+        "udir": {
+            "name": {
+                "en": "Norwegian Directorate for Education and Training",
+                "nb": "Utlendingsdirektoratet",
+                "nn": "Utlendingsdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/udi/udi.png",
             "orgnr": "970018131",
             "homepage": "https://www.udir.no",
             "environments": [
