@@ -227,6 +227,19 @@
                 "production"
             ]
         },
+        "stami": {
+            "name": {
+                "en": "The National Institute of Occupational Health",
+                "nb": "Statens arbeidsmiljøinstitutt",
+                "nn": "Statens arbeidsmiljøinstitutt"
+            },
+            "logo": "https://altinncdn.no/orgs/stami/stami.png",
+            "orgnr": "874761222",
+            "homepage": "https://stami.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "ttd": {
             "name": {
                 "en": "Test Ministry",
