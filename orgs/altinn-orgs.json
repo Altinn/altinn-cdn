@@ -246,6 +246,20 @@
                 "production"
             ]
         },
+        "udi": {
+            "name": {
+                "en": "The Norwegian Directorate of Immigration",
+                "nb": "Utlendingsdirektoratet",
+                "nn": "Utlendingsdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/udi/udi.png",
+            "orgnr": "974760746",
+            "homepage": "https://www.udi.no",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
         "udir": {
             "name": {
                 "en": "Norwegian Directorate for Education and Training",
