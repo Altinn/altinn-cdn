@@ -146,6 +146,19 @@
                 "production"
             ]
         },
+        "mdir": {
+            "name": {
+                "en": "Norwegian Environment Agency",
+                "nb": "Miljødirektoratet",
+                "nn": "Miljødirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/mdir/mdir.png",
+            "orgnr": "999601391",
+            "homepage": "https://www.miljodirektoratet.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "nbib": {
             "name": {
                 "en": "National Library of Norway",
