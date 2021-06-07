@@ -298,6 +298,19 @@
             "environments": [
                 "tt02"
             ]
+        },
+        "valg": {
+            "name": {
+                "en": "Election Directorate",
+                "nb": "Valgdirektoratet",
+                "nn": "Valdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/valg/valg.png",
+            "orgnr": "916132727",
+            "homepage": "https://www.valg.no",
+            "environments": [
+                "tt02"
+            ]
         }
     }
 }
