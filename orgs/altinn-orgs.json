@@ -226,6 +226,19 @@
                 "production"
             ]
         },
+        "srf": {
+            "name": {
+                "en": "Norwegian Civil Affairs Autorithy",
+                "nb": "Statens Sivilrettsforvaltning",
+                "nn": "Statens Sivilrettsforvaltning"
+            },
+            "logo": "https://altinncdn.no/orgs/srf/srf.png",
+            "orgnr": "986186999",
+            "homepage": "https://www.sivilrett.no",
+            "environments": [
+                "tt02"
+            ]
+        },
         "ssb": {
             "name": {
                 "en": "Statistics Norway",
