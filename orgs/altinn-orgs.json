@@ -322,7 +322,8 @@
             "orgnr": "916132727",
             "homepage": "https://www.valg.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         }
     }
