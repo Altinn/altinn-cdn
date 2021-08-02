@@ -131,7 +131,7 @@
             "environments": [
                 "tt02"
             ]
-        },        
+        },
         "kv": {
             "name": {
                 "en": "Norwegian Mapping Authority",
@@ -182,6 +182,19 @@
             "logo": "https://altinncdn.no/orgs/nav/nav.png",
             "orgnr": "889640782",
             "homepage": "https://www.nav.no",
+            "environments": [
+                "tt02"
+            ]
+        },
+        "npe": {
+            "name": {
+                "en": "Norwegian System of Patient Injury Compensation ",
+                "nb": "Norsk pasientskadeerstatning",
+                "nn": "Norsk pasientskadeerstatning"
+            },
+            "logo": "https://altinncdn.no/orgs/npe/npe.png",
+            "orgnr": "984936923",
+            "homepage": "https://www.npe.no",
             "environments": [
                 "tt02"
             ]
