@@ -13,6 +13,19 @@
                 "tt02"
             ]
         },
+        "buf": {
+            "name": {
+                "en": "The Norwegian Directorate for Children, Youth and Family Affairs",
+                "nb": "Barne-, ungdoms- og familiedirektoratet",
+                "nn": "Barne-, ungdoms- og familiedirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/buf/buf.png",
+            "orgnr": "986128433",
+            "homepage": "https://www.bufdir.no",
+            "environments": [
+                "tt02"
+            ]
+        },
         "dat": {
             "name": {
                 "en": "Norwegian Labour Inspection Authority",
@@ -67,6 +80,19 @@
                 "tt02"
             ]
         },
+        "dmf": {
+            "name": {
+                "en": "The Directorate of Mining",
+                "nb": "Direktoratet for mineralforvaltning",
+                "nn": "Direktoratet for mineralforvaltning"
+            },
+            "logo": "https://altinncdn.no/orgs/dmf/dmf.png",
+            "orgnr": "974760282",
+            "homepage": "https://dirmin.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "gk": {
             "name": {
                 "en": "The Criminal Cases Review Commission",
@@ -90,8 +116,7 @@
             "orgnr": "983544622",
             "homepage": "https://www.helsedirektoratet.no",
             "environments": [
-                "tt02",
-                "production"
+                "tt02"
             ]
         },
         "hmrhf": {
@@ -171,8 +196,7 @@
             "orgnr": "985165262",
             "homepage": "https://www.nsm.no",
             "environments": [
-                "tt02",
-                "production"
+                "tt02"
             ]
         },
         "skd": {
