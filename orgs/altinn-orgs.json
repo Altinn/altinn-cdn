@@ -188,7 +188,7 @@
         },
         "npe": {
             "name": {
-                "en": "Norwegian System of Patient Injury Compensation ",
+                "en": "Norwegian System of Patient Injury Compensation",
                 "nb": "Norsk pasientskadeerstatning",
                 "nn": "Norsk pasientskadeerstatning"
             },
@@ -196,7 +196,7 @@
             "orgnr": "984936923",
             "homepage": "https://www.npe.no",
             "environments": [
-                "tt02"
+               "tt02"
             ]
         },
         "nsm": {
