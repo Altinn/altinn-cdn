@@ -236,6 +236,7 @@
             "homepage": "https://www.skatteetaten.no",
             "environments": [
                 "tt02",
+                "yt01",
                 "production"
             ]
         },
