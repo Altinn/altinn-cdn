@@ -131,7 +131,7 @@
             "environments": [
                 "tt02"
             ]
-        },        
+        },
         "kv": {
             "name": {
                 "en": "Norwegian Mapping Authority",
@@ -199,6 +199,19 @@
                 "tt02"
             ]
         },
+        "npe": {
+            "name": {
+                "en": "Norwegian System of Patient Injury Compensation",
+                "nb": "Norsk pasientskadeerstatning",
+                "nn": "Norsk pasientskadeerstatning"
+            },
+            "logo": "https://altinncdn.no/orgs/npe/npe.png",
+            "orgnr": "984936923",
+            "homepage": "https://www.npe.no",
+            "environments": [
+               "tt02"
+            ]
+        },
         "nsm": {
             "name": {
                 "en": "National Security Agency",
@@ -224,6 +237,19 @@
             "environments": [
                 "tt02",
                 "production"
+            ]
+        },
+        "srf": {
+            "name": {
+                "en": "Norwegian Civil Affairs Authority",
+                "nb": "Statens Sivilrettsforvaltning",
+                "nn": "Statens Sivilrettsforvaltning"
+            },
+            "logo": "https://altinncdn.no/orgs/srf/srf.png",
+            "orgnr": "986186999",
+            "homepage": "https://www.sivilrett.no",
+            "environments": [
+                "tt02"
             ]
         },
         "ssb": {
@@ -309,7 +335,8 @@
             "orgnr": "916132727",
             "homepage": "https://www.valg.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         }
     }
