@@ -225,6 +225,19 @@
                 "tt02"
             ]
         },
+        "pat": {
+            "name": {
+                "en": "Norwegian Industrial Property Office",
+                "nb": "Patentstyret",
+                "nn": "Patentstyret"
+            },
+            "logo": "https://altinncdn.no/orgs/pat/pat.png",
+            "orgnr": "971526157",
+            "homepage": "https://www.patentstyret.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "skd": {
             "name": {
                 "en": "Norwegian Tax Administration",
