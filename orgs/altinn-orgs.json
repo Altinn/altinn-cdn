@@ -10,7 +10,8 @@
             "orgnr": "974760673",
             "homepage": "https://www.brreg.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "buf": {
