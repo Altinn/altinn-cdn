@@ -194,6 +194,12 @@
     "gridSettings": {
         "allOf": [{ "$ref": "#/definitions/gridProps"}],
         "properties": {
+              "labelGrid": {
+                "title": "labelGrid",
+                "description": "Optional grid for label component. Used with innerGrid to make labels show on the side.",
+                "examples": [{ "xs": 12 }],
+                "$ref": "#/definitions/gridProps"
+            },
             "innerGrid": {
                 "title": "innerGrid",
                 "description": "Optional grid for inner component content like input field or dropdown. Used to avoid inner content filling the component width.",
