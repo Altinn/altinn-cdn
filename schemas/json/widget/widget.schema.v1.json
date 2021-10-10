@@ -1,5 +1,5 @@
 {
-  "$id": "https://altinncdn.no/schemas/json/widget/widget.schema.v1.json",
+    "$id": "https://altinncdn.no/schemas/json/widget/widget.schema.v1.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Altinn Studio widget",
     "description": "Schema that describes a widget for use in Altinn Studio",
