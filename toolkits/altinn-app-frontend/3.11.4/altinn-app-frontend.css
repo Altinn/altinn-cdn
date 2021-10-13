@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v3.11.9, https://github.com/Altinn/altinn-studio/tree/896c5138542638b87cebd740adb40bb6e6beddf8/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v3.11.4, https://github.com/Altinn/altinn-studio/tree/3903fc57d15a59775ce378d7d2850082c8b84493/src/react-apps/applications/altinn-app-frontend */
 .logo {
   height: 24px;
 }
@@ -28,7 +28,7 @@
     #efefef 2px,
     #fff 3px,
     #fff 5px
-  ) !important;
+  );
 }
 input:hover:not(.disabled) {
   border-color: #0062ba !important;

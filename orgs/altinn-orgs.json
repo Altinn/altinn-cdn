@@ -10,7 +10,8 @@
             "orgnr": "974760673",
             "homepage": "https://www.brreg.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "buf": {
@@ -221,6 +222,19 @@
             "logo": "https://altinncdn.no/orgs/nsm/nsm.png",
             "orgnr": "985165262",
             "homepage": "https://www.nsm.no",
+            "environments": [
+                "tt02"
+            ]
+        },
+        "pat": {
+            "name": {
+                "en": "Norwegian Industrial Property Office",
+                "nb": "Patentstyret",
+                "nn": "Patentstyret"
+            },
+            "logo": "https://altinncdn.no/orgs/pat/pat.png",
+            "orgnr": "971526157",
+            "homepage": "https://www.patentstyret.no/",
             "environments": [
                 "tt02"
             ]
