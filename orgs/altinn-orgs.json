@@ -133,6 +133,19 @@
                 "tt02"
             ]
         },
+        "krt": {
+            "name": {
+                "en": "The Financial Supervisory Authorization of Norway",
+                "nb": "Finanstilsynet",
+                "nn": "Finanstilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/krt/krt.png",
+            "orgnr": "840747972",
+            "homepage": "https://www.finanstilsynet.no",
+            "environments": [
+                "tt02"
+            ]
+        },
         "kv": {
             "name": {
                 "en": "Norwegian Mapping Authority",
