@@ -29,31 +29,244 @@
             "description": "Data from the Altinn user profile.",
             "properties": {
                 "UserId": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "User ID",
+                    "description": "ID of the user."
                 },
                 "UserName": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "Username",
+                    "description": "The username."
                 },
                 "PhoneNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "Phone number",
+                    "description": "The users phone number."
                 },
                 "Email": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "Email",
+                    "description": "The users email."
                 },
                 "PartyId": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "PartyId",
+                    "description": "The users party id."
                 },
                 "UserType": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "UserType",
+                    "description": "The user type (default = 0, user = 1, org = 2)."
                 },
                 "ProfileSettingPreference.Language": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "ProfileSettingPreference.Language",
+                    "description": "The user's language preference in Altinn"
                 },
                 "ProfileSettingPreference.PreSelectedPartyId": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "ProfileSettingPreference.PreSelectedPartyId",
+                    "description": "The user's preselected party."
                 },
                 "ProfileSettingsPreference.DoNotPromptForParty": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "ProfileSettingsPreference.DoNotPromptForParty",
+                    "description": "Boolean indicating whether the users want to be asked for the party on every form submission."
+                },
+                "Party.PartyId": {
+                    "type": "string",
+                    "title": "Party.PartyId",
+                    "description": "The if of the users party."
+                },
+                "Party.PartyTypeName": {
+                    "type": "string",
+                    "title": "Party.PartyTypeName",
+                    "description": "The type of the users party. (Person = 1, Organization = 2, SelfIdentified = 3, SubUnit = 4, BankruptcyEstate = 5) "
+                },
+                "Party.OrgNumber": {
+                    "type": "string",
+                    "title": "Party.OrgNumber",
+                    "description": "The party organization number."
+                },
+                "Party.SSN": {
+                    "type": "string",
+                    "title": "Party.SSN",
+                    "description": "The party social security number."
+                },
+                "Party.UnitType": {
+                    "type": "string",
+                    "title": "Party.UnitType",
+                    "description": "The party unit type."
+                },
+                "Party.Name": {
+                    "type": "string",
+                    "title": "Party.Name",
+                    "description": "The party name."
+                },
+                "Party.isDeleted": {
+                    "type": "string",
+                    "title": "Party.isDeleted",
+                    "description": "Boolean value indicating if the party is deleted."
+                },
+                "Party.OnlyHierarchyElementWithNoAccess": {
+                    "type": "string",
+                    "title": "Party.OnlyHierarchyElementWithNoAccess",
+                    "description": "Boolean value indicating whether if the reportee in the list is only there for showing the hierarchy (a parent unit with no access)."
+                },
+                "Party.Person.SSN": {
+                    "type": "string",
+                    "title": "Party.Person.SSN",
+                    "description": "The social security number."
+                },
+                "Party.Person.Name": {
+                    "type": "string",
+                    "title": "Party.Person.Name",
+                    "description": "The name persons full name."
+                },
+                "Party.Person.FirstName": {
+                    "type": "string",
+                    "title": "Party.Person.FirstName",
+                    "description": "The persons first name."
+                },
+                "Party.Person.MiddleName": {
+                    "type": "string",
+                    "title": "Party.Person.MiddleName",
+                    "description": "The persons middle name."
+                },
+                "Party.Person.LastName": {
+                    "type": "string",
+                    "title": "Party.Person.LastName",
+                    "description": "The persons last name."
+                },
+                "Party.Person.TelephoneNumber": {
+                    "type": "string",
+                    "title": "Party.Person.TelephoneNumber",
+                    "description": "The telephone number."
+                },
+                "Party.Person.MobileNumber": {
+                    "type": "string",
+                    "title": "Party.Person.MobileNumber",
+                    "description": "The mobile number."
+                },
+                "Party.Person.MailingAddress": {
+                    "type": "string",
+                    "title": "Party.Person.MailingAddress",
+                    "description": "The mailing address."
+                },
+                "Party.Person.MailingPostalCode": {
+                    "type": "string",
+                    "title": "Party.Person.MailingPostalCode",
+                    "description": "The mailing address postal code."
+                },
+                "Party.Person.MailingPostalCity": {
+                    "type": "string",
+                    "title": "Party.Person.MailingPostalCity",
+                    "description": "The mailing address postal city."
+                },
+                "Party.Person.AddressMunicipalNumber": {
+                    "type": "string",
+                    "title": "Party.Person.AddressMunicipalNumber",
+                    "description": "The address municipal number."
+                },
+                "Party.Person.AddressMunicipalName": {
+                    "type": "string",
+                    "title": "Party.Person.AddressMunicipalName",
+                    "description": "The address municipal name."
+                },
+                "Party.Person.AddressStreetName": {
+                    "type": "string",
+                    "title": "Party.Person.AddressStreetName",
+                    "description": "The address street name."
+                },
+                "Party.Person.AddressHouseNumber": {
+                    "type": "string",
+                    "title": "Party.Person.AddressHouseNumber",
+                    "description": "The address house number."
+                },
+                "Party.Person.AddressHouseLetter": {
+                    "type": "string",
+                    "title": "Party.Person.AddressHouseLetter",
+                    "description": "The address house letter."
+                },
+                "Party.Person.AddressPostalCode": {
+                    "type": "string",
+                    "title": "Party.Person.AddressPostalCode",
+                    "description": "The address postal code."
+                },
+                "Party.Person.AddressCity": {
+                    "type": "string",
+                    "title": "Party.Person.AddressCity",
+                    "description": "The address city."
+                },
+                "Party.Organization.OrgNumber": {
+                    "type": "string",
+                    "title": "Party.Organization.OrgNumber",
+                    "description": "The organization number"
+                },
+                "Party.Organization.Name": {
+                    "type": "string",
+                    "title": "Party.Organization.Name",
+                    "description": "The organization name."
+                },
+                "Party.Organization.UnitType": {
+                    "type": "string",
+                    "title": "Party.Organization.UnitType",
+                    "description": "The unit type."
+                },
+                "Party.Organization.TelephoneNumber": {
+                    "type": "string",
+                    "title": "Party.Organization.TelephoneNumber",
+                    "description": "The phone number"
+                },
+                "Party.Organization.MobileNumber": {
+                    "type": "string",
+                    "title": "Party.Organization.MobileNumber",
+                    "description": "The mobile number."
+                },
+                "Party.Organization.FaxNumber": {
+                    "type": "string",
+                    "title": "Party.Organization.FaxNumber",
+                    "description": "The fax number."
+                },
+                "Party.Organization.EMailAddress": {
+                    "type": "string",
+                    "title": "Party.Organization.EMailAddress",
+                    "description": "The email address."
+                },
+                "Party.Organization.InternetAddress": {
+                    "type": "string",
+                    "title": "Party.Organization.InternetAddress",
+                    "description": "The internet address."
+                },
+                "Party.Organization.MailingAddress": {
+                    "type": "string",
+                    "title": "Party.Organization.MailingAddress",
+                    "description": "The mailing address."
+                },
+                "Party.Organization.MailingPostalCode": {
+                    "type": "string",
+                    "title": "Party.Organization.MailingPostalCode",
+                    "description": "The mailing address."
+                },
+                "Party.Organization.MailingPostalCity": {
+                    "type": "string",
+                    "title": "Party.Organization.MailingPostalCity",
+                    "description": "The mailing address postal city."
+                },
+                "Party.Organization.BusinessAddress": {
+                    "type": "string",
+                    "title": "Party.Organization.BusinessAddress",
+                    "description": "The business address."
+                },
+                "Party.Organization.BusinessPostalCode": {
+                    "type": "string",
+                    "title": "Party.Organization.BusinessPostalCode",
+                    "description": "The business postal code."
+                },
+                "Party.Organization.BusinessPostalCity": {
+                    "type": "string",
+                    "title": "Party.Organization.BusinessPostalCity",
+                    "description": "The business postal city."
                 }
             }
         },
@@ -63,46 +276,74 @@
             "type": "object",
             "properties": {
                 "OrgNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "OrgNumber",
+                    "description": "The organization number."
                 },
                 "Name": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "Name",
+                    "description": "The organization name."
                 },
                 "UnitType": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "UnitType",
+                    "description": "The unit type."
                 },
                 "TelephoneNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "TelephoneNumber",
+                    "description": "The phone number."
                 },
                 "MobileNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MobileNumber",
+                    "description": "The mobile number."
                 },
                 "FaxNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "FaxNumber",
+                    "description": "The fax number."
                 },
                 "EMailAddress": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "EMailAddress",
+                    "description": "The email address."
                 },
                 "InternetAddress": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "InternetAddress",
+                    "description": "The internet address."
                 },
                 "MailingAddress": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MailingAddress",
+                    "description": "The mailing address."
                 },
                 "MailingPostalCode": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MailingPostalCode",
+                    "description": "The mailing postal code."
                 },
                 "MailingPostalCity": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MailingPostalCity",
+                    "description": "The mailing postal city."
                 },
                 "BusinessAddress": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "BusinessAddress",
+                    "description": "The business address"
                 },
                 "BusinessPostalCode": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "BusinessPostalCode",
+                    "description": "The business postal code."
                 },
                 "BusinessPostalCity": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "BusinessPostalCity",
+                    "description": "The business postal city."
                 }
             }
         },
@@ -112,55 +353,89 @@
             "type": "object",
             "properties": {
                 "SSN": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "SSN",
+                    "description": "The persons social security number."
                 },
                 "Name": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "Name",
+                    "description": "The persons full name."
                 },
                 "FirstName": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "FirstName",
+                    "description": "The persons first name."
                 },
                 "MiddleName": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MiddleName",
+                    "description": "The persons middle name."
                 },
                 "LastName": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "LastName",
+                    "description": "The persons last name."
                 },
                 "TelephoneNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "TelephoneNumber",
+                    "description": "The persons telephone number."
                 },
                 "MobileNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MobileNumber",
+                    "description": "The persons mobile number."
                 },
                 "MailingAddress": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MailingAddress",
+                    "description": "The persons mailing address."
                 },
                 "MailingPostalCode": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MailingPostalCode",
+                    "description": "The persons mailing postal code."
                 },
                 "MailingPostalCity": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "MailingPostalCity",
+                    "description": "The persons full name."
                 },
                 "AddressMunicipalNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "AddressMunicipalNumber",
+                    "description": "The persons address municipal number."
                 },
                 "AddressMunicipalName": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "AddressMunicipalName",
+                    "description": "The persons address municipal name."
                 },
                 "AddressStreetName": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "AddressStreetName",
+                    "description": "The persons address street name."
                 },
                 "AddressHouseNumber": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "AddressHouseNumber",
+                    "description": "The persons address house number."
                 },
                 "AddressHouseLetter": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "AddressHouseLetter",
+                    "description": "The persons address house letter."
                 },
                 "AddressPostalCode": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "AddressPostalCode",
+                    "description": "The persons address postal code."
                 },
                 "AddressCity": {
-                    "type": "string"
+                    "type": "string",
+                    "title": "AddressCity",
+                    "description": "The persons address city."
                 }
             }
         }

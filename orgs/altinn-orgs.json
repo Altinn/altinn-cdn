@@ -131,7 +131,7 @@
             "environments": [
                 "tt02"
             ]
-        },        
+        },
         "kv": {
             "name": {
                 "en": "Norwegian Mapping Authority",
@@ -144,6 +144,19 @@
             "environments": [
                 "tt02",
                 "production"
+            ]
+        },
+        "mdir": {
+            "name": {
+                "en": "Norwegian Environment Agency",
+                "nb": "Miljødirektoratet",
+                "nn": "Miljødirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/mdir/mdir.png",
+            "orgnr": "999601391",
+            "homepage": "https://www.miljodirektoratet.no/",
+            "environments": [
+                "tt02"
             ]
         },
         "nbib": {
@@ -186,6 +199,19 @@
                 "tt02"
             ]
         },
+        "npe": {
+            "name": {
+                "en": "Norwegian System of Patient Injury Compensation",
+                "nb": "Norsk pasientskadeerstatning",
+                "nn": "Norsk pasientskadeerstatning"
+            },
+            "logo": "https://altinncdn.no/orgs/npe/npe.png",
+            "orgnr": "984936923",
+            "homepage": "https://www.npe.no",
+            "environments": [
+               "tt02"
+            ]
+        },
         "nsm": {
             "name": {
                 "en": "National Security Agency",
@@ -209,6 +235,21 @@
             "orgnr": "974761076",
             "homepage": "https://www.skatteetaten.no",
             "environments": [
+                "tt02",
+                "yt01",
+                "production"
+            ]
+        },
+        "srf": {
+            "name": {
+                "en": "Norwegian Civil Affairs Authority",
+                "nb": "Statens Sivilrettsforvaltning",
+                "nn": "Statens Sivilrettsforvaltning"
+            },
+            "logo": "https://altinncdn.no/orgs/srf/srf.png",
+            "orgnr": "986186999",
+            "homepage": "https://www.sivilrett.no",
+            "environments": [
                 "tt02"
             ]
         },
@@ -224,6 +265,19 @@
             "environments": [
                 "tt02",
                 "production"
+            ]
+        },
+        "stami": {
+            "name": {
+                "en": "The National Institute of Occupational Health",
+                "nb": "Statens arbeidsmiljøinstitutt",
+                "nn": "Statens arbeidsmiljøinstitutt"
+            },
+            "logo": "https://altinncdn.no/orgs/stami/stami.png",
+            "orgnr": "874761222",
+            "homepage": "https://stami.no/",
+            "environments": [
+                "tt02"
             ]
         },
         "ttd": {
@@ -245,6 +299,20 @@
                 "production"
             ]
         },
+        "udi": {
+            "name": {
+                "en": "The Norwegian Directorate of Immigration",
+                "nb": "Utlendingsdirektoratet",
+                "nn": "Utlendingsdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/udi/udi.png",
+            "orgnr": "974760746",
+            "homepage": "https://www.udi.no",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
         "udir": {
             "name": {
                 "en": "Norwegian Directorate for Education and Training",
@@ -256,6 +324,20 @@
             "homepage": "https://www.udir.no",
             "environments": [
                 "tt02"
+            ]
+        },
+        "valg": {
+            "name": {
+                "en": "Election Directorate",
+                "nb": "Valgdirektoratet",
+                "nn": "Valdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/valg/valg.png",
+            "orgnr": "916132727",
+            "homepage": "https://www.valg.no",
+            "environments": [
+                "tt02",
+                "production"
             ]
         }
     }
