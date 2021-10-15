@@ -90,7 +90,8 @@
             "items": {
               "$ref": "#/definitions/resourceTextVariable"
             }
-          }
+          },
+          "additionalProperties": false
         },
         "required": ["id", "value"]
       },
@@ -110,7 +111,8 @@
             "type": "string"
           }
         },
-        "required": ["key", "dataSource"]
+        "required": ["key", "dataSource"],
+        "additionalProperties": false
       }
     }
 }

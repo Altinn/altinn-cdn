@@ -19,7 +19,8 @@
         "layout": {
           "$ref": "#/definitions/layout"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "layout": {
       "title": "The layout",
@@ -111,7 +112,8 @@
         { "if": {"properties": {"type": { "const": "RadioButtons"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
         { "if": {"properties": {"type": { "const": "Summary"}}}, "then": {"$ref": "#/definitions/summaryComponent"}}
         
-      ]
+      ],
+      "additionalProperties": false
     },
     "fileUploadComponent": {
       "properties": {
@@ -151,7 +153,8 @@
           "examples": ["csv", "doc", "docx", "gif", "jpeg", "pdf", "txt"]
         }
       },
-      "required": ["displayMode", "maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments"]
+      "required": ["displayMode", "maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments"],
+      "additionalProperties": false
     },
     "datepickerComponent": {
       "properties": {
@@ -174,7 +177,8 @@
           "default": false
         }
       },
-      "required": []
+      "required": [],
+      "additionalProperties": false
     },
     "navigationButtonsComponent": {
       "properties": {
@@ -183,7 +187,8 @@
           "title": "Show back button",
           "description": "Shows two buttons (back/next) instead of just 'next'."
         }
-      }
+      },
+      "additionalProperties": false
     },
     "gridValue": {
         "type": "integer",
@@ -200,7 +205,8 @@
                 "examples": [{ "xs": 12 }],
                 "$ref": "#/definitions/gridProps"
             }
-        }
+        },
+        "additionalProperties": false
     },
     "gridProps": {
         "properties": {
@@ -229,7 +235,8 @@
                 "title": "xl",
                 "description": "Grid breakpoint at 1920px"
             }
-        }
+        },
+        "additionalProperties": false
     },
     "groupComponent": {
       "properties": {
@@ -253,7 +260,8 @@
             "minimum": 0
         }
       },
-      "required": ["children"]
+      "required": ["children"],
+      "additionalProperties": false
     },
     "groupEditOptions": {
       "properties": {
@@ -286,7 +294,8 @@
           "description": "Boolean value indicating if form components in edit mode should be shown over multiple pages/views.",
           "type": "boolean"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "groupFilterItem": {
       "properties": {
@@ -300,7 +309,8 @@
           "description": "Value to check against.",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "options": {
       "properties": {
@@ -315,7 +325,8 @@
           "description": "The option value."
         }
       },
-      "required": ["label", "value"]
+      "required": ["label", "value"],
+      "additionalProperties": false
     },
     "triggers": {
       "title": "Triggers",
@@ -347,7 +358,8 @@
           "description": "Sets a preselected index.",
           "minimum": 0
         }
-      }
+      },
+      "additionalProperties": false
     },
     "addressComponent": {
       "properties": {
@@ -357,7 +369,8 @@
           "description": "Boolean value indicating if the address component should be shown in simple mode.",
           "default": false
         }
-      }
+      },
+      "additionalProperties": false
     },
     "summaryComponent": {
       "properties": {
@@ -371,7 +384,8 @@
           "title": "Page reference",
           "description": "String value indicating which layout page the referenced component is defined on."
         }
-      }
+      },
+      "additionalProperties": false
     },
     "attachmentListComponent": {
       "properties": {
@@ -384,7 +398,8 @@
           "description": "List of data type IDs for the attachment list to show.",
           "examples": [["SomeDataType", "SomeOtherDataType"]]
         }
-      }
+      },
+      "additionalProperties": false
     },
     "inputComponent": {
       "properties": {
@@ -393,7 +408,8 @@
           "description": "Set of options for formatting input fields.",
           "$ref": "#/definitions/inputFormatting"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "inputFormatting": {
       "properties": {
@@ -406,7 +422,8 @@
           "description": "The alignment for Input field (eg. right aligning a series of numbers)",
           "enum": ["left", "center", "right"]
         }
-      }
+      },
+      "additionalProperties": false
     }
   }
 }
