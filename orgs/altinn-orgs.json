@@ -317,7 +317,8 @@
             "orgnr": "874761222",
             "homepage": "https://stami.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "ttd": {
