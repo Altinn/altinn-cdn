@@ -10,7 +10,8 @@
             "orgnr": "974760673",
             "homepage": "https://www.brreg.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "buf": {
@@ -93,6 +94,19 @@
                 "tt02"
             ]
         },
+        "fd": {
+            "name": {
+                "en": "The Norwegian Directorate of Fisheries",
+                "nb": "Fiskeridirektoratet",
+                "nn": "Fiskeridirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/fd/fiskeridirektoratet.png",
+            "orgnr": "971203420",
+            "homepage": "https://www.fiskeridir.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "gk": {
             "name": {
                 "en": "The Criminal Cases Review Commission",
@@ -128,6 +142,19 @@
             "logo": "https://altinncdn.no/orgs/hmrhf/hmrhf.png",
             "orgnr": "997005562",
             "homepage": "https://helse-mr.no",
+            "environments": [
+                "tt02"
+            ]
+        },
+        "krt": {
+            "name": {
+                "en": "The Financial Supervisory Authorization of Norway",
+                "nb": "Finanstilsynet",
+                "nn": "Finanstilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/krt/krt.png",
+            "orgnr": "840747972",
+            "homepage": "https://www.finanstilsynet.no",
             "environments": [
                 "tt02"
             ]
@@ -221,6 +248,19 @@
             "logo": "https://altinncdn.no/orgs/nsm/nsm.png",
             "orgnr": "985165262",
             "homepage": "https://www.nsm.no",
+            "environments": [
+                "tt02"
+            ]
+        },
+        "pat": {
+            "name": {
+                "en": "Norwegian Industrial Property Office",
+                "nb": "Patentstyret",
+                "nn": "Patentstyret"
+            },
+            "logo": "https://altinncdn.no/orgs/pat/pat.png",
+            "orgnr": "971526157",
+            "homepage": "https://www.patentstyret.no/",
             "environments": [
                 "tt02"
             ]
