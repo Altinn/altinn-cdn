@@ -236,7 +236,7 @@
       "properties": {
         "children": {
           "title": "Children",
-          "description": "An array of child components belonging to the group.",
+          "description": "An array of the \"id\" of child components belonging to the group.",
           "type": "array",
           "items": {
             "type": "string"
