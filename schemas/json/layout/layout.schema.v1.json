@@ -391,23 +391,40 @@
     "imageComponent": {
       "properties": {
         "image": {
-            "type": "object",
+          "type": "object",
           "title": "Image properties",
           "description": "Set of options for image field.",
           "properties": {
-              "src": {
-                  "title": "Image source",
-                  "description": "",
-                  "type": "object",
-                  "additionalProperties": true
+            "src": {
+              "title": "Image source",
+              "description": "",
+              "type": "object",
+              "properties": {
+                "nb" :{
+                  "type": "string",
+                  "title": "Bokmål"
+                },
+                "nn":{
+                  "type": "string",
+                  "title": "Nynorsk"
+                },
+                "en":{
+                  "type": "string",
+                  "title": "English"
+                }
               },
-              "width": {
-                  "type":"string"
-              },
-              "align": {
-                  "type":"string",
-                  "enum": ["center", "right", "left"]
-              }
+              "additionalProperties": true
+            },
+            "width": {
+              "type":"string",
+              "title": "Image width",
+              "examples": ["100%"]
+            },
+            "align": {
+              "type":"string",
+              "title": "Align image",
+              "enum": ["flex-start", "center", "flex-end", "space-between", "space-around", "space-evenly"]
+            }
           }
         }
       }
