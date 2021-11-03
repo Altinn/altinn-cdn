@@ -160,13 +160,13 @@
         "minDate": {
           "type": "string",
           "title": "Minimum allowed date",
-          "description": "Sets the minimum allowed date. Defaults to 1900-01-01T12:00:00.000Z'.",
+          "description": "Sets the minimum allowed date. Can also use keywords such as 'today'. The 'today' keyword will disable all past dates dynamically. Defaults to 1900-01-01T12:00:00.000Z'.",
           "default": "1900-01-01T12:00:00.000Z"
         },
         "maxDate": {
           "type": "string",
           "title": "Maximum allowed date",
-          "description": "Sets the maxiumum allowed date. Defaults to 2100-01-01T12:00:00.000Z.'",
+          "description": "Sets the maxiumum allowed date. Can also use keywords such as 'today'. The 'today' keyword will disable all future dates dynamically. Defaults to 2100-01-01T12:00:00.000Z.'",
           "default": "2100-01-01T12:00:00.000Z."
         },
         "timeStamp": {
