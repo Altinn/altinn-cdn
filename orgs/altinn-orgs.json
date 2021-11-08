@@ -321,6 +321,19 @@
                 "production"
             ]
         },
+        "svv": {
+            "name": {
+                "en": "The Norwegian Public Roads Administration",
+                "nb": "Statens vegvesen",
+                "nn": "Statens vegvesen"
+            },
+            "logo": "https://altinncdn.no/orgs/svv/svv.png",
+            "orgnr": "971032081",
+            "homepage": "https://vegvesen.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "ttd": {
             "name": {
                 "en": "Test Ministry",
