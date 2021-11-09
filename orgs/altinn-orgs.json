@@ -104,7 +104,8 @@
             "orgnr": "971203420",
             "homepage": "https://www.fiskeridir.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "gk": {
