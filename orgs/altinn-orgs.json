@@ -266,6 +266,19 @@
                 "tt02"
             ]
         },
+        "sfd": {
+            "name": {
+                "en": "Norwegian Maritime Authority",
+                "nb": "Sjøfartsdirektoratet",
+                "nn": "Sjøfartsdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/sfd/sfd.png",
+            "orgnr": "974761262",
+            "homepage": "https://www.sdir.no",
+            "environments": [
+                "tt02"
+            ]
+        },
         "skd": {
             "name": {
                 "en": "Norwegian Tax Administration",
