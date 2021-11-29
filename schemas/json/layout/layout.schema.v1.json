@@ -196,7 +196,7 @@
         "properties": {
               "labelGrid": {
                 "title": "labelGrid",
-                "description": "Optional grid for label component. Used with innerGrid to make labels show on the side.",
+                "description": "Optional grid for the component label. Used in combination with innerGrid to align labels on the side.",
                 "examples": [{ "xs": 12 }],
                 "$ref": "#/definitions/gridProps"
             },
