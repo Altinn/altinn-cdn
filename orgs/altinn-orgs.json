@@ -94,6 +94,20 @@
                 "tt02"
             ]
         },
+        "fd": {
+            "name": {
+                "en": "The Norwegian Directorate of Fisheries",
+                "nb": "Fiskeridirektoratet",
+                "nn": "Fiskeridirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/fd/fiskeridirektoratet.png",
+            "orgnr": "971203420",
+            "homepage": "https://www.fiskeridir.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
         "gk": {
             "name": {
                 "en": "The Criminal Cases Review Commission",
@@ -129,6 +143,19 @@
             "logo": "https://altinncdn.no/orgs/hmrhf/hmrhf.png",
             "orgnr": "997005562",
             "homepage": "https://helse-mr.no",
+            "environments": [
+                "tt02"
+            ]
+        },
+        "krt": {
+            "name": {
+                "en": "The Financial Supervisory Authorization of Norway",
+                "nb": "Finanstilsynet",
+                "nn": "Finanstilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/krt/krt.png",
+            "orgnr": "840747972",
+            "homepage": "https://www.finanstilsynet.no",
             "environments": [
                 "tt02"
             ]
@@ -239,6 +266,19 @@
                 "tt02"
             ]
         },
+        "sfd": {
+            "name": {
+                "en": "Norwegian Maritime Authority",
+                "nb": "Sjøfartsdirektoratet",
+                "nn": "Sjøfartsdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/sfd/sfd.png",
+            "orgnr": "974761262",
+            "homepage": "https://www.sdir.no",
+            "environments": [
+                "tt02"
+            ]
+        },
         "skd": {
             "name": {
                 "en": "Norwegian Tax Administration",
@@ -290,6 +330,20 @@
             "logo": "https://altinncdn.no/orgs/stami/stami.png",
             "orgnr": "874761222",
             "homepage": "https://stami.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
+        "svv": {
+            "name": {
+                "en": "The Norwegian Public Roads Administration",
+                "nb": "Statens vegvesen",
+                "nn": "Statens vegvesen"
+            },
+            "logo": "https://altinncdn.no/orgs/svv/svv.png",
+            "orgnr": "971032081",
+            "homepage": "https://vegvesen.no/",
             "environments": [
                 "tt02"
             ]
