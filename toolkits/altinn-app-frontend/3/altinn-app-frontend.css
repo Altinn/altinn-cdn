@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v3.18.2, https://github.com/Altinn/altinn-studio/tree/42b87f8642db87606de0b0797c2c883d0556a7ff/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v3.18.3, https://github.com/Altinn/altinn-studio/tree/03f28623a9d8c99c30c6db2172a8a50f2bf69744/src/react-apps/applications/altinn-app-frontend */
 .logo {
   height: 24px;
 }
@@ -47,6 +47,10 @@ input.form-control:focus:not(.a-hasButton) {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.address-component .form-control {
+  margin-bottom: 18px;
 }
 
 .address-component input {
@@ -285,6 +289,7 @@ option {
 
 .a-form-group .form-control {
   border: 2px solid #008FD6;
+  max-width: 684px;
 }
 
 .a-form-group .input-group .input-group-prepend {
