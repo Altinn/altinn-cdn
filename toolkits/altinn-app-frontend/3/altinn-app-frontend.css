@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v3.18.1, https://github.com/Altinn/altinn-studio/tree/5bba1a15e7c4fcff9f18ef6251a0b42a3866aa37/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v3.18.2, https://github.com/Altinn/altinn-studio/tree/ac89e3e465f0926e2b96fecd13a4efdf68b03a63/src/react-apps/applications/altinn-app-frontend */
 .logo {
   height: 24px;
 }
@@ -227,6 +227,17 @@ input:focus + .slider {
 
 p {
   font-family: 'Altinn-DIN';
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 576px) {
+  h2 {
+      font-size: 28px;
+  }
 }
 
 option {
