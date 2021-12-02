@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v3.18.3, https://github.com/Altinn/altinn-studio/tree/09563aa08da37df15e9049e62193fef81235b68c/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v3.18.4, https://github.com/Altinn/altinn-studio/tree/6d13b4fd52684a19a9793c456f51b01b1090fe0a/src/react-apps/applications/altinn-app-frontend */
 .logo {
   height: 24px;
 }
@@ -289,7 +289,6 @@ option {
 
 .a-form-group .form-control {
   border: 2px solid #008FD6;
-  max-width: 684px;
 }
 
 .a-form-group .input-group .input-group-prepend {
