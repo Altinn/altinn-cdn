@@ -134,6 +134,20 @@
                 "tt02"
             ]
         },
+        "hi": {
+            "name": {
+                "en": "Institute of Marine Research",
+                "nb": "Havforskningsinstituttet",
+                "nn": "Havforskningsinstituttet"
+            },
+            "logo": "https://altinncdn.no/orgs/hi/havforskningsinstituttet.png",
+            "orgnr": "971349077",
+            "homepage": "https://www.hi.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },        
         "hmrhf": {
             "name": {
                 "en": "Helse Møre og Romsdal",

@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v3.14.2, https://github.com/Altinn/altinn-studio/tree/41c70b000bf260e019cc565465dedb363fa1891d/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v3.18.1, https://github.com/Altinn/altinn-studio/tree/5bba1a15e7c4fcff9f18ef6251a0b42a3866aa37/src/react-apps/applications/altinn-app-frontend */
 .logo {
   height: 24px;
 }
@@ -378,6 +378,67 @@ select.disabled {
   background-size: 8px 10px, cover !important;
 }
 
+
+/* Container */
+.container {
+  max-width: none;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+      max-width: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1056px;
+  }
+}
+
+
+/* Modal header */
+
+.a-modal-navbar {
+  margin-top: 12px;
+}
+@media only screen and (min-width: 977px) {
+  .a-modal-navbar {
+    margin-top: 36px;
+  }
+}
+
+/* Modal body */
+
+.a-modal-body {
+  padding: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .a-modal-body {
+      padding: 36px 84px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .a-modal-body {
+      padding: 36px 96px;
+  }
+}
+
+.modal-content {
+  margin-bottom: 60px;
+}
+
+#errorReport .modal-content {
+  margin-bottom: 24px;
+}
 
 /* Button */
 .a-btn-sm-fullwidth {
