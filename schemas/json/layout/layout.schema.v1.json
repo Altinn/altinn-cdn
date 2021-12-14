@@ -217,7 +217,7 @@
         "mapping": {
           "type": "object",
           "title": "Mapping",
-          "description": "Mapping from current data model a prefill object being passed to the instantiation api.",
+          "description": "Creates a new app instance with data collected from a stateless part of the app.",
           "examples": [{"some.source.field": "key1", "some.other.source": "key2"}],
           "additionalProperties": { "type": "string" }
         }
