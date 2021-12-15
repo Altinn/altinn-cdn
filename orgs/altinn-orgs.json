@@ -319,7 +319,8 @@
             "orgnr": "986186999",
             "homepage": "https://www.sivilrett.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "ssb": {
