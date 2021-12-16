@@ -267,6 +267,19 @@
                 "tt02"
             ]
         },
+        "oko": {
+            "name": {
+                "en": "National Authority for Investigation and Prosecution of Economic and Environmental Crime",
+                "nb": "Økokrim",
+                "nn": "Økokrim"
+            },
+            "logo": "https://altinncdn.no/orgs/oko/oko.png",
+            "orgnr": "874761532",
+            "homepage": "https://www.okokrim.no/",
+            "environments": [
+                "tt02"
+            ]
+        },        
         "pat": {
             "name": {
                 "en": "Norwegian Industrial Property Office",
