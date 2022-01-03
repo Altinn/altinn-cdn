@@ -42,7 +42,7 @@
           "type": "string",
           "title": "Type",
           "description": "The component type.",
-          "enum": ["AddressComponent", "AttachmentList", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "Group", "Header", "Image", "Input", "InstantiationButton", "NavigationButtons", "Paragraph", "RadioButtons", "Summary", "TextArea" ]
+          "enum": ["AddressComponent", "AttachmentList", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "FileUploadWithTag", "Group", "Header", "Image", "Input", "InstantiationButton", "NavigationButtons", "Paragraph", "RadioButtons", "Summary", "TextArea" ]
         },
         "required": {
           "type": "boolean",
@@ -119,6 +119,7 @@
         { "if": {"properties": {"type": { "const": "Datepicker"}}}, "then": { "$ref": "#/definitions/datepickerComponent"}},
         { "if": {"properties": {"type": { "const": "Dropdown"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
         { "if": {"properties": {"type": { "const": "FileUpload"}}}, "then": { "$ref": "#/definitions/fileUploadComponent"}},
+        { "if": {"properties": {"type": { "const": "FileUploadWithTag"}}}, "then": { "$ref": "#/definitions/fileUploadWithTagComponent"}},
         { "if": {"properties": {"type": { "const": "Group"}}}, "then": { "$ref": "#/definitions/groupComponent"}},
         { "if": {"properties": {"type": { "const": "Image"}}}, "then": { "$ref": "#/definitions/imageComponent"}},
         { "if": {"properties": {"type": { "const": "Input"}}}, "then": { "$ref": "#/definitions/inputComponent"}},
@@ -179,6 +180,45 @@
         }
       },
       "required": ["displayMode", "maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments" ]
+    },
+    "fileUploadWithTagComponent": {
+      "properties": {
+        "optionsId": {
+          "type": "string",
+          "title": "Options ID",
+          "description": "Reference to connected options by id."
+        },
+        "maxFileSizeInMB": {
+          "title": "Maximum file size in MB",
+          "description": "Sets the maximum file size allowed in megabytes.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "maxNumberOfAttachments": {
+          "title": "Maximum allowed attachments",
+          "description": "Sets the maximum number of attachments allowed to upload.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "minNumberOfAttachments": {
+          "title": "Minimum allowed attachments",
+          "description": "Sets the minimum number of attachments to upload",
+          "type": "integer",
+          "minimum": 0
+        },
+        "hasCustomFileEndings": {
+          "title": "Has custom file endings",
+          "description": "Boolean value indicating if the component has valid file endings",
+          "type": "boolean"
+        },
+        "validFileEndings": {
+          "title": "Valid file endings",
+          "description": "A separated string of valid file endings to upload. If not set all endings are accepted.",
+          "type": "string",
+          "examples": ["csv", "doc", "docx", "gif", "jpeg", "pdf", "txt"]
+        }
+      },
+      "required": ["optionsId", "maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments" ]
     },
     "datepickerComponent": {
       "properties": {
