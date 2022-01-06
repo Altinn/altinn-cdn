@@ -176,7 +176,7 @@
           "title": "Valid file endings",
           "description": "A separated string of valid file endings to upload. If not set all endings are accepted.",
           "type": "string",
-          "examples": ["csv", "doc", "docx", "gif", "jpeg", "pdf", "txt"]
+          "examples": [".csv", ".doc", ".docx", ".gif", ".jpeg", ".pdf", ".txt"]
         }
       },
       "required": ["displayMode", "maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments" ]
@@ -215,7 +215,7 @@
           "title": "Valid file endings",
           "description": "A separated string of valid file endings to upload. If not set all endings are accepted.",
           "type": "string",
-          "examples": ["csv", "doc", "docx", "gif", "jpeg", "pdf", "txt"]
+          "examples": [".csv", ".doc", ".docx", ".gif", ".jpeg", ".pdf", ".txt"]
         }
       },
       "required": ["optionsId", "maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments" ]
