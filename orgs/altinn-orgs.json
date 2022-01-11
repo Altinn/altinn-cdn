@@ -215,6 +215,19 @@
                 "production"
             ]
         },
+        "nhn": {
+            "name": {
+                "en": "Norwegian Healthnet",
+                "nb": "Norsk helsenett",
+                "nn": "Norsk helsenett"
+            },
+            "logo": "https://altinncdn.no/orgs/nhn/nhn.png",
+            "orgnr": "994598759",
+            "homepage": "https://www.nhn.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "nkr": {
             "name": {
                 "en": "Arts Council Norway",
