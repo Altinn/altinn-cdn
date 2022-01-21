@@ -171,7 +171,8 @@
             "orgnr": "840747972",
             "homepage": "https://www.finanstilsynet.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "kv": {
