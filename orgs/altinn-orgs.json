@@ -388,7 +388,8 @@
             "orgnr": "971032081",
             "homepage": "https://vegvesen.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "ttd": {
