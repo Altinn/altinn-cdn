@@ -330,7 +330,6 @@
             "orgnr": "974761076",
             "homepage": "https://www.skatteetaten.no",
             "environments": [
-                "at05",
                 "tt02",
                 "yt01",
                 "production"

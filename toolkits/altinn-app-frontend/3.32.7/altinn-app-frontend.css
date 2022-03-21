@@ -1,4 +1,4 @@
-/*! altinn-app-frontend, v3.27.5, https://github.com/Altinn/altinn-studio/tree/906b33199f91b52d143c29356c4d8b14a5257e55/src/react-apps/applications/altinn-app-frontend */
+/*! altinn-app-frontend, v3.32.7, https://github.com/Altinn/altinn-studio/tree/096cd54a6897a8928a2e5c1c09eb59ade28861cd/src/react-apps/applications/altinn-app-frontend */
 .logo {
   height: 24px;
 }
@@ -399,15 +399,16 @@ select.disabled {
   background-color: #fff;
   color: #000;
   border-bottom: 1px solid #eee;
+  padding-left: 24px;
 }
 
-@media only screen and (min-width: 753px) {
+@media only screen and (min-width: 768px) {
   .a-iconText.a-iconText-background {
     padding-left: 84px;
   }
 }
 
-@media only screen and (min-width: 977px) {
+@media only screen and (min-width: 992px) {
   .a-iconText.a-iconText-background {
     padding-left: 96px;
   }

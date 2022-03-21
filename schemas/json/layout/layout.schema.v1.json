@@ -42,7 +42,7 @@
           "type": "string",
           "title": "Type",
           "description": "The component type.",
-          "enum": ["AddressComponent", "AttachmentList", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "Group", "Header", "Image", "Input", "InstantiationButton", "NavigationButtons", "Paragraph", "RadioButtons", "Summary", "TextArea" ]
+          "enum": ["AddressComponent", "AttachmentList", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "Group", "Header", "Image", "Input", "InstantiationButton", "NavigationButtons", "NavigationBar", "Paragraph", "RadioButtons", "Summary", "TextArea" ]
         },
         "required": {
           "type": "boolean",
@@ -114,7 +114,7 @@
       "required": ["id", "type"],
       "allOf": [
         { "if": {"properties": {"type": { "const": "AddressComponent"}}}, "then": { "$ref": "#/definitions/addressComponent"}},
-        { "if": {"properties": {"type": { "const": "AttachmentList"}}}, "then": { "ref": "#/definitions/attachmentListComponent"}},
+        { "if": {"properties": {"type": { "const": "AttachmentList"}}}, "then": { "$ref": "#/definitions/attachmentListComponent"}},
         { "if": {"properties": {"type": { "const": "Checkboxes"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
         { "if": {"properties": {"type": { "const": "Datepicker"}}}, "then": { "$ref": "#/definitions/datepickerComponent"}},
         { "if": {"properties": {"type": { "const": "Dropdown"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
@@ -419,6 +419,11 @@
           "title": "Preselected option index",
           "description": "Sets a preselected index.",
           "minimum": 0
+        },
+        "secure": {
+          "type": "boolean",
+          "title": "Secure Options",
+          "description": "Boolean value indicating if the options should be instance aware. Defaults to false. See more on docs: https://docs.altinn.studio/app/development/data/options/"
         }
       }
     },
