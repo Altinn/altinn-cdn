@@ -391,6 +391,19 @@
                 "production"
             ]
         },
+        "tad": {
+            "name": {
+                "en": "Norwegian Customs",
+                "nb": "Tolletaten",
+                "nn": "Tolletaten"
+            },
+            "logo": "https://altinncdn.no/orgs/tad/tad.png",
+            "orgnr": "880455702",
+            "homepage": "https://www.toll.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "ttd": {
             "name": {
                 "en": "Test Ministry",
