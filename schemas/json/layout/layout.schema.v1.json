@@ -428,31 +428,8 @@
       }
     },
     "radioAndCheckboxComponents": {
+      "allOf": [{ "$ref": "#/definitions/selectionComponents" }],
       "properties": {
-        "optionsId": {
-          "type": "string",
-          "title": "Options ID",
-          "description": "Reference to connected options by id."
-        },
-        "options": {
-          "type": "array",
-          "title": "Options",
-          "description": "An array of options. Only relevant if no optionsId is set.",
-          "items": {
-            "$ref": "#/definitions/options"
-          }
-        },
-        "preselectedOptionIndex": {
-          "type": "integer",
-          "title": "Preselected option index",
-          "description": "Sets a preselected index.",
-          "minimum": 0
-        },
-        "secure": {
-          "type": "boolean",
-          "title": "Secure Options",
-          "description": "Boolean value indicating if the options should be instance aware. Defaults to false. See more on docs: https://docs.altinn.studio/app/development/data/options/"
-        },
         "layout": {
           "type": "string",
           "enum": ["column", "row"],
