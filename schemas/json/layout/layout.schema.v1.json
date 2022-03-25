@@ -399,7 +399,7 @@
         "enum": ["validation", "validatePage", "validateAllPages", "calculatePageOrder"]
       }
     },
-    "dropdownComponents": {
+    "selectionComponents": {
       "properties": {
         "optionsId": {
           "type": "string",
