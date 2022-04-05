@@ -447,7 +447,8 @@
             "orgnr": "970018131",
             "homepage": "https://www.udir.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "valg": {
