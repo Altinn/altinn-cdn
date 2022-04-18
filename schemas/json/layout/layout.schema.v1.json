@@ -460,7 +460,7 @@
                     "type": "string",
                     "title": "Label",
                     "description": "Field in the group that should be used as value",
-                    "examples": ["model.some.group[[{0}].someField"]
+                    "examples": ["model.some.group[{0}].someField"]
                 }
             },
             "required": ["group", "label", "value"]
