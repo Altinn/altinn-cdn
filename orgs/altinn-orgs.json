@@ -78,7 +78,8 @@
             "orgnr": "964983291",
             "homepage": "https://digihelgeland.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "dmf": {
