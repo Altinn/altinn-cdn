@@ -95,6 +95,19 @@
                 "tt02"
             ]
         },
+        "dsb": {
+            "name": {
+                "en": "The Norwegian Directorate for Civil Protection",
+                "nb": "Direktoratet for samfunnssikkerhet og beredskap",
+                "nn": "Direktoratet for samfunnssikkerhet og beredskap"
+            },
+            "logo": "https://altinncdn.no/orgs/dsb/dsb.png",
+            "orgnr": "974760983",
+            "homepage": "https://www.dsb.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "fd": {
             "name": {
                 "en": "The Norwegian Directorate of Fisheries",
