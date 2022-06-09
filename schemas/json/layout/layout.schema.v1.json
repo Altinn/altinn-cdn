@@ -42,28 +42,7 @@
           "type": "string",
           "title": "Type",
           "description": "The component type.",
-          "enum": [
-            "AddressComponent",
-            "AttachmentList",
-            "Button",
-            "Checkboxes",
-            "Datepicker",
-            "Dropdown",
-            "FileUpload",
-            "FileUploadWithTag",
-            "Group",
-            "Header",
-            "Image",
-            "Input",
-            "InstantiationButton",
-            "NavigationButtons",
-            "NavigationBar",
-            "Paragraph",
-            "RadioButtons",
-            "Summary",
-            "TextArea",
-            "Likert"
-          ]
+          "enum": ["AddressComponent", "AttachmentList", "Button", "Checkboxes", "Datepicker", "Dropdown", "FileUpload", "FileUploadWithTag", "Group", "Header", "Image", "Input", "InstantiationButton", "NavigationButtons", "NavigationBar", "Paragraph", "RadioButtons", "Summary", "TextArea" ]
         },
         "required": {
           "type": "boolean",
@@ -95,40 +74,6 @@
           "type": "object",
           "title": "Data model bindings",
           "description": "Data model bindings for a component.",
-          "properties": {
-            "likert": {
-              "type": "object",
-              "title": "Data model bindings for likert component.",
-              "properties": {
-                "list": {
-                  "type": "string",
-                  "title": "Refernce to the main data model binding",
-                  "description": "This must be a list."
-                },
-                "question": {
-                  "type": "string",
-                  "title": "Reference to the question attribute in your list data model binding.",
-                  "description": "This can be plain text or reference to text resource file."
-                },
-                "answer": {
-                  "type": "string",
-                  "title": "Reference to the answere attribute in your list data model binding.",
-                  "description": "This is where the selected value is stored."
-                },
-                "start": {
-                  "type": "string",
-                  "title": "Slice the datamodel binding list by start index (inclusive).",
-                  "description": "This must be a number above 0 and less then the length of your data model binding list. Defaults to 0."
-                },
-                "end": {
-                  "type": "string",
-                  "title": "Slice the datamodel binding list by end index (exclusive).",
-                  "description": "This must be a number above 0 and less then the length of your data model binding list. Defaults to the length of list."
-                }
-              },
-              "required": ["list", "question", "answer"]
-            }
-          },
           "additionalProperties": {
             "type": "string"
           },
@@ -168,72 +113,21 @@
       },
       "required": ["id", "type"],
       "allOf": [
-        {
-          "if": { "properties": { "type": { "const": "AddressComponent" } } },
-          "then": { "$ref": "#/definitions/addressComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "AttachmentList" } } },
-          "then": { "$ref": "#/definitions/attachmentListComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Checkboxes" } } },
-          "then": { "$ref": "#/definitions/radioAndCheckboxComponents" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Datepicker" } } },
-          "then": { "$ref": "#/definitions/datepickerComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Dropdown" } } },
-          "then": { "$ref": "#/definitions/selectionComponents" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "FileUpload" } } },
-          "then": { "$ref": "#/definitions/fileUploadComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "FileUploadWithTag" } } },
-          "then": { "$ref": "#/definitions/fileUploadWithTagComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Group" } } },
-          "then": { "$ref": "#/definitions/groupComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Image" } } },
-          "then": { "$ref": "#/definitions/imageComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Input" } } },
-          "then": { "$ref": "#/definitions/inputComponent" }
-        },
-        {
-          "if": {
-            "properties": { "type": { "const": "InstantiationButton" } }
-          },
-          "then": { "$ref": "#/definitions/instantiationButtonComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "NavigationButtons" } } },
-          "then": { "$ref": "#/definitions/navigationButtonsComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "RadioButtons" } } },
-          "then": { "$ref": "#/definitions/radioAndCheckboxComponents" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Summary" } } },
-          "then": { "$ref": "#/definitions/summaryComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Header" } } },
-          "then": { "$ref": "#/definitions/headerComponent" }
-        },
-        {
-          "if": { "properties": { "type": { "const": "Likert" } } },
-          "then": { "$ref": "#/definitions/likertComponent" }
-        }
+        { "if": {"properties": {"type": { "const": "AddressComponent"}}}, "then": { "$ref": "#/definitions/addressComponent"}},
+        { "if": {"properties": {"type": { "const": "AttachmentList"}}}, "then": { "$ref": "#/definitions/attachmentListComponent"}},
+        { "if": {"properties": {"type": { "const": "Checkboxes"}}}, "then": { "$ref": "#/definitions/radioAndCheckboxComponents"}},
+        { "if": {"properties": {"type": { "const": "Datepicker"}}}, "then": { "$ref": "#/definitions/datepickerComponent"}},
+        { "if": {"properties": {"type": { "const": "Dropdown"}}}, "then": { "$ref": "#/definitions/selectionComponents"}},
+        { "if": {"properties": {"type": { "const": "FileUpload"}}}, "then": { "$ref": "#/definitions/fileUploadComponent"}},
+        { "if": {"properties": {"type": { "const": "FileUploadWithTag"}}}, "then": { "$ref": "#/definitions/fileUploadWithTagComponent"}},
+        { "if": {"properties": {"type": { "const": "Group"}}}, "then": { "$ref": "#/definitions/groupComponent"}},
+        { "if": {"properties": {"type": { "const": "Image"}}}, "then": { "$ref": "#/definitions/imageComponent"}},
+        { "if": {"properties": {"type": { "const": "Input"}}}, "then": { "$ref": "#/definitions/inputComponent"}},
+        { "if": {"properties": {"type": { "const": "InstantiationButton"}}}, "then": { "$ref": "#/definitions/instantiationButtonComponent"}},
+        { "if": {"properties": {"type": { "const": "NavigationButtons"}}}, "then": { "$ref": "#/definitions/navigationButtonsComponent"}},
+        { "if": {"properties": {"type": { "const": "RadioButtons"}}}, "then": { "$ref": "#/definitions/radioAndCheckboxComponents"}},
+        { "if": {"properties": {"type": { "const": "Summary"}}}, "then": {"$ref": "#/definitions/summaryComponent"}},
+        { "if": {"properties": {"type": { "const": "Header"}}}, "then": {"$ref": "#/definitions/headerComponent"}}
       ]
     },
     "headerComponent": {
@@ -285,15 +179,12 @@
           "examples": [".csv", ".doc", ".docx", ".gif", ".jpeg", ".pdf", ".txt"]
         }
       },
-      "required": [
-        "displayMode",
-        "maxFileSizeInMB",
-        "maxNumberOfAttachments",
-        "minNumberOfAttachments"
-      ]
+      "required": ["displayMode", "maxFileSizeInMB", "maxNumberOfAttachments", "minNumberOfAttachments" ]
     },
     "fileUploadWithTagComponent": {
-      "allOf": [{ "$ref": "#/definitions/fileUploadComponent" }],
+      "allOf": [
+        { "$ref": "#/definitions/fileUploadComponent" }
+      ],
       "properties": {
         "optionsId": {
           "type": "string",
@@ -341,9 +232,7 @@
           "type": "object",
           "title": "Mapping",
           "description": "Creates a new app instance with data collected from a stateless part of the app.",
-          "examples": [
-            { "some.source.field": "key1", "some.other.source": "key2" }
-          ],
+          "examples": [{"some.source.field": "key1", "some.other.source": "key2"}],
           "additionalProperties": { "type": "string" }
         }
       }
@@ -352,7 +241,9 @@
       "type": "integer",
       "maximum": 12,
       "minimum": 1,
-      "examples": [12]
+      "examples": [
+        12
+      ]
     },
     "gridSettings": {
       "allOf": [
@@ -519,12 +410,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": [
-          "validation",
-          "validatePage",
-          "validateAllPages",
-          "calculatePageOrder"
-        ]
+        "enum": ["validation", "validatePage", "validateAllPages", "calculatePageOrder"]
       }
     },
     "selectionComponents": {
@@ -554,30 +440,30 @@
           "description": "Boolean value indicating if the options should be instance aware. Defaults to false. See more on docs: https://docs.altinn.studio/app/development/data/options/"
         },
         "source": {
-          "type": "object",
-          "title": "Source",
-          "description": "Object to define a data model source to be used as basis for options. Can not be used if options or optionId is set. See more on docs: https://docs.altinn.studio/app/development/data/options/",
-          "properties": {
-            "group": {
-              "type": "string",
-              "title": "Group",
-              "description": "The repeating group to base options on.",
-              "examples": ["model.some.group"]
+            "type": "object",
+            "title": "Source",
+            "description": "Object to define a data model source to be used as basis for options. Can not be used if options or optionId is set. See more on docs: https://docs.altinn.studio/app/development/data/options/",
+            "properties": {
+                "group": {
+                    "type": "string",
+                    "title": "Group",
+                    "description": "The repeating group to base options on.",
+                    "examples": ["model.some.group"]
+                },
+                "label": {
+                    "type": "string",
+                    "title": "Label",
+                    "description": "Reference to a text resource to be used as the option label.",
+                    "examples": ["some.text.key"]
+                },
+                "value": {
+                    "type": "string",
+                    "title": "Label",
+                    "description": "Field in the group that should be used as value",
+                    "examples": ["model.some.group[{0}].someField"]
+                }
             },
-            "label": {
-              "type": "string",
-              "title": "Label",
-              "description": "Reference to a text resource to be used as the option label.",
-              "examples": ["some.text.key"]
-            },
-            "value": {
-              "type": "string",
-              "title": "Label",
-              "description": "Field in the group that should be used as value",
-              "examples": ["model.some.group[{0}].someField"]
-            }
-          },
-          "required": ["group", "label", "value"]
+            "required": ["group", "label", "value"]
         }
       }
     },
@@ -591,9 +477,6 @@
           "description": "Define the layout style for the options"
         }
       }
-    },
-    "likertComponent": {
-      "allOf": [{ "$ref": "#/definitions/selectionComponents" }]
     },
     "addressComponent": {
       "properties": {
@@ -644,15 +527,15 @@
               "description": "",
               "type": "object",
               "properties": {
-                "nb": {
+                "nb" :{
                   "type": "string",
                   "title": "Bokmål"
                 },
-                "nn": {
+                "nn":{
                   "type": "string",
                   "title": "Nynorsk"
                 },
-                "en": {
+                "en":{
                   "type": "string",
                   "title": "English"
                 }
@@ -660,21 +543,14 @@
               "additionalProperties": true
             },
             "width": {
-              "type": "string",
+              "type":"string",
               "title": "Image width",
               "examples": ["100%"]
             },
             "align": {
-              "type": "string",
+              "type":"string",
               "title": "Align image",
-              "enum": [
-                "flex-start",
-                "center",
-                "flex-end",
-                "space-between",
-                "space-around",
-                "space-evenly"
-              ]
+              "enum": ["flex-start", "center", "flex-end", "space-between", "space-around", "space-evenly"]
             }
           }
         }
@@ -698,7 +574,7 @@
           "type": "string",
           "title": "Align input",
           "description": "The alignment for Input field (eg. right aligning a series of numbers)",
-          "enum": ["left", "center", "right"]
+          "enum": [ "left", "center", "right"]
         }
       }
     }
