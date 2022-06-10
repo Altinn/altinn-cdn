@@ -105,7 +105,8 @@
             "orgnr": "974760983",
             "homepage": "https://www.dsb.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "fd": {
