@@ -419,8 +419,14 @@
         },
         "openByDefault": {
           "title": "Open by default",
-          "description": "Boolean value indicating if group should be opened to add a new item by default when no items exist.",
-          "type": "boolean"
+          "description": "Boolean or string indicating if group should be opened by default. If no items exist: 'first', 'last', and true adds a new item. If items are prefilled: 'first' and true opens the first item, and 'last' opens the last item in the group.",
+          "oneOf": [
+            { "type": "boolean" },
+            {
+              "type": "string",
+              "enum": ["first", "last"]
+            }
+          ]
         }
       }
     },
