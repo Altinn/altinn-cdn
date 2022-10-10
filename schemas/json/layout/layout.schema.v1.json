@@ -421,6 +421,11 @@
           "title": "Open by default",
           "description": "Boolean value indicating if group should be opened to add a new item by default when no items exist.",
           "type": "boolean"
+        },
+        "saveAndNextButton": {
+          "title": "Save and open next button",
+          "description": "Boolean value indicating whether save and go to next button should be shown or not in addition to save and close button in edit mode of repeating group item.",
+          "type": "boolean"
         }
       }
     },
