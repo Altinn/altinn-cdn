@@ -246,6 +246,19 @@
                 "tt02"
             ]
         },
+        "nkom": {
+            "name": {
+                "en": "The Norwegian Communications Authority",
+                "nb": "Nasjonal kommunikasjonsmyndighet",
+                "nn": "Nasjonal kommunikasjonsmyndighet"
+            },
+            "logo": "https://altinncdn.no/orgs/nkom/nkom.png",
+            "orgnr": "974446871",
+            "homepage": "https://www.nkom.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "nkr": {
             "name": {
                 "en": "Arts Council Norway",
