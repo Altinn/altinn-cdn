@@ -133,7 +133,8 @@
             "orgnr": "985847215",
             "homepage": "https://www.gjenopptakelse.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "hdir": {
@@ -173,7 +174,8 @@
             "orgnr": "997005562",
             "homepage": "https://helse-mr.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "krt": {
