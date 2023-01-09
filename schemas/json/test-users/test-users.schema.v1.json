@@ -1,5 +1,5 @@
 {
-    "$id": "https://altinncdn.no/schema/json/test-users/test-users.schema.v1.json",
+    "$id": "https://altinncdn.no/schemas/json/test-users/test-users.schema.v1.json",
     "type": "object",
     "properties": {
       "$schema": { "type": "string" },
@@ -182,5 +182,4 @@
     },
     "required": ["Persons", "Orgs"],
     "additionalProperties": false
-  }
-  
+}
