@@ -12,7 +12,8 @@
               "type": "integer"
             },
             "ssn": {
-              "type": "string"
+              "type": "string",
+              "description": "Empty string is interpreted as self-identified"
             },
             "firstName": {
               "type": "string"
