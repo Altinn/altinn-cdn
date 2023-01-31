@@ -1,0 +1,36 @@
+name: Deploy files to staging cdn
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    name: Deply files to staging cdn
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Copy files to tmp folder
+      run: |
+        rm -rf /tmp/cdn
+        mkdir /tmp/cdn
+        rsync . -rv --exclude-from=.cdnignore --exclude-from=.gitignore /tmp/cdn
+    - name: Copy files
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.44.1
+        inlineScript: |
+          cd /tmp/cdn
+          az storage copy -s altinn-apps -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }} --recursive
+          az storage copy -s config -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }} --recursive
+          az storage copy -s fonts -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }} --recursive
+          az storage copy -s img -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }} --recursive
+          az storage copy -s orgs -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }} --recursive
+          az storage copy -s schemas -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }} --recursive
+          az storage copy -s toolkits -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }} --recursive
+          az storage copy -s robots.txt -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn/robots.txt${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }}
+          az storage copy -s favicon.ico -d https://${{ secrets.STAGING_STORAGEACCOUNT_NAME }}.blob.core.windows.net/altinn-cdn/favicon.ico${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }}
+    - name: Cleanup after copy files
+      run: |
+        rm -rf /tmp/cdn
