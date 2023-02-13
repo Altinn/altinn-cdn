@@ -1,0 +1,50 @@
+[
+  {
+    "appsUrl": "https://:org.apps.at05.altinn.cloud",
+    "platformUrl": "https://platform.at05.altinn.cloud",
+    "name": "at05",
+    "type": "test"
+  },
+  {
+    "appsUrl": "https://:org.apps.at21.altinn.cloud",
+    "platformUrl": "https://platform.at21.altinn.cloud",
+    "name": "at21",
+    "type": "test"
+  },
+  {
+    "appsUrl": "https://:org.apps.at22.altinn.cloud",
+    "platformUrl": "https://platform.at22.altinn.cloud",
+    "name": "at22",
+    "type": "test"
+  },
+  {
+    "appsUrl": "https://:org.apps.at23.altinn.cloud",
+    "platformUrl": "https://platform.at23.altinn.cloud",
+    "name": "at23",
+    "type": "test"
+  },
+  {
+    "appsUrl": "https://:org.apps.at24.altinn.cloud",
+    "platformUrl": "https://platform.at24.altinn.cloud",
+    "name": "at24",
+    "type": "test"
+  },
+  {
+    "appsUrl": "https://:org.apps.yt01.altinn.cloud",
+    "platformUrl": "https://platform.yt01.altinn.cloud",
+    "name": "yt01",
+    "type": "test"
+  },
+  {
+    "appsUrl": "https://:org.apps.tt02.altinn.no",
+    "platformUrl": "https://platform.tt02.altinn.no",
+    "name": "tt02",
+    "type": "test"
+  },
+  {
+    "appsUrl": "https://:org.apps.altinn.no",
+    "platformUrl": "https://platform.altinn.no",
+    "name": "production",
+    "type": "production"
+  }
+]
