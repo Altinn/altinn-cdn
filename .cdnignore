@@ -4,7 +4,9 @@ schemas/json/layout/
 schemas/json/component/
 
 ## Ignore github specific files
+.git/
 .github/
 .gitignore
+.cdnignore
 CNAME
 README.md
