@@ -43,11 +43,10 @@ rm -rf $TMP_DIR
 mkdir $TMP_DIR
 rsync $PATH_TO_SOURCE -rv --exclude-from=.cdnignore --exclude-from=.gitignore $TMP_DIR
 
-AZURE_TARGET_URI="https://${AZURE_STORAGE_ACCOUNT_NAME}.blob.core.windows.net/altinn-cdn"
-
 if [[ -z "$AZURE_STORAGE_ACCOUNT_NAME" ]]; then
     echo "Skipping publish to azure cdn. As --azure-sa-name flag not defined"
 else 
+    AZURE_TARGET_URI="https://${AZURE_STORAGE_ACCOUNT_NAME}.blob.core.windows.net/altinn-cdn"
     cd $TMP_DIR
     AZCOPY_OPTS=( --put-md5 --compare-hash=MD5 --delete-destination=true )
     if [[ "$SYNC_AZURE_CDN" == "no" ]]; then
