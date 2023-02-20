@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Run release script
       run: |
-        bash .github/scripts/release.sh
+        bash .github/scripts/release.sh \
           --source . \
           --azure-sync-cdn \
           --azure-sa-name "${{ secrets.STAGING_STORAGEACCOUNT_NAME }}" \
