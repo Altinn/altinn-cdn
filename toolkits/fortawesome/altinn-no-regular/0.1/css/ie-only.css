@@ -528,6 +528,26 @@
       content: '\f050';
   }
 
+  .reg-request:before {
+      content: '\f051';
+  }
+
+  .reg-link:before {
+      content: '\f055';
+  }
+
+  .reg-screen:before {
+      content: '\f056';
+  }
+
+  .reg-help-outline:before {
+      content: '\f057';
+  }
+
+  .reg-help-filled:before {
+      content: '\f058';
+  }
+
 
 .sr-only {
     position: absolute;

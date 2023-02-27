@@ -70,15 +70,16 @@
         },
         "dihe": {
             "name": {
-                "en": "Digital Helgeland c/o Brønnøy municipality",
-                "nb": "Digitale Helgeland v/Brønnøy kommune",
-                "nn": "Digitale Helgeland v/Brønnøy kommune"
+                "en": "Digital Helgeland ",
+                "nb": "Digitale Helgeland",
+                "nn": "Digitale Helgeland"
             },
             "logo": "",
             "orgnr": "964983291",
             "homepage": "https://digihelgeland.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "dmf": {
@@ -94,6 +95,20 @@
                 "tt02"
             ]
         },
+        "dsb": {
+            "name": {
+                "en": "The Norwegian Directorate for Civil Protection",
+                "nb": "Direktoratet for samfunnssikkerhet og beredskap",
+                "nn": "Direktoratet for samfunnssikkerhet og beredskap"
+            },
+            "logo": "https://altinncdn.no/orgs/dsb/dsb.png",
+            "orgnr": "974760983",
+            "homepage": "https://www.dsb.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
         "fd": {
             "name": {
                 "en": "The Norwegian Directorate of Fisheries",
@@ -104,7 +119,8 @@
             "orgnr": "971203420",
             "homepage": "https://www.fiskeridir.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "gk": {
@@ -117,7 +133,8 @@
             "orgnr": "985847215",
             "homepage": "https://www.gjenopptakelse.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "hdir": {
@@ -133,6 +150,20 @@
                 "tt02"
             ]
         },
+        "hi": {
+            "name": {
+                "en": "Institute of Marine Research",
+                "nb": "Havforskningsinstituttet",
+                "nn": "Havforskningsinstituttet"
+            },
+            "logo": "https://altinncdn.no/orgs/hi/havforskningsinstituttet.png",
+            "orgnr": "971349077",
+            "homepage": "https://www.hi.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
         "hmrhf": {
             "name": {
                 "en": "Helse Møre og Romsdal",
@@ -143,7 +174,8 @@
             "orgnr": "997005562",
             "homepage": "https://helse-mr.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "krt": {
@@ -156,7 +188,8 @@
             "orgnr": "840747972",
             "homepage": "https://www.finanstilsynet.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "kv": {
@@ -198,6 +231,32 @@
             "environments": [
                 "tt02",
                 "production"
+            ]
+        },
+        "nhn": {
+            "name": {
+                "en": "Norwegian Healthnet",
+                "nb": "Norsk helsenett",
+                "nn": "Norsk helsenett"
+            },
+            "logo": "https://altinncdn.no/orgs/nhn/nhn.png",
+            "orgnr": "994598759",
+            "homepage": "https://www.nhn.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
+        "nkom": {
+            "name": {
+                "en": "The Norwegian Communications Authority",
+                "nb": "Nasjonal kommunikasjonsmyndighet",
+                "nn": "Nasjonal kommunikasjonsmyndighet"
+            },
+            "logo": "https://altinncdn.no/orgs/nkom/nkom.png",
+            "orgnr": "974446871",
+            "homepage": "https://www.nkom.no/",
+            "environments": [
+                "tt02"
             ]
         },
         "nkr": {
@@ -252,6 +311,19 @@
                 "tt02"
             ]
         },
+        "oko": {
+            "name": {
+                "en": "National Authority for Investigation and Prosecution of Economic and Environmental Crime",
+                "nb": "Økokrim",
+                "nn": "Økokrim"
+            },
+            "logo": "https://altinncdn.no/orgs/oko/oko.png",
+            "orgnr": "874761532",
+            "homepage": "https://www.okokrim.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "pat": {
             "name": {
                 "en": "Norwegian Industrial Property Office",
@@ -261,6 +333,19 @@
             "logo": "https://altinncdn.no/orgs/pat/pat.png",
             "orgnr": "971526157",
             "homepage": "https://www.patentstyret.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
+        "sfd": {
+            "name": {
+                "en": "Norwegian Maritime Authority",
+                "nb": "Sjøfartsdirektoratet",
+                "nn": "Sjøfartsdirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/sfd/sfd.png",
+            "orgnr": "974761262",
+            "homepage": "https://www.sdir.no",
             "environments": [
                 "tt02"
             ]
@@ -290,7 +375,8 @@
             "orgnr": "986186999",
             "homepage": "https://www.sivilrett.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "ssb": {
@@ -330,6 +416,20 @@
             "logo": "https://altinncdn.no/orgs/svv/svv.png",
             "orgnr": "971032081",
             "homepage": "https://vegvesen.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
+        "tad": {
+            "name": {
+                "en": "Norwegian Customs",
+                "nb": "Tolletaten",
+                "nn": "Tolletaten"
+            },
+            "logo": "https://altinncdn.no/orgs/tad/tad.png",
+            "orgnr": "880455702",
+            "homepage": "https://www.toll.no/",
             "environments": [
                 "tt02"
             ]
@@ -377,7 +477,8 @@
             "orgnr": "970018131",
             "homepage": "https://www.udir.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "valg": {

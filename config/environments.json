@@ -1,6 +1,15 @@
 {
   "environments": [
     {
+      "platformUrl": "https://platform.at05.altinn.cloud",
+      "hostname": "at05.altinn.cloud",
+      "appPrefix": "apps",
+      "platformPrefix": "platform",
+      "name": "at05",
+      "type": "test"
+    },
+    {
+      "platformUrl": "https://platform.at21.altinn.cloud",
       "hostname": "at21.altinn.cloud",
       "appPrefix": "apps",
       "platformPrefix": "platform",
@@ -8,6 +17,7 @@
       "type": "test"
     },
     {
+      "platformUrl": "https://platform.at22.altinn.cloud",
       "hostname": "at22.altinn.cloud",
       "appPrefix": "apps",
       "platformPrefix": "platform",
@@ -15,6 +25,7 @@
       "type": "test"
     },
     {
+      "platformUrl": "https://platform.at23.altinn.cloud",
       "hostname": "at23.altinn.cloud",
       "appPrefix": "apps",
       "platformPrefix": "platform",
@@ -22,6 +33,7 @@
       "type": "test"
     },
     {
+      "platformUrl": "https://platform.at24.altinn.cloud",
       "hostname": "at24.altinn.cloud",
       "appPrefix": "apps",
       "platformPrefix": "platform",
@@ -29,6 +41,7 @@
       "type": "test"
     },
     {
+      "platformUrl": "https://platform.yt01.altinn.cloud",
       "hostname": "yt01.altinn.cloud",
       "appPrefix": "apps",
       "platformPrefix": "platform",
@@ -36,6 +49,7 @@
       "type": "test"
     },
     {
+      "platformUrl": "https://platform.tt02.altinn.no",
       "hostname": "tt02.altinn.no",
       "appPrefix": "apps",
       "platformPrefix": "platform",
@@ -43,6 +57,7 @@
       "type": "test"
     },
     {
+      "platformUrl": "https://platform.altinn.no",
       "hostname": "altinn.no",
       "appPrefix": "apps",
       "platformPrefix": "platform",
