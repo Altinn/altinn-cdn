@@ -206,6 +206,19 @@
                 "production"
             ]
         },
+        "mat":{
+            "name": {
+                "en": "Norwegian Food Safety Authority",
+                "nb": "Mattilsynet",
+                "nn": "Mattilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/mat/mat.png",
+            "orgnr": "985399077",
+            "homepage": "https://www.mattilsynet.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "mdir": {
             "name": {
                 "en": "Norwegian Environment Agency",
