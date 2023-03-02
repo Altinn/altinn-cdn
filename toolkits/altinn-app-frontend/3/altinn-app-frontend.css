@@ -894,6 +894,10 @@ input.form-control:focus:not(.a-hasButton) {
   margin-top: 1.5rem;
 }
 
+.XSqpiyhUitFEb9FMnqfg {
+  padding: 2px 4px;
+}
+
 .multipleSelect .multipleSelect__control {
   border-radius: 0;
   border-width: 2px;
@@ -976,6 +980,11 @@ input.form-control:focus:not(.a-hasButton) {
 
 .multipleSelect .multipleSelect__option--is-focused {
   background-color: var(--colors-primary-200);
+}
+
+.i4UiV0nZwVKZIhhdV_zK {
+  display: flex;
+  flex-direction: row;
 }
 
 .iu4b4FoSLkWf1rwPfj5D {
