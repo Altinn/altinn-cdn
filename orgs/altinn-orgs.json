@@ -123,6 +123,19 @@
                 "production"
             ]
         },
+        "fors": {
+            "name": {
+                "en": "The Norwegian Armed Forces",
+                "nb": "Forsvaret",
+                "nn": "Forsvaret"
+            },
+            "logo": "https://altinncdn.no/orgs/fors/fors.png",
+            "orgnr": "986105174",
+            "homepage": "https://www.forsvaret.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "gk": {
             "name": {
                 "en": "The Criminal Cases Review Commission",
@@ -206,7 +219,7 @@
                 "production"
             ]
         },
-        "mat":{
+        "mat": {
             "name": {
                 "en": "Norwegian Food Safety Authority",
                 "nb": "Mattilsynet",
@@ -308,7 +321,7 @@
             "orgnr": "984936923",
             "homepage": "https://www.npe.no",
             "environments": [
-               "tt02"
+                "tt02"
             ]
         },
         "nsm": {
