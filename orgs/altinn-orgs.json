@@ -123,15 +123,15 @@
                 "production"
             ]
         },
-        "fors":{
-            "name":{
+        "fors": {
+            "name": {
                 "en": "The Norwegian Armed Forces",
-                "nb":"Forsvaret",
+                "nb": "Forsvaret",
                 "nn": "Forsvaret"
             },
-            "logo":"https://altinncdn.no/orgs/fors/fors.png",
-            "orgnr":"986105174",
-            "homepage":"https://www.forsvaret.no/",
+            "logo": "https://altinncdn.no/orgs/fors/fors.png",
+            "orgnr": "986105174",
+            "homepage": "https://www.forsvaret.no/",
             "environments": [
                 "tt02"
             ]
@@ -219,7 +219,7 @@
                 "production"
             ]
         },
-        "mat":{
+        "mat": {
             "name": {
                 "en": "Norwegian Food Safety Authority",
                 "nb": "Mattilsynet",
@@ -321,7 +321,7 @@
             "orgnr": "984936923",
             "homepage": "https://www.npe.no",
             "environments": [
-               "tt02"
+                "tt02"
             ]
         },
         "nsm": {
