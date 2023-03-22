@@ -1069,6 +1069,21 @@ button.QYdBXkNlwMq4m0sA0CIl {
   }
 }
 
+.CQ7SGlh0Az0hzWgZtZjt {
+  padding-top: 12px;
+}
+
+.olj42hYuYGZ2d4G_hXAE {
+  white-space: normal;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(0, 143, 214);
+  padding-left: 12px;
+}
+
+.FaQraoDskLAi1ayO8q2E {
+  padding: 4px 12px;
+}
+
 .multipleSelect .multipleSelect__control {
   border-radius: 0;
   border-width: 2px;
@@ -1653,18 +1668,6 @@ fieldset {
   padding: 0;
   margin: 0;
   border: 0;
-}
-
-legend {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-  margin-bottom: 0.3125rem;
-  font-size: 0.937rem;
-  line-height: inherit;
-  color: inherit;
-  white-space: normal;
 }
 
 progress {
@@ -24842,7 +24845,7 @@ option {
   margin-bottom: 0;
 }
 
-.a-form-label.title-label .label-optional {
+.label-optional {
   font-size: 0.875rem;
   font-weight: 400;
   color: #6a6a6a;
