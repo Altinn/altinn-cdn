@@ -1,14 +1,6 @@
 {
   "environments": [
     {
-      "platformUrl": "https://platform.at05.altinn.cloud",
-      "hostname": "at05.altinn.cloud",
-      "appPrefix": "apps",
-      "platformPrefix": "platform",
-      "name": "at05",
-      "type": "test"
-    },
-    {
       "platformUrl": "https://platform.at21.altinn.cloud",
       "hostname": "at21.altinn.cloud",
       "appPrefix": "apps",
