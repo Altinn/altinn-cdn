@@ -1126,13 +1126,32 @@ input.form-control:focus:not(.a-hasButton) {
 }
 
 .vfTUVTvHKsLJE9h4_hgk {
+  --cell-max-number-of-lines: 2;
+  --cell-text-alignment: left;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
   word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--cell-max-number-of-lines);
+  line-clamp: var(--cell-max-number-of-lines);
+  text-align: var(--cell-text-alignment);
+}
+
+.gnmmb6rhCcsQXvgialmT {
+  --cell-width: auto;
+  width: var(--cell-width);
+}
+
+/* The width here should be: calc(var(--cell-width) + var(--modal-padding-x) - var(--table-input-margin));
+   Adding 8.15% is a workaround for calc not working with both percentages and pixels inside a cell element.
+*/
+.gnmmb6rhCcsQXvgialmT:first-child {
+  width: calc(var(--cell-width) + 8.15%);
+}
+
+.gnmmb6rhCcsQXvgialmT:last-child {
+  width: calc(var(--cell-width) + 8.15%);
 }
 
 .YmiRm8EANJc2y8ehH6X0 {
@@ -1581,27 +1600,6 @@ button._JzvmnyM7C9AcBL9uM78 {
   border-radius: 3px;
 }
 
-.upkzRBY0HeMN43EFqVYJ {
-  display: none;
-}
-
-.AiDzqlN5cCEFwiJOJGBV {
-  min-width: 200px;
-}
-
-@media only screen and (min-width: 768px) {
-  .tylht9c4ycz86BuoAxOs {
-    display: none;
-  }
-  .upkzRBY0HeMN43EFqVYJ {
-    display: initial;
-  }
-}
-
-.L94YGptjyUWfZr7FTaZZ {
-  display: none;
-}
-
 @media print {
   .BeNPOqtWPGogZw1NdOdQ {
     display: contents;
@@ -1641,21 +1639,174 @@ button._JzvmnyM7C9AcBL9uM78 {
 }
 
 .EYKzXT6aAN5HahZzklsL {
-  padding: 8px 16px;
+  height: calc(100% - 10px);
+  width: 100%;
 }
 
-.cyP5q5USnoy0WFcXBRAs {
+.y5iSaItiafyjQDd_J1RC > button {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 10001;
+}
+
+.MEfcBrsKJod824Z5mTN_ {
+  height: 100%;
+  width: 100%;
+}
+
+.MEfcBrsKJod824Z5mTN_ > div {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 8px;
+  flex-direction: column;
 }
 
-.g2SX6CJUG3gJSU9q52TA {
+.MEfcBrsKJod824Z5mTN_ [role='tabpanel'] {
+  min-height: 0;
+  flex: 1;
+  margin: 0;
+}
+
+.k1gWjEMDJPzfgH0KiAhB {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 12px;
+  padding: 12px;
+}
+
+.upkzRBY0HeMN43EFqVYJ {
+  display: none;
+}
+
+.AiDzqlN5cCEFwiJOJGBV {
+  min-width: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tylht9c4ycz86BuoAxOs {
+    display: none;
+  }
+  .upkzRBY0HeMN43EFqVYJ {
+    display: initial;
+  }
+}
+
+.L94YGptjyUWfZr7FTaZZ {
+  display: none;
+}
+
+.gstaoybCcDetk7GPlSwo {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.poFzroI0aasYS9iEbLqw {
+  padding: 0 6px;
+  display: table;
+  width: 100%;
+}
+
+.livwtPrtJM3B0eqvnYmc {
+  display: table-row;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+.livwtPrtJM3B0eqvnYmc span {
+  display: table-cell;
+  cursor: default;
+}
+
+.livwtPrtJM3B0eqvnYmc:hover {
+  background-color: #ccc;
+}
+
+.NiUlCOXAhe6bMfU2_twn {
+  width: 1px;
+  font-weight: bold;
+}
+
+.zASOGSRoaUQFlFyCX4FT {
+  padding-left: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 0;
+}
+
+.MgTnffXtbYs5Ld7ggSQ1 {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.MgTnffXtbYs5Ld7ggSQ1 > textarea {
+  font-family: monospace;
+  line-height: 1.2;
+  background: transparent;
+  flex: 1;
+  resize: none;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+}
+
+.nX6H_gOvPiECwhBvydtS h3 {
+  font-size: 1rem;
+}
+
+.nX6H_gOvPiECwhBvydtS button {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  z-index: 10001;
+}
+
+.Ycy_14PhV4V5THy8n4wP {
+  color: red;
+}
+
+.KI8EkMiEwgSOn_OxGLjQ {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.Y6BnH69rtTWS9b1EwKdK {
+  min-height: 0;
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+.MMCIJ9SDKXWrUUOk_XfX {
+  align-self: stretch;
+  min-width: 8px;
+  min-height: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.LZ_WvwDPYdvtx92tAdr0 {
+  background-color: #666;
+  align-self: stretch;
+  min-width: 2px;
+  min-height: 2px;
+}
+
+.MMCIJ9SDKXWrUUOk_XfX:hover .LZ_WvwDPYdvtx92tAdr0 {
+  background-color: #333;
 }
 
 @charset "UTF-8";
@@ -1846,21 +1997,12 @@ svg {
   vertical-align: middle;
 }
 
-table {
-  border-collapse: collapse;
-}
-
 caption {
   padding-top: 0.469rem;
   padding-bottom: 0.469rem;
   color: #bcc7cc;
   text-align: left;
   caption-side: bottom;
-}
-
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
 }
 
 label,
@@ -3557,29 +3699,6 @@ mark,
     margin-left: 91.6666666667%;
   }
 }
-.table {
-  width: 100%;
-  margin-bottom: 12px;
-  color: #212529;
-}
-.table th,
-.table td {
-  padding: 0.469rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-}
-.table tbody + tbody {
-  border-top: 2px solid #dee2e6;
-}
-
-.table-sm th,
-.table-sm td {
-  padding: 0.187rem;
-}
 
 .table-bordered {
   border: 1px solid #dee2e6;
@@ -3781,17 +3900,6 @@ mark,
 .table-hover .table-active:hover > td,
 .table-hover .table-active:hover > th {
   background-color: rgba(0, 0, 0, 0.075);
-}
-
-.table .thead-dark th {
-  color: #ffffff;
-  background-color: #343a40;
-  border-color: #454d55;
-}
-.table .thead-light th {
-  color: #495057;
-  background-color: #e9ecef;
-  border-color: #dee2e6;
 }
 
 .table-dark {
@@ -17537,23 +17645,6 @@ h1 + .a-helpIconButton {
 }
 .a-fullWidthLink.a-fullWidthLink--underline span:hover {
   border-bottom: 2px solid #0062ba;
-}
-
-table {
-  font-family: 'Altinn-DIN';
-  font-weight: 'normal';
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-table th {
-  font-family: 'Altinn-DIN';
-  font-weight: 'medium';
-}
-table th,
-table td {
-  padding-right: 24px;
 }
 
 .a-table thead th {
