@@ -51,7 +51,8 @@
             "orgnr": "974760223",
             "homepage": "https://dibk.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "digdir": {
