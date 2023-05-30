@@ -1,0 +1,20 @@
+name: Deploy files to staging cdn
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    name: Deply files to staging cdn
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run release script
+      run: |
+        bash .github/scripts/release.sh \
+          --source . \
+          --azure-sync-cdn \
+          --azure-sa-name "${{ secrets.STAGING_STORAGEACCOUNT_NAME }}" \
+          --azure-sa-token "${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }}"

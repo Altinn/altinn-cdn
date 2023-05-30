@@ -1,6 +1,6 @@
 {
   "$id": "https://altinncdn.no/schemas/json/layout/expression.schema.v1.json",
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Expression",
   "description": "Multi-purpose expression mini-language used to declare dynamic behaviour in Altinn 3 apps",
   "examples": [
@@ -54,7 +54,9 @@
       "oneOf": [
         { "type": "null", "title": "Null/missing value" },
         { "$ref": "#/definitions/strict-string" },
-        { "$ref": "#/definitions/func-if" }
+        { "$ref": "#/definitions/func-if" },
+        { "$ref": "#/definitions/strict-number", "description": "Numbers can be cast to strings" },
+        { "$ref": "#/definitions/strict-boolean", "description": "Booleans can be cast to strings" }
       ]
     },
     "strict-string": {
@@ -73,7 +75,9 @@
       "oneOf": [
         { "type": "null", "title": "Null/missing value" },
         { "$ref": "#/definitions/strict-boolean" },
-        { "$ref": "#/definitions/func-if" }
+        { "$ref": "#/definitions/func-if" },
+        { "$ref": "#/definitions/strict-string", "description": "Stringy true/false/0/1 can be cast to boolean" },
+        { "$ref": "#/definitions/strict-number", "description": "Numeric 0/1 can be cast to boolean" }
       ]
     },
     "strict-boolean": {
@@ -86,8 +90,10 @@
         { "$ref": "#/definitions/func-greaterThanEq" },
         { "$ref": "#/definitions/func-lessThan" },
         { "$ref": "#/definitions/func-lessThanEq" },
+        { "$ref": "#/definitions/func-not" },
         { "$ref": "#/definitions/func-and" },
-        { "$ref": "#/definitions/func-or" }
+        { "$ref": "#/definitions/func-or" },
+        { "$ref": "#/definitions/func-authContext" }
       ]
     },
     "number": {
@@ -95,20 +101,14 @@
       "oneOf": [
         { "type": "null", "title": "Null/missing value" },
         { "$ref": "#/definitions/strict-number" },
-        { "$ref": "#/definitions/func-if" }
+        { "$ref": "#/definitions/func-if" },
+        { "$ref": "#/definitions/strict-string", "description": "Numeric strings can be cast to numbers" }
       ]
     },
     "strict-number": {
       "title": "Any expression returning a number (strict)",
       "oneOf": [
         { "type": "number", "title": "Numeric constant" }
-      ]
-    },
-    "string-or-number": {
-      "title": "Any expression returning a string or number",
-      "oneOf": [
-        { "$ref": "#/definitions/string" },
-        { "$ref": "#/definitions/number" }
       ]
     },
     "func-if": {
@@ -169,6 +169,16 @@
       ],
       "additionalItems": false
     },
+    "func-authContext": {
+      "title": "Auth context lookup function",
+      "description": "This function can be used to check the users permissions on the current process step.",
+      "type": "array",
+      "items": [
+        { "const":  "authContext" },
+        { "enum": ["read", "write", "instantiate", "confirm", "sign", "reject"] }
+      ],
+      "additionalItems": false
+    },
     "func-frontendSettings": {
       "title": "Frontend settings lookup function",
       "description": "This function can be used to lookup a value from frontendSettings (only supports scalar values, no objects or arrays)",
@@ -186,7 +196,7 @@
       "items": [
         { "const":  "concat" }
       ],
-      "additionalItems": { "$ref": "#/definitions/string-or-number" }
+      "additionalItems": { "$ref": "#/definitions/string" }
     },
     "func-equals": {
       "title": "Equals function",
@@ -210,14 +220,24 @@
       ],
       "additionalItems": false
     },
+    "func-not": {
+      "title": "Not function",
+      "description": "This function inverts a boolean, returning true if given false, and vice versa.",
+      "type": "array",
+      "items": [
+        { "const":  "not" },
+        { "$ref": "#/definitions/boolean" }
+      ],
+      "additionalItems": false
+    },
     "func-greaterThan": {
       "title": "Greater than function",
       "description": "This function compares two values (or expressions), returning true if the first argument is greater than the second",
       "type": "array",
       "items": [
         { "const":  "greaterThan" },
-        { "$ref": "#/definitions/string-or-number" },
-        { "$ref": "#/definitions/string-or-number" }
+        { "$ref": "#/definitions/number" },
+        { "$ref": "#/definitions/number" }
       ],
       "additionalItems": false
     },
@@ -227,8 +247,8 @@
       "type": "array",
       "items": [
         { "const":  "greaterThanEq" },
-        { "$ref": "#/definitions/string-or-number" },
-        { "$ref": "#/definitions/string-or-number" }
+        { "$ref": "#/definitions/number" },
+        { "$ref": "#/definitions/number" }
       ],
       "additionalItems": false
     },
@@ -238,8 +258,8 @@
       "type": "array",
       "items": [
         { "const":  "lessThan" },
-        { "$ref": "#/definitions/string-or-number" },
-        { "$ref": "#/definitions/string-or-number" }
+        { "$ref": "#/definitions/number" },
+        { "$ref": "#/definitions/number" }
       ],
       "additionalItems": false
     },
@@ -249,8 +269,8 @@
       "type": "array",
       "items": [
         { "const":  "lessThanEq" },
-        { "$ref": "#/definitions/string-or-number" },
-        { "$ref": "#/definitions/string-or-number" }
+        { "$ref": "#/definitions/number" },
+        { "$ref": "#/definitions/number" }
       ],
       "additionalItems": false
     },
