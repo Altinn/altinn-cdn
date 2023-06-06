@@ -361,7 +361,8 @@
             "orgnr": "971526157",
             "homepage": "https://www.patentstyret.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "sfd": {
