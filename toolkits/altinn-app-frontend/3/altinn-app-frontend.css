@@ -676,18 +676,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background-color: var(--colors-red-200);
 }
 
-.WICecnxz8cXwU1RmjRt9 {
-  margin-left: calc(var(--modal-padding-x) * -1);
-  margin-right: calc(var(--modal-padding-x) * -1);
-  width: calc(100% + 2 * var(--modal-padding-x));
-}
+@media only screen {
+  .WICecnxz8cXwU1RmjRt9 {
+    margin-left: calc(var(--modal-padding-x) * -1);
+    margin-right: calc(var(--modal-padding-x) * -1);
+    width: calc(100% + 2 * var(--modal-padding-x));
+  }
 
-.M29ACENDbtT1efpROOiw {
-  margin-bottom: calc(var(--modal-padding-y) * -1);
-}
+  .M29ACENDbtT1efpROOiw {
+    margin-bottom: calc(var(--modal-padding-y) * -1);
+  }
 
-.RxK_qAqu4RXxazvx9Hfg {
-  margin-top: calc(var(--modal-padding-y) * -1);
+  .RxK_qAqu4RXxazvx9Hfg {
+    margin-top: calc(var(--modal-padding-y) * -1);
+  }
 }
 
 .W0VcoqgZa845rNZqCwpb {
@@ -1000,95 +1002,47 @@ input.form-control:focus:not(.a-hasButton) {
   filter: invert(11%) sepia(34%) saturate(4590%) hue-rotate(188deg) brightness(96%) contrast(98%);
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.file-upload-text-bold {
-  font-weight: bold;
-  font-size: 1rem;
-  margin-bottom: 0.375rem;
-}
-
-.file-upload-text-bold-small {
-  font-weight: bold;
-  font-size: 0.75rem;
-  margin-bottom: 0;
-}
-
-.file-upload-text {
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-.file-upload-invalid:focus {
-  border-style: solid !important;
-  outline-color: #e23b53 !important;
-  border-color: #e23b53 !important;
-}
-
-.file-upload:hover {
-  border-style: solid !important;
-}
-
-.file-upload:focus {
-  border-color: #0062ba !important;
-  border-style: solid !important;
-  outline: 2px solid #0062ba;
-  outline-offset: 0px;
-}
-
-.blue-underline {
+.JfnzjKq8fATcXJrhLSSz {
   border-bottom: 2px solid #1eadf7;
 }
 
-.blue-underline-dotted {
+.fB81y3soRpSCownr4lI9 {
   border-bottom: 1px dotted #1eadf7;
 }
 
-.file-upload-table > thead > tr > th {
+.upZ0wkS5W33ODr2Hq5LH > tbody > tr > td {
+  padding: 10px 4px 10px 6px;
+}
+.upZ0wkS5W33ODr2Hq5LH > thead > tr > th {
   font-size: 0.875rem;
-  font-weight: 500 !important;
+  padding: 4px 4px 4px 6px;
 }
 
-.file-upload-table > tbody > tr > td {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.file-upload-table > tbody > tr > td:last-child > div {
-  cursor: pointer;
+.eeWozqPzVHDX992D8eT5 {
   float: right;
   padding-right: 0;
 }
 
-.file-upload-table > tbody > tr > td:last-child {
-  padding-right: 0;
-  width: 15%;
-}
-
-.file-upload-table > tbody > tr > td:first-child {
+.upZ0wkS5W33ODr2Hq5LH > tbody > tr > td:first-child {
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.file-upload-table > thead > tr > th:first-child {
-  width: 40%;
-}
-
-.file-upload-table {
+.upZ0wkS5W33ODr2Hq5LH {
   width: 100%;
   margin-top: 1.5rem;
   border-spacing: 0 0.75rem;
   table-layout: fixed;
+  box-shadow: none;
 }
 
-.file-upload-table > tbody {
-  font-weight: 500 !important;
-  font-size: 0.75rem;
+.BLdxNTB1drQYFVTrPqe8 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
-.file-upload-button {
+.NxQS7gqS5tRzbUjcVAGe {
   cursor: pointer;
   background: 0;
   font-size: 1rem;
@@ -1097,6 +1051,89 @@ input.form-control:focus:not(.a-hasButton) {
   border-top: 0;
   padding: 0;
   margin-top: 1.5rem;
+}
+
+.JYtq2nsdj7N2te9vn8yd {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  float: right;
+}
+
+.aVeCzaGYMZJCxgEaXyuc {
+  display: flex;
+  text-overflow: ellipsis;
+  gap: 5px;
+}
+.PBj2F81fAuma5gFC5ctV {
+  color: #0062ba;
+}
+
+.TzntQIGa9nmtM43wxGE3 {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.gL8hqho7MA2Ue31SSLfC {
+  display: flex;
+  padding: 0;
+}
+
+.E7vb7QWhUExfDS7rO_ny {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.UvJQVcyQpONamICc3tFq {
+  white-space: nowrap;
+}
+
+.WvOT0Ue7nxNWTWTHCBLP {
+  font-size: 3rem !important;
+  margin-bottom: 15px;
+}
+
+.AK_xZFzk7OfQ7sg8kQz9 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.QTsrHP4RfSbZTtpe2lTO {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.375rem;
+}
+.fv9p8y4f0TAgbax2z_gC {
+  border-bottom: 2px solid #1eadf7 !important;
+}
+
+.AWhZABaunsDoCnkmQz6u {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+.x2a3mqRMMklBJCZNvYDZ {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.ObLXbHQNHvDx_I2NPeyu:focus {
+  border-style: solid !important;
+  outline-color: #e23b53 !important;
+  border-color: #e23b53 !important;
+}
+
+.RJwCKaIBDqA2qFIM01NY:hover {
+  border-style: solid !important;
+}
+
+.RJwCKaIBDqA2qFIM01NY:focus {
+  border-color: #0062ba !important;
+  border-style: solid !important;
+  outline: 2px solid #0062ba;
+  outline-offset: 0px;
 }
 
 .iBDEQbZOeZlEhzpkKXQB {
@@ -1141,10 +1178,6 @@ input.form-control:focus:not(.a-hasButton) {
   outline: 2px solid #0062ba !important;
 }
 
-.PKi0reP6J52i992HVshH {
-  display: inline-block !important;
-}
-
 .Xjt0mbKPT5apDslBw51T {
   word-break: break-word;
   text-overflow: ellipsis;
@@ -1155,6 +1188,7 @@ input.form-control:focus:not(.a-hasButton) {
   table-layout: fixed;
   margin-top: 1.5rem;
   margin-bottom: 12px;
+  box-shadow: none;
 }
 
 .ZV2Mz2z7WC8tr49YbkF8 {
@@ -1210,25 +1244,25 @@ input.form-control:focus:not(.a-hasButton) {
 }
 
 .qeisI6YCqZKkrJuhgpVS tr td {
-  padding: 4px 4px 4px 6px;
-  font-size: 0.75rem;
+  padding: 10px 4px 10px 6px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   font-family: 'Altinn-DIN', sans-serif;
   font-weight: 400;
+  font-size: 1rem;
   border-bottom: 1px dotted var(--border-color-primary);
   color: #000;
 }
+.YLemJQndLabpki0lidab {
+  float: right;
+  padding-right: 0;
+}
 
-.QGOrrrnmKjU0TpdJc3j6 {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  color: #000;
-  font-weight: 500 !important;
-  font-size: 0.875rem;
-  min-width: 0px;
+.WvGmdOQJZmH7jzo3bfYL {
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .g_PmREk_KEy4din_ZNYW,
@@ -1272,6 +1306,30 @@ tr > .L7FIJvmH015dQRkyIWd5 {
 
 .yoexw_xJQin7JicQA3De:last-child {
   width: calc(var(--cell-width) + 8.15%);
+}
+
+.gb0Cmb3379DXKU0vpAzz {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.D_j9FRj42IcZcJkfXkxq {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.RTDpJ2of3iSL6nISqnn4 {
+  padding-bottom: 38px !important;
+}
+
+.lna8Dk0n3uvFiSGb7X62 {
+  border-left: 2px solid #949494;
+  margin-left: 12px !important;
+  margin-bottom: 12px !important;
+  margin-top: 12px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .Ffxk0Fcmrj4YSj_Caac9 {
@@ -1659,7 +1717,7 @@ button.y4UmmIbnEW7UgIrUBFbS {
 }
 
 button._JzvmnyM7C9AcBL9uM78 {
-  margin-top: calc(var(--semantic-tab_focus-outline-offset) + var(--semantic-tab_focus-outline-width));
+  margin-top: calc(2 * var(--fds-focus-border-width));
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1697,6 +1755,13 @@ button._JzvmnyM7C9AcBL9uM78 {
   justify-self: center;
 }
 
+/* Focus utility class */
+.Gys4aYYdnZnsqITChQri:focus-within {
+  outline: var(--fds-focus-border-width) solid var(--fds-outer-focus-border-color);
+  outline-offset: var(--fds-focus-border-width);
+  box-shadow: 0 0 0 var(--fds-focus-border-width) var(--fds-inner-focus-border-color);
+}
+
 /*
   The use of !important in this file is to override old design system global css,
   Remove when the old global css is gone
@@ -1706,6 +1771,7 @@ button._JzvmnyM7C9AcBL9uM78 {
   color: var(--semantic-surface-action-default) !important;
   border: none !important; /* Override old design-system global css, remove when possible */
   border-radius: var(--interactive_components-border_radius-normal);
+  padding: 4px;
 }
 
 .Rw6Tny_A5zhxj4VG6CsD:hover {
@@ -1714,11 +1780,6 @@ button._JzvmnyM7C9AcBL9uM78 {
 
 .Rw6Tny_A5zhxj4VG6CsD:active {
   color: var(--semantic-surface-action-active) !important;
-}
-
-.Rw6Tny_A5zhxj4VG6CsD:focus-visible {
-  outline: var(--semantic-tab_focus-outline-color) solid var(--semantic-tab_focus-outline-width);
-  outline-offset: var(--semantic-tab_focus-outline-offset);
 }
 
 /* Override old design-system global css, remove when possible */
@@ -24770,7 +24831,6 @@ a.a-overflow-dropdown:hover {
   .a-breadcrumb,
   .a-footer,
   .nav,
-  .form-group,
   button,
   .a-linkFeatured,
   .a-btn,
@@ -25435,6 +25495,11 @@ a.a-overflow-dropdown:hover {
   --repeating-group-edit-divider-color: var(--colors-blue-200);
   --repeating-group-error-color: var(--colors-red-200);
 
+  /* Focus styles */
+  --fds-inner-focus-border-color: #1e2b3c;
+  --fds-outer-focus-border-color: #fadf4b;
+  --fds-focus-border-width: 3px;
+
   /*Border styles*/
   --border-color-primary: #008fd6;
   --dashed-border-primary: 1px dashed var(--border-color-primary);
@@ -25463,6 +25528,13 @@ a.a-overflow-dropdown:hover {
     --page-max-width: 1056px;
     --page-padding-x: 0;
   }
+}
+
+/* TODO: remove when https://github.com/digdir/designsystem/issues/497 is resolved 
+ * This is a workaround to avoid the dropdown list from being hidden behind the dev tools panel
+ */
+* {
+  --option_list-z_index: 10002 !important;
 }
 
 /* Custom CSS for all app */
