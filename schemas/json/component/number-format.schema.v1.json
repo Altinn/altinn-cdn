@@ -125,18 +125,36 @@
     },
     {
       "properties": {
-        "allowedDecimalSeparators": false,
+        "allowedDecimalSeparators": {
+          "type": "boolean",
+          "default": false
+        },
         "allowEmptyFormatting": {
           "title": "Allow empty formatting",
           "description": "Apply formatting to empty inputs",
           "type": "boolean",
           "default": false
         },
-        "allowLeadingZeros": false,
-        "allowNegative": false,
-        "decimalScale": false,
-        "decimalSeparator": false,
-        "fixedDecimalScale": false,
+        "allowLeadingZeros": {
+          "type": "boolean",
+          "default": false
+        },
+        "allowNegative": {
+          "type": "boolean",
+          "default": false
+        },
+        "decimalScale": {
+          "type": "boolean",
+          "default": false
+        },
+        "decimalSeparator": {
+          "type": "boolean",
+          "default": false
+        },
+        "fixedDecimalScale": {
+          "type": "boolean",
+          "default": false
+        },
         "format": {
           "title": "Format",
           "description": "Format given as hash string, to allow number input in place of hash.",
@@ -156,9 +174,18 @@
           ],
           "default": " "
         },
-        "prefix": false,
-        "suffix": false,
-        "thousandSeparator": false
+        "prefix": {
+          "type": "boolean",
+          "default": false
+        },
+        "suffix": {
+          "type": "boolean",
+          "default": false
+        },
+        "thousandSeparator": {
+          "type": "boolean",
+          "default": false
+        }
       },
       "if": {
         "anyOf": [
