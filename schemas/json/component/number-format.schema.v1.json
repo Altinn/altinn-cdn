@@ -63,8 +63,14 @@
           "type": "boolean",
           "default": false
         },
-        "format": false,
-        "mask": false,
+        "format": {
+          "type": "boolean",
+          "default": false
+        },
+        "mask": {
+          "type": "boolean",
+          "default": false
+        },
         "prefix": {
           "title": "Prefix",
           "description": "Add a prefix before the number",
