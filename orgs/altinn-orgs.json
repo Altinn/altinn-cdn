@@ -124,6 +124,19 @@
                 "production"
             ]
         },
+        "fmfa": {
+            "name": {
+                "en": "County Governor",
+                "nb": "Statsforvalterens fellestjenester",
+                "nn": "Statsforvaltarens fellestjenester"
+            },
+            "logo": "https://altinncdn.no/orgs/fmfa/fellestjenester.png",
+            "orgnr": "921627009",
+            "homepage": "https://www.statsforvalteren.no/staf/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "fors": {
             "name": {
                 "en": "The Norwegian Armed Forces",
