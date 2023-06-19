@@ -1,5 +1,5 @@
 {
-    "$id": "https://altinncdn.no/schemas/json/component/common-defs.schema.v1.json",
+    "$id": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Common definitions",
     "description": "Schema that contains common definitions used by components",
