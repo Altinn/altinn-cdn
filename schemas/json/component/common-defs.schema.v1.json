@@ -1,0 +1,195 @@
+{
+    "$id": "https://altinncdn.no/schemas/json/component/common-defs.schema.v1.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Common definitions",
+    "description": "Schema that contains common definitions used by components",
+    "type": "object",
+    "$defs": {
+        "id": {
+            "type": "string",
+            "title": "id",
+            "pattern": "^[0-9a-zA-Z][0-9a-zA-Z-]*(-?[a-zA-Z]+|[a-zA-Z][0-9]+|-[0-9]{6,})$",
+            "description": "The component ID. Must be unique within all layouts/pages in a layout-set. Cannot end with <dash><number>."
+        },
+        "hidden": {
+            "title": "Hidden",
+            "description": "Boolean value or expression indicating if the component should be hidden. Defaults to false.",
+            "default": false,
+            "$ref": "expression.schema.v1.json#/$defs/boolean"
+        },
+        "renderAsSummary": {
+            "title": "Render as summary",
+            "description": "Boolean or expression indicating if the component should be rendered as a summary. Defaults to false.",
+            "default": false,
+            "$ref": "expression.schema.v1.json#/$defs/boolean"
+        },
+        "required": {
+            "title": "Required",
+            "description": "Boolean or expression indicating if the component is required when filling in the form. Defaults to false.",
+            "default": false,
+            "$ref": "expression.schema.v1.json#/$defs/boolean"
+        },
+        "readOnly": {
+            "title": "Read only",
+            "description": "Boolean or expression indicating if the component should be presented as read only. Defaults to false.",
+            "default": false,
+            "$ref": "expression.schema.v1.json#/$defs/boolean"
+        },
+        "basicTextResources": {
+            "type": "object",
+            "properties": {
+                "textResourceBindings": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "help": {
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "title"
+                    ]
+                }
+            }
+        },
+        "basicDataModelBindings": {
+            "type": "object",
+            "properties": {
+                "simpleBinding": {
+                    "type": "string",
+                    "title": "Simple binding",
+                    "description": "Data model binding for components connection to a single field in the data model"
+                }
+            },
+            "required": [
+                "simpleBinding"
+            ]
+        },
+        "gridProps": {
+            "properties": {
+                "xs": {
+                    "$ref": "#/$defs/gridValue",
+                    "title": "xs",
+                    "description": "Grid breakpoint at 0px"
+                },
+                "sm": {
+                    "$ref": "#/$defs/gridValue",
+                    "title": "sm",
+                    "description": "Grid breakpoint at 600px"
+                },
+                "md": {
+                    "$ref": "#/$defs/gridValue",
+                    "title": "md",
+                    "description": "Grid breakpoint at 960px"
+                },
+                "lg": {
+                    "$ref": "#/$defs/gridValue",
+                    "title": "lg",
+                    "description": "Grid breakpoint at 1280px"
+                },
+                "xl": {
+                    "$ref": "#/$defs/gridValue",
+                    "title": "xl",
+                    "description": "Grid breakpoint at 1920px"
+                }
+            }
+        },
+        "gridSettings": {
+            "allOf": [
+                {
+                    "$ref": "#/$defs/gridProps"
+                }
+            ],
+            "properties": {
+                "labelGrid": {
+                    "title": "labelGrid",
+                    "description": "Optional grid for the component label. Used in combination with innerGrid to align labels on the side.",
+                    "examples": [
+                        {
+                            "xs": 12
+                        }
+                    ],
+                    "$ref": "#/$defs/gridProps"
+                },
+                "innerGrid": {
+                    "title": "innerGrid",
+                    "description": "Optional grid for inner component content like input field or dropdown. Used to avoid inner content filling the component width.",
+                    "examples": [
+                        {
+                            "xs": 12
+                        }
+                    ],
+                    "$ref": "#/$defs/gridProps"
+                }
+            }
+        },
+        "gridValue": {
+            "type": "integer",
+            "maximum": 12,
+            "minimum": 1,
+            "examples": [
+                12
+            ]
+        },
+        "labelSettings": {
+            "type": "object",
+            "title": "Label settings",
+            "description": "A collection of settings for how the component label should be rendered.",
+            "properties": {
+                "optionalIndicator": {
+                    "type": "boolean",
+                    "title": "Optional indicator",
+                    "description": "Controls whether the text that is indicating that a field is optional should be displayed.",
+                    "default": true
+                }
+            }
+        },
+        "pageBreak": {
+            "type": "object",
+            "properties": {
+                "breakBefore": {
+                    "title": "Page break before",
+                    "description": "PDF only: Value or expression indicating whether a page break should be added before the component. Can be either: 'auto' (default), 'always', or 'avoid'.",
+                    "examples": [
+                        "auto",
+                        "always",
+                        "avoid"
+                    ],
+                    "default": "auto",
+                    "$ref": "expression.schema.v1.json#/$defs/string"
+                },
+                "breakAfter": {
+                    "title": "Page break after",
+                    "description": "PDF only: Value or expression indicating whether a page break should be added after the component. Can be either: 'auto' (default), 'always', or 'avoid'.",
+                    "examples": [
+                        "auto",
+                        "always",
+                        "avoid"
+                    ],
+                    "default": "auto",
+                    "$ref": "expression.schema.v1.json#/$defs/string"
+                }
+            }
+        },
+        "triggers": {
+            "title": "Triggers",
+            "description": "An array of actions that should be triggered when data connected to this component changes.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "validation",
+                    "validateRow",
+                    "validatePage",
+                    "validateAllPages",
+                    "calculatePageOrder"
+                ]
+            }
+        }
+    }
+}
