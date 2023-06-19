@@ -1,0 +1,50 @@
+{
+    "$id": "https://altinncdn.no/schemas/json/layout/layout.schema.v1.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Altinn layout",
+    "description": "Schema that describes the layout configuration for Altinn applications.",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "data": {
+            "$ref": "#/$defs/data"
+        }
+    },
+    "$defs": {
+        "data": {
+            "title": "The layout data",
+            "description": "Contains data describing the layout configuration.",
+            "type": "object",
+            "properties": {
+                "layout": {
+                    "$ref": "#/$defs/layout"
+                }
+            }
+        },
+        "layout": {
+            "title": "The layout",
+            "description": "Array of components to be presented in the layout.",
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/component"
+            }
+        },
+        "component": {
+            "type": "object",
+            "oneOf": [
+                {
+                    "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/input-component.schema.v1.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/header-component.schema.v1.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/textArea-component.schema.v1.json"
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/iframe-component.schema.v1.json"
+                }
+            ]
+        }
+    }
+}

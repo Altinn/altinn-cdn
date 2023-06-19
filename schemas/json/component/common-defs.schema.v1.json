@@ -190,6 +190,19 @@
                     "calculatePageOrder"
                 ]
             }
+        },
+        "saveWhileTyping": {
+            "title": "Automatic saving while typing",
+            "description": "Boolean or number. True = feature on (default), false = feature off (saves on focus blur), number = timeout in milliseconds (400 by default)",
+            "default": true,
+            "oneOf": [
+                {
+                    "type": "boolean"
+                },
+                {
+                    "type": "number"
+                }
+            ]
         }
     }
 }
