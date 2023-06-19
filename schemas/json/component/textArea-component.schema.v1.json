@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "id": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/id"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/id"
         },
         "type": {
             "type": "string",
@@ -15,37 +15,37 @@
             "const": "TextArea"
         },
         "dataModelBindings": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/basicDataModelBindings"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/basicDataModelBindings"
         },
         "required": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/required"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/required"
         },
         "readOnly": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/readOnly"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/readOnly"
         },
         "textResourceBindings": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/basicTextResources"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/basicTextResources"
         },
         "triggers": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/triggers"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/triggers"
         },
         "grid": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/gridSettings"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/gridSettings"
         },
         "labelSettings": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/labelSettings"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/labelSettings"
         },
         "pageBreak": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/pageBreak"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/pageBreak"
         },
         "hidden": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/hidden"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/hidden"
         },
         "renderAsSummary": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/renderAsSummary"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/renderAsSummary"
         },
         "saveWhileTyping": {
-            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v2.json#/$defs/saveWhileTyping"
+            "$ref": "https://raw.githubusercontent.com/Altinn/altinn-cdn/poc/update-layout-schema/schemas/json/component/common-defs.schema.v1.json#/$defs/saveWhileTyping"
         },
         "autocomplete": {
             "title": "HTML attribute: autocomplete",
