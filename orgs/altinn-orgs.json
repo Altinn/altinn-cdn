@@ -361,6 +361,7 @@
             "orgnr": "977161630",
             "homepage": "https://www.regjeringen.no/no/dep/oed/",
             "environments": [
+                "tt02"
             ]
         },
         "oko": {
