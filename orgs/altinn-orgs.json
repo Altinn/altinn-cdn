@@ -243,7 +243,8 @@
             "orgnr": "985399077",
             "homepage": "https://www.mattilsynet.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "mdir": {
