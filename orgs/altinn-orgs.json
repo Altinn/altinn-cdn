@@ -233,6 +233,19 @@
                 "production"
             ]
         },
+        "lt":{
+            "name": {
+                "en": "Civil Aviation Authority of Norway",
+                "nb": "Luftfartstilsynet",
+                "nn": "Luftfartstilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/lt/lt.png",
+            "orgnr": "981105516",
+            "homepage": "https://luftfartstilsynet.no",
+            "environments": [
+                "tt02"
+            ]
+        },
         "mat": {
             "name": {
                 "en": "Norwegian Food Safety Authority",
