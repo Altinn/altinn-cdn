@@ -1776,8 +1776,25 @@ tr > .L7FIJvmH015dQRkyIWd5 {
 }
 
 .BHaP79uSJ8B41mSIBhxQ {
-  max-height: 32px;
   width: 100%;
+}
+
+.KSajfpADIsF2_Szodtdw {
+  height: 32px;
+}
+
+.XKD2bHcWOJ4PyxXD2oM5 {
+  height: 50px;
+}
+
+.F6IooJAFkBl3zthdqafl {
+  height: 50px;
+}
+
+@media only screen and (min-width: 576px) {
+  .F6IooJAFkBl3zthdqafl {
+    height: 123px;
+  }
 }
 
 .CFouAxdTfOlXFpMNnPvb {
