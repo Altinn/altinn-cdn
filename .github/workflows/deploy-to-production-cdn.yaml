@@ -1,4 +1,4 @@
-name: Deploy files to staging cdn
+name: Deploy files to production cdn
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: Deply files to staging cdn
+    name: Deply files to production cdn
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -16,5 +16,5 @@ jobs:
         bash .github/scripts/release.sh \
           --source . \
           --azure-sync-cdn \
-          --azure-sa-name "${{ secrets.STAGING_STORAGEACCOUNT_NAME }}" \
-          --azure-sa-token "${{ secrets.STAGING_ALTINN_CDN_SAS_TOKEN }}"
+          --azure-sa-name "${{ secrets.PRODUCTION_STORAGEACCOUNT_NAME }}" \
+          --azure-sa-token "${{ secrets.PRODUCTION_ALTINN_CDN_SAS_TOKEN }}"
