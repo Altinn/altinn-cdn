@@ -1,4 +1,4 @@
-name: Deploy files to staging cdn
+name: Deploy files to production cdn
 
 on:
   push:
