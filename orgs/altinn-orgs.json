@@ -310,7 +310,8 @@
             "orgnr": "974446871",
             "homepage": "https://www.nkom.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nkr": {
