@@ -192,6 +192,19 @@
                 "production"
             ]
         },
+        "k1103": {
+            "name": {
+                "en": "The municipality of Stavanger",
+                "nb": "Stavanger kommune",
+                "nn": "Stavanger kommune"
+            },
+            "logo": "https://altinncdn.no/orgs/k1103/k1103.png",
+            "orgnr": "964965226",
+            "homepage": "https://www.stavanger.kommune.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "krt": {
             "name": {
                 "en": "The Financial Supervisory Authorization of Norway",
