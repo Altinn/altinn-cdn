@@ -530,6 +530,19 @@
                 "tt02"
             ]
         },
+        "tra": {
+            "name": {
+                "en": "The Supervisory Council for Legal Practice",
+                "nb": "Tilsynsrådet for advokatvirksomhet",
+                "nn": "Tilsynsrådet for advokatverksemd"
+            },
+            "logo": "https://altinncdn.no/orgs/tra/tra.png",
+            "orgnr": "914459265",
+            "homepage": "https://tilsynet.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "ttd": {
             "name": {
                 "en": "Test Ministry",
