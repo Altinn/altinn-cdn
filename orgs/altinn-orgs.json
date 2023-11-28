@@ -124,6 +124,20 @@
                 "production"
             ]
         },
+        "fhi":{
+            "name": {
+                "en": "The Norwegian Institute of Public Health",
+                "nb": "Folkehelseinstituttet",
+                "nn": "Folkehelseinstituttet"
+            },
+            "logo": "https://altinncdn.no/orgs/fhi/fhi.png",
+            "orgnr": "983744516",
+            "homepage": "https://www.fhi.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
         "fors": {
             "name": {
                 "en": "The Norwegian Armed Forces",
