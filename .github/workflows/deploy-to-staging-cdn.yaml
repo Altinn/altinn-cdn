@@ -10,7 +10,7 @@ jobs:
     name: Deply files to staging cdn
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Run release script
       run: |
         bash .github/scripts/release.sh \

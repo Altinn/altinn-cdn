@@ -1,0 +1,15 @@
+{
+  "$schema": "news.schema.json",
+  "news": [
+    {
+      "date": "2023-12-11",
+      "title": "Mer kompakt sidevisning i skjemabyggeren",
+      "content": "Nå har vi oppdatert sidevisningen i skjemabyggeren til å bli mer kompakt! Dra-og-slipp og valg av komponent for å konfigurere fungerer akkurat som før."
+    },
+    {
+      "date": "2023-10-20",
+      "title": "Ny oversikts-side",
+      "content": "Nå har vi fått en ny oversiktsside i Altinn Studio. Her kan du navigere deg videre rundt i Studio, finne lenker til dokumentasjon, og se status på tjenesten i de forskjellige miljøene. Feltene som tidligere ble vist på denne siden finner du under \"Innstillinger\"-menyen til venstre i toppmenyen."
+    }
+  ]
+}
