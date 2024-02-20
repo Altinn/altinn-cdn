@@ -173,6 +173,28 @@ and limitations under the License.
  * @license MIT
  */
 
+/**
+ * react-virtual
+ *
+ * Copyright (c) TanStack
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * virtual-core
+ *
+ * Copyright (c) TanStack
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
 /** @license Material-UI v4.12.4
  *
  * This source code is licensed under the MIT license found in the

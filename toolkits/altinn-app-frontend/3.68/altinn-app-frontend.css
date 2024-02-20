@@ -1365,11 +1365,47 @@ tr.gBhee2ch3eiT84MoiDVg td {
 }
 
 tr > .kkNuqjtobbSBKjHP3Awv {
-  padding-left: calc(var(--modal-padding-x) - var(--table-input-margin));
+  padding-left: var(--modal-padding-x);
 }
 
 tr > .L7FIJvmH015dQRkyIWd5 {
-  padding-right: calc(var(--modal-padding-x) - var(--table-input-margin));
+  padding-right: var(--modal-padding-x);
+}
+
+.AV0vmIv7yF5_a6c7LAcw {
+  width: 100%;
+}
+
+/* ====
+TODO(1779): Remove these styles after going through all the different Table styles in
+Altinn, and making sure they are consistent. */
+
+.AV0vmIv7yF5_a6c7LAcw {
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.12),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 992px) {
+  .AV0vmIv7yF5_a6c7LAcw {
+    border-top: 1px solid #dde3e5;
+  }
+}
+.AV0vmIv7yF5_a6c7LAcw th {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dde3e5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.AV0vmIv7yF5_a6c7LAcw td {
+  border-bottom: 1px solid #dde3e5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* ==== */
+
+.AV0vmIv7yF5_a6c7LAcw tr:hover {
+  background-color: unset;
 }
 
 .hexz6YXOCTR8pwB3ioVM {
@@ -1390,15 +1426,12 @@ tr > .L7FIJvmH015dQRkyIWd5 {
   width: var(--cell-width);
 }
 
-/* The width here should be: calc(var(--cell-width) + var(--modal-padding-x) - var(--table-input-margin));
-   Adding 8.15% is a workaround for calc not working with both percentages and pixels inside a cell element.
-*/
 .yoexw_xJQin7JicQA3De:first-child {
-  width: calc(var(--cell-width) + 8.15%);
+  width: calc(var(--cell-width) + var(--modal-padding-x));
 }
 
 .yoexw_xJQin7JicQA3De:last-child {
-  width: calc(var(--cell-width) + 8.15%);
+  width: calc(var(--cell-width) + var(--modal-padding-x));
 }
 
 .A90VzSnvZgZSDQCWVvW0,
@@ -1453,18 +1486,75 @@ tr > .L7FIJvmH015dQRkyIWd5 {
 
 .Ffxk0Fcmrj4YSj_Caac9 > table > tbody > tr > td:first-child,
 .Ffxk0Fcmrj4YSj_Caac9 > table > thead > tr > th:first-child {
-  padding-left: calc(var(--modal-padding-x) - var(--table-input-margin));
+  padding-left: var(--modal-padding-x);
 }
 
 .Ffxk0Fcmrj4YSj_Caac9 > table > tbody > tr > td:last-child,
 .Ffxk0Fcmrj4YSj_Caac9 > table > thead > tr > th:last-child {
-  padding-right: calc(var(--modal-padding-x) - var(--table-input-margin));
+  padding-right: var(--modal-padding-x);
 }
 
 .XU5QOh3ZRJrHlze7_ePb {
-  overflow-x: auto;
   margin: 0 0 15px 0;
   width: 100%;
+}
+
+.p9t4pChg5EWL1Mtimd2j {
+  width: 100%;
+}
+
+/* ====
+TODO(1779): Remove these styles after going through all the different Table styles in
+Altinn, and making sure they are consistent. */
+
+.p9t4pChg5EWL1Mtimd2j {
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.12),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 992px) {
+  .p9t4pChg5EWL1Mtimd2j {
+    border-top: 1px solid #dde3e5;
+  }
+}
+.p9t4pChg5EWL1Mtimd2j > thead > tr > th {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dde3e5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.p9t4pChg5EWL1Mtimd2j > thead > tr > td {
+  border-bottom: 1px solid #dde3e5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* ==== */
+
+.p9t4pChg5EWL1Mtimd2j tr:hover {
+  background-color: unset;
+}
+
+.VeaQZuyq7NzNeutFQZbN {
+  background-color: var(--fds-semantic-surface-neutral-default);
+}
+
+.VeaQZuyq7NzNeutFQZbN th {
+  /*background-color: var(--fds-semantic-surface-action-second-subtle);*/
+  background-color: #f5f5f5; /* Remove this and uncomment the line above when adjusting the new table component*/
+}
+
+.VeaQZuyq7NzNeutFQZbN thead:not(:first-of-type) th {
+  /*border-top: 2px solid var(--fds-semantic-border-divider-default);*/
+  border-top: 1px solid #dde3e5; /* Remove this and uncomment the line above when adjusting the new table component*/
+}
+
+.VeaQZuyq7NzNeutFQZbN thead:not(:first-of-type) th:first-of-type {
+  border-top-left-radius: 0 !important;
+}
+
+.VeaQZuyq7NzNeutFQZbN thead:not(:first-of-type) th:last-of-type {
+  border-top-right-radius: 0 !important;
 }
 
 .t9jMjgqQM3T1RvzwXEoy {
@@ -1482,6 +1572,10 @@ tr > .L7FIJvmH015dQRkyIWd5 {
 
 .KyM54k3OeQKHxZr__Ebz {
   border-top: 2px dotted var(--repeating-group-edit-border-color);
+  background-color: var(--repeating-group-edit-surface-color);
+}
+
+tr.KyM54k3OeQKHxZr__Ebz:hover {
   background-color: var(--repeating-group-edit-surface-color);
 }
 
@@ -1535,15 +1629,12 @@ tr > .L7FIJvmH015dQRkyIWd5 {
   width: var(--cell-width);
 }
 
-/* The width here should be: calc(var(--cell-width) + var(--modal-padding-x) - var(--table-input-margin));
-   Adding 8.15% is a workaround for calc not working with both percentages and pixels inside a cell element.
-*/
 .gnmmb6rhCcsQXvgialmT:first-child {
-  width: calc(var(--cell-width) + 8.15%);
+  width: calc(var(--cell-width) + var(--modal-padding-x));
 }
 
 .gnmmb6rhCcsQXvgialmT:last-child {
-  width: calc(var(--cell-width) + 8.15%);
+  width: calc(var(--cell-width) + var(--modal-padding-x));
 }
 
 .YmiRm8EANJc2y8ehH6X0 {
@@ -1610,29 +1701,50 @@ tr > .L7FIJvmH015dQRkyIWd5 {
   padding-top: 12px;
 }
 
+.olj42hYuYGZ2d4G_hXAE {
+  background-color: var(--fds-semantic-surface-action-second-subtle);
+}
+
 .oYrhm9SyPY54K6T5NcRo {
   display: block;
   width: 100%;
   padding: 12px;
 }
 
-.TQssnOix32CYgpyC2F18 {
-  text-align: center !important; /* remove important after https://github.com/Altinn/app-frontend-react/pull/1330*/
+.jPlNt0BEIKIRN5ozXfQ2 {
+  width: 100%;
 }
 
-.rckjX_jwRVWf0f9BGxgf {
-  border-top: 1px solid #dde3e5;
+/* ====
+TODO(1779): Remove these styles after going through all the different Table styles in
+Altinn, and making sure they are consistent. */
+.jPlNt0BEIKIRN5ozXfQ2 {
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.12),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.jPlNt0BEIKIRN5ozXfQ2 th {
+  background-color: #f5f5f5;
   border-bottom: 1px solid #dde3e5;
-  background-color: transparent !important; /* remove important after https://github.com/Altinn/app-frontend-react/pull/1330*/
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.FaQraoDskLAi1ayO8q2E {
-  padding: 4px 12px;
+.jPlNt0BEIKIRN5ozXfQ2 tr:not(:last-of-type) td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dde3e5;
 }
 
-.nDvbQUgJ_yK1yUMI7fAN:hover {
+.jPlNt0BEIKIRN5ozXfQ2 tr:last-of-type td {
+  border-bottom: none;
+}
+
+.jPlNt0BEIKIRN5ozXfQ2 tr:hover {
   background-color: #e3f7ff;
 }
+/* ==== */
 
 .Vi7GBmIm2gcQS_XQG66Z > div {
   --panel-x-padding: var(--modal-padding-x);
@@ -2039,9 +2151,41 @@ tr > .L7FIJvmH015dQRkyIWd5 {
   padding: 0;
 }
 
-.aj8sHAdurOYgiU6D6Q1g {
-  padding: 4px 36px 4px 4px;
+.RcOtLwbDcvez9GNmrHW9 {
+  width: 100%;
 }
+
+.RcOtLwbDcvez9GNmrHW9 tr:hover {
+  background-color: unset;
+}
+
+/* ====
+TODO(1779): Remove these styles after going through all the different Table styles in
+Altinn, and making sure they are consistent. */
+
+.RcOtLwbDcvez9GNmrHW9 {
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.12),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 992px) {
+  .RcOtLwbDcvez9GNmrHW9 {
+    border-top: 1px solid #dde3e5;
+  }
+}
+.RcOtLwbDcvez9GNmrHW9 th {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #dde3e5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.RcOtLwbDcvez9GNmrHW9 td {
+  border-bottom: 1px solid #dde3e5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* ==== */
 
 .HzO3lXkuP1UmVXq6TM04 {
   display: flex;
@@ -2062,7 +2206,15 @@ tr > .L7FIJvmH015dQRkyIWd5 {
 
 .hqV5pK4TRMmb7wEKJZRI {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.foFgb871kQ7G0XstsyMb {
+  background-color: var(--fds-semantic-surface-action-second-subtle);
+}
+tr.foFgb871kQ7G0XstsyMb:hover {
+  background-color: var(--fds-semantic-background-subtle);
 }
 
 .gDSaNkkbCH0_LwHQGzbD {
