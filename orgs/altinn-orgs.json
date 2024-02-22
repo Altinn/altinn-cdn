@@ -457,7 +457,8 @@
             "orgnr": "974762501",
             "homepage": "https://www.statsforvalteren.no/nb/vestfold-og-telemark/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },        
         "skd": {
