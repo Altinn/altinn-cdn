@@ -1705,6 +1705,11 @@ tr.KyM54k3OeQKHxZr__Ebz:hover {
   background-color: var(--fds-semantic-surface-action-second-subtle);
 }
 
+.vukJOxTdXSAPS7bRbO10:not(:first-of-type) {
+  width: 100px;
+  text-align: center;
+}
+
 .oYrhm9SyPY54K6T5NcRo {
   display: block;
   width: 100%;
@@ -1715,13 +1720,22 @@ tr.KyM54k3OeQKHxZr__Ebz:hover {
   width: 100%;
 }
 
+.txxipBddFk_V4yDPYncL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txxipBddFk_V4yDPYncL label {
+  margin: 0;
+  gap: 0;
+}
+
 /* ====
 TODO(1779): Remove these styles after going through all the different Table styles in
 Altinn, and making sure they are consistent. */
 .jPlNt0BEIKIRN5ozXfQ2 {
-  box-shadow:
-    0 1px 1px rgba(0, 0, 0, 0.12),
-    0 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .jPlNt0BEIKIRN5ozXfQ2 th {
@@ -1934,6 +1948,10 @@ Altinn, and making sure they are consistent. */
 
 .fWWk7yRHzQHHRfEq6eUM {
   padding: var(--modal-padding-y) var(--modal-padding-x);
+}
+
+._O7v00GqLBCQXgCxtTAQ:focus-visible {
+  outline: none;
 }
 
 .iu4b4FoSLkWf1rwPfj5D {
