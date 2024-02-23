@@ -1065,7 +1065,7 @@
               ]
             },
             "dataModelBindings": {
-              "$ref": "#/definitions/IDataModelBindingsSimple"
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
             },
             "layout": {
               "$ref": "#/definitions/LayoutStyle"
@@ -1379,7 +1379,7 @@
               ]
             },
             "dataModelBindings": {
-              "$ref": "#/definitions/IDataModelBindingsSimple"
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
             }
           },
           "required": [
@@ -2307,7 +2307,7 @@
               ]
             },
             "dataModelBindings": {
-              "$ref": "#/definitions/IDataModelBindingsSimple"
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
             },
             "layout": {
               "$ref": "#/definitions/LayoutStyle"
@@ -2695,7 +2695,7 @@
               ]
             },
             "dataModelBindings": {
-              "$ref": "#/definitions/IDataModelBindingsSimple"
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
             }
           },
           "required": [
@@ -3046,7 +3046,7 @@
               ]
             },
             "dataModelBindings": {
-              "$ref": "#/definitions/IDataModelBindingsSimple"
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
             },
             "layout": {
               "$ref": "#/definitions/LayoutStyle"
@@ -4126,6 +4126,23 @@
       },
       "required": [
         "list"
+      ],
+      "additionalProperties": false
+    },
+    "IDataModelBindingsOptionsSimple": {
+      "title": "IDataModelBindingsOptionsSimple",
+      "type": "object",
+      "properties": {
+        "simpleBinding": {
+          "type": "string"
+        },
+        "metadata": {
+          "description": "Describes the location where metadata for the option based component should be stored in the datamodel.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "simpleBinding"
       ],
       "additionalProperties": false
     },

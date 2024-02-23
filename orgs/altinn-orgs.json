@@ -221,7 +221,7 @@
         },
         "krt": {
             "name": {
-                "en": "The Financial Supervisory Authorization of Norway",
+                "en": "The Financial Supervisory Authority of Norway",
                 "nb": "Finanstilsynet",
                 "nn": "Finanstilsynet"
             },
@@ -457,7 +457,8 @@
             "orgnr": "974762501",
             "homepage": "https://www.statsforvalteren.no/nb/vestfold-og-telemark/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },        
         "skd": {

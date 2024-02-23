@@ -2,6 +2,11 @@
   "$schema": "news.schema.json",
   "news": [
     {
+      "date": "2024-01-16",
+      "title": "Prosessvisning",
+      "content": "Nå er prosess-siden tilgjengelig i BETA! I første omgang blir det mulig å se prosessen sin. Når versjon 8 av støttebibliotekene til applikasjonene er publisert kan de som oppgrader til disse også få mulighet til å redigere prosessen. Nye detaljer og redigeringsmuligheter publiseres fortløpende."
+    },
+    {
       "date": "2023-12-11",
       "title": "Mer kompakt sidevisning i skjemabyggeren",
       "content": "Nå har vi oppdatert sidevisningen i skjemabyggeren til å bli mer kompakt! Dra-og-slipp og valg av komponent for å konfigurere fungerer akkurat som før."
