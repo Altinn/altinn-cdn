@@ -93,7 +93,8 @@
             "orgnr": "974760282",
             "homepage": "https://dirmin.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "dsb": {
