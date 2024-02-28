@@ -207,6 +207,19 @@
                 "production"
             ]
         },
+        "indi": {
+            "name": {
+                "en": "Indigo IKT IKS",
+                "nb": "Indigo IKT IKS",
+                "nn": "Indigo IKT IKS"
+            },
+            "logo": "https://altinncdn.no/orgs/indi/indi.png",
+            "orgnr": "930283487",
+            "homepage": "https://www.indigo-ikt.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "k1103": {
             "name": {
                 "en": "The municipality of Stavanger",
