@@ -3557,6 +3557,9 @@
                 "type": "string"
               }
             },
+            "showValidations": {
+              "$ref": "#/definitions/AllowedValidationMasks"
+            },
             "validateOnSaveRow": {
               "$ref": "#/definitions/AllowedValidationMasks"
             },
@@ -3636,6 +3639,7 @@
             "textResourceBindings": true,
             "dataModelBindings": true,
             "children": true,
+            "showValidations": true,
             "validateOnSaveRow": true,
             "edit": true,
             "maxCount": true,

@@ -1,0 +1,5637 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://altinncdn.no/schemas/json/layout/layout.schema.v1.json",
+  "$ref": "#/definitions/ILayoutFile",
+  "definitions": {
+    "AnyComponent": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Type",
+          "description": "The component type",
+          "enum": [
+            "Accordion",
+            "AccordionGroup",
+            "ActionButton",
+            "Address",
+            "Alert",
+            "AttachmentList",
+            "Button",
+            "ButtonGroup",
+            "Checkboxes",
+            "Custom",
+            "CustomButton",
+            "Datepicker",
+            "Dropdown",
+            "FileUpload",
+            "FileUploadWithTag",
+            "Grid",
+            "Group",
+            "Header",
+            "IFrame",
+            "Image",
+            "Input",
+            "InstanceInformation",
+            "InstantiationButton",
+            "Likert",
+            "LikertItem",
+            "Link",
+            "List",
+            "Map",
+            "MultipleSelect",
+            "NavigationBar",
+            "NavigationButtons",
+            "Panel",
+            "Paragraph",
+            "PrintButton",
+            "RadioButtons",
+            "RepeatingGroup",
+            "Summary",
+            "TextArea"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Accordion"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompAccordion"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "AccordionGroup"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompAccordionGroup"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "ActionButton"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompActionButton"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Address"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompAddress"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Alert"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompAlert"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "AttachmentList"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompAttachmentList"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Button"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompButton"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "ButtonGroup"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompButtonGroup"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Checkboxes"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompCheckboxes"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Custom"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompCustom"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "CustomButton"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompCustomButton"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Datepicker"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompDatepicker"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Dropdown"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompDropdown"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "FileUpload"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompFileUpload"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "FileUploadWithTag"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompFileUploadWithTag"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Grid"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompGrid"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Group"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompGroup"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Header"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompHeader"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "IFrame"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompIFrame"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Image"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompImage"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Input"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompInput"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "InstanceInformation"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompInstanceInformation"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "InstantiationButton"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompInstantiationButton"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Likert"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompLikert"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "LikertItem"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompLikertItem"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Link"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompLink"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "List"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompList"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Map"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompMap"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "MultipleSelect"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompMultipleSelect"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "NavigationBar"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompNavigationBar"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "NavigationButtons"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompNavigationButtons"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Panel"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompPanel"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Paragraph"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompParagraph"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "PrintButton"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompPrintButton"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "RadioButtons"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompRadioButtons"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "RepeatingGroup"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompRepeatingGroup"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Summary"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompSummary"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "TextArea"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompTextArea"
+          }
+        }
+      ]
+    },
+    "CompAccordion": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompAccordion",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Accordion"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title of the accordion",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "children": {
+              "title": "Children",
+              "description": "List of child component IDs to show inside the Accordion (limited to a few component types)",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "headingLevel": {
+              "$ref": "#/definitions/HeadingLevel"
+            }
+          },
+          "required": [
+            "type",
+            "children"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "children": true,
+            "headingLevel": true
+          },
+          "required": [
+            "id",
+            "type",
+            "children"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompAccordionGroup": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompAccordionGroup",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "AccordionGroup"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "title": "Title",
+                      "description": "The title of the accordion group",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "children": {
+              "title": "Children",
+              "description": "List of child component IDs to show inside the Accordion (limited to a few component types)",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "type",
+            "children"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "children": true
+          },
+          "required": [
+            "id",
+            "type",
+            "children"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompActionButton": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompActionButton",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "ActionButton"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Button title/text",
+                  "description": "The text to display on the button.",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "action": {
+              "title": "Action",
+              "description": "The action to perform when the button is clicked.",
+              "enum": [
+                "instantiate",
+                "confirm",
+                "sign",
+                "reject"
+              ]
+            },
+            "buttonStyle": {
+              "$ref": "#/definitions/ActionButtonStyle"
+            }
+          },
+          "required": [
+            "type",
+            "action",
+            "buttonStyle"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "action": true,
+            "buttonStyle": true
+          },
+          "required": [
+            "id",
+            "type",
+            "action",
+            "buttonStyle"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompAddress": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompAddress",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Address"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "title": "Title",
+                      "description": "Title of the component",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "careOfTitle": {
+                      "title": "Care Of Title",
+                      "description": "Title for care-of",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "zipCodeTitle": {
+                      "title": "Zip Code Title",
+                      "description": "Title for the zip code",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "postPlaceTitle": {
+                      "title": "Post place Title",
+                      "description": "Title for post place",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "houseNumberTitle": {
+                      "title": "House number Title",
+                      "description": "Title for house number",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "careOfTitle": true,
+                    "zipCodeTitle": true,
+                    "postPlaceTitle": true,
+                    "houseNumberTitle": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsForAddress"
+            },
+            "saveWhileTyping": {
+              "$ref": "#/definitions/SaveWhileTyping"
+            },
+            "simplified": {
+              "title": "Simplified",
+              "description": "Whether to use the simplified address input or not",
+              "default": true,
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "saveWhileTyping": true,
+            "simplified": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompAlert": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompAlert",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Alert"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title of the alert",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "body": {
+                  "title": "Body",
+                  "description": "The body text of the alert",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "severity": {
+              "$ref": "#/definitions/AlertSeverity"
+            }
+          },
+          "required": [
+            "type",
+            "severity"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "severity": true
+          },
+          "required": [
+            "id",
+            "type",
+            "severity"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompAttachmentList": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompAttachmentList",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "AttachmentList"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "Title shown above the attachment list",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "dataTypeIds": {
+              "title": "Data type IDs",
+              "description": "List of data type IDs for the attachment list to show",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataTypeIds": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompButton": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompButton",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Button"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title/text on the button",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "mode": {
+              "$ref": "#/definitions/ButtonMode"
+            },
+            "mapping": {
+              "$ref": "#/definitions/IMapping"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "mode": true,
+            "mapping": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompButtonGroup": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompButtonGroup",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "ButtonGroup"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "children": {
+              "title": "Children",
+              "description": "Child component IDs of button-like components to be rendered in this group",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "type",
+            "children"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "children": true
+          },
+          "required": [
+            "id",
+            "type",
+            "children"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompCheckboxes": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/ISelectionComponentFull"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompCheckboxes",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Checkboxes"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
+            },
+            "layout": {
+              "$ref": "#/definitions/LayoutStyle"
+            },
+            "alertOnChange": {
+              "title": "Alert on change",
+              "description": "Boolean value indicating if the component should alert on uncheck",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "optionsId": true,
+            "mapping": true,
+            "queryParameters": true,
+            "options": true,
+            "secure": true,
+            "sortOrder": true,
+            "source": true,
+            "preselectedOptionIndex": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "layout": true,
+            "alertOnChange": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompCustom": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompCustom",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Custom"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "title": "Title",
+                      "description": "Title (passed on as the \"text\" property to the component)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsForCustom"
+            },
+            "tagName": {
+              "title": "Tag name",
+              "description": "Web component tag name to use",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "tagName"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "tagName": true
+          },
+          "required": [
+            "id",
+            "type",
+            "tagName"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompCustomButton": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompCustomButton",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "CustomButton"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title/text on the button",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "actions": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CustomAction"
+              }
+            },
+            "buttonStyle": {
+              "$ref": "#/definitions/CustomButtonStyle"
+            }
+          },
+          "required": [
+            "type",
+            "actions",
+            "buttonStyle"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "actions": true,
+            "buttonStyle": true
+          },
+          "required": [
+            "id",
+            "type",
+            "actions",
+            "buttonStyle"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompDatepicker": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompDatepicker",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Datepicker"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsSimple"
+            },
+            "minDate": {
+              "title": "Earliest date",
+              "description": "Sets the earliest allowed date. Can also use keyword 'today' to disable all past dates dynamically based on the current date. Defaults to 1900-01-01T12:00:00.000Z.",
+              "default": "1900-01-01T12:00:00.000Z",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "const": "today"
+                }
+              ]
+            },
+            "maxDate": {
+              "title": "Latest date",
+              "description": "Sets the latest allowed date. Can also use keyword 'today' to disable all future dates dynamically based on the current date. Defaults to 2100-01-01T12:00:00.000Z.",
+              "default": "2100-01-01T12:00:00.000Z",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "const": "today"
+                }
+              ]
+            },
+            "timeStamp": {
+              "title": "Include time",
+              "description": "Boolean value indicating if the date time should be stored as a timeStamp. Defaults to true. If true: 'YYYY-MM-DDThh:mm:ss.sssZ', if false 'YYYY-MM-DD';",
+              "default": true,
+              "type": "boolean"
+            },
+            "format": {
+              "title": "Date format",
+              "description": "Date format used when displaying the date to the user. The user date format from the locale will be prioritized over this setting.",
+              "examples": [
+                "DD/MM/YYYY",
+                "MM/DD/YYYY",
+                "YYYY-MM-DD"
+              ],
+              "default": "DD.MM.YYYY",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "minDate": true,
+            "maxDate": true,
+            "timeStamp": true,
+            "format": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompDropdown": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "$ref": "#/definitions/ISelectionComponentFull"
+        },
+        {
+          "title": "CompDropdown",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Dropdown"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "optionsId": true,
+            "mapping": true,
+            "queryParameters": true,
+            "options": true,
+            "secure": true,
+            "sortOrder": true,
+            "source": true,
+            "preselectedOptionIndex": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompFileUpload": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompFileUpload",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "FileUpload"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/IDataModelBindingsSimple"
+                },
+                {
+                  "$ref": "#/definitions/IDataModelBindingsList"
+                }
+              ]
+            },
+            "maxFileSizeInMB": {
+              "title": "Max file size (MB)",
+              "description": "Sets the maximum file size allowed in megabytes",
+              "type": "integer"
+            },
+            "maxNumberOfAttachments": {
+              "title": "Max number of attachments",
+              "description": "Sets the maximum number of attachments allowed to upload",
+              "type": "integer"
+            },
+            "minNumberOfAttachments": {
+              "title": "Min number of attachments",
+              "description": "Sets the minimum number of attachments required to upload",
+              "type": "integer"
+            },
+            "displayMode": {
+              "enum": [
+                "simple",
+                "list"
+              ]
+            },
+            "hasCustomFileEndings": {
+              "title": "Has custom file endings",
+              "description": "Boolean value indicating if the component has valid file endings",
+              "default": false,
+              "type": "boolean"
+            },
+            "validFileEndings": {
+              "title": "Valid file endings",
+              "description": "A separated string of valid file endings to upload. If not set all endings are accepted.",
+              "examples": [
+                ".csv",
+                ".doc",
+                ".docx",
+                ".gif",
+                ".jpeg",
+                ".pdf",
+                ".txt"
+              ],
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "alertOnDelete": {
+              "title": "Alert on delete",
+              "description": "Boolean value indicating if warning popup should be displayed when attempting to delete an element",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
+            }
+          },
+          "required": [
+            "type",
+            "maxFileSizeInMB",
+            "maxNumberOfAttachments",
+            "minNumberOfAttachments",
+            "displayMode"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "maxFileSizeInMB": true,
+            "maxNumberOfAttachments": true,
+            "minNumberOfAttachments": true,
+            "displayMode": true,
+            "hasCustomFileEndings": true,
+            "validFileEndings": true,
+            "alertOnDelete": true
+          },
+          "required": [
+            "id",
+            "type",
+            "maxFileSizeInMB",
+            "maxNumberOfAttachments",
+            "minNumberOfAttachments",
+            "displayMode"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompFileUploadWithTag": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "$ref": "#/definitions/ISelectionComponent"
+        },
+        {
+          "title": "CompFileUploadWithTag",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "FileUploadWithTag"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tagTitle": {
+                      "title": "Tag title",
+                      "description": "The title to show when selecting a tag for each uploaded file",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true,
+                    "tagTitle": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/IDataModelBindingsSimple"
+                },
+                {
+                  "$ref": "#/definitions/IDataModelBindingsList"
+                }
+              ]
+            },
+            "maxFileSizeInMB": {
+              "title": "Max file size (MB)",
+              "description": "Sets the maximum file size allowed in megabytes",
+              "type": "integer"
+            },
+            "maxNumberOfAttachments": {
+              "title": "Max number of attachments",
+              "description": "Sets the maximum number of attachments allowed to upload",
+              "type": "integer"
+            },
+            "minNumberOfAttachments": {
+              "title": "Min number of attachments",
+              "description": "Sets the minimum number of attachments required to upload",
+              "type": "integer"
+            },
+            "displayMode": {
+              "enum": [
+                "simple",
+                "list"
+              ]
+            },
+            "hasCustomFileEndings": {
+              "title": "Has custom file endings",
+              "description": "Boolean value indicating if the component has valid file endings",
+              "default": false,
+              "type": "boolean"
+            },
+            "validFileEndings": {
+              "title": "Valid file endings",
+              "description": "A separated string of valid file endings to upload. If not set all endings are accepted.",
+              "examples": [
+                ".csv",
+                ".doc",
+                ".docx",
+                ".gif",
+                ".jpeg",
+                ".pdf",
+                ".txt"
+              ],
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "alertOnDelete": {
+              "title": "Alert on delete",
+              "description": "Boolean value indicating if warning popup should be displayed when attempting to delete an element",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
+            }
+          },
+          "required": [
+            "type",
+            "maxFileSizeInMB",
+            "maxNumberOfAttachments",
+            "minNumberOfAttachments",
+            "displayMode"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "optionsId": true,
+            "mapping": true,
+            "queryParameters": true,
+            "options": true,
+            "secure": true,
+            "sortOrder": true,
+            "source": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "maxFileSizeInMB": true,
+            "maxNumberOfAttachments": true,
+            "minNumberOfAttachments": true,
+            "displayMode": true,
+            "hasCustomFileEndings": true,
+            "validFileEndings": true,
+            "alertOnDelete": true
+          },
+          "required": [
+            "id",
+            "type",
+            "maxFileSizeInMB",
+            "maxNumberOfAttachments",
+            "minNumberOfAttachments",
+            "displayMode"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompGrid": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompGrid",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Grid"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "rows": {
+              "$ref": "#/definitions/GridRows"
+            }
+          },
+          "required": [
+            "type",
+            "rows"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "rows": true
+          },
+          "required": [
+            "id",
+            "type",
+            "rows"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompGroup": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompGroup",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Group"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "title": "Title",
+                      "description": "The title of the group (shown above the group)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "description": {
+                      "title": "Description",
+                      "description": "The description text shown underneath the title",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "groupingIndicator": {
+              "title": "Set grouping indicator",
+              "description": "Can visually group components together by indenting them or by putting them in a panel. ",
+              "enum": [
+                "indented",
+                "panel"
+              ]
+            },
+            "children": {
+              "title": "Children",
+              "description": "Array of component IDs that should be displayed in the group",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "headingLevel": {
+              "title": "Heading level",
+              "description": "The heading level of the group title.",
+              "enum": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "children"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "groupingIndicator": true,
+            "children": true,
+            "headingLevel": true
+          },
+          "required": [
+            "id",
+            "type",
+            "children"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompHeader": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompHeader",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Header"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The text to display in the header",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "help": {
+                  "title": "Help text",
+                  "description": "The text to display in the help tooltip/popup",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "size": {
+              "title": "Size",
+              "description": "The size of the header",
+              "enum": [
+                "L",
+                "M",
+                "S",
+                "h2",
+                "h3",
+                "h4"
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "size"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "size": true
+          },
+          "required": [
+            "id",
+            "type",
+            "size"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompIFrame": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompIFrame",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "IFrame"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title/text/content",
+                  "description": "The content of the IFrame. Can for example be be set to a string containing HTML, a text resource key, or an expression looking up a value from the data model",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "sandbox": {
+              "$ref": "#/definitions/ISandboxProperties"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "sandbox": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompImage": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompImage",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Image"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "altTextImg": {
+                  "title": "Alt text",
+                  "description": "Alternative text for the image (for screen readers).",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "help": {
+                  "title": "Help text",
+                  "description": "Help text for the image (shown in help text tooltip/popup)",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "image": {
+              "$ref": "#/definitions/IImage"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "image": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompInput": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompInput",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Input"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsSimple"
+            },
+            "saveWhileTyping": {
+              "$ref": "#/definitions/SaveWhileTyping"
+            },
+            "formatting": {
+              "$ref": "#/definitions/IInputFormatting"
+            },
+            "variant": {
+              "title": "Input variant",
+              "description": "The variant of the input field (text or search).",
+              "default": "text",
+              "enum": [
+                "text",
+                "search"
+              ]
+            },
+            "autocomplete": {
+              "$ref": "#/definitions/HTMLAutoCompleteValues"
+            },
+            "maxLength": {
+              "title": "Max length",
+              "description": "Max length of the input field. Will add a counter to let the user know how many characters are left.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "saveWhileTyping": true,
+            "formatting": true,
+            "variant": true,
+            "autocomplete": true,
+            "maxLength": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompInstanceInformation": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompInstanceInformation",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "InstanceInformation"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBLabel"
+            },
+            "elements": {
+              "title": "Elements",
+              "description": "Which elements to show in the instance information",
+              "type": "object",
+              "properties": {
+                "dateSent": {
+                  "type": "boolean"
+                },
+                "sender": {
+                  "type": "boolean"
+                },
+                "receiver": {
+                  "type": "boolean"
+                },
+                "referenceNumber": {
+                  "type": "boolean"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "elements": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompInstantiationButton": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompInstantiationButton",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "InstantiationButton"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title/text to display on the button",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "mapping": {
+              "$ref": "#/definitions/IMapping"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "mapping": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompLikert": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/ISelectionComponent"
+        },
+        {
+          "title": "CompLikert",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Likert"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "title": "Title",
+                      "description": "The title of the group",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "description": {
+                      "title": "Description",
+                      "description": "The description text for the Likert table.",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "leftColumnHeader": {
+                      "title": "Left column header",
+                      "description": "The header text for the left column in the Likert table",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "questions": {
+                      "title": "Questions",
+                      "description": "The questions to be displayed in each row (use a dynamic text resource)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "questionDescriptions": {
+                      "title": "Question descriptions",
+                      "description": "The descriptions to be displayed in each row (use a dynamic text resource)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "questionHelpTexts": {
+                      "title": "Question help texts",
+                      "description": "The help texts to be displayed in each row (use a dynamic text resource)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "leftColumnHeader": true,
+                    "questions": true,
+                    "questionDescriptions": true,
+                    "questionHelpTexts": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsLikert"
+            },
+            "filter": {
+              "$ref": "#/definitions/ILikertFilter"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "optionsId": true,
+            "mapping": true,
+            "queryParameters": true,
+            "options": true,
+            "secure": true,
+            "sortOrder": true,
+            "source": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "filter": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompLikertItem": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/ISelectionComponentFull"
+        },
+        {
+          "title": "CompLikertItem",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "LikertItem"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "title": "Title",
+                      "description": "Title of the Likert component/row",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "description": {
+                      "title": "Description",
+                      "description": "Description of the Likert component/row",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "help": {
+                      "title": "Help",
+                      "description": "Help text of the Likert component/row",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
+            },
+            "layout": {
+              "$ref": "#/definitions/LayoutStyle"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "optionsId": true,
+            "mapping": true,
+            "queryParameters": true,
+            "options": true,
+            "secure": true,
+            "sortOrder": true,
+            "source": true,
+            "preselectedOptionIndex": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "layout": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompLink": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompLink",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Link"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "target": {
+                  "title": "Target",
+                  "description": "The target of the link",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "title": {
+                  "title": "Title",
+                  "description": "The title/text of the link",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "style": {
+              "$ref": "#/definitions/LinkStyle"
+            },
+            "openInNewTab": {
+              "title": "Open in new tab",
+              "description": "Open the link in a new tab",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type",
+            "style"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "style": true,
+            "openInNewTab": true
+          },
+          "required": [
+            "id",
+            "type",
+            "style"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompList": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompList",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "List"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsForList"
+            },
+            "tableHeaders": {
+              "title": "Table Headers",
+              "description": "An object where the fields in the datalist is mapped to headers. Must correspond to datalist representing a row. Can be added to the resource files to change between languages.",
+              "examples": [
+                {
+                  "productId": "product.id",
+                  "description": "Beskrivelse av produkt"
+                }
+              ],
+              "type": "object",
+              "properties": {},
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "sortableColumns": {
+              "title": "Sortable columns",
+              "description": "An array of column keys that can be sorted (note that your API backend needs to support this as well). The column has to be represented by the the header name that is written in tableHeaders.",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "pagination": {
+              "$ref": "#/definitions/IPagination"
+            },
+            "dataListId": {
+              "title": "Data list ID",
+              "description": "The ID of the data list to use (must be implemented in your backend).",
+              "type": "string"
+            },
+            "secure": {
+              "title": "Secure",
+              "description": "Boolean value indicating if the options should be instance aware. Defaults to false.",
+              "default": false,
+              "type": "boolean"
+            },
+            "mapping": {
+              "$ref": "#/definitions/IMapping"
+            },
+            "bindingToShowInSummary": {
+              "title": "Binding to show in summary",
+              "description": "The value of this binding will be shown in the summary component for the list. This binding must be one of the specified bindings under dataModelBindings.",
+              "type": "string"
+            },
+            "tableHeadersMobile": {
+              "title": "Table Headers Mobile",
+              "description": "An array of strings representing the columns that is chosen to be shown in the mobile view.",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "type",
+            "tableHeaders",
+            "dataListId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "tableHeaders": true,
+            "sortableColumns": true,
+            "pagination": true,
+            "dataListId": true,
+            "secure": true,
+            "mapping": true,
+            "bindingToShowInSummary": true,
+            "tableHeadersMobile": true
+          },
+          "required": [
+            "id",
+            "type",
+            "tableHeaders",
+            "dataListId"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompMap": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompMap",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Map"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsSimple"
+            },
+            "layers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/MapLayer"
+              }
+            },
+            "centerLocation": {
+              "$ref": "#/definitions/Location"
+            },
+            "zoom": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "layers": true,
+            "centerLocation": true,
+            "zoom": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompMultipleSelect": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "$ref": "#/definitions/ISelectionComponentFull"
+        },
+        {
+          "title": "CompMultipleSelect",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "MultipleSelect"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "optionsId": true,
+            "mapping": true,
+            "queryParameters": true,
+            "options": true,
+            "secure": true,
+            "sortOrder": true,
+            "source": true,
+            "preselectedOptionIndex": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompNavigationBar": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompNavigationBar",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "NavigationBar"
+            },
+            "compact": {
+              "title": "Compact",
+              "description": "Change appearance of navbar as compact in desktop view",
+              "type": "boolean"
+            },
+            "validateOnForward": {
+              "$ref": "#/definitions/PageValidation"
+            },
+            "validateOnBackward": {
+              "$ref": "#/definitions/PageValidation"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "compact": true,
+            "validateOnForward": true,
+            "validateOnBackward": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompNavigationButtons": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompNavigationButtons",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "NavigationButtons"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "back": {
+                  "title": "Back",
+                  "description": "Text on the back/previous page button",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "next": {
+                  "title": "Next",
+                  "description": "Text on the next page button",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "showBackButton": {
+              "title": "Show back button",
+              "description": "Shows two buttons (back/next) instead of just 'next'.",
+              "default": false,
+              "type": "boolean"
+            },
+            "validateOnNext": {
+              "$ref": "#/definitions/PageValidation"
+            },
+            "validateOnPrevious": {
+              "$ref": "#/definitions/PageValidation"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "showBackButton": true,
+            "validateOnNext": true,
+            "validateOnPrevious": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompPanel": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/IPanelBase"
+        },
+        {
+          "title": "CompPanel",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Panel"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "Header/title of the panel",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "body": {
+                  "title": "Body",
+                  "description": "Body of the panel",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "variant": true,
+            "showIcon": true,
+            "type": true,
+            "textResourceBindings": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompParagraph": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompParagraph",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Paragraph"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title of the paragraph",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "help": {
+                  "title": "Help text",
+                  "description": "Help text, optionally shown in a tooltip",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompPrintButton": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompPrintButton",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "PrintButton"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title/text on the button",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompRadioButtons": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/ISelectionComponentFull"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompRadioButtons",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "RadioButtons"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
+            },
+            "layout": {
+              "$ref": "#/definitions/LayoutStyle"
+            },
+            "alertOnChange": {
+              "title": "Alert on change",
+              "description": "Boolean value indicating if the component should alert on change",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
+            },
+            "showAsCard": {
+              "title": "Show as card",
+              "description": "Boolean value indicating if the options should be displayed as cards. Defaults to false.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "optionsId": true,
+            "mapping": true,
+            "queryParameters": true,
+            "options": true,
+            "secure": true,
+            "sortOrder": true,
+            "source": true,
+            "preselectedOptionIndex": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "layout": true,
+            "alertOnChange": true,
+            "showAsCard": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompRepeatingGroup": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompRepeatingGroup",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "RepeatingGroup"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "title": "Title",
+                      "description": "The title of the group (shown above each instance in a Summary)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "description": {
+                      "title": "Description",
+                      "description": "The description text shown underneath the title",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "add_button_full": {
+                      "title": "Add button (full) (for repeating groups)",
+                      "description": "The text for the \"Add\" button (overrides \"add_button\", and sets the full text for the button)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "add_button": {
+                      "title": "Add button (suffix) (for repeating groups)",
+                      "description": "The text for the \"Add\" button (used as a suffix after the default button text)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "save_button": {
+                      "title": "Save button (for repeating groups)",
+                      "description": "The text for the \"Save\" button when the repeating group item is in edit mode",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "save_and_next_button": {
+                      "title": "Save and next button (for repeating groups)",
+                      "description": "The text for the \"Save and next\" button when the repeating group item is in edit mode (only displayed if edit.saveAndNextButton is true)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "edit_button_close": {
+                      "title": "Edit button (close) (for repeating groups)",
+                      "description": "The text for the \"Edit\" button when the repeating group item is in edit mode (i.e. the user can close the edit mode)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "edit_button_open": {
+                      "title": "Edit button (open) (for repeating groups)",
+                      "description": "The text for the \"Edit\" button when the repeating group item is not in edit mode (i.e. the user can open the edit mode)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "add_button_full": true,
+                    "add_button": true,
+                    "save_button": true,
+                    "save_and_next_button": true,
+                    "edit_button_close": true,
+                    "edit_button_open": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsForGroup"
+            },
+            "children": {
+              "title": "Children",
+              "description": "Array of component IDs that should be displayed in the repeating group",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "showValidations": {
+              "$ref": "#/definitions/AllowedValidationMasks"
+            },
+            "validateOnSaveRow": {
+              "$ref": "#/definitions/AllowedValidationMasks"
+            },
+            "edit": {
+              "$ref": "#/definitions/IGroupEditProperties"
+            },
+            "maxCount": {
+              "title": "Max number of rows",
+              "description": "Maximum number of rows that can be added.",
+              "type": "integer",
+              "minimum": 2
+            },
+            "minCount": {
+              "title": "Min number of rows",
+              "description": "Minimum number of rows that should be added. If the user has not added enough rows, the repeating group will show a validation error",
+              "type": "integer"
+            },
+            "tableHeaders": {
+              "title": "Table headers",
+              "description": "Array of component IDs that should be displayed as table headers. If not defined, all components referenced in the \"children\" property will be displayed as table headers",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "tableColumns": {
+              "examples": [
+                {
+                  "childComponent1": {
+                    "width": "auto"
+                  }
+                }
+              ],
+              "type": "object",
+              "properties": {},
+              "additionalProperties": {
+                "$ref": "#/definitions/IGroupColumnFormatting"
+              }
+            },
+            "hiddenRow": {
+              "title": "Hidden row?",
+              "description": "Expression or boolean indicating whether each row should be hidden. An expression will be evaluated per row, and if it evaluates to true, the row will be hidden. If set to true, all rows will be hidden.",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
+            },
+            "stickyHeader": {
+              "title": "Sticky header",
+              "description": "If set to true, the header of the repeating group will be sticky",
+              "default": false,
+              "type": "boolean"
+            },
+            "rowsBefore": {
+              "$ref": "#/definitions/GridRows"
+            },
+            "rowsAfter": {
+              "$ref": "#/definitions/GridRows"
+            },
+            "labelSettings": {
+              "$ref": "#/definitions/ILabelSettings"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings",
+            "children"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "children": true,
+            "showValidations": true,
+            "validateOnSaveRow": true,
+            "edit": true,
+            "maxCount": true,
+            "minCount": true,
+            "tableHeaders": true,
+            "tableColumns": true,
+            "hiddenRow": true,
+            "stickyHeader": true,
+            "rowsBefore": true,
+            "rowsAfter": true,
+            "labelSettings": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings",
+            "children"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompSummary": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompSummary",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Summary"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBSummarizable"
+            },
+            "componentRef": {
+              "title": "Component reference",
+              "description": "String value indicating which layout component (by ID) the summary is for.",
+              "type": "string"
+            },
+            "largeGroup": {
+              "title": "Large group",
+              "description": "Boolean value indicating if summary of repeating group should be displayed in large format. Useful for displaying summary with nested groups.",
+              "default": false,
+              "type": "boolean"
+            },
+            "excludedChildren": {
+              "title": "Excluded child components",
+              "description": "Array of component IDs that should not be shown in a repeating group's summary",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "display": {
+              "$ref": "#/definitions/SummaryDisplayProperties"
+            }
+          },
+          "required": [
+            "type",
+            "componentRef"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "componentRef": true,
+            "largeGroup": true,
+            "excludedChildren": true,
+            "display": true
+          },
+          "required": [
+            "id",
+            "type",
+            "componentRef"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompTextArea": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompTextArea",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "TextArea"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsSimple"
+            },
+            "saveWhileTyping": {
+              "$ref": "#/definitions/SaveWhileTyping"
+            },
+            "autocomplete": {
+              "$ref": "#/definitions/HTMLAutoCompleteValues"
+            },
+            "maxLength": {
+              "title": "Max length",
+              "description": "Max length of the input field. Will add a counter to let the user know how many characters are left.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "type",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "dataModelBindings": true,
+            "saveWhileTyping": true,
+            "autocomplete": true,
+            "maxLength": true
+          },
+          "required": [
+            "id",
+            "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "ActionButtonStyle": {
+      "title": "Button style",
+      "description": "The style/color scheme of the button.",
+      "enum": [
+        "primary",
+        "secondary"
+      ]
+    },
+    "AlertSeverity": {
+      "title": "Alert severity",
+      "description": "The severity of the alert",
+      "enum": [
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ]
+    },
+    "AllowedValidationMasks": {
+      "title": "Validation types",
+      "description": "List of validation types to show",
+      "type": "array",
+      "items": {
+        "enum": [
+          "Schema",
+          "Component",
+          "Expression",
+          "CustomBackend",
+          "Required",
+          "AllExceptRequired",
+          "All"
+        ]
+      }
+    },
+    "ButtonMode": {
+      "title": "Mode",
+      "description": "The mode of the button",
+      "default": "submit",
+      "enum": [
+        "submit",
+        "save",
+        "instantiate"
+      ]
+    },
+    "ClientAction": {
+      "title": "ClientAction",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/NextPageAction"
+        },
+        {
+          "$ref": "#/definitions/PreviousPageAction"
+        },
+        {
+          "$ref": "#/definitions/NavigateToPageAction"
+        }
+      ]
+    },
+    "ComponentBase": {
+      "title": "ComponentBase",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "description": "The component ID. Must be unique within all layouts/pages in a layout-set. Cannot end with <dash><number>.",
+          "type": "string",
+          "pattern": "^[0-9a-zA-Z][0-9a-zA-Z-]*(-?[a-zA-Z]+|[a-zA-Z][0-9]+|-[0-9]{6,})$"
+        },
+        "hidden": {
+          "title": "Hidden",
+          "description": "Boolean value or expression indicating if the component should be hidden. Defaults to false.",
+          "default": false,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "grid": {
+          "$ref": "#/definitions/IGrid"
+        },
+        "pageBreak": {
+          "$ref": "#/definitions/IPageBreak"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "CustomAction": {
+      "title": "CustomAction",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ClientAction"
+        },
+        {
+          "$ref": "#/definitions/ServerAction"
+        }
+      ]
+    },
+    "CustomButtonStyle": {
+      "title": "Button style",
+      "description": "The style/color scheme of the button.",
+      "enum": [
+        "primary",
+        "secondary"
+      ]
+    },
+    "FormComponentProps": {
+      "title": "FormComponentProps",
+      "type": "object",
+      "properties": {
+        "readOnly": {
+          "title": "Read only/disabled?",
+          "description": "Boolean value or expression indicating if the component should be read only/disabled. Defaults to false. <br /> <i>Please note that even with read-only fields in components, it may currently be possible to update the field by modifying the request sent to the API or through a direct API call.<i/>",
+          "default": false,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "required": {
+          "title": "Required?",
+          "description": "Boolean value or expression indicating if the component should be required. Defaults to false.",
+          "default": false,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "showValidations": {
+          "$ref": "#/definitions/AllowedValidationMasks"
+        }
+      }
+    },
+    "GridCell": {
+      "title": "GridCell",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/GridComponentRef"
+        },
+        {
+          "const": null
+        },
+        {
+          "$ref": "#/definitions/GridCellText"
+        },
+        {
+          "$ref": "#/definitions/GridCellLabelFrom"
+        }
+      ]
+    },
+    "GridCellLabelFrom": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ITableColumnProperties"
+        },
+        {
+          "title": "GridCellLabelFrom",
+          "type": "object",
+          "properties": {
+            "labelFrom": {
+              "title": "Fetch label from other component",
+              "description": "Set this to a component id to display the label from that component",
+              "type": "string"
+            },
+            "columnOptions": {
+              "$ref": "#/definitions/ITableColumnProperties"
+            }
+          },
+          "required": [
+            "labelFrom"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "width": true,
+            "alignText": true,
+            "textOverflow": true,
+            "labelFrom": true,
+            "columnOptions": true
+          },
+          "required": [
+            "labelFrom"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "GridCellText": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ITableColumnProperties"
+        },
+        {
+          "title": "GridCellText",
+          "type": "object",
+          "properties": {
+            "text": {
+              "title": "Text",
+              "description": "Text to display (can also be a key in text resources)",
+              "type": "string"
+            },
+            "help": {
+              "title": "Help",
+              "description": "Help text to display",
+              "type": "string"
+            },
+            "columnOptions": {
+              "$ref": "#/definitions/ITableColumnProperties"
+            }
+          },
+          "required": [
+            "text"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "width": true,
+            "alignText": true,
+            "textOverflow": true,
+            "text": true,
+            "help": true,
+            "columnOptions": true
+          },
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "GridComponentRef": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ITableColumnProperties"
+        },
+        {
+          "title": "GridComponentRef",
+          "type": "object",
+          "properties": {
+            "component": {
+              "title": "Component ID",
+              "description": "ID of the component",
+              "type": "string"
+            },
+            "columnOptions": {
+              "$ref": "#/definitions/ITableColumnProperties"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "width": true,
+            "alignText": true,
+            "textOverflow": true,
+            "component": true,
+            "columnOptions": true
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "GridJustification": {
+      "title": "Justification/alignment",
+      "description": "Justification/alignment of the image",
+      "enum": [
+        "flex-start",
+        "center",
+        "flex-end",
+        "space-between",
+        "space-around",
+        "space-evenly"
+      ]
+    },
+    "GridRow": {
+      "title": "GridRow",
+      "type": "object",
+      "properties": {
+        "header": {
+          "title": "Is header row?",
+          "default": false,
+          "type": "boolean"
+        },
+        "readOnly": {
+          "title": "Is row read-only?",
+          "default": false,
+          "type": "boolean"
+        },
+        "columnOptions": {
+          "$ref": "#/definitions/ITableColumnProperties"
+        },
+        "cells": {
+          "title": "Cells in table row",
+          "description": "The list of cells in this row",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GridCell"
+          }
+        }
+      },
+      "required": [
+        "cells"
+      ],
+      "additionalProperties": false
+    },
+    "GridRows": {
+      "title": "Rows in Grid or Grid-like component",
+      "description": "The list of rows in this grid",
+      "examples": [
+        [
+          {
+            "header": false,
+            "readOnly": false,
+            "cells": [
+              {
+                "text": "hello.world"
+              },
+              {
+                "component": "myOtherComponent"
+              }
+            ]
+          }
+        ]
+      ],
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/GridRow"
+      }
+    },
+    "HTMLAutoCompleteValues": {
+      "title": "HTML autocomplete values",
+      "description": "Autocomplete hints to the browser. See https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete",
+      "enum": [
+        "on",
+        "off",
+        "name",
+        "honorific-prefix",
+        "given-name",
+        "additional-name",
+        "family-name",
+        "honorific-suffix",
+        "nickname",
+        "email",
+        "username",
+        "new-password",
+        "current-password",
+        "one-time-code",
+        "organization-title",
+        "organization",
+        "street-address",
+        "address-line1",
+        "address-line2",
+        "address-line3",
+        "address-level4",
+        "address-level3",
+        "address-level2",
+        "address-level1",
+        "country",
+        "country-name",
+        "postal-code",
+        "cc-name",
+        "cc-given-name",
+        "cc-additional-name",
+        "cc-family-name",
+        "cc-number",
+        "cc-exp",
+        "cc-exp-month",
+        "cc-exp-year",
+        "cc-csc",
+        "cc-type",
+        "transaction-currency",
+        "transaction-amount",
+        "language",
+        "bday",
+        "bday-day",
+        "bday-month",
+        "bday-year",
+        "sex",
+        "tel",
+        "tel-country-code",
+        "tel-national",
+        "tel-area-code",
+        "tel-local",
+        "tel-extension",
+        "impp",
+        "url",
+        "photo"
+      ]
+    },
+    "HeadingLevel": {
+      "title": "HeadingLevel",
+      "enum": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "IDataModelBindingsForAddress": {
+      "title": "IDataModelBindingsForAddress",
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "string"
+        },
+        "zipCode": {
+          "type": "string"
+        },
+        "postPlace": {
+          "type": "string"
+        },
+        "careOf": {
+          "type": "string"
+        },
+        "houseNumber": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "address",
+        "zipCode",
+        "postPlace"
+      ],
+      "additionalProperties": false
+    },
+    "IDataModelBindingsForCustom": {
+      "title": "IDataModelBindingsForCustom",
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "IDataModelBindingsForGroup": {
+      "title": "IDataModelBindingsForGroup",
+      "type": "object",
+      "properties": {
+        "group": {
+          "title": "Group",
+          "description": "Dot notation location for a repeating group structure (array of objects), where the data is stored",
+          "type": "string"
+        }
+      },
+      "required": [
+        "group"
+      ],
+      "additionalProperties": false
+    },
+    "IDataModelBindingsForList": {
+      "title": "IDataModelBindingsForList",
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "IDataModelBindingsLikert": {
+      "title": "Data model binding",
+      "description": "Describes the location in the data model where the component should store its value(s). A list binding should be pointed to an array structure in the data model, and is used for components that store multiple simple values (e.g. a list of strings).",
+      "type": "object",
+      "properties": {
+        "answer": {
+          "title": "Answer",
+          "description": "Dot notation location for the answers. This must point to a property of the objects inside the question array. The answer for each question will be stored in the answer property of the corresponding question object.",
+          "type": "string"
+        },
+        "questions": {
+          "title": "Questions",
+          "description": "Dot notation location for a likert structure (array of objects), where the data is stored",
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "questions"
+      ],
+      "additionalProperties": false
+    },
+    "IDataModelBindingsList": {
+      "title": "Data model binding",
+      "description": "Describes the location in the data model where the component should store its value(s). A list binding should be pointed to an array structure in the data model, and is used for components that store multiple simple values (e.g. a list of strings).",
+      "type": "object",
+      "properties": {
+        "list": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "list"
+      ],
+      "additionalProperties": false
+    },
+    "IDataModelBindingsOptionsSimple": {
+      "title": "Data model binding",
+      "description": "Describes the location in the data model where the component should store its value(s). A simple binding is used for components that only store a single value, usually a string.",
+      "type": "object",
+      "properties": {
+        "simpleBinding": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "metadata": {
+          "description": "Describes the location where metadata for the option based component should be stored in the datamodel.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "simpleBinding"
+      ],
+      "additionalProperties": false
+    },
+    "IDataModelBindingsSimple": {
+      "title": "Data model binding",
+      "description": "Describes the location in the data model where the component should store its value(s). A simple binding is used for components that only store a single value, usually a string.",
+      "type": "object",
+      "properties": {
+        "simpleBinding": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "simpleBinding"
+      ],
+      "additionalProperties": false
+    },
+    "IGrid": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/IGridStyling"
+        },
+        {
+          "title": "Grid",
+          "description": "Settings for the components grid. Used for controlling horizontal alignment",
+          "type": "object",
+          "properties": {
+            "labelGrid": {
+              "$ref": "#/definitions/IGridStyling"
+            },
+            "innerGrid": {
+              "$ref": "#/definitions/IGridStyling"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "xs": true,
+            "sm": true,
+            "md": true,
+            "lg": true,
+            "xl": true,
+            "labelGrid": true,
+            "innerGrid": true
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "IGridSize": {
+      "title": "IGridSize",
+      "anyOf": [
+        {
+          "const": "auto"
+        },
+        {
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ]
+    },
+    "IGridStyling": {
+      "title": "IGridStyling",
+      "type": "object",
+      "properties": {
+        "xs": {
+          "$ref": "#/definitions/IGridSize"
+        },
+        "sm": {
+          "$ref": "#/definitions/IGridSize"
+        },
+        "md": {
+          "$ref": "#/definitions/IGridSize"
+        },
+        "lg": {
+          "$ref": "#/definitions/IGridSize"
+        },
+        "xl": {
+          "$ref": "#/definitions/IGridSize"
+        }
+      }
+    },
+    "IGroupColumnFormatting": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ITableColumnProperties"
+        },
+        {
+          "title": "IGroupColumnFormatting",
+          "type": "object",
+          "properties": {
+            "editInTable": {
+              "title": "Edit in table",
+              "description": "If set to true, the component will be editable directly in the table view. ",
+              "default": false,
+              "type": "boolean"
+            },
+            "showInExpandedEdit": {
+              "title": "Show in expanded edit",
+              "description": "If set to true, the component will be shown in the expanded edit view. This is also the default behaviour, but can be turned off for components that are only to be edited in the table view.",
+              "default": true,
+              "type": "boolean"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "width": true,
+            "alignText": true,
+            "textOverflow": true,
+            "editInTable": true,
+            "showInExpandedEdit": true
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "IGroupEditProperties": {
+      "title": "IGroupEditProperties",
+      "type": "object",
+      "properties": {
+        "mode": {
+          "title": "Mode",
+          "description": "The mode of the repeating group",
+          "default": "showTable",
+          "enum": [
+            "hideTable",
+            "showTable",
+            "showAll",
+            "onlyTable"
+          ]
+        },
+        "addButton": {
+          "title": "Add button",
+          "description": "Expression or boolean indicating whether to show the \"Add\" button",
+          "default": true,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "saveButton": {
+          "title": "Save button",
+          "description": "Expression or boolean indicating whether to show the \"Save\" button",
+          "default": true,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "deleteButton": {
+          "title": "Delete button",
+          "description": "Expression or boolean indicating whether to show the \"Delete\" button",
+          "default": true,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "editButton": {
+          "title": "Edit button",
+          "description": "Expression or boolean indicating whether to show the \"Edit\" button",
+          "default": true,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "multiPage": {
+          "title": "Multi page functionality",
+          "description": "Turning this on makes it possible to display the edit mode for a repeating group with multiple inner pages. Every component referenced in the \"children\" property should have a prefix with the page number it should be displayed on (e.g. \"1:component1\", \"2:component2\", etc.)",
+          "default": false,
+          "type": "boolean"
+        },
+        "openByDefault": {
+          "title": "Open by default",
+          "description": "If set to true, a row of the repeating group will be opened by default, if the group has no rows already. If set to \"first\" or \"last\", the first or last row will be opened by default",
+          "default": false,
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "const": "first"
+            },
+            {
+              "const": "last"
+            }
+          ]
+        },
+        "alertOnDelete": {
+          "title": "Alert on delete",
+          "description": "Expression or boolean indicating whether to show an alert when the user clicks the \"Delete\" button, prompting them to confirm the deletion",
+          "default": false,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "saveAndNextButton": {
+          "title": "Save and next button",
+          "description": "Expression or boolean indicating whether to show the \"Save and next\" button when editing a repeating group row. This button will save the current row and open the next row for editing.",
+          "default": false,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "alwaysShowAddButton": {
+          "title": "Always show add button",
+          "description": "If set to true, the \"Add\" button will always be shown, even if the user is currently editing another row",
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "IImage": {
+      "title": "IImage",
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "#/definitions/IImageSrc"
+        },
+        "width": {
+          "title": "Image width",
+          "examples": [
+            "100%"
+          ],
+          "type": "string"
+        },
+        "align": {
+          "$ref": "#/definitions/GridJustification"
+        }
+      },
+      "required": [
+        "src",
+        "width",
+        "align"
+      ],
+      "additionalProperties": false
+    },
+    "IImageSrc": {
+      "title": "IImageSrc",
+      "examples": [
+        {
+          "nb": "https://example.com/bilde.png",
+          "nn": "https://example.com/bilete.png",
+          "en": "https://example.com/image.png"
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "nb": {
+          "title": "Image source (when using norwegian bokmål language)",
+          "type": "string"
+        },
+        "nn": {
+          "title": "Image source (when using norwegian nynorsk language)",
+          "type": "string"
+        },
+        "en": {
+          "title": "Image source (when using english language)",
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "title": "Image source (when using other languages)",
+        "type": "string"
+      }
+    },
+    "IInputFormatting": {
+      "title": "IInputFormatting",
+      "examples": [
+        {
+          "currency": "NOK"
+        },
+        {
+          "number": {
+            "thousandSeparator": " ",
+            "decimalSeparator": ",",
+            "allowNegative": false,
+            "suffix": " kr"
+          }
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "currency": {
+          "title": "Language-sensitive currency formatting",
+          "description": "Enables currency to be language sensitive based on selected app language. Note: parts that already exist in number property are not overridden by this prop.",
+          "enum": [
+            "AED",
+            "AFN",
+            "ALL",
+            "AMD",
+            "ANG",
+            "AOA",
+            "ARS",
+            "AUD",
+            "AWG",
+            "AZN",
+            "BAM",
+            "BBD",
+            "BDT",
+            "BGN",
+            "BHD",
+            "BIF",
+            "BMD",
+            "BND",
+            "BOB",
+            "BOV",
+            "BRL",
+            "BSD",
+            "BTN",
+            "BWP",
+            "BYN",
+            "BZD",
+            "CAD",
+            "CDF",
+            "CHE",
+            "CHF",
+            "CHW",
+            "CLF",
+            "CLP",
+            "CNY",
+            "COP",
+            "COU",
+            "CRC",
+            "CUC",
+            "CUP",
+            "CVE",
+            "CZK",
+            "DJF",
+            "DKK",
+            "DOP",
+            "DZD",
+            "EGP",
+            "ERN",
+            "ETB",
+            "EUR",
+            "FJD",
+            "FKP",
+            "GBP",
+            "GEL",
+            "GHS",
+            "GIP",
+            "GMD",
+            "GNF",
+            "GTQ",
+            "GYD",
+            "HKD",
+            "HNL",
+            "HTG",
+            "HUF",
+            "IDR",
+            "ILS",
+            "INR",
+            "IQD",
+            "IRR",
+            "ISK",
+            "JMD",
+            "JOD",
+            "JPY",
+            "KES",
+            "KGS",
+            "KHR",
+            "KMF",
+            "KPW",
+            "KRW",
+            "KWD",
+            "KYD",
+            "KZT",
+            "LAK",
+            "LBP",
+            "LKR",
+            "LRD",
+            "LSL",
+            "LYD",
+            "MAD",
+            "MDL",
+            "MGA",
+            "MKD",
+            "MMK",
+            "MNT",
+            "MOP",
+            "MRU",
+            "MUR",
+            "MVR",
+            "MWK",
+            "MXN",
+            "MXV",
+            "MYR",
+            "MZN",
+            "NAD",
+            "NGN",
+            "NIO",
+            "NOK",
+            "NPR",
+            "NZD",
+            "OMR",
+            "PAB",
+            "PEN",
+            "PGK",
+            "PHP",
+            "PKR",
+            "PLN",
+            "PYG",
+            "QAR",
+            "RON",
+            "RSD",
+            "RUB",
+            "RWF",
+            "SAR",
+            "SBD",
+            "SCR",
+            "SDG",
+            "SEK",
+            "SGD",
+            "SHP",
+            "SLE",
+            "SLL",
+            "SOS",
+            "SRD",
+            "SSP",
+            "STN",
+            "SVC",
+            "SYP",
+            "SZL",
+            "THB",
+            "TJS",
+            "TMT",
+            "TND",
+            "TOP",
+            "TRY",
+            "TTD",
+            "TWD",
+            "TZS",
+            "UAH",
+            "UGX",
+            "USD",
+            "USN",
+            "UYI",
+            "UYU",
+            "UYW",
+            "UZS",
+            "VED",
+            "VES",
+            "VND",
+            "VUV",
+            "WST",
+            "XAF",
+            "XCD",
+            "XDR",
+            "XOF",
+            "XPF",
+            "XSU",
+            "XUA",
+            "YER",
+            "ZAR",
+            "ZMW",
+            "ZWL"
+          ]
+        },
+        "unit": {
+          "title": "Language-sensitive number formatting based on unit",
+          "description": "Enables unit along with thousand and decimal separators to be language sensitive based on selected app language. They are configured in number property. Note: parts that already exist in number property are not overridden by this prop.",
+          "enum": [
+            "celsius",
+            "centimeter",
+            "day",
+            "degree",
+            "foot",
+            "gram",
+            "hectare",
+            "hour",
+            "inch",
+            "kilogram",
+            "kilometer",
+            "liter",
+            "meter",
+            "milliliter",
+            "millimeter",
+            "millisecond",
+            "minute",
+            "month",
+            "percent",
+            "second",
+            "week",
+            "year"
+          ]
+        },
+        "position": {
+          "title": "Position of the currency/unit symbol",
+          "description": "Display the unit as prefix or suffix. Default is prefix. (Use only when using currency or unit options)",
+          "enum": [
+            "prefix",
+            "suffix"
+          ]
+        },
+        "number": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/PatternFormatProps"
+            },
+            {
+              "$ref": "#/definitions/NumberFormatProps"
+            }
+          ]
+        },
+        "align": {
+          "default": "left",
+          "enum": [
+            "right",
+            "center",
+            "left"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "ILabelSettings": {
+      "title": "ILabelSettings",
+      "type": "object",
+      "properties": {
+        "optionalIndicator": {
+          "title": "Optional indicator",
+          "description": "Show optional indicator on label",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ILayoutFile": {
+      "title": "Altinn layout",
+      "description": "Schema that describes the layout configuration for Altinn applications.",
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "layout": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AnyComponent"
+              }
+            },
+            "hidden": {
+              "title": "Hidden",
+              "description": "Expression that will hide the page/form layout if true",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
+            },
+            "expandedWidth": {
+              "title": "Expanded width",
+              "description": "Sets expanded width for pages",
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "layout"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    "ILikertFilter": {
+      "title": "Filter",
+      "description": "Optionally filter specific rows within the likert group using start/stop indexes for displaying the desired ones(beware that start index starts at zero, and stop index starts at one, so {start, stop} = {0, 3} will display 3 rows, not 4)",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "enum": [
+              "start",
+              "stop"
+            ]
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d+$"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          }
+        },
+        "required": [
+          "key",
+          "value"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "IMapping": {
+      "title": "Mapping",
+      "description": "A mapping of key-value pairs (usually used for mapping a path in the data model to a query string parameter).",
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "IOptionSource": {
+      "title": "Option source",
+      "description": "Allows for fetching options from the data model, pointing to a repeating group structure",
+      "type": "object",
+      "properties": {
+        "group": {
+          "title": "Group",
+          "description": "The repeating group to base options on.",
+          "examples": [
+            "model.some.group"
+          ],
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "description": "A label of the option displayed in Radio- and Checkbox groups. Can be plain text, a text resource binding, or a dynamic expression.",
+          "examples": [
+            "some.text.key"
+          ],
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        },
+        "value": {
+          "title": "Value",
+          "description": "Field in the group that should be used as value",
+          "examples": [
+            "model.some.group[{0}].someField"
+          ],
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "A description of the option displayed in Radio- and Checkbox groups. Can be plain text, a text resource binding, or a dynamic expression.",
+          "examples": [
+            "some.text.key",
+            "My Description"
+          ],
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        },
+        "helpText": {
+          "title": "Help Text",
+          "description": "A help text for the option displayed in Radio- and Checkbox groups. Can be plain text, a text resource binding, or a dynamic expression.",
+          "examples": [
+            "some.text.key",
+            "My Help Text"
+          ],
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        }
+      },
+      "required": [
+        "group",
+        "label",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "IPageBreak": {
+      "title": "Page break",
+      "description": "Optionally insert page-break before/after component when rendered in PDF",
+      "type": "object",
+      "properties": {
+        "breakBefore": {
+          "title": "Page break before",
+          "description": "PDF only: Value or expression indicating whether a page break should be added before the component. Can be either: 'auto' (default), 'always', or 'avoid'.",
+          "examples": [
+            "auto",
+            "always",
+            "avoid"
+          ],
+          "default": "auto",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        },
+        "breakAfter": {
+          "title": "Page break after",
+          "description": "PDF only: Value or expression indicating whether a page break should be added after the component. Can be either: 'auto' (default), 'always', or 'avoid'.",
+          "examples": [
+            "auto",
+            "always",
+            "avoid"
+          ],
+          "default": "auto",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "IPagination": {
+      "title": "Pagination",
+      "description": "Pagination settings. Set this to enable pagination (must be supported by backend).",
+      "type": "object",
+      "properties": {
+        "alternatives": {
+          "title": "Alternatives",
+          "description": "List of page sizes the user can choose from. Make sure to test the performance of the largest number of items per page you are allowing.",
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "default": {
+          "title": "Default",
+          "description": "The pagination size that is set to default.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alternatives",
+        "default"
+      ],
+      "additionalProperties": false
+    },
+    "IPanelBase": {
+      "title": "IPanelBase",
+      "type": "object",
+      "properties": {
+        "variant": {
+          "title": "Panel variant",
+          "description": "Change the look of the panel",
+          "enum": [
+            "info",
+            "warning",
+            "error",
+            "success"
+          ]
+        },
+        "showIcon": {
+          "title": "Show icon",
+          "description": "Show icon in the panel header",
+          "default": true,
+          "type": "boolean"
+        }
+      }
+    },
+    "IQueryParameters": {
+      "title": "Query parameters",
+      "description": "A mapping of query string parameters to values. Will be appended to the URL when fetching options.",
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "IRawOption": {
+      "title": "IRawOption",
+      "examples": [
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "const": null
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "helpText": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "ISandboxProperties": {
+      "title": "ISandboxProperties",
+      "type": "object",
+      "properties": {
+        "allowPopups": {
+          "title": "Allow popups",
+          "description": "Sets \"allow-popups\" in the sandbox attribute on the iframe. See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox",
+          "default": false,
+          "type": "boolean"
+        },
+        "allowPopupsToEscapeSandbox": {
+          "title": "Allow popups to escape sandbox",
+          "description": "Sets \"allow-popups-to-escape-sandbox\" in the sandbox attribute on the iframe. See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox",
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ISelectionComponent": {
+      "title": "ISelectionComponent",
+      "type": "object",
+      "properties": {
+        "optionsId": {
+          "title": "Dynamic options (fetched from server)",
+          "description": "ID of the option list to fetch from the server",
+          "type": "string"
+        },
+        "mapping": {
+          "$ref": "#/definitions/IMapping"
+        },
+        "queryParameters": {
+          "$ref": "#/definitions/IQueryParameters"
+        },
+        "options": {
+          "title": "Static options",
+          "description": "List of static options",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IRawOption"
+          }
+        },
+        "secure": {
+          "title": "Secure options (when using optionsId)",
+          "description": "Whether to call the secure API endpoint when fetching options from the server (allows for user/instance-specific options)",
+          "default": false,
+          "type": "boolean"
+        },
+        "sortOrder": {
+          "description": "Sorts the code list in either ascending or descending order by label.",
+          "enum": [
+            "asc",
+            "desc"
+          ]
+        },
+        "source": {
+          "$ref": "#/definitions/IOptionSource"
+        }
+      }
+    },
+    "ISelectionComponentFull": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ISelectionComponent"
+        },
+        {
+          "title": "ISelectionComponentFull",
+          "type": "object",
+          "properties": {
+            "preselectedOptionIndex": {
+              "title": "Preselected option index",
+              "description": "Index of the option to preselect (if no option has been selected yet)",
+              "type": "integer"
+            }
+          }
+        }
+      ]
+    },
+    "ITableColumnProperties": {
+      "title": "Column options",
+      "description": "Options for the row/column",
+      "examples": [
+        {
+          "width": "auto",
+          "alignText": "left",
+          "textOverflow": {
+            "lineWrap": true,
+            "maxHeight": 2
+          }
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "width": {
+          "title": "Width",
+          "description": "Width of cell in % or 'auto'. Defaults to 'auto'",
+          "default": "auto",
+          "type": "string",
+          "pattern": "^([0-9]{1,2}%|100%|auto)$"
+        },
+        "alignText": {
+          "$ref": "#/definitions/ITableColumnsAlignText"
+        },
+        "textOverflow": {
+          "$ref": "#/definitions/ITableColumnsTextOverflow"
+        }
+      }
+    },
+    "ITableColumnsAlignText": {
+      "title": "Align Text",
+      "description": "Choose text alignment between 'left', 'center', or 'right' for text in table cells. Defaults to 'left' for text and 'right' for numbers.",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "ITableColumnsTextOverflow": {
+      "title": "ITableColumnsTextOverflow",
+      "type": "object",
+      "properties": {
+        "lineWrap": {
+          "title": "Line Wrap",
+          "description": "Toggle line wrapping on or off. Defaults to true",
+          "default": true,
+          "type": "boolean"
+        },
+        "maxHeight": {
+          "title": "Max Height",
+          "description": "Determines the number of lines to display in table cell before hiding the rest of the text with an ellipsis (...). Defaults to 2.",
+          "default": 2,
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LabeledComponentProps": {
+      "title": "LabeledComponentProps",
+      "type": "object",
+      "properties": {
+        "labelSettings": {
+          "$ref": "#/definitions/ILabelSettings"
+        }
+      }
+    },
+    "LayoutStyle": {
+      "title": "Layout",
+      "description": "Define the layout style for the options",
+      "enum": [
+        "column",
+        "row",
+        "table"
+      ]
+    },
+    "LinkStyle": {
+      "title": "Style",
+      "description": "The style of the link (a primary/secondary button, or an actual link)",
+      "enum": [
+        "primary",
+        "secondary",
+        "link"
+      ]
+    },
+    "Location": {
+      "title": "Center location",
+      "description": "Center location of the map",
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ],
+      "additionalProperties": false
+    },
+    "MapLayer": {
+      "title": "MapLayer",
+      "type": "object",
+      "properties": {
+        "url": {
+          "title": "Map layer url",
+          "description": "Url to a map tile. {z}/{x}/{y} will be replaced with tile coordinates, {s} will be replaced with a random subdomain if subdomains are given",
+          "type": "string"
+        },
+        "attribution": {
+          "title": "Attribution",
+          "description": "Ascribing a work or remark to a particular unit for recognition",
+          "type": "string"
+        },
+        "subdomains": {
+          "title": "Subdomains",
+          "description": "List of subdomains. Used for balancing the load on different map tiling servers. A random one will replace {s} in the defined url.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "NavigateToPageAction": {
+      "title": "NavigateToPageAction",
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "navigateToPage"
+        },
+        "type": {
+          "const": "ClientAction"
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "page": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "page"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "metadata"
+      ],
+      "additionalProperties": false
+    },
+    "NextPageAction": {
+      "title": "NextPageAction",
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "nextPage"
+        },
+        "type": {
+          "const": "ClientAction"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "NumberFormatProps": {
+      "title": "Number formatting options",
+      "description": "These options are sent directly to react-number-format in order to make it possible to format pretty numbers in the input field.",
+      "type": "object",
+      "properties": {
+        "thousandSeparator": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "decimalSeparator": {
+          "type": "string"
+        },
+        "allowedDecimalSeparators": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "thousandsGroupStyle": {
+          "enum": [
+            "thousand",
+            "lakh",
+            "wan",
+            "none"
+          ]
+        },
+        "decimalScale": {
+          "type": "number"
+        },
+        "fixedDecimalScale": {
+          "type": "boolean"
+        },
+        "allowNegative": {
+          "type": "boolean"
+        },
+        "allowLeadingZeros": {
+          "type": "boolean"
+        },
+        "suffix": {
+          "type": "string"
+        },
+        "prefix": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "PageValidation": {
+      "title": "PageValidation",
+      "type": "object",
+      "properties": {
+        "page": {
+          "title": "Page",
+          "description": "Which pages should be validated when the next button is clicked.",
+          "enum": [
+            "current",
+            "currentAndPrevious",
+            "all"
+          ]
+        },
+        "show": {
+          "$ref": "#/definitions/AllowedValidationMasks"
+        }
+      },
+      "required": [
+        "page",
+        "show"
+      ],
+      "additionalProperties": false
+    },
+    "PatternFormatProps": {
+      "title": "PatternFormatProps",
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "string"
+        },
+        "mask": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "allowEmptyFormatting": {
+          "type": "boolean"
+        },
+        "patternChar": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "format"
+      ],
+      "additionalProperties": false
+    },
+    "PreviousPageAction": {
+      "title": "PreviousPageAction",
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "previousPage"
+        },
+        "type": {
+          "const": "ClientAction"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "SaveWhileTyping": {
+      "title": "Automatic saving while typing",
+      "description": "Lets you control how long we wait before saving the value locally while typing. This value is usually also used to determine how long we wait before saving the value to the server. The default value is 400 milliseconds.",
+      "default": 400,
+      "type": "number"
+    },
+    "ServerAction": {
+      "title": "ServerAction",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "const": "ServerAction"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "SummarizableComponentProps": {
+      "title": "SummarizableComponentProps",
+      "type": "object",
+      "properties": {
+        "renderAsSummary": {
+          "title": "Render as summary",
+          "description": "Boolean value or expression indicating if the component should be rendered as a summary. Defaults to false.",
+          "default": false,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        }
+      }
+    },
+    "SummaryDisplayProperties": {
+      "title": "Display properties",
+      "description": "Optional properties to configure how summary is displayed",
+      "type": "object",
+      "properties": {
+        "hideChangeButton": {
+          "title": "Hide change button",
+          "description": "Set to true if the change button should be hidden for the summary component. False by default.",
+          "default": false,
+          "type": "boolean"
+        },
+        "hideValidationMessages": {
+          "title": "Hide validation messages",
+          "description": "Set to true if the validation messages should be hidden for the component when shown in Summary. False by default.",
+          "default": false,
+          "type": "boolean"
+        },
+        "useComponentGrid": {
+          "title": "Use component grid",
+          "description": "Set to true to allow summary component to use the grid setup of the referenced component. For group summary, this will apply for all group child components.",
+          "default": false,
+          "type": "boolean"
+        },
+        "hideBottomBorder": {
+          "title": "Hide bottom border",
+          "description": "Set to true to hide the blue dashed border below the summary component. False by default.",
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TRBFormComp": {
+      "title": "TRBFormComp",
+      "type": "object",
+      "properties": {
+        "tableTitle": {
+          "title": "Table title",
+          "description": "Title used in the table view (overrides the default title)",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        },
+        "shortName": {
+          "title": "Short name (for validation)",
+          "description": "Alternative name used for required validation messages (overrides the default title)",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        },
+        "requiredValidation": {
+          "title": "Required validation message",
+          "description": "Full validation message shown when the component is required and no value has been entered (overrides both the default and shortName)",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        }
+      }
+    },
+    "TRBLabel": {
+      "title": "TRBLabel",
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Title",
+          "description": "Label text/title shown above the component",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "Label description shown above the component, below the title",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        },
+        "help": {
+          "title": "Help text",
+          "description": "Help text shown in a tooltip when clicking the help button",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        }
+      }
+    },
+    "TRBSummarizable": {
+      "title": "TRBSummarizable",
+      "type": "object",
+      "properties": {
+        "summaryTitle": {
+          "title": "Summary title",
+          "description": "Title used in the summary view (overrides the default title)",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        },
+        "summaryAccessibleTitle": {
+          "title": "Accessible summary title",
+          "description": "Title used for aria-label on the edit button in the summary view (overrides the default and summary title)",
+          "$ref": "expression.schema.v1.json#/definitions/string"
+        }
+      }
+    }
+  }
+}

@@ -953,7 +953,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   height: 32px;
   width: 32px;
   position: absolute;
-  top: 10px;
+  top: 11px;
   right: 0;
   z-index: 1001;
 }
@@ -3049,6 +3049,63 @@ table > tbody > tr.hOU04Y5iWFnNKqPGHfRH:hover {
 
 .Ycy_14PhV4V5THy8n4wP {
   color: red;
+}
+
+.CHYacyTT7Cug0o6Mai3Q {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.D5_ThEfAi4jOo3HqR51d {
+  position: relative;
+}
+
+.D5_ThEfAi4jOo3HqR51d > button {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: 1001;
+}
+
+.MH4sLMFWp4UWEtuKD9UX {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  background-color: white;
+}
+
+.PTHBhBS_MP68pucJqnCM {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.x7tER_tpzfIP_BKEfuYg {
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.dQjODOKiOVNNLuxZK8Nt {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: #eee;
+  padding: 0px 0px 0px 4px;
+  list-style: none;
+  margin-bottom: 4px;
+}
+
+.JZeo4NvT160njiU9Zvoq {
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  padding: 0px 4px;
 }
 
 .hTXGkYjVNgPwG943ijAz button {
