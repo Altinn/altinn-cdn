@@ -1622,6 +1622,11 @@ dd.ix9EOGhoMwGeL3puCIs5 {
   align-items: center;
 }
 
+.J5x8sVJm035yMVaHC7sC {
+  font-size: '1rem';
+  word-break: 'break-word';
+}
+
 .thIJc7WhjQTBn7bpo7mn {
   display: flex;
   flex-direction: row;
@@ -1929,7 +1934,7 @@ tr.gBhee2ch3eiT84MoiDVg td {
 .g_PmREk_KEy4din_ZNYW,
 .g_PmREk_KEy4din_ZNYW td,
 .g_PmREk_KEy4din_ZNYW th {
-  background-color: var(--component-input-read_only_info-color-background-default);
+  background-color: var(--fds-semantic-surface-neutral-subtle);
 }
 
 tr > .kkNuqjtobbSBKjHP3Awv {
@@ -2120,6 +2125,34 @@ Altinn, and making sure they are consistent. */
   font-size: 1rem;
   line-height: 1.6875;
   margin-top: 4px;
+}
+
+.LZr4HcFL7oIkXPRe7LYl,
+.LZr4HcFL7oIkXPRe7LYl input {
+  text-align: right;
+}
+
+.DZsKJOi6yP3HA63j66Fs,
+.DZsKJOi6yP3HA63j66Fs input {
+  text-align: left;
+}
+
+.JHte3CUED_2gkKUkDqFd,
+.JHte3CUED_2gkKUkDqFd input {
+  text-align: center;
+}
+
+.aOn5ERt0w6BvuWBEk0ky {
+  padding: 0 var(--fds-spacing-2);
+  line-height: 32px;
+}
+
+.zdJWBqZjAAloyTdtRfPv:focus-visible {
+  --fds-focus-border-width: 3px;
+  outline: var(--fds-focus-border-width) solid var(--fds-semantic-border-focus-outline);
+  outline-offset: var(--fds-focus-border-width);
+  box-shadow: 0 0 0 var(--fds-focus-border-width) var(--fds-semantic-border-focus-boxshadow);
+  border-radius: var(--fds-border_radius-medium);
 }
 
 .gaE71UkhR9WAByJICM_S {
@@ -2330,6 +2363,8 @@ Altinn, and making sure they are consistent. */
 
 .MoopQELhYDuAsYzUF_tw {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   gap: var(--button-gap);
 }
 

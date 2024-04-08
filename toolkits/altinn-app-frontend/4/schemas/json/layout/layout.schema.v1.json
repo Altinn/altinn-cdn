@@ -3678,7 +3678,30 @@
               "const": "Summary"
             },
             "textResourceBindings": {
-              "$ref": "#/definitions/TRBSummarizable"
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "returnToSummaryButtonTitle": {
+                      "title": "ReturnToSummaryButtonTitle",
+                      "description": "Used to specify the text on the NavigationButtons component that should be used after clicking \"Change\" on the summary component",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "returnToSummaryButtonTitle": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
             },
             "componentRef": {
               "title": "Component reference",
@@ -5569,6 +5592,12 @@
         "hideBottomBorder": {
           "title": "Hide bottom border",
           "description": "Set to true to hide the blue dashed border below the summary component. False by default.",
+          "default": false,
+          "type": "boolean"
+        },
+        "nextButton": {
+          "title": "Display the next button",
+          "description": "Set to to true display a \"next\" button as well as the return to summary button",
           "default": false,
           "type": "boolean"
         }
