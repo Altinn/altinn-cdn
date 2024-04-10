@@ -2,6 +2,11 @@
   "$schema": "news.schema.json",
   "news": [
     {
+      "date": "2024-04-10",
+      "title": "Ny publiseringsside",
+      "content": "Nå har vi lansert en oppdatert publiserings-side med nytt design. Oversikt over tjenesten i de forskjellige miljøene er oppdatert, og status på tjenesten i miljøene er nå helt oppdatert til en hver tid."
+    },
+    {
       "date": "2024-01-16",
       "title": "Prosessvisning",
       "content": "Nå er prosess-siden tilgjengelig i BETA! I første omgang blir det mulig å se prosessen sin. Når versjon 8 av støttebibliotekene til applikasjonene er publisert kan de som oppgrader til disse også få mulighet til å redigere prosessen. Nye detaljer og redigeringsmuligheter publiseres fortløpende."
