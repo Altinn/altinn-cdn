@@ -371,9 +371,9 @@
         },
         "nav": {
             "name": {
-                "en": "Norwegian Labour and Welfare Administration",
-                "nb": "Arbeids- og velferdsetaten",
-                "nn": "Arbeids- og velferdsetaten"
+                "en": "Norwegian Labour and Welfare Administration (NAV)",
+                "nb": "Arbeids- og velferdsetaten (NAV)",
+                "nn": "Arbeids- og velferdsetaten (NAV)"
             },
             "logo": "https://altinncdn.no/orgs/nav/nav.png",
             "orgnr": "889640782",
