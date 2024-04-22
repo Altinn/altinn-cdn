@@ -125,7 +125,7 @@
                 "production"
             ]
         },
-        "fhi":{
+        "fhi": {
             "name": {
                 "en": "The Norwegian Institute of Public Health",
                 "nb": "Folkehelseinstituttet",
@@ -261,7 +261,7 @@
                 "production"
             ]
         },
-        "lt":{
+        "lt": {
             "name": {
                 "en": "Civil Aviation Authority of Norway",
                 "nb": "Luftfartstilsynet",
@@ -475,7 +475,7 @@
                 "tt02",
                 "production"
             ]
-        },        
+        },
         "skd": {
             "name": {
                 "en": "Norwegian Tax Administration",
@@ -655,6 +655,256 @@
             },
             "orgnr": "986252932",
             "homepage": "https://dfo.no/",
+            "environments": []
+        },
+        "slk": {
+            "name": {
+                "en": "Norwegian State Educational Loan Fund",
+                "nb": "Statens Lånekasse for utdanning",
+                "nn": "Statens Lånekasse for utdanning"
+            },
+            "orgnr": "960885406",
+            "homepage": "https://lanekassen.no/",
+            "environments": []
+        },
+        "kt": {
+            "name": {
+                "en": "Norwegian Competition Authority",
+                "nb": "Konkurransetilsynet",
+                "nn": "Konkurransetilsynet"
+            },
+            "orgnr": "974761246",
+            "homepage": "https://konkurransetilsynet.no/",
+            "environments": []
+        },
+        "hb": {
+            "name": {
+                "en": "Norwegian State Housing Bank",
+                "nb": "Husbanken",
+                "nn": "Husbanken"
+            },
+            "orgnr": "942114184",
+            "homepage": "https://www.husbanken.no/",
+            "environments": []
+        },
+        "lts": {
+            "name": {
+                "en": "Norwegian Gaming and Foundation Authority",
+                "nb": "Lotteri- og stiftelsestilsynet",
+                "nn": "Lotteri- og stiftelsestilsynet"
+            },
+            "orgnr": "982391490",
+            "homepage": "https://lottstift.no/",
+            "environments": []
+        },
+        "slf": {
+            "name": {
+                "en": "Norwegian Agriculture Agency",
+                "nb": "Landbruksdirektoratet",
+                "nn": "Landbruksdirektoratet"
+            },
+            "orgnr": "981544315",
+            "homepage": "https://www.landbruksdirektoratet.no/",
+            "environments": []
+        },
+        "nve": {
+            "name": {
+                "en": "Norwegian Water Resources and Energy Directorate",
+                "nb": "Norges vassdrags- og energidirektorat",
+                "nn": "Norges vassdrags- og energidirektoratt"
+            },
+            "orgnr": "970205039",
+            "homepage": "https://www.nve.no/",
+            "environments": []
+        },
+        "ok": {
+            "name": {
+                "en": "City of Oslo",
+                "nb": "Oslo kommune",
+                "nn": "Oslo kommune"
+            },
+            "orgnr": "971183675",
+            "homepage": "https://www.oslo.kommune.no/",
+            "environments": []
+        },
+        "bk": {
+            "name": {
+                "en": "City of Bergen",
+                "nb": "Bergen kommune",
+                "nn": "Bergen kommune"
+            },
+            "orgnr": "964338531",
+            "homepage": "https://www.bergen.kommune.no/",
+            "environments": []
+        },
+        "spk": {
+            "name": {
+                "en": "Norwegian Public Service Pension Fund",
+                "nb": "Statens pensjonskasse",
+                "nn": "Statens pensjonskasse"
+            },
+            "orgnr": "974760967",
+            "homepage": "https://www.spk.no/",
+            "environments": []
+        },
+        "ks": {
+            "name": {
+                "en": "Municipalities/County Municipalities",
+                "nb": "Kommuner/fylkeskommuner",
+                "nn": "Kommunar/fylkeskommunar"
+            },
+            "orgnr": "971032146",
+            "homepage": "https://www.ks.no/",
+            "environments": []
+        },
+        "kyv": {
+            "name": {
+                "en": "The Norwegian Coastal Administration",
+                "nb": "Kystverket",
+                "nn": "Kystverket"
+            },
+            "orgnr": "874783242",
+            "homepage": "https://www.kystverket.no/",
+            "environments": []
+        },
+        "dpa": {
+            "name": {
+                "en": "Norwegian Data Protection Authority",
+                "nb": "Datatilsynet",
+                "nn": "Datatilsynet"
+            },
+            "orgnr": "974761467",
+            "homepage": "https://www.datatilsynet.no/",
+            "environments": []
+        },
+        "pod": {
+            "name": {
+                "en": "Police",
+                "nb": "Politiet",
+                "nn": "Politiet"
+            },
+            "orgnr": "982531950",
+            "homepage": "https://www.datatilsynet.no/",
+            "environments": []
+        },
+        "sht": {
+            "name": {
+                "en": "Accident Investigation Board Norway",
+                "nb": "Statens havarikommisjon",
+                "nn": "Statens havarikommisjon"
+            },
+            "orgnr": "881143712",
+            "homepage": "https://havarikommisjonen.no/",
+            "environments": []
+        },
+        "eno": {
+            "name": {
+                "en": "Enova SF",
+                "nb": "Enova SF",
+                "nn": "Enova SF"
+            },
+            "orgnr": "983609155",
+            "homepage": "https://www.enova.no/",
+            "environments": []
+        },
+        "k5501": {
+            "name": {
+                "en": "Trondheim Municipality",
+                "nb": "Trondheim kommune",
+                "nn": "Trondheim kommune"
+            },
+            "orgnr": "942110464",
+            "homepage": "https://www.trondheim.kommune.no/",
+            "environments": []
+        },
+        "k3030": {
+            "name": {
+                "en": "Lillestrøm kommune",
+                "nb": "Lillestrøm kommune",
+                "nn": "Lillestrøm kommune"
+            },
+            "orgnr": "820710592",
+            "homepage": "https://www.lillestrom.kommune.no/",
+            "environments": []
+        },
+        "ikta": {
+            "name": {
+                "en": "IKT Agder IKS",
+                "nb": "IKT Agder IKS",
+                "nn": "IKT Agder IKS"
+            },
+            "orgnr": "985359385",
+            "homepage": "https://www.ikt-agder.no/",
+            "environments": []
+        },
+        "nokut": {
+            "name": {
+                "en": "The Norwegian Agency for Quality Assurance in Education",
+                "nb": "Nasjonalt organ for kvalitet i utdanningen",
+                "nn": "Nasjonalt organ for kvalitet i utdanninga"
+            },
+            "orgnr": "985042667",
+            "homepage": "https://www.nokut.no/",
+            "environments": []
+        },
+        "pol": {
+            "name": {
+                "en": "The Norwegian Police Service",
+                "nb": "Politi- og lensmannsetaten",
+                "nn": "Politi- og lensmannsetaten"
+            },
+            "orgnr": "915429785",
+            "homepage": "https://www.politiet.no/",
+            "environments": []
+        },
+        "afs": {
+            "name": {
+                "en": "Avfall Sør AS",
+                "nb": "Avfall Sør AS",
+                "nn": "Avfall Sør AS"
+            },
+            "orgnr": "995646137",
+            "homepage": "https://avfallsor.no/",
+            "environments": []
+        },
+        "fjel": {
+            "name": {
+                "en": "Fjellinjen AS",
+                "nb": "Fjellinjen AS",
+                "nn": "Fjellinjen AS"
+            },
+            "orgnr": "941856543",
+            "homepage": "https://www.fjellinjen.no/",
+            "environments": []
+        },
+        "vigo": {
+            "name": {
+                "en": "VIGO IKS",
+                "nb": "VIGO IKS",
+                "nn": "VIGO IKS"
+            },
+            "orgnr": "998283914",
+            "homepage": "https://www.vigoiks.no/",
+            "environments": []
+        },
+        "rmt": {
+            "name": {
+                "en": "Remidt IKS",
+                "nb": "Remidt IKS",
+                "nn": "Remidt IKS"
+            },
+            "orgnr": "975936333",
+            "homepage": "https://www.remidt.no/",
+            "environments": []
+        },
+        "mna": {
+            "name": {
+                "en": "MIDTRE NAMDAL AVFALLSSELSKAP IKS",
+                "nb": "MIDTRE NAMDAL AVFALLSSELSKAP IKS",
+                "nn": "MIDTRE NAMDAL AVFALLSSELSKAP IKS"
+            },
+            "orgnr": "957387969",
+            "homepage": "https://mna.no/",
             "environments": []
         }
     }
