@@ -261,6 +261,19 @@
                 "production"
             ]
         },
+        "kyv": {
+            "name": {
+                "en": "The Norwegian Coastal Administration",
+                "nb": "Kystverket",
+                "nn": "Kystverket"
+            },
+            "logo": "https://altinncdn.no/orgs/kyv/kyv.png",
+            "orgnr": "874783242",
+            "homepage": "https://www.kystverket.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "lt": {
             "name": {
                 "en": "Civil Aviation Authority of Norway",
@@ -755,16 +768,6 @@
             },
             "orgnr": "971032146",
             "homepage": "https://www.ks.no/",
-            "environments": []
-        },
-        "kyv": {
-            "name": {
-                "en": "The Norwegian Coastal Administration",
-                "nb": "Kystverket",
-                "nn": "Kystverket"
-            },
-            "orgnr": "874783242",
-            "homepage": "https://www.kystverket.no/",
             "environments": []
         },
         "dpa": {
