@@ -2,6 +2,11 @@
   "$schema": "news.schema.json",
   "news": [
     {
+      "date": "2024-04-24",
+      "title": "Automatisk lagring i prosessvising",
+      "content": "Prosess nå lagres automatisk ved endringer. Legger man til en ny oppgave for utfylling (Altinn 'data'-task) opprettes tilhørende sidegruppe (for oppsett av skjema) nå automatisk."
+    },
+    {
       "date": "2024-04-10",
       "title": "Ny publiseringsside",
       "content": "Nå har vi lansert en oppdatert publiserings-side med nytt design. Oversikt over tjenesten i de forskjellige miljøene er oppdatert, og status på tjenesten i miljøene er nå helt oppdatert til en hver tid."
