@@ -583,7 +583,8 @@
             "orgnr": "880455702",
             "homepage": "https://www.toll.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "tra": {
