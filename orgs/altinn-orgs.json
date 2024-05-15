@@ -271,7 +271,8 @@
             "orgnr": "874783242",
             "homepage": "https://www.kystverket.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "lt": {
