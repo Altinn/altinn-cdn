@@ -1497,6 +1497,7 @@ dd.ix9EOGhoMwGeL3puCIs5 {
 .CVvpA1vjycEfxRPRxiBT {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-content: space-between;
   align-items: baseline;
   gap: 0.937rem;
@@ -2382,6 +2383,72 @@ Altinn, and making sure they are consistent. */
   display: flex;
 }
 
+.pkPFm9QidvXqahcjpWgE {
+  display: flex;
+  gap: var(--fds-spacing-3);
+  padding: var(--fds-spacing-3) 0;
+}
+
+.pqUguQ96RmY2G7ca8zT1 {
+  display: flex;
+  gap: var(--fds-spacing-3);
+  flex-direction: row;
+  padding: var(--fds-spacing-3) 0;
+}
+
+.oYmW0NIAjLfmbfsFI_4g {
+  display: flex;
+  flex-direction: column;
+}
+
+.oYmW0NIAjLfmbfsFI_4g {
+  display: flex;
+  flex-direction: column;
+}
+
+.VsCVScqr5Uelk0f20gQv {
+  display: flex;
+  width: 100%;
+  gap: var(--fds-spacing-4);
+
+  table {
+    width: 100%;
+
+    tr {
+      vertical-align: top;
+    }
+  }
+}
+
+.dFROln_GQMB5MRJ_DrxA {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-4);
+}
+
+.nJj8mOZuUPo125X3YOho {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px 0 5px 0;
+}
+
+.QmgpS7jckt0BLv0uKjlP {
+  width: 100%;
+}
+
+.GWQDyQx2Sqqwr_xqIYMf {
+  width: 100%;
+}
+
+.EqNDJcllH93OSV4zkrjn {
+  text-align: left;
+}
+
+.ezonzbzj3ZEZ9tvdHwzv:hover td {
+  background-color: var(--fds-semantic-surface-neutral-default);
+}
+
 .KRfI_KoxKwbZ9Xsb9VdQ > legend {
   padding-left: var(--modal-padding-x);
   padding-right: var(--modal-padding-x);
@@ -2395,6 +2462,24 @@ Altinn, and making sure they are consistent. */
 
 .KRfI_KoxKwbZ9Xsb9VdQ > * {
   margin-top: 0 !important;
+}
+
+.CzF2hGtDuP_RM5zHHC4w {
+  display: flex;
+  justify-content: center;
+}
+
+.CzF2hGtDuP_RM5zHHC4w ul {
+  padding: 0;
+}
+
+.VEzTJ7dcsZoQAEP7eKAu,
+.VEzTJ7dcsZoQAEP7eKAu td {
+  background-color: var(--fds-semantic-surface-neutral-subtle);
+}
+
+.AMJilqnhkXhYzTd8lQIy {
+  visibility: hidden;
 }
 
 .M4oXbZ5iYGWZsZwBC4HH {
@@ -2583,7 +2668,7 @@ table > tbody > tr.hOU04Y5iWFnNKqPGHfRH:hover {
 }
 
 .ojNmWUzsDr2AmLZOk6or > td {
-  background-color: var(--repeating-group-error-color);
+  background-color: var(--repeating-group-error-color) !important;
 }
 
 .fiY5CnZwWl3wIIShVnTD {
@@ -3191,6 +3276,17 @@ table > tbody > tr.hOU04Y5iWFnNKqPGHfRH:hover {
 }
 .ccp_NJMMVTSFpy0UUXoB h1 {
   margin-top: 0;
+}
+
+.M815Z56Jw5vmwmR3UfGt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--fds-spacing-6);
+  margin-bottom: var(--fds-spacing-3);
+  h1 {
+    margin-bottom: 0;
+  }
 }
 
 @media print {

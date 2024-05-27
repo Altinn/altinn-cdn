@@ -43,6 +43,8 @@
             "NavigationButtons",
             "Panel",
             "Paragraph",
+            "Payment",
+            "PaymentDetails",
             "PrintButton",
             "RadioButtons",
             "RepeatingGroup",
@@ -446,6 +448,30 @@
           },
           "then": {
             "$ref": "#/definitions/CompParagraph"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Payment"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompPayment"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "PaymentDetails"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompPaymentDetails"
           }
         },
         {
@@ -3307,6 +3333,116 @@
         }
       ]
     },
+    "CompPayment": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompPayment",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Payment"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title of the paragraph",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "description": {
+                  "title": "Description",
+                  "description": "Description, optionally shown below the title",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompPaymentDetails": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompPaymentDetails",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "PaymentDetails"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Title",
+                  "description": "The title of the paragraph",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "description": {
+                  "title": "Description",
+                  "description": "Description, optionally shown below the title",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "mapping": {
+              "$ref": "#/definitions/IMapping"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "mapping": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "CompPrintButton": {
       "allOf": [
         {
@@ -3525,6 +3661,16 @@
                       "title": "Edit button (open) (for repeating groups)",
                       "description": "The text for the \"Edit\" button when the repeating group item is not in edit mode (i.e. the user can open the edit mode)",
                       "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "pagination_next_button": {
+                      "title": "Next button in pagination",
+                      "description": "The text for the \"Next\" button in pagination",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "pagination_back_button": {
+                      "title": "Back button in pagination",
+                      "description": "The text for the \"Back\" button in pagination",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
                     }
                   }
                 },
@@ -3540,7 +3686,9 @@
                     "save_button": true,
                     "save_and_next_button": true,
                     "edit_button_close": true,
-                    "edit_button_open": true
+                    "edit_button_open": true,
+                    "pagination_next_button": true,
+                    "pagination_back_button": true
                   },
                   "additionalProperties": false
                 }
@@ -3565,6 +3713,21 @@
             },
             "edit": {
               "$ref": "#/definitions/IGroupEditProperties"
+            },
+            "pagination": {
+              "title": "Pagination options",
+              "description": "Pagination options for the repeating group rows.",
+              "type": "object",
+              "properties": {
+                "rowsPerPage": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "rowsPerPage"
+              ],
+              "additionalProperties": false
             },
             "maxCount": {
               "title": "Max number of rows",
@@ -3642,6 +3805,7 @@
             "showValidations": true,
             "validateOnSaveRow": true,
             "edit": true,
+            "pagination": true,
             "maxCount": true,
             "minCount": true,
             "tableHeaders": true,
