@@ -16,8 +16,10 @@
             "Address",
             "Alert",
             "AttachmentList",
+            "Audio",
             "Button",
             "ButtonGroup",
+            "Cards",
             "Checkboxes",
             "Custom",
             "CustomButton",
@@ -49,7 +51,8 @@
             "RadioButtons",
             "RepeatingGroup",
             "Summary",
-            "TextArea"
+            "TextArea",
+            "Video"
           ]
         }
       },
@@ -130,6 +133,18 @@
           "if": {
             "properties": {
               "type": {
+                "const": "Audio"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompAudio"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
                 "const": "Button"
               }
             }
@@ -148,6 +163,18 @@
           },
           "then": {
             "$ref": "#/definitions/CompButtonGroup"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Cards"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompCards"
           }
         },
         {
@@ -532,6 +559,18 @@
           },
           "then": {
             "$ref": "#/definitions/CompTextArea"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Video"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompVideo"
           }
         }
       ]
@@ -972,6 +1011,56 @@
         }
       ]
     },
+    "CompAudio": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompAudio",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Audio"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "altText": {
+                  "title": "Alt text",
+                  "description": "Alternative text for the audio (for screen readers).",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "audio": {
+              "$ref": "#/definitions/IAudio"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "audio": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "CompButton": {
       "allOf": [
         {
@@ -1096,6 +1185,93 @@
             "id",
             "type",
             "children"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompCards": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompCards",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Cards"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBSummarizable"
+            },
+            "mediaPosition": {
+              "$ref": "#/definitions/CardsMediaPosition"
+            },
+            "minMediaHeight": {
+              "title": "minMediaHeight",
+              "description": "Fixed minimum height of media (if media is present)",
+              "examples": [
+                "100px",
+                "100%",
+                "100rem"
+              ],
+              "default": "150px",
+              "type": "string"
+            },
+            "minWidth": {
+              "title": "minWidth",
+              "description": "Fixed minimum width of the card",
+              "examples": [
+                "100",
+                "100px",
+                "100%",
+                "100rem"
+              ],
+              "default": "250px",
+              "type": "string",
+              "pattern": "^[0-9]+(px|rem|%)?$"
+            },
+            "color": {
+              "$ref": "#/definitions/CardsColor"
+            },
+            "cards": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CardConfigExternal"
+              }
+            }
+          },
+          "required": [
+            "type",
+            "color",
+            "cards"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "mediaPosition": true,
+            "minMediaHeight": true,
+            "minWidth": true,
+            "color": true,
+            "cards": true
+          },
+          "required": [
+            "id",
+            "type",
+            "color",
+            "cards"
           ],
           "additionalProperties": false
         }
@@ -1537,6 +1713,12 @@
             },
             "dataModelBindings": {
               "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
+            },
+            "alertOnChange": {
+              "title": "Alert on change",
+              "description": "Boolean value indicating if the component should alert on change",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
             }
           },
           "required": [
@@ -1566,7 +1748,8 @@
             "preselectedOptionIndex": true,
             "type": true,
             "textResourceBindings": true,
-            "dataModelBindings": true
+            "dataModelBindings": true,
+            "alertOnChange": true
           },
           "required": [
             "id",
@@ -2295,6 +2478,21 @@
                 {
                   "type": "object",
                   "properties": {
+                    "prefix": {
+                      "title": "Prefix",
+                      "description": "Prefix shown before the input field",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "suffix": {
+                      "title": "Suffix",
+                      "description": "Suffix shown after the input field",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
                     "tableTitle": true,
                     "shortName": true,
                     "requiredValidation": true,
@@ -2302,7 +2500,9 @@
                     "summaryAccessibleTitle": true,
                     "title": true,
                     "description": true,
-                    "help": true
+                    "help": true,
+                    "prefix": true,
+                    "suffix": true
                   },
                   "additionalProperties": false
                 }
@@ -3072,6 +3272,12 @@
             },
             "dataModelBindings": {
               "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
+            },
+            "alertOnChange": {
+              "title": "Alert on change",
+              "description": "Boolean value indicating if the component should alert on change",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
             }
           },
           "required": [
@@ -3101,7 +3307,8 @@
             "preselectedOptionIndex": true,
             "type": true,
             "textResourceBindings": true,
-            "dataModelBindings": true
+            "dataModelBindings": true,
+            "alertOnChange": true
           },
           "required": [
             "id",
@@ -4015,6 +4222,56 @@
         }
       ]
     },
+    "CompVideo": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompVideo",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Video"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "altText": {
+                  "title": "Alt text",
+                  "description": "Alternative text for the video (for screen readers).",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "video": {
+              "$ref": "#/definitions/IVideo"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "video": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "ActionButtonStyle": {
       "title": "Button style",
       "description": "The style/color scheme of the button.",
@@ -4049,6 +4306,35 @@
         ]
       }
     },
+    "AudioSrc": {
+      "title": "AudioSrc",
+      "examples": [
+        {
+          "nb": "https://example.com/audio.mp3",
+          "nn": "https://example.com/audio.mp3",
+          "en": "https://example.com/audio.mp3"
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "nb": {
+          "title": "Audio source (when using norwegian bokmål language)",
+          "type": "string"
+        },
+        "nn": {
+          "title": "Audio source (when using norwegian nynorsk language)",
+          "type": "string"
+        },
+        "en": {
+          "title": "Audio source (when using english language)",
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "title": "Audio source (when using other languages)",
+        "type": "string"
+      }
+    },
     "ButtonMode": {
       "title": "Mode",
       "description": "The mode of the button",
@@ -4057,6 +4343,58 @@
         "submit",
         "save",
         "instantiate"
+      ]
+    },
+    "CardConfigExternal": {
+      "title": "CardConfigExternal",
+      "type": "object",
+      "properties": {
+        "media": {
+          "title": "Media",
+          "description": "Media to display on the top/bottom of the card (must reference an Image, Audio or Video component",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "description": "Title of the card",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description/body text",
+          "description": "Full text displayed underneath the title, above any component children",
+          "type": "string"
+        },
+        "footer": {
+          "title": "Footer",
+          "description": "Footer text of the card",
+          "type": "string"
+        },
+        "children": {
+          "title": "Children",
+          "description": "Child component IDs to show inside the card",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CardsColor": {
+      "title": "Card color",
+      "description": "The color style for these cards",
+      "enum": [
+        "neutral",
+        "subtle"
+      ]
+    },
+    "CardsMediaPosition": {
+      "title": "ImagePosition",
+      "description": "Position of the media (image/video/audio) in each card",
+      "default": "top",
+      "enum": [
+        "top",
+        "bottom"
       ]
     },
     "ClientAction": {
@@ -4407,6 +4745,19 @@
         5,
         6
       ]
+    },
+    "IAudio": {
+      "title": "IAudio",
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "#/definitions/AudioSrc"
+        }
+      },
+      "required": [
+        "src"
+      ],
+      "additionalProperties": false
     },
     "IDataModelBindingsForAddress": {
       "title": "IDataModelBindingsForAddress",
@@ -5450,6 +5801,19 @@
       },
       "additionalProperties": false
     },
+    "IVideo": {
+      "title": "IVideo",
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "#/definitions/VideoSrc"
+        }
+      },
+      "required": [
+        "src"
+      ],
+      "additionalProperties": false
+    },
     "LabeledComponentProps": {
       "title": "LabeledComponentProps",
       "type": "object",
@@ -5578,15 +5942,15 @@
         "thousandSeparator": {
           "anyOf": [
             {
-              "type": "boolean"
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
             },
             {
-              "type": "string"
+              "$ref": "expression.schema.v1.json#/definitions/string"
             }
           ]
         },
         "decimalSeparator": {
-          "type": "string"
+          "$ref": "expression.schema.v1.json#/definitions/string"
         },
         "allowedDecimalSeparators": {
           "type": "array",
@@ -5615,10 +5979,10 @@
           "type": "boolean"
         },
         "suffix": {
-          "type": "string"
+          "$ref": "expression.schema.v1.json#/definitions/string"
         },
         "prefix": {
-          "type": "string"
+          "$ref": "expression.schema.v1.json#/definitions/string"
         }
       },
       "additionalProperties": false
@@ -5651,7 +6015,7 @@
       "type": "object",
       "properties": {
         "format": {
-          "type": "string"
+          "$ref": "expression.schema.v1.json#/definitions/string"
         },
         "mask": {
           "anyOf": [
@@ -5824,6 +6188,35 @@
           "description": "Title used for aria-label on the edit button in the summary view (overrides the default and summary title)",
           "$ref": "expression.schema.v1.json#/definitions/string"
         }
+      }
+    },
+    "VideoSrc": {
+      "title": "VideoSrc",
+      "examples": [
+        {
+          "nb": "https://example.com/video.mp4",
+          "nn": "https://example.com/video.mp4",
+          "en": "https://example.com/video.mp4"
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "nb": {
+          "title": "Video source (when using norwegian bokmål language)",
+          "type": "string"
+        },
+        "nn": {
+          "title": "Video source (when using norwegian nynorsk language)",
+          "type": "string"
+        },
+        "en": {
+          "title": "Video source (when using english language)",
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "title": "Video source (when using other languages)",
+        "type": "string"
       }
     }
   }
