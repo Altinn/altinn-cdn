@@ -289,6 +289,19 @@
                 "production"
             ]
         },
+        "lts": {
+            "name": {
+                "en": "Norwegian Gaming and Foundation Authority",
+                "nb": "Lotteri- og stiftelsestilsynet",
+                "nn": "Lotteri- og stiftelsestilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/lts/lts.png",
+            "orgnr": "982391490",
+            "homepage": "https://lottstift.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "mat": {
             "name": {
                 "en": "Norwegian Food Safety Authority",
@@ -434,6 +447,19 @@
             "environments": [
                 "tt02",
                 "production"
+            ]
+        },
+        "ok": {
+            "name": {
+                "en": "City of Oslo",
+                "nb": "Oslo kommune",
+                "nn": "Oslo kommune"
+            },
+            "logo": "https://altinncdn.no/orgs/ok/ok.png",
+            "orgnr": "971183675",
+            "homepage": "https://www.oslo.kommune.no/",
+            "environments": [
+                "tt02"
             ]
         },
         "oko": {
@@ -702,16 +728,6 @@
             "homepage": "https://www.husbanken.no/",
             "environments": []
         },
-        "lts": {
-            "name": {
-                "en": "Norwegian Gaming and Foundation Authority",
-                "nb": "Lotteri- og stiftelsestilsynet",
-                "nn": "Lotteri- og stiftelsestilsynet"
-            },
-            "orgnr": "982391490",
-            "homepage": "https://lottstift.no/",
-            "environments": []
-        },
         "slf": {
             "name": {
                 "en": "Norwegian Agriculture Agency",
@@ -730,16 +746,6 @@
             },
             "orgnr": "970205039",
             "homepage": "https://www.nve.no/",
-            "environments": []
-        },
-        "ok": {
-            "name": {
-                "en": "City of Oslo",
-                "nb": "Oslo kommune",
-                "nn": "Oslo kommune"
-            },
-            "orgnr": "971183675",
-            "homepage": "https://www.oslo.kommune.no/",
             "environments": []
         },
         "bk": {
