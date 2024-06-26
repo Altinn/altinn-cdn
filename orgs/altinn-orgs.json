@@ -339,7 +339,8 @@
             "orgnr": "937884117",
             "homepage": "https://www.norges-bank.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nbib": {
