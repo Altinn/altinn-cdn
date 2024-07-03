@@ -1,0 +1,20 @@
+name: Deploy files to production cdn
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    name: Deply files to production cdn
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run release script
+      run: |
+        bash .github/scripts/release.sh \
+          --source . \
+          --azure-sync-cdn \
+          --azure-sa-name "${{ secrets.PRODUCTION_STORAGEACCOUNT_NAME }}" \
+          --azure-sa-token "${{ secrets.PRODUCTION_ALTINN_CDN_SAS_TOKEN }}"
