@@ -125,7 +125,7 @@
                 "production"
             ]
         },
-        "fhi":{
+        "fhi": {
             "name": {
                 "en": "The Norwegian Institute of Public Health",
                 "nb": "Folkehelseinstituttet",
@@ -532,6 +532,18 @@
                 "production"
             ]
         },
+        "spk": {
+            "name": {
+                "en": "Norwegian Public Service Pension Fund",
+                "nb": "Statens pensjonskasse",
+                "nn": "Statens pensjonskasse"
+            },
+            "orgnr": "974760967",
+            "homepage": "https://www.spk.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "srf": {
             "name": {
                 "en": "Norwegian Civil Affairs Authority",
@@ -757,16 +769,6 @@
             },
             "orgnr": "964338531",
             "homepage": "https://www.bergen.kommune.no/",
-            "environments": []
-        },
-        "spk": {
-            "name": {
-                "en": "Norwegian Public Service Pension Fund",
-                "nb": "Statens pensjonskasse",
-                "nn": "Statens pensjonskasse"
-            },
-            "orgnr": "974760967",
-            "homepage": "https://www.spk.no/",
             "environments": []
         },
         "ks": {
