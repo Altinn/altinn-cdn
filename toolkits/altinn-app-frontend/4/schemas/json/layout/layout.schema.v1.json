@@ -51,6 +51,8 @@
             "RadioButtons",
             "RepeatingGroup",
             "Summary",
+            "Summary2",
+            "Tabs",
             "TextArea",
             "Video"
           ]
@@ -547,6 +549,30 @@
           },
           "then": {
             "$ref": "#/definitions/CompSummary"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Summary2"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompSummary2"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Tabs"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompTabs"
           }
         },
         {
@@ -1334,6 +1360,12 @@
             "layout": {
               "$ref": "#/definitions/LayoutStyle"
             },
+            "showLabelsInTable": {
+              "title": "Show label when single option in table",
+              "description": "Boolean value indicating if the label should be visible when only one option exists in table",
+              "default": false,
+              "type": "boolean"
+            },
             "alertOnChange": {
               "title": "Alert on change",
               "description": "Boolean value indicating if the component should alert on uncheck",
@@ -1370,6 +1402,7 @@
             "textResourceBindings": true,
             "dataModelBindings": true,
             "layout": true,
+            "showLabelsInTable": true,
             "alertOnChange": true
           },
           "required": [
@@ -2878,6 +2911,12 @@
             "dataModelBindings": {
               "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
             },
+            "showLabelsInTable": {
+              "title": "Show label when single option in table",
+              "description": "Boolean value indicating if the label should be visible when only one option exists in table",
+              "default": false,
+              "type": "boolean"
+            },
             "layout": {
               "$ref": "#/definitions/LayoutStyle"
             }
@@ -2909,6 +2948,7 @@
             "type": true,
             "textResourceBindings": true,
             "dataModelBindings": true,
+            "showLabelsInTable": true,
             "layout": true
           },
           "required": [
@@ -3759,6 +3799,12 @@
               "default": false,
               "$ref": "expression.schema.v1.json#/definitions/boolean"
             },
+            "showLabelsInTable": {
+              "title": "Show label when single option in table",
+              "description": "Boolean value indicating if the label should be visible when only one option exists in table",
+              "default": false,
+              "type": "boolean"
+            },
             "showAsCard": {
               "title": "Show as card",
               "description": "Boolean value indicating if the options should be displayed as cards. Defaults to false.",
@@ -3795,6 +3841,7 @@
             "dataModelBindings": true,
             "layout": true,
             "alertOnChange": true,
+            "showLabelsInTable": true,
             "showAsCard": true
           },
           "required": [
@@ -4126,6 +4173,167 @@
         }
       ]
     },
+    "CompSummary2": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompSummary2",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Summary2"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBSummarizable"
+            },
+            "target": {
+              "description": "Config for what should be rendered. If you set taskId, this property is optional.",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "title": "Mode",
+                  "default": "component",
+                  "enum": [
+                    "page",
+                    "layoutSet",
+                    "component"
+                  ]
+                },
+                "id": {
+                  "type": "string"
+                },
+                "taskId": {
+                  "title": "Task ID",
+                  "description": "Use this if you want to render something from another task.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            "showPageInAccordion": {
+              "type": "boolean"
+            },
+            "overrides": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "#/definitions/InputSummaryOverrideProps"
+                  },
+                  {
+                    "$ref": "#/definitions/CheckboxSummaryOverrideProps"
+                  },
+                  {
+                    "$ref": "#/definitions/RadioSummaryOverrideProps"
+                  },
+                  {
+                    "$ref": "#/definitions/DropdownSummaryOverrideProps"
+                  },
+                  {
+                    "$ref": "#/definitions/MultipleSelectSummaryOverrideProps"
+                  }
+                ]
+              }
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "target": true,
+            "showPageInAccordion": true,
+            "overrides": true
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompTabs": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompTabs",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Tabs"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBSummarizable"
+            },
+            "size": {
+              "default": "medium",
+              "enum": [
+                "small",
+                "medium",
+                "large"
+              ]
+            },
+            "defaultTab": {
+              "type": "string"
+            },
+            "tabs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/TabConfigExternal"
+              }
+            }
+          },
+          "required": [
+            "type",
+            "tabs"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "renderAsSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "size": true,
+            "defaultTab": true,
+            "tabs": true
+          },
+          "required": [
+            "id",
+            "type",
+            "tabs"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "CompTextArea": {
       "allOf": [
         {
@@ -4397,6 +4605,40 @@
         "bottom"
       ]
     },
+    "CheckboxSummaryOverrideProps": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ISummaryOverridesCommon"
+        },
+        {
+          "title": "Summary properties",
+          "description": "Properties for how to display the summary of the component",
+          "type": "object",
+          "properties": {
+            "displayType": {
+              "title": "Display type",
+              "description": "How data should be displayed for the radio in the summary",
+              "enum": [
+                "list",
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "componentId": true,
+            "hidden": true,
+            "displayType": true
+          },
+          "required": [
+            "componentId"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "ClientAction": {
       "title": "ClientAction",
       "anyOf": [
@@ -4456,6 +4698,9 @@
         "primary",
         "secondary"
       ]
+    },
+    "DropdownSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "FormComponentProps": {
       "title": "FormComponentProps",
@@ -5743,6 +5988,21 @@
         }
       ]
     },
+    "ISummaryOverridesCommon": {
+      "title": "ISummaryOverridesCommon",
+      "type": "object",
+      "properties": {
+        "componentId": {
+          "type": "string"
+        },
+        "hidden": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "componentId"
+      ]
+    },
     "ITableColumnProperties": {
       "title": "Column options",
       "description": "Options for the row/column",
@@ -5813,6 +6073,9 @@
         "src"
       ],
       "additionalProperties": false
+    },
+    "InputSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "LabeledComponentProps": {
       "title": "LabeledComponentProps",
@@ -5886,6 +6149,40 @@
         "url"
       ],
       "additionalProperties": false
+    },
+    "MultipleSelectSummaryOverrideProps": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ISummaryOverridesCommon"
+        },
+        {
+          "title": "Summary properties",
+          "description": "Properties for how to display the summary of the component",
+          "type": "object",
+          "properties": {
+            "displayType": {
+              "title": "Display type",
+              "description": "How data should be displayed for the radio in the summary",
+              "enum": [
+                "list",
+                "string"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "componentId": true,
+            "hidden": true,
+            "displayType": true
+          },
+          "required": [
+            "componentId"
+          ],
+          "additionalProperties": false
+        }
+      ]
     },
     "NavigateToPageAction": {
       "title": "NavigateToPageAction",
@@ -6059,6 +6356,9 @@
       ],
       "additionalProperties": false
     },
+    "RadioSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
     "SaveWhileTyping": {
       "title": "Automatic saving while typing",
       "description": "Lets you control how long we wait before saving the value locally while typing. This value is usually also used to determine how long we wait before saving the value to the server. The default value is 400 milliseconds.",
@@ -6189,6 +6489,40 @@
           "$ref": "expression.schema.v1.json#/definitions/string"
         }
       }
+    },
+    "TabConfigExternal": {
+      "title": "TabConfigExternal",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "description": "Title of the tab",
+          "type": "string"
+        },
+        "icon": {
+          "examples": [
+            "https://example.com/icon.svg"
+          ],
+          "type": "string"
+        },
+        "children": {
+          "title": "Children",
+          "description": "List of component IDs that should be displayed in the Tab",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "children"
+      ],
+      "additionalProperties": false
     },
     "VideoSrc": {
       "title": "VideoSrc",

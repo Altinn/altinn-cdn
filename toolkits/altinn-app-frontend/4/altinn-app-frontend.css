@@ -1539,6 +1539,211 @@ dd.ix9EOGhoMwGeL3puCIs5 {
   max-width: 90px;
 }
 
+.j7NN_Mzh43O5XQgAyd9g {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.xT5_46jTKghu_LZDiwqo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: baseline;
+  gap: 0.937rem;
+}
+
+.V1tmO5jToRsfTDk8lofA {
+  flex-grow: 4;
+  max-width: 300px;
+}
+
+.h22Qw1KWQFiHccElPpVa {
+  flex-grow: 0;
+}
+
+.qvuG7eTBAqy3gkegrmNw {
+  max-width: 90px;
+}
+
+.ccp_NJMMVTSFpy0UUXoB {
+  /* Hide interactive elements from PDF
+   * This makes testing easier as cypress does not support rendering in @media print mode
+   * @see https://github.com/cypress-io/cypress/issues/790
+   */
+  & button,
+  & [role='button'] {
+    display: none !important;
+  }
+}
+.ccp_NJMMVTSFpy0UUXoB h1 {
+  margin-top: 0;
+}
+
+.ccp_NJMMVTSFpy0UUXoB .epc9OTOJMr8xHEQQWJoI {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-4);
+  padding: var(--fds-spacing-2);
+  margin-bottom: var(--fds-spacing-2);
+}
+
+.M815Z56Jw5vmwmR3UfGt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--fds-spacing-6);
+  margin-bottom: var(--fds-spacing-3);
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .CjPryd1a04GB7uw1lKFg {
+    display: none;
+  }
+}
+
+@media screen {
+  .z3beWI4PFzdsJWfGe_wW {
+    display: none;
+  }
+}
+
+.KpDByyLtURI9K0Mu9I2n {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.bFELrgF7q80rgtqb1Zla {
+  margin: 0;
+}
+
+@media only screen {
+  .WICecnxz8cXwU1RmjRt9 {
+    margin-left: calc(var(--modal-padding-x) * -1);
+    margin-right: calc(var(--modal-padding-x) * -1);
+    width: calc(100% + 2 * var(--modal-padding-x));
+  }
+
+  .M29ACENDbtT1efpROOiw {
+    margin-bottom: calc(var(--modal-padding-y) * -1);
+  }
+
+  .RxK_qAqu4RXxazvx9Hfg {
+    margin-top: calc(var(--modal-padding-y) * -1);
+  }
+}
+
+.S2XNO8d7yW1QJ3lNSsKL {
+  width: 100%;
+  padding: 12px;
+}
+
+.c_nfaHX3Sc4mW5G5DOwc {
+  width: 100%;
+}
+
+.mPIm5422nERIoVVZvDV_ {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 38px;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.mPIm5422nERIoVVZvDV_ > * {
+  padding: 12px;
+}
+
+.w7Kzu1AJURDwOaHvQqea {
+  width: auto;
+  padding-left: var(--panel-x-padding);
+  padding-right: var(--panel-x-padding);
+  background-color: var(--component-panel-color-background-default);
+}
+
+.w7Kzu1AJURDwOaHvQqea > legend {
+  padding-top: 36px;
+}
+
+.OpRrmKzB2VKPvHLviKRn > .w7Kzu1AJURDwOaHvQqea {
+  --panel-x-padding: var(--modal-padding-x);
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.ky0H0ZDXHdDCqOQ5vqp3 {
+  border-left: 2px solid #949494;
+  margin-left: 0;
+  padding: 12px 0 12px 12px;
+}
+
+.gaE71UkhR9WAByJICM_S {
+  margin-top: 36px;
+  box-shadow: none;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+.TVkqYCvufunHIPq6gqs0 {
+  border-bottom: 0;
+  padding-right: 1.5625rem;
+}
+
+.vdOmXEvfX6YIwrMx9mBA {
+  height: auto;
+}
+
+@media print {
+  .gaE71UkhR9WAByJICM_S {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.tnvw35q2sJTT0nsw3wUe {
+  width: 100%;
+}
+
+.GuD6jkWrkm0lbRpe728a {
+  font-weight: 500;
+}
+
+.qobNE8yBhiXAOAZWbBag {
+  color: var(--fds-semantic-text-neutral-subtle);
+  font-style: italic;
+}
+
+.meyywRlY29ZVRu38VFg6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.Y7RInZMyzPF3i2_oL6Vt {
+  border-bottom: var(--fds-semantic-border-danger-default) solid 2px;
+}
+
+.Uc3QdJQ5n9kNUxRlJU5r {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-2);
+}
+
+._UMXIh7a0YClt4ikmCvi {
+  margin-left: auto;
+  min-width: unset;
+}
+
+.yfdFX8u_15zAYTk1Mit2 {
+  white-space: pre-wrap;
+}
+
 .luzW26mAD4oUp7bLcmiM {
   font-weight: 500;
   font-size: 1.125rem;
@@ -1660,6 +1865,36 @@ dd.ix9EOGhoMwGeL3puCIs5 {
   box-sizing: border-box;
 }
 
+.ZeUgnhuOWr7kqxPuw1Fo {
+  font-weight: 500;
+}
+
+.Ia69JyN4YH8RezwP84YD {
+  color: var(--fds-semantic-text-neutral-subtle);
+  font-style: italic;
+}
+
+.MV11bjHBT5hqLHnpNuxZ {
+  border-bottom: var(--fds-semantic-border-danger-default) solid 2px;
+}
+
+.vW8StNkCjIOg4Ed0he9U {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-2);
+}
+
+.FxUIVsYcsptjXsqpyfWb {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.EjjxJshjLRWs_m7aaYcH {
+  margin-left: auto;
+  min-width: unset;
+}
+
 .input-group input:focus ~ .a-icon-right {
   border-color: #0062ba !important;
 }
@@ -1688,6 +1923,137 @@ input.form-control:focus:not(.a-hasButton) {
 .input-group:focus-within {
   outline: 2px solid #0062ba;
   outline-offset: 0px;
+}
+
+._gzrs550AER1dd4O3UMd {
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+
+._gzrs550AER1dd4O3UMd,
+.cWWUN7qUkDmUTorkZuAA {
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 1.5rem;
+  margin-bottom: 12px;
+  box-shadow: none;
+  border-spacing: 0;
+}
+
+.cWWUN7qUkDmUTorkZuAA tbody tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Ej5k2It_UexHur3KeTOF {
+  grid-column: 1 / -1;
+}
+
+.QenUb7lxHtqbIWOP_6Sg tr td {
+  padding: 10px 4px 10px 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 1rem;
+  border-bottom: 1px dotted var(--border-color-primary);
+  color: #000;
+}
+.k5SNojcjKCwt5bbkxlUt {
+  float: right;
+  padding-right: 0;
+}
+
+.n8f_rqg6xTsfaI6eA886 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.usa68MsdElfMxRcssufm th {
+  border-bottom: var(--solid-border-primary);
+  font-size: 0.875rem;
+  padding: 4px 4px 4px 6px;
+}
+
+.jqB7NJWado87o_WhK_Qm th {
+  border-bottom: var(--fds-semantic-border-neutral-default);
+  font-size: 0.875rem;
+  padding: 4px 4px 4px 6px;
+}
+
+.GpWZSH2OFB1BSlOgrcig {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  float: right;
+}
+
+.I0OT9Onk6AzDei003rSC {
+  float: right;
+  padding-right: 0;
+}
+
+tr.gBhee2ch3eiT84MoiDVg td {
+  border-bottom: 1px dotted #1eadf7;
+}
+
+tr.GgQeJQ04_MMeJGzsE69j td {
+  border-bottom: 1px solid var(--fds-semantic-border-neutral-default);
+}
+
+.t6Xd3cLmEsSE6ZWTdYrC {
+  margin-bottom: 1rem;
+  margin-right: 0.8125rem;
+}
+
+.eEwQdBZdKjt5nUKggZd5 {
+  margin-left: auto;
+}
+
+.iBDEQbZOeZlEhzpkKXQB {
+  display: flex;
+  align-items: center;
+}
+
+.b21MJyy8te6uDKB60hKa {
+  margin-left: 0.2rem;
+  font-size: 1.3rem;
+}
+
+.U154A3APiPkVwK9kqZLl {
+  gap: 0.5rem;
+}
+
+.Yxj2K1E9SewiqmDb0Y_h {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.YwZQV54CDUDgFoP3qr2S {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000;
+  font-weight: 500;
+  font-size: 0.875rem;
+  min-width: 0px;
+}
+
+.SI0apgYS6P583Z6kl0VJ {
+  display: inline-block;
+  border: var(--dotted-border-primary);
+  padding: 12px;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.BKDvqUwQmOozn1xwvCLw {
+  font-size: 1rem;
+}
+
+.BKDvqUwQmOozn1xwvCLw:focus {
+  outline: 2px solid #0062ba;
 }
 
 .T4d4fCP_K8ui2MV0iEtm {
@@ -1749,123 +2115,6 @@ input.form-control:focus:not(.a-hasButton) {
   margin-top: 1.5rem;
 }
 
-._gzrs550AER1dd4O3UMd {
-  word-break: break-word;
-  text-overflow: ellipsis;
-}
-
-._gzrs550AER1dd4O3UMd,
-.cWWUN7qUkDmUTorkZuAA {
-  width: 100%;
-  table-layout: fixed;
-  margin-top: 1.5rem;
-  margin-bottom: 12px;
-  box-shadow: none;
-  border-spacing: 0;
-}
-
-.cWWUN7qUkDmUTorkZuAA tbody tr td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.Ej5k2It_UexHur3KeTOF {
-  grid-column: 1 / -1;
-}
-
-.QenUb7lxHtqbIWOP_6Sg tr td {
-  padding: 10px 4px 10px 6px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-weight: 400;
-  font-size: 1rem;
-  border-bottom: 1px dotted var(--border-color-primary);
-  color: #000;
-}
-.k5SNojcjKCwt5bbkxlUt {
-  float: right;
-  padding-right: 0;
-}
-
-.n8f_rqg6xTsfaI6eA886 {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-
-.usa68MsdElfMxRcssufm th {
-  border-bottom: var(--solid-border-primary);
-  font-size: 0.875rem;
-  padding: 4px 4px 4px 6px;
-}
-
-.GpWZSH2OFB1BSlOgrcig {
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  float: right;
-}
-
-.I0OT9Onk6AzDei003rSC {
-  float: right;
-  padding-right: 0;
-}
-
-tr.gBhee2ch3eiT84MoiDVg td {
-  border-bottom: 1px dotted #1eadf7;
-}
-
-.t6Xd3cLmEsSE6ZWTdYrC {
-  margin-bottom: 1rem;
-  margin-right: 0.8125rem;
-}
-
-.iBDEQbZOeZlEhzpkKXQB {
-  display: flex;
-  align-items: center;
-}
-
-.b21MJyy8te6uDKB60hKa {
-  margin-left: 0.2rem;
-  font-size: 1.3rem;
-}
-
-.U154A3APiPkVwK9kqZLl {
-  gap: 0.5rem;
-}
-
-.Yxj2K1E9SewiqmDb0Y_h {
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.YwZQV54CDUDgFoP3qr2S {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: #000;
-  font-weight: 500;
-  font-size: 0.875rem;
-  min-width: 0px;
-}
-
-.SI0apgYS6P583Z6kl0VJ {
-  display: inline-block;
-  border: var(--dotted-border-primary);
-  padding: 12px;
-  width: 100%;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  box-sizing: border-box;
-}
-
-.BKDvqUwQmOozn1xwvCLw {
-  font-size: 1rem;
-}
-
-.BKDvqUwQmOozn1xwvCLw:focus {
-  outline: 2px solid #0062ba;
-}
-
 .LVjtCPfuo13vhHMKygUA {
   display: grid;
   grid-template-columns: 1fr;
@@ -1921,32 +2170,6 @@ tr.gBhee2ch3eiT84MoiDVg td {
   align-items: center;
   gap: 0.25rem;
   padding-bottom: 0.75rem;
-}
-
-.KpDByyLtURI9K0Mu9I2n {
-  display: flex;
-  gap: 0.25rem;
-  align-items: center;
-}
-
-.bFELrgF7q80rgtqb1Zla {
-  margin: 0;
-}
-
-@media only screen {
-  .WICecnxz8cXwU1RmjRt9 {
-    margin-left: calc(var(--modal-padding-x) * -1);
-    margin-right: calc(var(--modal-padding-x) * -1);
-    width: calc(100% + 2 * var(--modal-padding-x));
-  }
-
-  .M29ACENDbtT1efpROOiw {
-    margin-bottom: calc(var(--modal-padding-y) * -1);
-  }
-
-  .RxK_qAqu4RXxazvx9Hfg {
-    margin-top: calc(var(--modal-padding-y) * -1);
-  }
 }
 
 .g_PmREk_KEy4din_ZNYW,
@@ -2056,48 +2279,186 @@ Altinn, and making sure they are consistent. */
   flex-direction: column;
 }
 
-.S2XNO8d7yW1QJ3lNSsKL {
-  width: 100%;
-  padding: 12px;
+.biQNz4XBjihbS3AWBNMz,
+.biQNz4XBjihbS3AWBNMz td,
+.biQNz4XBjihbS3AWBNMz th {
+  background-color: var(--fds-semantic-surface-neutral-subtle);
 }
 
-.c_nfaHX3Sc4mW5G5DOwc {
+tr > .NkDvNgATuXvbGxmIPebu {
+  padding-left: var(--modal-padding-x);
+}
+
+tr > .Hg55k_xZ3rMtkVY8SM6g {
+  padding-right: var(--modal-padding-x);
+}
+
+.D11_i_eFgYffS9hjEuF1 {
   width: 100%;
 }
 
-.mPIm5422nERIoVVZvDV_ {
+.D11_i_eFgYffS9hjEuF1 th {
+  font-weight: 500;
+  border-bottom: 2px solid var(--fds-semantic-border-neutral-strong);
+}
+
+.D11_i_eFgYffS9hjEuF1 td {
+  border-bottom: 1px dashed var(--fds-semantic-border-neutral-default);
+}
+
+.D11_i_eFgYffS9hjEuF1 tr:hover td {
+  background-color: unset;
+}
+
+.YJg1tBK8ZMnor0mXataM {
+  --cell-max-number-of-lines: 2;
+  --cell-text-alignment: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--cell-max-number-of-lines);
+  line-clamp: var(--cell-max-number-of-lines);
+  text-align: var(--cell-text-alignment);
+}
+
+.TOrB_O3CI9BSXluL3lYA {
+  --cell-width: auto;
+  width: var(--cell-width);
+  box-sizing: border-box;
+  white-space: pre-wrap;
+}
+
+/* The width here should be: calc(var(--cell-width) + var(--modal-padding-x) - var(--table-input-margin));
+   Adding 8.15% is a workaround for calc not working with both percentages and pixels inside a cell element.
+*/
+.TOrB_O3CI9BSXluL3lYA:first-child {
+  width: calc(var(--cell-width) + 8.15%);
+}
+
+.TOrB_O3CI9BSXluL3lYA:last-child {
+  width: calc(var(--cell-width) + 8.15%);
+}
+
+.XRWmbBm6dQ1A4SOlZ5Ve,
+.G6wZqarJETnKB9LPgBZl,
+.G6wZqarJETnKB9LPgBZl div {
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 38px;
-  margin-right: -12px;
-  margin-left: -12px;
 }
 
-.mPIm5422nERIoVVZvDV_ > * {
-  padding: 12px;
+.G6wZqarJETnKB9LPgBZl {
+  margin-top: 12px;
 }
 
-.w7Kzu1AJURDwOaHvQqea {
-  width: auto;
-  padding-left: var(--panel-x-padding);
-  padding-right: var(--panel-x-padding);
-  background-color: var(--component-panel-color-background-default);
+.G6wZqarJETnKB9LPgBZl div {
+  flex-wrap: nowrap;
 }
 
-.w7Kzu1AJURDwOaHvQqea > legend {
-  padding-top: 36px;
+.G6wZqarJETnKB9LPgBZl button {
+  align-self: flex-start;
 }
 
-.OpRrmKzB2VKPvHLviKRn > .w7Kzu1AJURDwOaHvQqea {
-  --panel-x-padding: var(--modal-padding-x);
-  margin-right: 12px;
-  margin-left: 12px;
+.T4vBj4NXtcWzPxW3GqZ_ {
+  padding-left: var(--modal-padding-x);
+  padding-right: var(--modal-padding-x);
 }
 
-.ky0H0ZDXHdDCqOQ5vqp3 {
-  border-left: 2px solid #949494;
-  margin-left: 0;
-  padding: 12px 0 12px 12px;
+.opLASI7P25Op4A5O8jbE {
+  font-weight: 500;
+}
+
+.AaIK78KAZhQwsugJIdpb {
+  text-align: left;
+}
+
+.Il6RmOAWNN25TXjGVDe6 {
+  border-bottom: var(--fds-semantic-border-danger-default) solid 2px;
+}
+
+.nIUNvvzwy3w_a3Je1130 {
+  padding-bottom: var(--fds-spacing-2);
+}
+
+.wFym8djkWoxekxTBYSuQ {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.UvZjxPTDHVlcDrRQGGTz {
+  margin-left: auto;
+}
+
+.J4z8yr79QJJTQ9zh36YI {
+  display: block;
+}
+
+.J4z8yr79QJJTQ9zh36YI thead {
+  display: none;
+}
+
+.J4z8yr79QJJTQ9zh36YI th {
+  display: block;
+  border: none;
+}
+
+.J4z8yr79QJJTQ9zh36YI tbody,
+.J4z8yr79QJJTQ9zh36YI tr {
+  display: block;
+}
+
+.J4z8yr79QJJTQ9zh36YI td {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: var(--fds-spacing-2) 0;
+}
+
+.J4z8yr79QJJTQ9zh36YI td .CAa2dFIzPv5erhbAYOwY {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.J4z8yr79QJJTQ9zh36YI tbody:last-child tr:last-child {
+  border-bottom: none;
+}
+
+.J4z8yr79QJJTQ9zh36YI tr {
+  border-bottom: 2px solid var(--fds-semantic-border-neutral-default);
+  padding-top: var(--fds-spacing-3);
+  padding-bottom: var(--fds-spacing-3);
+}
+
+.J4z8yr79QJJTQ9zh36YI td[data-header-title]:not([data-header-title=''])::before,
+.J4z8yr79QJJTQ9zh36YI th[data-header-title]:not([data-header-title=''])::before {
+  content: attr(data-header-title);
+  display: block;
+  text-align: left;
+  font-weight: 500;
+}
+
+.WBdHeCog2Tx8r10C8Gs4.pLwZzgSSrSJJzVYgIBxa {
+  padding: var(--fds-spacing-6) var(--fds-spacing-4) var(--fds-spacing-6) var(--fds-spacing-4);
+  border-width: var(--fds-border_width-default);
+  border-radius: var(--fds-border_radius-medium);
+  border-color: var(--fds-semantic-border-neutral-default);
+  border-style: dashed;
+  margin-top: var(--fds-spacing-6);
+}
+
+.WBdHeCog2Tx8r10C8Gs4 .ZPIs5W0XD9Rkj7E4vvdP {
+  margin-bottom: var(--fds-spacing-6);
+}
+
+.WBdHeCog2Tx8r10C8Gs4 .LEWVuJkcnaU2AFv8TemQ {
+  color: var(--semantic-text-neutral-subtle);
+}
+
+.WBdHeCog2Tx8r10C8Gs4 .ZCGaxp30afvPPYu1_rOJ:not(:last-of-type) {
+  margin-bottom: var(--fds-spacing-8);
 }
 
 .w_EyJqMIVdJyotnCyHfq {
@@ -2171,29 +2532,6 @@ Altinn, and making sure they are consistent. */
   outline-offset: var(--fds-focus-border-width);
   box-shadow: 0 0 0 var(--fds-focus-border-width) var(--fds-semantic-border-focus-boxshadow);
   border-radius: var(--fds-border_radius-medium);
-}
-
-.gaE71UkhR9WAByJICM_S {
-  margin-top: 36px;
-  box-shadow: none;
-  padding: 0;
-  height: auto;
-  width: auto;
-}
-
-.TVkqYCvufunHIPq6gqs0 {
-  border-bottom: 0;
-  padding-right: 1.5625rem;
-}
-
-.vdOmXEvfX6YIwrMx9mBA {
-  height: auto;
-}
-
-@media print {
-  .gaE71UkhR9WAByJICM_S {
-    margin-bottom: 1.25rem;
-  }
 }
 
 .Yc4eTIcuEt2PHietbE18 {
@@ -3280,43 +3618,6 @@ table > tbody > tr.hOU04Y5iWFnNKqPGHfRH:hover {
   display: flex;
   margin-top: 35px;
   gap: 10px;
-}
-
-.ccp_NJMMVTSFpy0UUXoB {
-  /* Hide interactive elements from PDF
-   * This makes testing easier as cypress does not support rendering in @media print mode
-   * @see https://github.com/cypress-io/cypress/issues/790
-   */
-  & button,
-  & [role='button'] {
-    display: none !important;
-  }
-}
-.ccp_NJMMVTSFpy0UUXoB h1 {
-  margin-top: 0;
-}
-
-.M815Z56Jw5vmwmR3UfGt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--fds-spacing-6);
-  margin-bottom: var(--fds-spacing-3);
-  h1 {
-    margin-bottom: 0;
-  }
-}
-
-@media print {
-  .CjPryd1a04GB7uw1lKFg {
-    display: none;
-  }
-}
-
-@media screen {
-  .z3beWI4PFzdsJWfGe_wW {
-    display: none;
-  }
 }
 
 .pwQIy7CIAFEjLNBCUnu2 {
