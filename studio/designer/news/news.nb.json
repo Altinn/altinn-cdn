@@ -4,7 +4,7 @@
     {
       "date": "2024-07-18",
       "title": "Vi har fjernet regler for beregninger og betingede visninger",
-      "content": "Verktøyet er utdatert, så vi har tatt det bort fra Lage-siden. Du kan fortsatt lage regler for beregninger i koden."
+      "content": "Verktøyene er utdaterte, så vi har tatt de bort fra Lage-siden. Du kan fortsatt lage regler for beregninger og betingede visninger i koden, men vi anbefaler å heller bruke dynamiske uttrykk."
     },
     {
       "date": "2024-04-24",
