@@ -2,6 +2,11 @@
   "$schema": "news.schema.json",
   "news": [
     {
+      "date": "2024-07-18",
+      "title": "Vi har fjernet beregningsregler",
+      "content": "Verktøyet er utdatert, så vi har tatt det bort fra Lage-siden. Du kan fortsatt lage regler for beregninger i koden."
+    },
+    {
       "date": "2024-04-24",
       "title": "Automatisk lagring i prosessvising",
       "content": "Prosess nå lagres automatisk ved endringer. Legger man til en ny oppgave for utfylling (Altinn 'data'-task) opprettes tilhørende sidegruppe (for oppsett av skjema) nå automatisk."
