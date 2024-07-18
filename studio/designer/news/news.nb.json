@@ -2,6 +2,11 @@
   "$schema": "news.schema.json",
   "news": [
     {
+      "date": "2024-07-18",
+      "title": "Vi har fjernet regler for beregninger og betingede visninger",
+      "content": "Verktøyene er utdaterte, så vi har tatt de bort fra Lage-siden. Du kan fortsatt lage regler for beregninger og betingede visninger i koden, men vi anbefaler å heller bruke dynamiske uttrykk."
+    },
+    {
       "date": "2024-04-24",
       "title": "Automatisk lagring i prosessvising",
       "content": "Prosess nå lagres automatisk ved endringer. Legger man til en ny oppgave for utfylling (Altinn 'data'-task) opprettes tilhørende sidegruppe (for oppsett av skjema) nå automatisk."
