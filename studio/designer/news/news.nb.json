@@ -2,7 +2,7 @@
   "$schema": "news.schema.json",
   "news": [
     {
-      "date": "2024-08-06",
+      "date": "2024-08-07",
       "title": "Prosessverktøyet støtter nå betaling.",
       "content": "Du kan nå legge til betalingssteg i prosessen."
     },
