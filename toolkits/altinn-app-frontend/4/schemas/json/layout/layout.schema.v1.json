@@ -646,6 +646,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -722,6 +723,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -786,6 +788,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -903,6 +906,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -967,6 +971,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -1023,6 +1028,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -1073,6 +1079,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -1126,6 +1133,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -1199,6 +1207,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -1282,6 +1291,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -1383,6 +1393,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -1483,6 +1494,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -1547,6 +1559,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -1669,6 +1682,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -1705,10 +1719,10 @@
           "$ref": "#/definitions/SummarizableComponentProps"
         },
         {
-          "$ref": "#/definitions/LabeledComponentProps"
+          "$ref": "#/definitions/ISelectionComponentFull"
         },
         {
-          "$ref": "#/definitions/ISelectionComponentFull"
+          "$ref": "#/definitions/LabeledComponentProps"
         },
         {
           "title": "CompDropdown",
@@ -1764,13 +1778,13 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
             "required": true,
             "showValidations": true,
             "renderAsSummary": true,
-            "labelSettings": true,
             "optionsId": true,
             "mapping": true,
             "queryParameters": true,
@@ -1779,6 +1793,7 @@
             "sortOrder": true,
             "source": true,
             "preselectedOptionIndex": true,
+            "labelSettings": true,
             "type": true,
             "textResourceBindings": true,
             "dataModelBindings": true,
@@ -1922,6 +1937,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -1970,6 +1986,9 @@
           "$ref": "#/definitions/ISelectionComponent"
         },
         {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
           "title": "CompFileUploadWithTag",
           "type": "object",
           "properties": {
@@ -1983,6 +2002,9 @@
                 },
                 {
                   "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
                 },
                 {
                   "$ref": "#/definitions/TRBLabel"
@@ -2095,6 +2117,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -2185,6 +2208,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -2287,6 +2311,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -2356,6 +2381,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -2407,6 +2433,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -2462,6 +2489,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -2578,6 +2606,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -2651,6 +2680,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "labelSettings": true,
@@ -2702,6 +2732,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -2816,6 +2847,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -2931,6 +2963,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -3007,6 +3040,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -3136,6 +3170,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -3237,6 +3272,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -3271,10 +3307,10 @@
           "$ref": "#/definitions/SummarizableComponentProps"
         },
         {
-          "$ref": "#/definitions/LabeledComponentProps"
+          "$ref": "#/definitions/ISelectionComponentFull"
         },
         {
-          "$ref": "#/definitions/ISelectionComponentFull"
+          "$ref": "#/definitions/LabeledComponentProps"
         },
         {
           "title": "CompMultipleSelect",
@@ -3330,13 +3366,13 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
             "required": true,
             "showValidations": true,
             "renderAsSummary": true,
-            "labelSettings": true,
             "optionsId": true,
             "mapping": true,
             "queryParameters": true,
@@ -3345,6 +3381,7 @@
             "sortOrder": true,
             "source": true,
             "preselectedOptionIndex": true,
+            "labelSettings": true,
             "type": true,
             "textResourceBindings": true,
             "dataModelBindings": true,
@@ -3392,6 +3429,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -3457,6 +3495,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -3514,6 +3553,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "variant": true,
@@ -3567,6 +3607,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -3621,6 +3662,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -3676,6 +3718,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -3723,6 +3766,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -3821,6 +3865,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -4049,6 +4094,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -4154,6 +4200,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -4221,6 +4268,10 @@
             "showPageInAccordion": {
               "type": "boolean"
             },
+            "hideEmptyFields": {
+              "description": "Set this to true if you don't want to show fields that have not been filled out.",
+              "type": "boolean"
+            },
             "overrides": {
               "type": "array",
               "items": {
@@ -4253,6 +4304,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -4260,6 +4312,7 @@
             "textResourceBindings": true,
             "target": true,
             "showPageInAccordion": true,
+            "hideEmptyFields": true,
             "overrides": true
           },
           "required": [
@@ -4316,6 +4369,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "renderAsSummary": true,
@@ -4407,6 +4461,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "readOnly": true,
@@ -4466,6 +4521,7 @@
           "properties": {
             "id": true,
             "hidden": true,
+            "forceShowInSummary": true,
             "grid": true,
             "pageBreak": true,
             "type": true,
@@ -4630,6 +4686,7 @@
           "properties": {
             "componentId": true,
             "hidden": true,
+            "forceShow": true,
             "displayType": true
           },
           "required": [
@@ -4666,6 +4723,12 @@
         "hidden": {
           "title": "Hidden",
           "description": "Boolean value or expression indicating if the component should be hidden. Defaults to false.",
+          "default": false,
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
+        },
+        "forceShowInSummary": {
+          "title": "Force show in summary",
+          "description": "Will force show the component in a summary even if hideEmptyFields is set to true in the summary component.",
           "default": false,
           "$ref": "expression.schema.v1.json#/definitions/boolean"
         },
@@ -4921,6 +4984,16 @@
         "$ref": "#/definitions/GridRow"
       }
     },
+    "HeadingLevel": {
+      "title": "HeadingLevel",
+      "enum": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
     "HTMLAutoCompleteValues": {
       "title": "HTML autocomplete values",
       "description": "Autocomplete hints to the browser. See https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete",
@@ -4979,16 +5052,6 @@
         "impp",
         "url",
         "photo"
-      ]
-    },
-    "HeadingLevel": {
-      "title": "HeadingLevel",
-      "enum": [
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
     "IAudio": {
@@ -5727,6 +5790,9 @@
         "type": "string"
       }
     },
+    "InputSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
     "IOptionSource": {
       "title": "Option source",
       "description": "Allows for fetching options from the data model, pointing to a repeating group structure",
@@ -5997,6 +6063,9 @@
         },
         "hidden": {
           "type": "boolean"
+        },
+        "forceShow": {
+          "type": "boolean"
         }
       },
       "required": [
@@ -6073,9 +6142,6 @@
         "src"
       ],
       "additionalProperties": false
-    },
-    "InputSummaryOverrideProps": {
-      "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "LabeledComponentProps": {
       "title": "LabeledComponentProps",
@@ -6175,6 +6241,7 @@
           "properties": {
             "componentId": true,
             "hidden": true,
+            "forceShow": true,
             "displayType": true
           },
           "required": [
@@ -6432,6 +6499,40 @@
       },
       "additionalProperties": false
     },
+    "TabConfigExternal": {
+      "title": "TabConfigExternal",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "description": "Title of the tab",
+          "type": "string"
+        },
+        "icon": {
+          "examples": [
+            "https://example.com/icon.svg"
+          ],
+          "type": "string"
+        },
+        "children": {
+          "title": "Children",
+          "description": "List of component IDs that should be displayed in the Tab",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "children"
+      ],
+      "additionalProperties": false
+    },
     "TRBFormComp": {
       "title": "TRBFormComp",
       "type": "object",
@@ -6489,40 +6590,6 @@
           "$ref": "expression.schema.v1.json#/definitions/string"
         }
       }
-    },
-    "TabConfigExternal": {
-      "title": "TabConfigExternal",
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "title": {
-          "title": "Title",
-          "description": "Title of the tab",
-          "type": "string"
-        },
-        "icon": {
-          "examples": [
-            "https://example.com/icon.svg"
-          ],
-          "type": "string"
-        },
-        "children": {
-          "title": "Children",
-          "description": "List of component IDs that should be displayed in the Tab",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "id",
-        "title",
-        "children"
-      ],
-      "additionalProperties": false
     },
     "VideoSrc": {
       "title": "VideoSrc",
