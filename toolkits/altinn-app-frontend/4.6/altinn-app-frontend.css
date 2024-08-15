@@ -2289,22 +2289,8 @@ Altinn, and making sure they are consistent. */
   width: calc(var(--cell-width) + 8.15%);
 }
 
-.A90VzSnvZgZSDQCWVvW0,
-.vaIjLBX3xFHjtr4GPdBH,
-.vaIjLBX3xFHjtr4GPdBH div {
+.A90VzSnvZgZSDQCWVvW0 {
   display: flex;
-}
-
-.vaIjLBX3xFHjtr4GPdBH {
-  margin-top: 12px;
-}
-
-.vaIjLBX3xFHjtr4GPdBH div {
-  flex-wrap: nowrap;
-}
-
-.vaIjLBX3xFHjtr4GPdBH button {
-  align-self: flex-start;
 }
 
 .uvEiSMVzBsfaO7HgPaIs {
