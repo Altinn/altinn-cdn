@@ -43,6 +43,7 @@
             "MultipleSelect",
             "NavigationBar",
             "NavigationButtons",
+            "Number",
             "Panel",
             "Paragraph",
             "Payment",
@@ -53,6 +54,7 @@
             "Summary",
             "Summary2",
             "Tabs",
+            "Text",
             "TextArea",
             "Video"
           ]
@@ -459,6 +461,18 @@
           "if": {
             "properties": {
               "type": {
+                "const": "Number"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompNumber"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
                 "const": "Panel"
               }
             }
@@ -579,6 +593,18 @@
           "if": {
             "properties": {
               "type": {
+                "const": "Text"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompText"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
                 "const": "TextArea"
               }
             }
@@ -632,6 +658,12 @@
                 "type": "string"
               }
             },
+            "openByDefault": {
+              "title": "Open by default",
+              "description": "Boolean value indicating if the accordion should be open by default",
+              "default": false,
+              "$ref": "expression.schema.v1.json#/definitions/boolean"
+            },
             "headingLevel": {
               "$ref": "#/definitions/HeadingLevel"
             }
@@ -652,6 +684,7 @@
             "type": true,
             "textResourceBindings": true,
             "children": true,
+            "openByDefault": true,
             "headingLevel": true
           },
           "required": [
@@ -2576,7 +2609,7 @@
               "$ref": "#/definitions/SaveWhileTyping"
             },
             "formatting": {
-              "$ref": "#/definitions/IInputFormatting"
+              "$ref": "#/definitions/IFormatting"
             },
             "variant": {
               "title": "Input variant",
@@ -3512,6 +3545,70 @@
         }
       ]
     },
+    "CompNumber": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompNumber",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Number"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBLabel"
+            },
+            "formatting": {
+              "$ref": "#/definitions/IFormatting"
+            },
+            "value": {
+              "$ref": "expression.schema.v1.json#/definitions/number"
+            },
+            "direction": {
+              "default": "horizontal",
+              "enum": [
+                "horizontal",
+                "vertical"
+              ]
+            },
+            "icon": {
+              "examples": [
+                "https://example.com/icon.svg"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "forceShowInSummary": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "formatting": true,
+            "value": true,
+            "direction": true,
+            "icon": true
+          },
+          "required": [
+            "id",
+            "type",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "CompPanel": {
       "allOf": [
         {
@@ -4388,6 +4485,66 @@
         }
       ]
     },
+    "CompText": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompText",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Text"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBLabel"
+            },
+            "value": {
+              "$ref": "expression.schema.v1.json#/definitions/string"
+            },
+            "direction": {
+              "default": "horizontal",
+              "enum": [
+                "horizontal",
+                "vertical"
+              ]
+            },
+            "icon": {
+              "examples": [
+                "https://example.com/icon.svg"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "forceShowInSummary": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "value": true,
+            "direction": true,
+            "icon": true
+          },
+          "required": [
+            "id",
+            "type",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "CompTextArea": {
       "allOf": [
         {
@@ -5196,6 +5353,334 @@
       ],
       "additionalProperties": false
     },
+    "IFormatting": {
+      "title": "IFormatting",
+      "examples": [
+        {
+          "currency": "NOK"
+        },
+        {
+          "number": {
+            "thousandSeparator": " ",
+            "decimalSeparator": ",",
+            "allowNegative": false,
+            "suffix": " kr"
+          }
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "currency": {
+          "title": "Language-sensitive currency formatting",
+          "description": "Enables currency to be language sensitive based on selected app language. Note: parts that already exist in number property are not overridden by this prop.",
+          "enum": [
+            "AED",
+            "AFN",
+            "ALL",
+            "AMD",
+            "ANG",
+            "AOA",
+            "ARS",
+            "AUD",
+            "AWG",
+            "AZN",
+            "BAM",
+            "BBD",
+            "BDT",
+            "BGN",
+            "BHD",
+            "BIF",
+            "BMD",
+            "BND",
+            "BOB",
+            "BOV",
+            "BRL",
+            "BSD",
+            "BTN",
+            "BWP",
+            "BYN",
+            "BZD",
+            "CAD",
+            "CDF",
+            "CHE",
+            "CHF",
+            "CHW",
+            "CLF",
+            "CLP",
+            "CNY",
+            "COP",
+            "COU",
+            "CRC",
+            "CUC",
+            "CUP",
+            "CVE",
+            "CZK",
+            "DJF",
+            "DKK",
+            "DOP",
+            "DZD",
+            "EGP",
+            "ERN",
+            "ETB",
+            "EUR",
+            "FJD",
+            "FKP",
+            "GBP",
+            "GEL",
+            "GHS",
+            "GIP",
+            "GMD",
+            "GNF",
+            "GTQ",
+            "GYD",
+            "HKD",
+            "HNL",
+            "HTG",
+            "HUF",
+            "IDR",
+            "ILS",
+            "INR",
+            "IQD",
+            "IRR",
+            "ISK",
+            "JMD",
+            "JOD",
+            "JPY",
+            "KES",
+            "KGS",
+            "KHR",
+            "KMF",
+            "KPW",
+            "KRW",
+            "KWD",
+            "KYD",
+            "KZT",
+            "LAK",
+            "LBP",
+            "LKR",
+            "LRD",
+            "LSL",
+            "LYD",
+            "MAD",
+            "MDL",
+            "MGA",
+            "MKD",
+            "MMK",
+            "MNT",
+            "MOP",
+            "MRU",
+            "MUR",
+            "MVR",
+            "MWK",
+            "MXN",
+            "MXV",
+            "MYR",
+            "MZN",
+            "NAD",
+            "NGN",
+            "NIO",
+            "NOK",
+            "NPR",
+            "NZD",
+            "OMR",
+            "PAB",
+            "PEN",
+            "PGK",
+            "PHP",
+            "PKR",
+            "PLN",
+            "PYG",
+            "QAR",
+            "RON",
+            "RSD",
+            "RUB",
+            "RWF",
+            "SAR",
+            "SBD",
+            "SCR",
+            "SDG",
+            "SEK",
+            "SGD",
+            "SHP",
+            "SLE",
+            "SLL",
+            "SOS",
+            "SRD",
+            "SSP",
+            "STN",
+            "SVC",
+            "SYP",
+            "SZL",
+            "THB",
+            "TJS",
+            "TMT",
+            "TND",
+            "TOP",
+            "TRY",
+            "TTD",
+            "TWD",
+            "TZS",
+            "UAH",
+            "UGX",
+            "USD",
+            "USN",
+            "UYI",
+            "UYU",
+            "UYW",
+            "UZS",
+            "VED",
+            "VES",
+            "VND",
+            "VUV",
+            "WST",
+            "XAF",
+            "XCD",
+            "XDR",
+            "XOF",
+            "XPF",
+            "XSU",
+            "XUA",
+            "YER",
+            "ZAR",
+            "ZMW",
+            "ZWL"
+          ]
+        },
+        "unit": {
+          "title": "Language-sensitive number formatting based on unit",
+          "description": "Enables unit along with thousand and decimal separators to be language sensitive based on selected app language. They are configured in number property. Note: parts that already exist in number property are not overridden by this prop.",
+          "enum": [
+            "celsius",
+            "centimeter",
+            "day",
+            "degree",
+            "foot",
+            "gram",
+            "hectare",
+            "hour",
+            "inch",
+            "kilogram",
+            "kilometer",
+            "liter",
+            "meter",
+            "milliliter",
+            "millimeter",
+            "millisecond",
+            "minute",
+            "month",
+            "percent",
+            "second",
+            "week",
+            "year"
+          ]
+        },
+        "position": {
+          "title": "Position of the currency/unit symbol",
+          "description": "Display the unit as prefix or suffix. Default is prefix. (Use only when using currency or unit options)",
+          "enum": [
+            "prefix",
+            "suffix"
+          ]
+        },
+        "number": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "format": {
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "mask": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  ]
+                },
+                "allowEmptyFormatting": {
+                  "type": "boolean"
+                },
+                "patternChar": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "format"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "title": "Number formatting options",
+              "description": "These options are sent directly to react-number-format in order to make it possible to format pretty numbers in the input field.",
+              "type": "object",
+              "properties": {
+                "thousandSeparator": {
+                  "anyOf": [
+                    {
+                      "$ref": "expression.schema.v1.json#/definitions/boolean"
+                    },
+                    {
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  ]
+                },
+                "decimalSeparator": {
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "allowedDecimalSeparators": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "thousandsGroupStyle": {
+                  "enum": [
+                    "thousand",
+                    "lakh",
+                    "wan",
+                    "none"
+                  ]
+                },
+                "decimalScale": {
+                  "type": "number"
+                },
+                "fixedDecimalScale": {
+                  "type": "boolean"
+                },
+                "allowNegative": {
+                  "type": "boolean"
+                },
+                "allowLeadingZeros": {
+                  "type": "boolean"
+                },
+                "suffix": {
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "prefix": {
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            }
+          ]
+        },
+        "align": {
+          "default": "left",
+          "enum": [
+            "right",
+            "center",
+            "left"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
     "IGrid": {
       "allOf": [
         {
@@ -5445,256 +5930,6 @@
         "title": "Image source (when using other languages)",
         "type": "string"
       }
-    },
-    "IInputFormatting": {
-      "title": "IInputFormatting",
-      "examples": [
-        {
-          "currency": "NOK"
-        },
-        {
-          "number": {
-            "thousandSeparator": " ",
-            "decimalSeparator": ",",
-            "allowNegative": false,
-            "suffix": " kr"
-          }
-        }
-      ],
-      "type": "object",
-      "properties": {
-        "currency": {
-          "title": "Language-sensitive currency formatting",
-          "description": "Enables currency to be language sensitive based on selected app language. Note: parts that already exist in number property are not overridden by this prop.",
-          "enum": [
-            "AED",
-            "AFN",
-            "ALL",
-            "AMD",
-            "ANG",
-            "AOA",
-            "ARS",
-            "AUD",
-            "AWG",
-            "AZN",
-            "BAM",
-            "BBD",
-            "BDT",
-            "BGN",
-            "BHD",
-            "BIF",
-            "BMD",
-            "BND",
-            "BOB",
-            "BOV",
-            "BRL",
-            "BSD",
-            "BTN",
-            "BWP",
-            "BYN",
-            "BZD",
-            "CAD",
-            "CDF",
-            "CHE",
-            "CHF",
-            "CHW",
-            "CLF",
-            "CLP",
-            "CNY",
-            "COP",
-            "COU",
-            "CRC",
-            "CUC",
-            "CUP",
-            "CVE",
-            "CZK",
-            "DJF",
-            "DKK",
-            "DOP",
-            "DZD",
-            "EGP",
-            "ERN",
-            "ETB",
-            "EUR",
-            "FJD",
-            "FKP",
-            "GBP",
-            "GEL",
-            "GHS",
-            "GIP",
-            "GMD",
-            "GNF",
-            "GTQ",
-            "GYD",
-            "HKD",
-            "HNL",
-            "HTG",
-            "HUF",
-            "IDR",
-            "ILS",
-            "INR",
-            "IQD",
-            "IRR",
-            "ISK",
-            "JMD",
-            "JOD",
-            "JPY",
-            "KES",
-            "KGS",
-            "KHR",
-            "KMF",
-            "KPW",
-            "KRW",
-            "KWD",
-            "KYD",
-            "KZT",
-            "LAK",
-            "LBP",
-            "LKR",
-            "LRD",
-            "LSL",
-            "LYD",
-            "MAD",
-            "MDL",
-            "MGA",
-            "MKD",
-            "MMK",
-            "MNT",
-            "MOP",
-            "MRU",
-            "MUR",
-            "MVR",
-            "MWK",
-            "MXN",
-            "MXV",
-            "MYR",
-            "MZN",
-            "NAD",
-            "NGN",
-            "NIO",
-            "NOK",
-            "NPR",
-            "NZD",
-            "OMR",
-            "PAB",
-            "PEN",
-            "PGK",
-            "PHP",
-            "PKR",
-            "PLN",
-            "PYG",
-            "QAR",
-            "RON",
-            "RSD",
-            "RUB",
-            "RWF",
-            "SAR",
-            "SBD",
-            "SCR",
-            "SDG",
-            "SEK",
-            "SGD",
-            "SHP",
-            "SLE",
-            "SLL",
-            "SOS",
-            "SRD",
-            "SSP",
-            "STN",
-            "SVC",
-            "SYP",
-            "SZL",
-            "THB",
-            "TJS",
-            "TMT",
-            "TND",
-            "TOP",
-            "TRY",
-            "TTD",
-            "TWD",
-            "TZS",
-            "UAH",
-            "UGX",
-            "USD",
-            "USN",
-            "UYI",
-            "UYU",
-            "UYW",
-            "UZS",
-            "VED",
-            "VES",
-            "VND",
-            "VUV",
-            "WST",
-            "XAF",
-            "XCD",
-            "XDR",
-            "XOF",
-            "XPF",
-            "XSU",
-            "XUA",
-            "YER",
-            "ZAR",
-            "ZMW",
-            "ZWL"
-          ]
-        },
-        "unit": {
-          "title": "Language-sensitive number formatting based on unit",
-          "description": "Enables unit along with thousand and decimal separators to be language sensitive based on selected app language. They are configured in number property. Note: parts that already exist in number property are not overridden by this prop.",
-          "enum": [
-            "celsius",
-            "centimeter",
-            "day",
-            "degree",
-            "foot",
-            "gram",
-            "hectare",
-            "hour",
-            "inch",
-            "kilogram",
-            "kilometer",
-            "liter",
-            "meter",
-            "milliliter",
-            "millimeter",
-            "millisecond",
-            "minute",
-            "month",
-            "percent",
-            "second",
-            "week",
-            "year"
-          ]
-        },
-        "position": {
-          "title": "Position of the currency/unit symbol",
-          "description": "Display the unit as prefix or suffix. Default is prefix. (Use only when using currency or unit options)",
-          "enum": [
-            "prefix",
-            "suffix"
-          ]
-        },
-        "number": {
-          "anyOf": [
-            {
-              "$ref": "#/definitions/PatternFormatProps"
-            },
-            {
-              "$ref": "#/definitions/NumberFormatProps"
-            }
-          ]
-        },
-        "align": {
-          "default": "left",
-          "enum": [
-            "right",
-            "center",
-            "left"
-          ]
-        }
-      },
-      "additionalProperties": false
     },
     "ILabelSettings": {
       "title": "ILabelSettings",
@@ -6298,59 +6533,6 @@
       ],
       "additionalProperties": false
     },
-    "NumberFormatProps": {
-      "title": "Number formatting options",
-      "description": "These options are sent directly to react-number-format in order to make it possible to format pretty numbers in the input field.",
-      "type": "object",
-      "properties": {
-        "thousandSeparator": {
-          "anyOf": [
-            {
-              "$ref": "expression.schema.v1.json#/definitions/boolean"
-            },
-            {
-              "$ref": "expression.schema.v1.json#/definitions/string"
-            }
-          ]
-        },
-        "decimalSeparator": {
-          "$ref": "expression.schema.v1.json#/definitions/string"
-        },
-        "allowedDecimalSeparators": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "thousandsGroupStyle": {
-          "enum": [
-            "thousand",
-            "lakh",
-            "wan",
-            "none"
-          ]
-        },
-        "decimalScale": {
-          "type": "number"
-        },
-        "fixedDecimalScale": {
-          "type": "boolean"
-        },
-        "allowNegative": {
-          "type": "boolean"
-        },
-        "allowLeadingZeros": {
-          "type": "boolean"
-        },
-        "suffix": {
-          "$ref": "expression.schema.v1.json#/definitions/string"
-        },
-        "prefix": {
-          "$ref": "expression.schema.v1.json#/definitions/string"
-        }
-      },
-      "additionalProperties": false
-    },
     "PageValidation": {
       "title": "PageValidation",
       "type": "object",
@@ -6371,38 +6553,6 @@
       "required": [
         "page",
         "show"
-      ],
-      "additionalProperties": false
-    },
-    "PatternFormatProps": {
-      "title": "PatternFormatProps",
-      "type": "object",
-      "properties": {
-        "format": {
-          "$ref": "expression.schema.v1.json#/definitions/string"
-        },
-        "mask": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
-          ]
-        },
-        "allowEmptyFormatting": {
-          "type": "boolean"
-        },
-        "patternChar": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "format"
       ],
       "additionalProperties": false
     },
