@@ -292,5 +292,11 @@
         "SubjectSource": "altinn:rolecode",
         "SubjectTitle": "Konkursbo skrivetilgang",
         "SubjectDescription": "Utvidet lesetilgang og innsendingsrett for tjenesten Konkursbehandling"
+    },
+    {
+        "SubjectId": "innh",
+        "SubjectSource": "altinn:rolecode",
+        "SubjectTitle": "Innehaver",
+        "SubjectDescription": "Ekstern rolle (fra Enhetsregisteret)"
     }
 ]
