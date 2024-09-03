@@ -891,16 +891,6 @@
             "homepage": "https://www.fjellinjen.no/",
             "environments": []
         },
-        "vigo": {
-            "name": {
-                "en": "VIGO IKS",
-                "nb": "VIGO IKS",
-                "nn": "VIGO IKS"
-            },
-            "orgnr": "998283914",
-            "homepage": "https://www.vigoiks.no/",
-            "environments": []
-        },
         "rmt": {
             "name": {
                 "en": "Remidt IKS",
@@ -920,6 +910,19 @@
             "orgnr": "957387969",
             "homepage": "https://mna.no/",
             "environments": []
+        },
+        "vigo": {
+            "name": {
+                "en": "VIGO IKS",
+                "nb": "VIGO IKS",
+                "nn": "VIGO IKS"
+            },
+            "orgnr": "998283914",
+            "homepage": "https://www.vigoiks.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
         }
     }
 }
