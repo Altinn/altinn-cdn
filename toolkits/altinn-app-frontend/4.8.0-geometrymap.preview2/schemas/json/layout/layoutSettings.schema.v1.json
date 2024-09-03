@@ -1,0 +1,150 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://altinncdn.no/schemas/json/layout/layoutSettings.schema.v1.json",
+  "title": "Altinn layout settings",
+  "description": "Schema that describes settings for the layout configuration for Altinn applications.",
+  "$ref": "#/definitions/ILayoutSettings",
+  "definitions": {
+    "GlobalPageSettings": {
+      "title": "GlobalPageSettings",
+      "type": "object",
+      "properties": {
+        "hideCloseButton": {
+          "title": "Hide close button",
+          "description": "Hide the close button in the upper right corner of the app",
+          "default": false,
+          "type": "boolean"
+        },
+        "showLanguageSelector": {
+          "title": "Show language selector",
+          "description": "Show the language selector in the upper right corner of the app",
+          "default": false,
+          "type": "boolean"
+        },
+        "showExpandWidthButton": {
+          "title": "Show expand width button",
+          "description": "Show the expand width button in the upper right corner of the app",
+          "default": false,
+          "type": "boolean"
+        },
+        "expandedWidth": {
+          "title": "Expanded width",
+          "description": "Sets expanded width for pages",
+          "default": false,
+          "type": "boolean"
+        },
+        "showProgress": {
+          "title": "Show progress indicator",
+          "description": "Enables a progress indicator in the upper right corner of the app (when on data tasks/forms)",
+          "default": false,
+          "type": "boolean"
+        },
+        "autoSaveBehavior": {
+          "title": "Auto save behavior",
+          "description": "An attribute specifying when the application will save form data. onChangeFormData saves on every interaction with form elements. onChangePage saves on every page change.",
+          "default": "onChangeFormData",
+          "enum": [
+            "onChangeFormData",
+            "onChangePage"
+          ]
+        }
+      }
+    },
+    "IComponentsSettings": {
+      "title": "IComponentsSettings",
+      "type": "object",
+      "properties": {
+        "excludeFromPdf": {
+          "title": "Exclude from PDF",
+          "description": "List of components to exclude from the PDF generation",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "excludeFromPdf"
+      ],
+      "additionalProperties": false
+    },
+    "ILayoutSettings": {
+      "title": "Layout settings",
+      "description": "Settings regarding layout pages and components",
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "pages": {
+          "$ref": "#/definitions/IPagesSettings"
+        },
+        "components": {
+          "$ref": "#/definitions/IComponentsSettings"
+        }
+      },
+      "required": [
+        "pages"
+      ],
+      "additionalProperties": false
+    },
+    "IPagesBaseSettings": {
+      "title": "IPagesBaseSettings",
+      "type": "object",
+      "properties": {
+        "order": {
+          "title": "Page order",
+          "description": "List of pages in the order they should appear in the application",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "excludeFromPdf": {
+          "title": "Exclude from PDF",
+          "description": "List of pages to exclude from the PDF generation",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pdfLayoutName": {
+          "title": "PDF layout name",
+          "description": "Name of a custom layout file to use for PDF creation instead of the automatically generated PDF.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "order"
+      ]
+    },
+    "IPagesSettings": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/GlobalPageSettings"
+        },
+        {
+          "$ref": "#/definitions/IPagesBaseSettings"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "hideCloseButton": true,
+            "showLanguageSelector": true,
+            "showExpandWidthButton": true,
+            "expandedWidth": true,
+            "showProgress": true,
+            "autoSaveBehavior": true,
+            "order": true,
+            "excludeFromPdf": true,
+            "pdfLayoutName": true
+          },
+          "required": [
+            "order"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}
