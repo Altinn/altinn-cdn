@@ -759,7 +759,9 @@
             },
             "orgnr": "970205039",
             "homepage": "https://www.nve.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "bk": {
             "name": {
@@ -920,8 +922,7 @@
             "orgnr": "998283914",
             "homepage": "https://www.vigoiks.no/",
             "environments": [
-                "tt02",
-                "production"
+                "tt02"
             ]
         }
     }
