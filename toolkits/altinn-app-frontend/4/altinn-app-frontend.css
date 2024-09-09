@@ -1246,6 +1246,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
   margin-top: 12px;
 }
 
+.TCJC4IraAyfdTv6AOViz li {
+  white-space: pre-line;
+}
+
 .dVJH6fg3MemKld0W0K7c {
   max-width: 330px;
   color: rgba(black, 0.87);
@@ -1599,8 +1603,11 @@ dd.ix9EOGhoMwGeL3puCIs5 {
   display: flex;
   flex-direction: column;
   gap: var(--fds-spacing-4);
-  padding: var(--fds-spacing-2);
   margin-bottom: var(--fds-spacing-2);
+}
+
+.ccp_NJMMVTSFpy0UUXoB .Qe1Hr7vHzWjc5vSWG_ha {
+  margin-bottom: var(--fds-spacing-4);
 }
 
 .M815Z56Jw5vmwmR3UfGt {
@@ -1624,86 +1631,6 @@ dd.ix9EOGhoMwGeL3puCIs5 {
   .z3beWI4PFzdsJWfGe_wW {
     display: none;
   }
-}
-
-.KpDByyLtURI9K0Mu9I2n {
-  display: flex;
-  gap: 0.25rem;
-  align-items: center;
-}
-
-.bFELrgF7q80rgtqb1Zla {
-  margin: 0;
-}
-
-.sHtkvxz8D2HjBYYhdKCA {
-  padding: 2px 4px;
-}
-
-@media print {
-  .sHtkvxz8D2HjBYYhdKCA {
-    display: none;
-  }
-}
-
-@media only screen {
-  .WICecnxz8cXwU1RmjRt9 {
-    margin-left: calc(var(--modal-padding-x) * -1);
-    margin-right: calc(var(--modal-padding-x) * -1);
-    width: calc(100% + 2 * var(--modal-padding-x));
-  }
-
-  .M29ACENDbtT1efpROOiw {
-    margin-bottom: calc(var(--modal-padding-y) * -1);
-  }
-
-  .RxK_qAqu4RXxazvx9Hfg {
-    margin-top: calc(var(--modal-padding-y) * -1);
-  }
-}
-
-.S2XNO8d7yW1QJ3lNSsKL {
-  width: 100%;
-  padding: 12px;
-}
-
-.c_nfaHX3Sc4mW5G5DOwc {
-  width: 100%;
-}
-
-.mPIm5422nERIoVVZvDV_ {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 38px;
-  margin-right: -12px;
-  margin-left: -12px;
-}
-
-.mPIm5422nERIoVVZvDV_ > * {
-  padding: 12px;
-}
-
-.w7Kzu1AJURDwOaHvQqea {
-  width: auto;
-  padding-left: var(--panel-x-padding);
-  padding-right: var(--panel-x-padding);
-  background-color: var(--component-panel-color-background-default);
-}
-
-.w7Kzu1AJURDwOaHvQqea > legend {
-  padding-top: 36px;
-}
-
-.OpRrmKzB2VKPvHLviKRn > .w7Kzu1AJURDwOaHvQqea {
-  --panel-x-padding: var(--modal-padding-x);
-  margin-right: 12px;
-  margin-left: 12px;
-}
-
-.ky0H0ZDXHdDCqOQ5vqp3 {
-  border-left: 2px solid #949494;
-  margin-left: 0;
-  padding: 12px 0 12px 12px;
 }
 
 .gaE71UkhR9WAByJICM_S {
@@ -1895,14 +1822,14 @@ dd.ix9EOGhoMwGeL3puCIs5 {
   word-break: 'break-word';
 }
 
-.thIJc7WhjQTBn7bpo7mn {
+.OQIfRhY0nqEr01FI0u6P {
   display: flex;
   flex-direction: row;
   margin-top: 0.625rem;
   gap: 0.625rem;
 }
 
-.zs02yaHE02m53H7jmpvv {
+.wPERWlaB7V4ULA2_yH_a {
   z-index: 1700;
   box-sizing: border-box;
 }
@@ -2245,6 +2172,42 @@ tr.GgQeJQ04_MMeJGzsE69j td {
   padding-bottom: 0.75rem;
 }
 
+.sHtkvxz8D2HjBYYhdKCA {
+  padding: 2px 4px;
+}
+
+@media print {
+  .sHtkvxz8D2HjBYYhdKCA {
+    display: none;
+  }
+}
+
+.KpDByyLtURI9K0Mu9I2n {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.bFELrgF7q80rgtqb1Zla {
+  margin: 0;
+}
+
+@media only screen {
+  .WICecnxz8cXwU1RmjRt9 {
+    margin-left: calc(var(--modal-padding-x) * -1);
+    margin-right: calc(var(--modal-padding-x) * -1);
+    width: calc(100% + 2 * var(--modal-padding-x));
+  }
+
+  .M29ACENDbtT1efpROOiw {
+    margin-bottom: calc(var(--modal-padding-y) * -1);
+  }
+
+  .RxK_qAqu4RXxazvx9Hfg {
+    margin-top: calc(var(--modal-padding-y) * -1);
+  }
+}
+
 .g_PmREk_KEy4din_ZNYW,
 .g_PmREk_KEy4din_ZNYW td,
 .g_PmREk_KEy4din_ZNYW th {
@@ -2497,6 +2460,50 @@ tr > .Hg55k_xZ3rMtkVY8SM6g {
   display: block;
   text-align: left;
   font-weight: 500;
+}
+
+.S2XNO8d7yW1QJ3lNSsKL {
+  width: 100%;
+  padding: 12px;
+}
+
+.c_nfaHX3Sc4mW5G5DOwc {
+  width: 100%;
+}
+
+.mPIm5422nERIoVVZvDV_ {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 38px;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.mPIm5422nERIoVVZvDV_ > * {
+  padding: 12px;
+}
+
+.w7Kzu1AJURDwOaHvQqea {
+  width: auto;
+  padding-left: var(--panel-x-padding);
+  padding-right: var(--panel-x-padding);
+  background-color: var(--component-panel-color-background-default);
+}
+
+.w7Kzu1AJURDwOaHvQqea > legend {
+  padding-top: 36px;
+}
+
+.OpRrmKzB2VKPvHLviKRn > .w7Kzu1AJURDwOaHvQqea {
+  --panel-x-padding: var(--modal-padding-x);
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.ky0H0ZDXHdDCqOQ5vqp3 {
+  border-left: 2px solid #949494;
+  margin-left: 0;
+  padding: 12px 0 12px 12px;
 }
 
 .WBdHeCog2Tx8r10C8Gs4.pLwZzgSSrSJJzVYgIBxa {
@@ -2764,6 +2771,76 @@ Altinn, and making sure they are consistent. */
   outline-offset: var(--fds-focus-border-width);
 }
 
+.REEKBb0bkH2vu40uf6fY {
+  width: 100%;
+}
+
+.SWQLSUAGktZ4s_Nsw_JX {
+  position: relative;
+  height: 40rem;
+}
+
+/**
+* This will give the map an (almost) square aspect ratio when loading the print page
+* Since it has @media only screen it will still scale to fit the page,
+* but the initial fitBounds will not depend on the PDF-service's browser viewport
+* Ideally, the browser's viewport would match the pages aspect ratio, as
+* geometries could still be cut off for extremely narrow pages, and would have a lot of
+* space on the right side for a landscape print, but for all "normal" portrait page formats
+* this should work well.
+* Additionally, for very wide pages the map tiles on the far right will not have a chance to
+* load before the page prints, but you should at least see the relevant area.
+**/
+@media only screen {
+  .uWhXWYFfUvncGaWYNak7 {
+    width: 42rem;
+  }
+}
+
+/* We do not want the map to look faded in PDF, so using @media only screen */
+@media only screen {
+  .Guqv5H0SUCbc0n56qAH5 .leaflet-tile-pane {
+    opacity: 0.5;
+  }
+}
+
+/* In PDF we should show attribution with hyperlinks printed out */
+@media print {
+  .SWQLSUAGktZ4s_Nsw_JX div:has(> .leaflet-control-attribution) {
+    width: 100%;
+  }
+  .SWQLSUAGktZ4s_Nsw_JX .leaflet-control-attribution {
+    background: white;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .SWQLSUAGktZ4s_Nsw_JX .leaflet-control-attribution a {
+    color: black;
+  }
+
+  .SWQLSUAGktZ4s_Nsw_JX .leaflet-control-attribution a[href]:after {
+    content: ' [' attr(href) ']';
+  }
+}
+
+.MurseDTE9Kc69gsRs_Gg {
+  border-color: var(--fds-semantic-border-danger-default);
+  border-width: 2px;
+  border-style: solid;
+}
+
+._lOAzlgE3pLbQJcrc4IP {
+  padding-top: 12px;
+}
+
+.Pw6ZRoTZeuFaGr8DOcWE {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6875;
+}
+
 .MoopQELhYDuAsYzUF_tw {
   display: flex;
   flex-direction: row-reverse;
@@ -2866,39 +2943,6 @@ Altinn, and making sure they are consistent. */
 
 .ezonzbzj3ZEZ9tvdHwzv:hover td {
   background-color: var(--fds-semantic-surface-neutral-default);
-}
-
-.KRfI_KoxKwbZ9Xsb9VdQ > legend {
-  padding-left: var(--modal-padding-x);
-  padding-right: var(--modal-padding-x);
-}
-
-.KRfI_KoxKwbZ9Xsb9VdQ .HlO_mCUdBgWgI3AqOZl2 {
-  padding-left: var(--modal-padding-x);
-  padding-right: var(--modal-padding-x);
-  padding-bottom: 12px !important;
-}
-
-.KRfI_KoxKwbZ9Xsb9VdQ > * {
-  margin-top: 0 !important;
-}
-
-.CzF2hGtDuP_RM5zHHC4w {
-  display: flex;
-  justify-content: center;
-}
-
-.CzF2hGtDuP_RM5zHHC4w ul {
-  padding: 0;
-}
-
-.VEzTJ7dcsZoQAEP7eKAu,
-.VEzTJ7dcsZoQAEP7eKAu td {
-  background-color: var(--fds-semantic-surface-neutral-subtle);
-}
-
-.AMJilqnhkXhYzTd8lQIy {
-  visibility: hidden;
 }
 
 .M4oXbZ5iYGWZsZwBC4HH {
@@ -3135,6 +3179,24 @@ table > tbody > tr.hOU04Y5iWFnNKqPGHfRH:hover {
   padding-right: var(--modal-padding-x);
 }
 
+.JHJdTy8LmPDvChqR8Aei {
+  display: flex;
+  justify-content: center;
+}
+
+.JHJdTy8LmPDvChqR8Aei ul {
+  padding: 0;
+}
+
+.xnwlEJ6QJg5FrX3IQWKP,
+.xnwlEJ6QJg5FrX3IQWKP td {
+  background-color: var(--fds-semantic-surface-neutral-subtle);
+}
+
+.uzjfcEsYxCqBLZXH4cdd {
+  visibility: hidden;
+}
+
 .O2il9Rqx5EX3d0sAEmVg {
   padding-bottom: 38px !important;
 }
@@ -3191,6 +3253,36 @@ table > tbody > tr.hOU04Y5iWFnNKqPGHfRH:hover {
   font-size: 1rem;
   line-height: 1.6875;
   margin-top: 4px;
+}
+
+.Rtezof3vAbayNPObduD7 {
+  border-bottom: solid 1px var(--fds-semantic-border-neutral-default);
+}
+
+.cRwz67Olg6ab9AWJNJiP {
+  display: flex;
+  gap: var(--fds-spacing-8);
+  flex-direction: column;
+  padding: var(--fds-spacing-5) 0;
+}
+
+.P7GhsBd7agOvX0vNvkDT {
+  display: flex;
+  gap: var(--fds-spacing-3);
+  flex-direction: column;
+}
+
+.GlJOdhS2uw3TbIR7Iwj9 {
+  border: dashed 1px var(--fds-semantic-border-neutral-default);
+  padding: var(--fds-spacing-2) var(--fds-spacing-4);
+  border-radius: var(--fds-border_radius-medium);
+}
+
+.on9A1aiijxr1gADuDfpv {
+  display: flex;
+  flex-direction: row;
+  gap: var(--fds-spacing-2);
+  align-items: center;
 }
 
 .b4yc9uSXEtRVT3UK_kmB {
