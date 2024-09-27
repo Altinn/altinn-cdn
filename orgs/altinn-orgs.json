@@ -532,6 +532,16 @@
                 "production"
             ]
         },
+        "slv": {
+            "name": {
+                "en": "The Norwegian Medical Products Agency",
+                "nb": "Direktoratet for medisinske produkter",
+                "nn": "Direktoratet for medisinske produkter"
+            },
+            "orgnr": "974761122",
+            "homepage": "https://www.dmp.no/",
+            "environments": []
+        },
         "spk": {
             "name": {
                 "en": "Norwegian Public Service Pension Fund",
