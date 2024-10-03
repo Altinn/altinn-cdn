@@ -540,7 +540,9 @@
             },
             "orgnr": "974761122",
             "homepage": "https://www.dmp.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "spk": {
             "name": {
