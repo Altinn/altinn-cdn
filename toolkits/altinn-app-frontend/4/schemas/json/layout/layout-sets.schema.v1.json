@@ -51,8 +51,20 @@
       }
     },
     "ILayoutSet": {
-      "title": "Layout set",
-      "description": "Settings regarding a specific layout-set",
+      "title": "Layout Set Union",
+      "description": "todo",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/ILayoutSetDefault"
+        },
+        {
+          "$ref": "#/definitions/ILayoutSetSubform"
+        }
+      ]
+    },
+    "ILayoutSetDefault": {
+      "title": "Default Layout Set",
+      "description": "Settings regarding a default layout-set",
       "type": "object",
       "properties": {
         "id": {
@@ -62,7 +74,7 @@
         },
         "dataType": {
           "title": "Data type",
-          "description": "The datatype to use this layoyut.",
+          "description": "The datatype to use this layout.",
           "type": "string"
         },
         "tasks": {
@@ -102,6 +114,34 @@
       },
       "required": [
         "sets"
+      ],
+      "additionalProperties": false
+    },
+    "ILayoutSetSubform": {
+      "title": "Layout Set",
+      "description": "A layout set with either tasks or type, but not both.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "description": "The layout-set ID. Must be unique within a given application.",
+          "type": "string"
+        },
+        "dataType": {
+          "title": "Data type",
+          "description": "The datatype to use this layout.",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "description": "The type of layout set, here subform.",
+          "const": "subform"
+        }
+      },
+      "required": [
+        "id",
+        "dataType",
+        "type"
       ],
       "additionalProperties": false
     }

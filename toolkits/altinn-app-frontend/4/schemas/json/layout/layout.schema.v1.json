@@ -51,6 +51,7 @@
             "PrintButton",
             "RadioButtons",
             "RepeatingGroup",
+            "Subform",
             "Summary",
             "Summary2",
             "Tabs",
@@ -557,6 +558,18 @@
           "if": {
             "properties": {
               "type": {
+                "const": "Subform"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompSubform"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
                 "const": "Summary"
               }
             }
@@ -750,6 +763,9 @@
     "CompRepeatingGroup": {
       "$ref": "#/definitions/CompRepeatingGroupExternal"
     },
+    "CompSubform": {
+      "$ref": "#/definitions/CompSubformExternal"
+    },
     "CompSummary": {
       "$ref": "#/definitions/CompSummaryExternal"
     },
@@ -834,6 +850,21 @@
         },
         {
           "$ref": "#/definitions/ListSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/TabsSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/MapSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/SubformSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/LikertSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/PaymentSummaryOverrideProps"
         }
       ]
     },
@@ -866,6 +897,16 @@
         "type": "string"
       }
     },
+    "ButtonColor": {
+      "title": "Button color override",
+      "description": "The color scheme of the button.",
+      "enum": [
+        "first",
+        "second",
+        "success",
+        "danger"
+      ]
+    },
     "ButtonMode": {
       "title": "Mode",
       "description": "The mode of the button",
@@ -874,6 +915,27 @@
         "submit",
         "save",
         "instantiate"
+      ]
+    },
+    "ButtonSize": {
+      "title": "Button size override",
+      "description": "The size of the button.",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "ButtonStyle": {
+      "title": "Button style",
+      "description": "The style/color scheme of the button.",
+      "default": "secondary",
+      "enum": [
+        "primary",
+        "secondary"
       ]
     },
     "CardConfigExternal": {
@@ -975,8 +1037,31 @@
         },
         {
           "$ref": "#/definitions/NavigateToPageAction"
+        },
+        {
+          "$ref": "#/definitions/SubformAction"
         }
       ]
+    },
+    "CloseSubformAction": {
+      "title": "CloseSubformAction",
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "closeSubform"
+        },
+        "type": {
+          "const": "ClientAction"
+        },
+        "validation": {
+          "$ref": "#/definitions/PageValidation"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": false
     },
     "CompAccordionExternal": {
       "allOf": [
@@ -1289,6 +1374,7 @@
               "$ref": "#/definitions/IDataModelBindingsForAddress"
             },
             "saveWhileTyping": {
+              "default": true,
               "$ref": "#/definitions/SaveWhileTyping"
             },
             "simplified": {
@@ -1842,7 +1928,13 @@
               }
             },
             "buttonStyle": {
-              "$ref": "#/definitions/CustomButtonStyle"
+              "$ref": "#/definitions/ButtonStyle"
+            },
+            "buttonColor": {
+              "$ref": "#/definitions/ButtonColor"
+            },
+            "buttonSize": {
+              "$ref": "#/definitions/ButtonSize"
             },
             "textResourceBindings": {
               "type": "object",
@@ -1858,8 +1950,7 @@
           },
           "required": [
             "type",
-            "actions",
-            "buttonStyle"
+            "actions"
           ]
         },
         {
@@ -1872,13 +1963,14 @@
             "type": true,
             "actions": true,
             "buttonStyle": true,
+            "buttonColor": true,
+            "buttonSize": true,
             "textResourceBindings": true
           },
           "required": [
             "id",
             "type",
-            "actions",
-            "buttonStyle"
+            "actions"
           ],
           "additionalProperties": false
         }
@@ -2053,7 +2145,7 @@
             },
             "timeStamp": {
               "title": "Include time",
-              "description": "Boolean value indicating if the date time should be stored as a timeStamp. Defaults to true. If true: 'YYYY-MM-DDThh:mm:ss.sssZ', if false 'YYYY-MM-DD';",
+              "description": "Boolean value indicating if the date time should be stored as a timeStamp. Defaults to true. If true: 'yyyy-MM-ddThh:mm:ss.sssZ', if false 'yyyy-MM-dd';",
               "default": true,
               "type": "boolean"
             },
@@ -2061,11 +2153,11 @@
               "title": "Date format",
               "description": "Date format used when displaying the date to the user. The user date format from the locale will be prioritized over this setting.",
               "examples": [
-                "DD/MM/YYYY",
-                "MM/DD/YYYY",
-                "YYYY-MM-DD"
+                "dd/MM/yyyy",
+                "MM/dd/yyyy",
+                "yyyy-MM-dd"
               ],
-              "default": "DD.MM.YYYY",
+              "default": "dd.MM.yyyy",
               "type": "string"
             }
           },
@@ -2961,6 +3053,7 @@
               "$ref": "#/definitions/IDataModelBindingsSimple"
             },
             "saveWhileTyping": {
+              "default": true,
               "$ref": "#/definitions/SaveWhileTyping"
             },
             "formatting": {
@@ -3403,6 +3496,11 @@
                   "title": "Title",
                   "description": "The title/text of the link",
                   "$ref": "expression.schema.v1.json#/definitions/string"
+                },
+                "download": {
+                  "title": "Download",
+                  "description": "Download target instead of navigating to it. Non-blank value is passed to the download attribute and becomes the filename of the downloaded file. Blank value means default filename is used.",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
                 }
               },
               "additionalProperties": false
@@ -3531,11 +3629,22 @@
               "type": "boolean"
             },
             "mapping": {
+              "description": "**Deprecated**: Will be removed in the next major version. Use `queryParameters` with expressions instead.",
+              "deprecated": true,
               "$ref": "#/definitions/IMapping"
+            },
+            "queryParameters": {
+              "$ref": "#/definitions/IQueryParameters"
+            },
+            "summaryBinding": {
+              "title": "Data model binding to show in summary",
+              "description": "Specify one of the keys in the `dataModelBindings` object to show in the summary component for the list.",
+              "type": "string"
             },
             "bindingToShowInSummary": {
               "title": "Binding to show in summary",
-              "description": "The value of this binding will be shown in the summary component for the list. This binding must be one of the specified bindings under dataModelBindings.",
+              "description": "**Deprecated**: This property will be removed in the next major version, use `summaryBinding` instead.\nThe value of this binding will be shown in the summary component for the list. It expects a path in the datamodel. The binding must be one of the specified bindings under dataModelBindings.",
+              "deprecated": true,
               "type": "string"
             },
             "tableHeadersMobile": {
@@ -3575,6 +3684,8 @@
             "dataListId": true,
             "secure": true,
             "mapping": true,
+            "queryParameters": true,
+            "summaryBinding": true,
             "bindingToShowInSummary": true,
             "tableHeadersMobile": true
           },
@@ -4605,6 +4716,161 @@
         }
       ]
     },
+    "CompSubformExternal": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompSubformExternal",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Subform"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "title": "Title",
+                      "description": "The title of the subform component",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "description": {
+                      "title": "Description",
+                      "description": "The description text shown underneath the title",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    },
+                    "addButton": {
+                      "title": "Add button (suffix)",
+                      "description": "The text for the \"Add\" button (used as a suffix after the default button text)",
+                      "$ref": "expression.schema.v1.json#/definitions/string"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "addButton": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "layoutSet": {
+              "title": "Layout set ID",
+              "description": "The layout set to load for this subform",
+              "type": "string"
+            },
+            "showAddButton": {
+              "default": true,
+              "type": "boolean"
+            },
+            "showDeleteButton": {
+              "default": true,
+              "type": "boolean"
+            },
+            "tableColumns": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "headerContent": {
+                    "title": "The column header value",
+                    "description": "The header value to display. May contain a text resource bindings, but no data model lookups.",
+                    "type": "string"
+                  },
+                  "cellContent": {
+                    "type": "object",
+                    "properties": {
+                      "query": {
+                        "title": "The cell value via data model lookup",
+                        "description": "The cell value to display from a data model lookup (dot notation).",
+                        "type": "string"
+                      },
+                      "default": {
+                        "title": "The default cell value",
+                        "description": "The cell value to display if `query` returns no result.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "query"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "headerContent",
+                  "cellContent"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "summaryDelimiter": {
+              "title": "The summary view cell delimiter",
+              "description": "The value used to separate cells/elements in a summary view where rich layout is not available. Typically a comma, dash or similar.",
+              "default": " — ",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "layoutSet",
+            "tableColumns"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "forceShowInSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "layoutSet": true,
+            "showAddButton": true,
+            "showDeleteButton": true,
+            "tableColumns": true,
+            "summaryDelimiter": true
+          },
+          "required": [
+            "id",
+            "type",
+            "layoutSet",
+            "tableColumns"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "CompSummary2External": {
       "allOf": [
         {
@@ -4871,6 +5137,7 @@
               "$ref": "#/definitions/IDataModelBindingsSimple"
             },
             "saveWhileTyping": {
+              "default": true,
               "$ref": "#/definitions/SaveWhileTyping"
             },
             "autocomplete": {
@@ -5034,14 +5301,6 @@
         {
           "$ref": "#/definitions/ServerAction"
         }
-      ]
-    },
-    "CustomButtonStyle": {
-      "title": "Button style",
-      "description": "The style/color scheme of the button.",
-      "enum": [
-        "primary",
-        "secondary"
       ]
     },
     "DatepickerSummaryOverrideProps": {
@@ -5390,19 +5649,19 @@
       "type": "object",
       "properties": {
         "address": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         },
         "zipCode": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         },
         "postPlace": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         },
         "careOf": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         },
         "houseNumber": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         }
       },
       "required": [
@@ -5417,7 +5676,7 @@
       "type": "object",
       "properties": {},
       "additionalProperties": {
-        "type": "string"
+        "$ref": "#/definitions/IRawDataModelBinding"
       }
     },
     "IDataModelBindingsForGroup": {
@@ -5425,9 +5684,7 @@
       "type": "object",
       "properties": {
         "group": {
-          "title": "Group",
-          "description": "Dot notation location for a repeating group structure (array of objects), where the data is stored",
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         }
       },
       "required": [
@@ -5440,7 +5697,7 @@
       "type": "object",
       "properties": {},
       "additionalProperties": {
-        "type": "string"
+        "$ref": "#/definitions/IRawDataModelBinding"
       }
     },
     "IDataModelBindingsForMap": {
@@ -5448,29 +5705,23 @@
       "type": "object",
       "properties": {
         "simpleBinding": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         },
         "geometries": {
-          "description": "Should point to an array of objects like {data: string, label: string}",
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         }
       },
       "additionalProperties": false
     },
     "IDataModelBindingsLikert": {
-      "title": "Data model binding",
-      "description": "Describes the location in the data model where the component should store its value(s). A list binding should be pointed to an array structure in the data model, and is used for components that store multiple simple values (e.g. a list of strings).",
+      "title": "IDataModelBindingsLikert",
       "type": "object",
       "properties": {
         "answer": {
-          "title": "Answer",
-          "description": "Dot notation location for the answers. This must point to a property of the objects inside the question array. The answer for each question will be stored in the answer property of the corresponding question object.",
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         },
         "questions": {
-          "title": "Questions",
-          "description": "Dot notation location for a likert structure (array of objects), where the data is stored",
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         }
       },
       "required": [
@@ -5480,12 +5731,11 @@
       "additionalProperties": false
     },
     "IDataModelBindingsList": {
-      "title": "Data model binding",
-      "description": "Describes the location in the data model where the component should store its value(s). A list binding should be pointed to an array structure in the data model, and is used for components that store multiple simple values (e.g. a list of strings).",
+      "title": "IDataModelBindingsList",
       "type": "object",
       "properties": {
         "list": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         }
       },
       "required": [
@@ -5494,19 +5744,17 @@
       "additionalProperties": false
     },
     "IDataModelBindingsOptionsSimple": {
-      "title": "Data model binding",
-      "description": "Describes the location in the data model where the component should store its value(s). A simple binding is used for components that only store a single value, usually a string.",
+      "title": "IDataModelBindingsOptionsSimple",
       "type": "object",
       "properties": {
         "simpleBinding": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         },
         "label": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         },
         "metadata": {
-          "description": "Describes the location where metadata for the option based component should be stored in the datamodel.",
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         }
       },
       "required": [
@@ -5515,16 +5763,36 @@
       "additionalProperties": false
     },
     "IDataModelBindingsSimple": {
-      "title": "Data model binding",
-      "description": "Describes the location in the data model where the component should store its value(s). A simple binding is used for components that only store a single value, usually a string.",
+      "title": "IDataModelBindingsSimple",
       "type": "object",
       "properties": {
         "simpleBinding": {
-          "type": "string"
+          "$ref": "#/definitions/IRawDataModelBinding"
         }
       },
       "required": [
         "simpleBinding"
+      ],
+      "additionalProperties": false
+    },
+    "IDataModelReference": {
+      "title": "IDataModelReference",
+      "type": "object",
+      "properties": {
+        "dataType": {
+          "title": "Data type",
+          "description": "The name of the datamodel type to reference",
+          "type": "string"
+        },
+        "field": {
+          "title": "Field",
+          "description": "The path to the property using dot-notation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataType",
+        "field"
       ],
       "additionalProperties": false
     },
@@ -5848,18 +6116,23 @@
       "type": "object",
       "properties": {
         "xs": {
+          "default": "auto",
           "$ref": "#/definitions/IGridSize"
         },
         "sm": {
+          "default": "auto",
           "$ref": "#/definitions/IGridSize"
         },
         "md": {
+          "default": "auto",
           "$ref": "#/definitions/IGridSize"
         },
         "lg": {
+          "default": "auto",
           "$ref": "#/definitions/IGridSize"
         },
         "xl": {
+          "default": "auto",
           "$ref": "#/definitions/IGridSize"
         }
       }
@@ -6138,6 +6411,11 @@
       "description": "Allows for fetching options from the data model, pointing to a repeating group structure",
       "type": "object",
       "properties": {
+        "dataType": {
+          "title": "Data type",
+          "description": "The datamodel where the repeating group data is stored. If not specified, the data model defined in the layout-set will be used.",
+          "type": "string"
+        },
         "group": {
           "title": "Group",
           "description": "The repeating group to base options on.",
@@ -6271,8 +6549,19 @@
       "type": "object",
       "properties": {},
       "additionalProperties": {
-        "type": "string"
+        "$ref": "expression.schema.v1.json#/definitions/string"
       }
+    },
+    "IRawDataModelBinding": {
+      "title": "IRawDataModelBinding",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "#/definitions/IDataModelReference"
+        }
+      ]
     },
     "IRawOption": {
       "title": "IRawOption",
@@ -6345,6 +6634,8 @@
           "type": "string"
         },
         "mapping": {
+          "description": "**Deprecated**: Will be removed in the next major version. Use `queryParameters` with expressions instead.",
+          "deprecated": true,
           "$ref": "#/definitions/IMapping"
         },
         "queryParameters": {
@@ -6504,6 +6795,9 @@
         "table"
       ]
     },
+    "LikertSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
     "LinkStyle": {
       "title": "Style",
       "description": "The style of the link (a primary/secondary button, or an actual link)",
@@ -6562,6 +6856,9 @@
       ],
       "additionalProperties": false
     },
+    "MapSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
     "MultipleSelectSummaryOverrideProps": {
       "allOf": [
         {
@@ -6608,6 +6905,9 @@
         "type": {
           "const": "ClientAction"
         },
+        "validation": {
+          "$ref": "#/definitions/PageValidation"
+        },
         "metadata": {
           "type": "object",
           "properties": {
@@ -6637,6 +6937,9 @@
         },
         "type": {
           "const": "ClientAction"
+        },
+        "validation": {
+          "$ref": "#/definitions/PageValidation"
         }
       },
       "required": [
@@ -6753,6 +7056,9 @@
       ],
       "additionalProperties": false
     },
+    "PaymentSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
     "PreviousPageAction": {
       "title": "PreviousPageAction",
       "type": "object",
@@ -6762,6 +7068,9 @@
         },
         "type": {
           "const": "ClientAction"
+        },
+        "validation": {
+          "$ref": "#/definitions/PageValidation"
         }
       },
       "required": [
@@ -6791,6 +7100,9 @@
         },
         "type": {
           "const": "ServerAction"
+        },
+        "validation": {
+          "$ref": "#/definitions/PageValidation"
         }
       },
       "required": [
@@ -6798,6 +7110,51 @@
         "type"
       ],
       "additionalProperties": false
+    },
+    "SubformAction": {
+      "title": "SubformAction",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/CloseSubformAction"
+        }
+      ]
+    },
+    "SubformSummaryOverrideProps": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ISummaryOverridesCommon"
+        },
+        {
+          "title": "Summary properties",
+          "description": "Properties for how to display the summary of the component",
+          "type": "object",
+          "properties": {
+            "display": {
+              "title": "Display type",
+              "description": "Show the summary as a table or as full summary components",
+              "default": "table",
+              "enum": [
+                "table",
+                "full"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "componentId": true,
+            "hidden": true,
+            "forceShow": true,
+            "emptyFieldText": true,
+            "display": true
+          },
+          "required": [
+            "componentId"
+          ],
+          "additionalProperties": false
+        }
+      ]
     },
     "SummarizableComponentProps": {
       "title": "SummarizableComponentProps",
@@ -6888,6 +7245,9 @@
         "children"
       ],
       "additionalProperties": false
+    },
+    "TabsSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "TextAreaSummaryOverrideProps": {
       "$ref": "#/definitions/ISummaryOverridesCommon"
