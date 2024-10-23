@@ -865,6 +865,12 @@
         },
         {
           "$ref": "#/definitions/PaymentSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/HeaderSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/ParagraphSummaryOverrideProps"
         }
       ]
     },
@@ -5561,6 +5567,9 @@
         }
       ]
     },
+    "HeaderSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
     "HeadingLevel": {
       "title": "HeadingLevel",
       "enum": [
@@ -7023,6 +7032,9 @@
         "show"
       ],
       "additionalProperties": false
+    },
+    "ParagraphSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "PatternFormatProps": {
       "title": "PatternFormatProps",
