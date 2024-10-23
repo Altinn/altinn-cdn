@@ -410,6 +410,17 @@
                 "tt02"
             ]
         },
+        "npd": {
+            "name": {
+                "en": "Norwegian Offshore Directorate",
+                "nb": "Sokkeldirektoratet",
+                "nn": "Sokkeldirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/npd/npd.svg",
+            "orgnr": "870917732",
+            "homepage": "https://www.sodir.no",
+            "environments": []
+        },
         "npe": {
             "name": {
                 "en": "Norwegian System of Patient Injury Compensation",
