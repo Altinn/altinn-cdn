@@ -3644,7 +3644,18 @@ Altinn, and making sure they are consistent. */
 .pkPFm9QidvXqahcjpWgE {
   display: flex;
   gap: var(--fds-spacing-3);
-  padding: var(--fds-spacing-3) 0;
+}
+
+.wjyL52W2ZrdiB4KjNfeW {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-3);
+}
+
+.NlPBi1o07kg1OSM6jXXu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-6);
 }
 
 .nJj8mOZuUPo125X3YOho {
