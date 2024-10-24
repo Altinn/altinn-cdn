@@ -4916,6 +4916,9 @@
             "showPageInAccordion": {
               "type": "boolean"
             },
+            "isCompact": {
+              "type": "boolean"
+            },
             "hideEmptyFields": {
               "description": "Set this to true if you don't want to show fields that have not been filled out.",
               "type": "boolean"
@@ -4941,6 +4944,7 @@
             "type": true,
             "target": true,
             "showPageInAccordion": true,
+            "isCompact": true,
             "hideEmptyFields": true,
             "overrides": true
           },
