@@ -1,0 +1,12 @@
+[
+    {
+        "label": "Varmkompostering",
+        "value": "varm",
+        "description": "Varmkompostering er en aerob komposterinsmetode, der alt organisk avfall brytes ned ved hjelp av mikroorganismer."
+    },
+    {
+        "label": "Bokashi",
+        "value": "bokashi",
+        "description": "Bokashi er en fermenteringsmetode, hvor organisk avfall brytes ned ved hjelp av melkesyrebakterier."
+    }
+]
