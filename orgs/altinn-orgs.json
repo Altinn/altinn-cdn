@@ -179,6 +179,17 @@
                 "tt02"
             ]
         },
+        "hemit": {
+            "name": {
+                "en": "Central Norway Regional Health Authority's IT department",
+                "nb": "Hemit HF",
+                "nn": "Hemit HF"
+            },
+            "logo": "https://altinncdn.no/orgs/hemit/hemit.svg",
+            "orgnr": "928033821",
+            "homepage": "https://www.hemit.no/",
+            "environments": []
+        },
         "hi": {
             "name": {
                 "en": "Institute of Marine Research",
