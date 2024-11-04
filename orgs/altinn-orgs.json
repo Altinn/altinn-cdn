@@ -188,7 +188,9 @@
             "logo": "https://altinncdn.no/orgs/hemit/hemit.svg",
             "orgnr": "928033821",
             "homepage": "https://www.hemit.no/",
-            "environments": []
+            "environments": [
+                "tt02",
+                "production"]
         },
         "hi": {
             "name": {
