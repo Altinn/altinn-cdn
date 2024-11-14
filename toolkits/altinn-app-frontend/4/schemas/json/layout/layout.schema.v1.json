@@ -23,6 +23,7 @@
             "Checkboxes",
             "Custom",
             "CustomButton",
+            "Date",
             "Datepicker",
             "Dropdown",
             "FileUpload",
@@ -216,6 +217,18 @@
           },
           "then": {
             "$ref": "#/definitions/CompCustomButton"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Date"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompDate"
           }
         },
         {
@@ -678,6 +691,9 @@
     },
     "CompCustomButton": {
       "$ref": "#/definitions/CompCustomButtonExternal"
+    },
+    "CompDate": {
+      "$ref": "#/definitions/CompDateExternal"
     },
     "CompDatepicker": {
       "$ref": "#/definitions/CompDatepickerExternal"
@@ -2067,6 +2083,72 @@
             "id",
             "type",
             "tagName"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompDateExternal": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompDateExternal",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Date"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBLabel"
+            },
+            "format": {
+              "examples": [
+                "dd.MM.yyyy"
+              ],
+              "type": "string"
+            },
+            "value": {
+              "$ref": "expression.schema.v1.json#/definitions/string"
+            },
+            "direction": {
+              "default": "horizontal",
+              "enum": [
+                "horizontal",
+                "vertical"
+              ]
+            },
+            "icon": {
+              "examples": [
+                "https://example.com/icon.svg"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "format": true,
+            "value": true,
+            "direction": true,
+            "icon": true
+          },
+          "required": [
+            "id",
+            "type",
+            "value"
           ],
           "additionalProperties": false
         }
@@ -4118,9 +4200,6 @@
           "$ref": "#/definitions/ComponentBase"
         },
         {
-          "$ref": "#/definitions/IPanelBase"
-        },
-        {
           "title": "CompPanelExternal",
           "type": "object",
           "properties": {
@@ -4142,6 +4221,15 @@
                 }
               },
               "additionalProperties": false
+            },
+            "variant": {
+              "$ref": "#/definitions/PanelVariant"
+            },
+            "showIcon": {
+              "title": "Show icon",
+              "description": "Show icon in the panel header",
+              "default": true,
+              "type": "boolean"
             }
           },
           "required": [
@@ -4155,10 +4243,10 @@
             "hidden": true,
             "grid": true,
             "pageBreak": true,
-            "variant": true,
-            "showIcon": true,
             "type": true,
-            "textResourceBindings": true
+            "textResourceBindings": true,
+            "variant": true,
+            "showIcon": true
           },
           "required": [
             "id",
@@ -6534,28 +6622,6 @@
       ],
       "additionalProperties": false
     },
-    "IPanelBase": {
-      "title": "IPanelBase",
-      "type": "object",
-      "properties": {
-        "variant": {
-          "title": "Panel variant",
-          "description": "Change the look of the panel",
-          "enum": [
-            "info",
-            "warning",
-            "error",
-            "success"
-          ]
-        },
-        "showIcon": {
-          "title": "Show icon",
-          "description": "Show icon in the panel header",
-          "default": true,
-          "type": "boolean"
-        }
-      }
-    },
     "IQueryParameters": {
       "title": "Query parameters",
       "description": "A mapping of query string parameters to values. Will be appended to the URL when fetching options.",
@@ -7037,6 +7103,16 @@
       ],
       "additionalProperties": false
     },
+    "PanelVariant": {
+      "title": "Panel variant",
+      "description": "Change the look of the panel",
+      "enum": [
+        "info",
+        "warning",
+        "error",
+        "success"
+      ]
+    },
     "ParagraphSummaryOverrideProps": {
       "$ref": "#/definitions/ISummaryOverridesCommon"
     },
@@ -7099,7 +7175,41 @@
       "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "RepeatingGroupSummaryOverrideProps": {
-      "$ref": "#/definitions/ISummaryOverridesCommon"
+      "allOf": [
+        {
+          "$ref": "#/definitions/ISummaryOverridesCommon"
+        },
+        {
+          "title": "Summary properties",
+          "description": "Properties for how to display the summary of the component",
+          "type": "object",
+          "properties": {
+            "display": {
+              "title": "Display type",
+              "description": "Show the summary as a table or as full summary components",
+              "default": "full",
+              "enum": [
+                "table",
+                "full"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "componentId": true,
+            "hidden": true,
+            "forceShow": true,
+            "emptyFieldText": true,
+            "display": true
+          },
+          "required": [
+            "componentId"
+          ],
+          "additionalProperties": false
+        }
+      ]
     },
     "SaveWhileTyping": {
       "title": "Automatic saving while typing",
