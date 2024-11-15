@@ -514,6 +514,17 @@
                 "production"
             ]
         },
+        "rir": {
+            "name": {
+                "en": "ROMSDALSHALVØYA INTERKOMMUNALE RENOVASJONSSELSKAP IKS",
+                "nb": "ROMSDALSHALVØYA INTERKOMMUNALE RENOVASJONSSELSKAP IKS",
+                "nn": "ROMSDALSHALVØYA INTERKOMMUNALE RENOVASJONSSELSKAP IKS"
+            },
+            "logo": "",
+            "orgnr": "971042656",
+            "homepage": "https://www.rir.no/",
+            "environments": []
+        },
         "sfd": {
             "name": {
                 "en": "Norwegian Maritime Authority",
