@@ -97,6 +97,17 @@
                 "production"
             ]
         },
+        "din": {
+            "name": {
+                "en": "The Norwegian Courts",
+                "nb": "Domstolene i Norge",
+                "nn": "Domstolane i Noreg"
+            },
+            "logo": "https://altinncdn.no/orgs/din/din.jpg",
+            "orgnr": "984195796",
+            "homepage": "https://www.domstol.no/",
+            "environments": []
+        },
         "dsb": {
             "name": {
                 "en": "The Norwegian Directorate for Civil Protection",
