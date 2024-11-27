@@ -1030,6 +1030,17 @@ svg.leaflet-image-layer.leaflet-interactive path {
   gap: 0.5rem;
 }
 
+.AZZuSzhQLgemdS6_KCvH {
+  border-radius: 1px;
+  max-width: 100px;
+  padding: 10px;
+  top: 50px;
+}
+
+.JYaHzahFkpIw7aTeOSes {
+  padding: 0;
+}
+
 .QQIYw2acH7A7D_kjvrYA {
   display: flex;
   align-items: center;
@@ -1445,63 +1456,6 @@ dd.ix9EOGhoMwGeL3puCIs5 {
   }
 }
 
-.lKSO77mgb6nQMFTtk6YL {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999em;
-  transform: translateZ(0);
-  width: 0.625em;
-  height: 0.625em;
-  border-radius: 50%;
-  animation: FiLjKNSHzruYWY_TrCVk 1.8s infinite ease-in-out;
-  animation-delay: -0.16s;
-  animation-fill-mode: both;
-}
-.lKSO77mgb6nQMFTtk6YL::after,
-.lKSO77mgb6nQMFTtk6YL::before {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  border-radius: 50%;
-  animation: FiLjKNSHzruYWY_TrCVk 1.8s infinite ease-in-out;
-  animation-fill-mode: both;
-}
-.lKSO77mgb6nQMFTtk6YL::before {
-  left: -0.875em;
-  animation-delay: -0.32s;
-}
-.lKSO77mgb6nQMFTtk6YL::after {
-  left: 0.875em;
-}
-
-@keyframes FiLjKNSHzruYWY_TrCVk {
-  0%,
-  100%,
-  80% {
-    box-shadow: 0 0.625em 0 -0.325em #008fd6;
-  }
-  40% {
-    box-shadow: 0 0.625em 0 0 #008fd6;
-  }
-}
-
-.x6eRaZyZIHu2cUXOeNQy {
-  position: relative;
-  width: fit-content;
-}
-.k1U3W0_ShXEwuJjivwYa {
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -0.9rem;
-  margin-left: -0.3rem;
-}
-
 input[type='search'] {
   background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221.5em%22%20height%3D%221.5em%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20focusable%3D%22false%22%20role%3D%22img%22%3E%3Cpath%20fill%3D%22currentColor%22%20fill-rule%3D%22evenodd%22%20d%3D%22M10.5%203.25a7.25%207.25%200%201%200%204.569%2012.88l5.411%205.41a.75.75%200%201%200%201.06-1.06l-5.41-5.411A7.25%207.25%200%200%200%2010.5%203.25M4.75%2010.5a5.75%205.75%200%201%201%2011.5%200%205.75%205.75%200%200%201-11.5%200%22%20clip-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
   background-position: right 10px center;
@@ -1520,6 +1474,23 @@ input[type='search'] {
   outline-offset: var(--fds-focus-border-width);
   box-shadow: 0 0 0 var(--fds-focus-border-width) var(--fds-semantic-border-focus-boxshadow);
   border-radius: var(--fds-border_radius-medium);
+}
+
+.FhhoRMV4H02Mdoqz30t2 {
+  display: flex;
+  gap: var(--fds-spacing-2);
+  align-items: center;
+}
+
+.g5VAlBJU55qBDDaaNpJt {
+  padding-bottom: var(--fds-spacing-2);
+}
+
+.qlBoh3NGn6INgyMo3FrX {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-1);
+  align-items: flex-start;
 }
 
 .ShCBu1erDKk6jDgb5LxF {
@@ -1766,18 +1737,18 @@ tr.cxzCr5D6mawIXFEHiU14 td {
   }
 }
 
-.blppdgGM5Cak_w5_F6pA {
+.CzFlC3uoGcBDf5D7x65g {
   text-align: left;
   padding-bottom: var(--fds-spacing-2);
 }
 
-.W8t5I51jCvsv5cDZMmRo {
+.Hzt6ax3cJYskVrdw8RLQ {
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
 
-.t_AMWIh4Bv00Zx7O1lMr {
+.b46nbML0YTCTWHxWs8Uj {
   padding-bottom: var(--fds-spacing-3);
 }
 
@@ -1959,6 +1930,129 @@ Altinn, and making sure they are consistent. */
   overflow-wrap: break-word;
 }
 
+.p2pdBCy4UuEHb2qxjaYA span[id*='description-'] {
+  margin-bottom: 0;
+}
+.C_FqzkQZDXuV7zOqdkwS {
+  gap: var(--fds-spacing-2);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--fds-spacing-2);
+}
+
+.RyRrf81s709KLSiOVArY {
+  word-break: break-word;
+  line-height: 1.5rem;
+  display: inline-block;
+  font-weight: normal;
+}
+
+.uZAeSN20ZpoqNVGWpOTQ {
+  background-color: white;
+}
+
+.J2PeLvhYudYuN6w8ESVU {
+  background-color: var(--fds-colors-blue-900);
+  color: white;
+  font-weight: normal;
+  border-radius: var(--fds-border_radius-medium);
+}
+.J2PeLvhYudYuN6w8ESVU button {
+  color: white;
+}
+.frkyAgi5Da7S7wkqGhFd {
+  border-radius: var(--fds-border_radius-medium);
+  background: var(--fds-colors-grey-100);
+  cursor: not-allowed;
+}
+.frkyAgi5Da7S7wkqGhFd button {
+  text-decoration: line-through;
+}
+.BQ7PT_rnIgVpl2O6BDDn {
+  border-radius: var(--fds-border_radius-medium);
+  background: var(--fds-colors-blue-200);
+}
+.Wrw77Q1dQpc4FywNl0ip {
+  border-radius: var(--fds-border_radius-medium);
+  border: var(--fds-border_width-default) solid var(--fds-colors-blue-200);
+}
+.frkyAgi5Da7S7wkqGhFd:hover button {
+  cursor: not-allowed;
+}
+
+.YfWNHvi7JMttkGaF_ikG {
+  max-width: 363px;
+}
+.fGUVg5YSlaKW_LPa17t9 {
+  width: 350px;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.KyDH9WR_UY90Tdx5a9WU {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  opacity: 0.75;
+  padding: 0.5rem 0;
+  font: inherit;
+  font-weight: 500;
+}
+.SohwOKRVvIEotV9CMH5Y:hover {
+  border-radius: var(--fds-border_radius-medium);
+  background: var(--fds-colors-blue-200);
+}
+.SohwOKRVvIEotV9CMH5Y {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+}
+.sdDjaWrsV9zDLLo4PY7T {
+  height: 46px;
+  width: 46px;
+  background: transparent;
+  border: none;
+}
+.VyhK0PGYEi1FVKXzUvQM {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-2);
+}
+.Ppn9EAZNBYeE9U89CMhB {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 4px;
+}
+
+.L6k_gBjuKMDCuY0v6v0A {
+  display: flex;
+  border-radius: 4px;
+  border: var(--fds-border_width-default, 1px) solid var(--fds-semantic-border-neutral-default);
+  gap: var(--fds-spacing-1);
+  background: white;
+}
+.L6k_gBjuKMDCuY0v6v0A:hover {
+  box-shadow: inset 0 0 0 1px var(--fds-semantic-border-input-hover);
+}
+.SfX4R1Y30qTp7BpSmO9g {
+  padding: 1px;
+}
+.SfX4R1Y30qTp7BpSmO9g,
+.SfX4R1Y30qTp7BpSmO9g * {
+  height: 36px;
+}
+.L6k_gBjuKMDCuY0v6v0A button {
+  min-height: 38px;
+  min-width: 38px;
+}
+.SfX4R1Y30qTp7BpSmO9g input:not(:focus-visible),
+.SfX4R1Y30qTp7BpSmO9g button {
+  border: none;
+  background: white;
+}
+.SfX4R1Y30qTp7BpSmO9g input:not(:focus-visible):hover {
+  box-shadow: none;
+}
+
 @media print {
   .uHpBkbI7zNhVJqEuFKw_ {
     break-inside: avoid;
@@ -2078,11 +2172,6 @@ Altinn, and making sure they are consistent. */
   gap: 0.625rem;
 }
 
-.wPERWlaB7V4ULA2_yH_a {
-  z-index: 1700;
-  box-sizing: border-box;
-}
-
 .vW8StNkCjIOg4Ed0he9U:not(.PIrGzYEkek9SQnWLy8vg) {
   display: flex;
   flex-direction: column;
@@ -2147,154 +2236,27 @@ Altinn, and making sure they are consistent. */
   flex-direction: column;
 }
 
-.whSMXJPD9EZ6iPUDdhXe span[id*='description-'] {
-  margin-bottom: 0;
-}
-.sJ7uxQV7SEk63kDTA6Sc {
-  gap: var(--fds-spacing-2);
-  display: flex;
-  flex-direction: column;
-  margin-bottom: var(--fds-spacing-2);
-}
-
-.QiWCK_OD331bHxd4pnet {
-  word-break: break-word;
-  line-height: 1.5rem;
-  display: inline-block;
-  font-weight: normal;
-}
-
-.mwzIPvVLErEDDxg_JV0N {
-  background-color: white;
-}
-
-.JcN5PxpWDuZR4w_6hwNm {
-  background-color: var(--fds-colors-blue-900);
-  color: white;
-  font-weight: normal;
-  border-radius: var(--fds-border_radius-medium);
-}
-.JcN5PxpWDuZR4w_6hwNm button {
-  color: white;
-}
-.iyd8alvUEMb7ZmQ63SDS {
-  border-radius: var(--fds-border_radius-medium);
-  background: var(--fds-colors-grey-100);
-  cursor: not-allowed;
-}
-.iyd8alvUEMb7ZmQ63SDS button {
-  text-decoration: line-through;
-}
-.E9Kuz3qSp9m8Qt9xxsdu {
-  border-radius: var(--fds-border_radius-medium);
-  background: var(--fds-colors-blue-200);
-}
-.gwblRjXq9nyYDXRiwfkI {
-  border-radius: var(--fds-border_radius-medium);
-  border: var(--fds-border_width-default) solid var(--fds-colors-blue-200);
-}
-.iyd8alvUEMb7ZmQ63SDS:hover button {
-  cursor: not-allowed;
-}
-
-.HZUuAUbNyPM3xxnVgVJ1 {
-  max-width: 363px;
-}
-.kqMBfrQDfPN41MNLBKnG {
-  width: 350px;
-  border-collapse: separate;
-  border-spacing: 2px;
-}
-.W8m1L4UQY_3LUv0Y1URX {
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  opacity: 0.75;
-  padding: 0.5rem 0;
-  font: inherit;
-  font-weight: 500;
-}
-.h8gZlBNP5zN1YBbc_R5k:hover {
-  border-radius: var(--fds-border_radius-medium);
-  background: var(--fds-colors-blue-200);
-}
-.h8gZlBNP5zN1YBbc_R5k {
-  width: 48px;
-  height: 48px;
-  text-align: center;
-}
-.nmJkNWFDTx1_ZL0SV8mu {
-  height: 46px;
-  width: 46px;
-  background: transparent;
-  border: none;
-}
-.d8sQHUPLVQ7hfwW635m7 {
-  display: flex;
-  flex-direction: column;
-  gap: var(--fds-spacing-2);
-}
-.SikVrBhg1Tt8Gt3It2Lx {
-  display: flex;
-  margin-bottom: 10px;
-  gap: 4px;
-}
-
-.jWvFbsvXFEywMTah5rf_ {
-  display: flex;
-  border-radius: 4px;
-  border: var(--fds-border_width-default, 1px) solid var(--fds-semantic-border-neutral-default);
-  gap: var(--fds-spacing-1);
-  background: white;
-}
-.jWvFbsvXFEywMTah5rf_:hover {
-  box-shadow: inset 0 0 0 1px var(--fds-semantic-border-input-hover);
-}
-.vBRiYTvkzA0Uoem44buS {
-  padding: 1px;
-}
-.vBRiYTvkzA0Uoem44buS,
-.vBRiYTvkzA0Uoem44buS * {
-  height: 36px;
-}
-.jWvFbsvXFEywMTah5rf_ button {
-  min-height: 38px;
-  min-width: 38px;
-}
-.vBRiYTvkzA0Uoem44buS input:not(:focus-visible),
-.vBRiYTvkzA0Uoem44buS button {
-  border: none;
-  background: white;
-}
-.vBRiYTvkzA0Uoem44buS input:not(:focus-visible):hover {
-  box-shadow: none;
-}
-
 /* Variables declaration */
 /* prettier-ignore */
 .rdp-root {
   --rdp-accent-color: blue; /* The accent color used for selected days and UI elements. */
   --rdp-accent-background-color: #f0f0ff; /* The accent background color used for selected days and UI elements. */
-  --rdp-font-family: system-ui; /* The font family used by the calendar. Note that `inherit`does not work here. */
 
-  --rdp-day-font: inherit; /* The font used for the day cells. */
   --rdp-day-height: 2.75rem; /* The height of the day cells. */
   --rdp-day-width: 2.75rem; /* The width of the day cells. */
   
   --rdp-day_button-border-radius: 100%; /* The border radius of the day cells. */
   --rdp-day_button-border: 2px solid transparent; /* The border of the day cells. */
-  --rdp-day_button-height: var(--rdp-day-width); /* The height of the day cells. */
-  --rdp-day_button-width: var(--rdp-day-height); /* The width of the day cells. */
+  --rdp-day_button-height: var(--rdp-day-height); /* The height of the day cells. */
+  --rdp-day_button-width: var(--rdp-day-width); /* The width of the day cells. */
   
   --rdp-selected-border: 2px solid var(--rdp-accent-color); /* The border of the selected days. */
-  --rdp-selected-font: bold large var(--rdp-font-family); /* The font of the selected days. */
   --rdp-disabled-opacity: 0.5; /* The opacity of the disabled days. */
   --rdp-outside-opacity: 0.75; /* The opacity of the days outside the current month. */
   --rdp-today-color: var(--rdp-accent-color); /* The color of the today's date. */
   
   --rdp-dropdown-gap: 0.5rem;/* The gap between the dropdowns used in the month captons. */
   
-  --rdp-month_caption-font: bold larger var(--rdp-font-family); /* The font of the month caption. */
   --rdp-months-gap: 2rem; /* The gap between the months in the multi-month view. */
   
   --rdp-nav_button-disabled-opacity: 0.5; /* The opacity of the disabled navigation buttons. */
@@ -2303,8 +2265,7 @@ Altinn, and making sure they are consistent. */
   --rdp-nav-height: 2.75rem; /* The height of the navigation bar. */
   
   --rdp-range_middle-background-color: var(--rdp-accent-background-color); /* The color of the background for days in the middle of a range. */
-  --rdp-range_middle-font: normal medium var(--rdp-font-family); /* The font for days in the middle of a range. */
-  --rdp-range_middle-foreground-color: white; /* The font for days in the middle of a range. */
+  --rdp-range_middle-foreground-color: white; /* The foregraound color for days in the middle of a range. */
   --rdp-range_middle-color: inherit;/* The color of the range text. */
   
   --rdp-range_start-color: white; /* The color of the range text. */
@@ -2317,13 +2278,12 @@ Altinn, and making sure they are consistent. */
   
   --rdp-week_number-border-radius: 100%; /* The border radius of the week number. */
   --rdp-week_number-border: 2px solid transparent; /* The border of the week number. */
-  --rdp-week_number-font: 400 small var(--rdp-font-family); /* The font of the week number cells. */
+  
   --rdp-week_number-height: var(--rdp-day-height); /* The height of the week number cells. */
   --rdp-week_number-opacity: 0.75; /* The opacity of the week number. */
   --rdp-week_number-width: var(--rdp-day-width); /* The width of the week number cells. */
   --rdp-weeknumber-text-align: center; /* The text alignment of the weekday cells. */
 
-  --rdp-weekday-font: 500 smaller var(--rdp-font-family); /* The font of the weekday. */
   --rdp-weekday-opacity: 0.75; /* The opacity of the weekday. */
   --rdp-weekday-padding: 0.5rem 0rem; /* The padding of the weekday. */
   --rdp-weekday-text-align: center; /* The text alignment of the weekday cells. */
@@ -2348,7 +2308,6 @@ Altinn, and making sure they are consistent. */
 .rdp-day {
   width: var(--rdp-day-width);
   height: var(--rdp-day-height);
-  font: var(--rdp-day-font);
   text-align: center;
 }
 
@@ -2464,7 +2423,8 @@ Altinn, and making sure they are consistent. */
   display: flex;
   align-content: center;
   height: var(--rdp-nav-height);
-  font: var(--rdp-month_caption-font);
+  font-weight: bold;
+  font-size: large;
 }
 
 .rdp-months {
@@ -2493,14 +2453,16 @@ Altinn, and making sure they are consistent. */
 .rdp-weekday {
   opacity: var(--rdp-weekday-opacity);
   padding: var(--rdp-weekday-padding);
-  font: var(--rdp-weekday-font);
+  font-weight: 500;
+  font-size: smaller;
   text-align: var(--rdp-weekday-text-align);
   text-transform: var(--rdp-weekday-text-transform);
 }
 
 .rdp-week_number {
   opacity: var(--rdp-week_number-opacity);
-  font: var(--rdp-week_number-font);
+  font-weight: 400;
+  font-size: small;
   height: var(--rdp-week_number-height);
   width: var(--rdp-week_number-width);
   border: var(--rdp-week_number-border);
@@ -2514,7 +2476,8 @@ Altinn, and making sure they are consistent. */
 }
 
 .rdp-selected {
-  font: var(--rdp-selected-font);
+  font-weight: bold;
+  font-size: large;
 }
 
 .rdp-selected .rdp-day_button {
@@ -2545,7 +2508,6 @@ Altinn, and making sure they are consistent. */
 
 .rdp-range_middle {
   background-color: var(--rdp-range_middle-background-color);
-  font: var(--rdp-range_middle-font);
 }
 
 .rdp-range_middle .rdp-day_button {
@@ -2638,6 +2600,49 @@ Altinn, and making sure they are consistent. */
   color: var(--fds-semantic-text-neutral-subtle);
 }
 
+.lKSO77mgb6nQMFTtk6YL {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 50%;
+  animation: FiLjKNSHzruYWY_TrCVk 1.8s infinite ease-in-out;
+  animation-delay: -0.16s;
+  animation-fill-mode: both;
+}
+.lKSO77mgb6nQMFTtk6YL::after,
+.lKSO77mgb6nQMFTtk6YL::before {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border-radius: 50%;
+  animation: FiLjKNSHzruYWY_TrCVk 1.8s infinite ease-in-out;
+  animation-fill-mode: both;
+}
+.lKSO77mgb6nQMFTtk6YL::before {
+  left: -0.875em;
+  animation-delay: -0.32s;
+}
+.lKSO77mgb6nQMFTtk6YL::after {
+  left: 0.875em;
+}
+
+@keyframes FiLjKNSHzruYWY_TrCVk {
+  0%,
+  100%,
+  80% {
+    box-shadow: 0 0.625em 0 -0.325em #008fd6;
+  }
+  40% {
+    box-shadow: 0 0.625em 0 0 #008fd6;
+  }
+}
+
 .GpWZSH2OFB1BSlOgrcig {
   margin-bottom: 1rem;
   margin-right: 0.5rem;
@@ -2728,11 +2733,6 @@ tr.GgQeJQ04_MMeJGzsE69j td {
   gap: 8px;
 }
 
-.prznQj_DyIDprUCAx41Q {
-  font-weight: 500;
-  font-size: 1rem;
-  margin-bottom: 0.375rem;
-}
 .Q17p5tqIm51diovNG7sG {
   border-bottom: 2px solid #1eadf7 !important;
 }
@@ -2743,9 +2743,10 @@ tr.GgQeJQ04_MMeJGzsE69j td {
   margin-bottom: 0;
 }
 
-.OaJuNDeQoMhtN4W13d4r {
-  font-weight: 300;
-  font-size: 1rem;
+.SVX3jcTNnUjGwHDrNxJX {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .LPqV09oEI7YOIr1TNVdP:focus {
@@ -2767,6 +2768,45 @@ tr.GgQeJQ04_MMeJGzsE69j td {
 
 .Je46ir9qmkA_dz2RRp06 {
   font-size: 2.5rem;
+}
+
+.BSy302egBDkDCGG15io_ {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.npdMUK2CvxyTSMSnFJWQ {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-start;
+}
+
+.ZCqAZ1OpJZxeK_JmFjTW {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.UjxSeErxJXENTbhHhneM {
+  color: var(--fds-semantic-text-neutral-default);
+  margin: -16px -16px 0 0;
+  padding: 8px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.V9IJEMceK7nKCd6DQW0I {
+  word-break: break-all;
+  font-weight: 500;
+}
+
+.Lnp7JN1p6ZEpn3QZ3GCQ {
+  margin: 0;
+}
+.Lnp7JN1p6ZEpn3QZ3GCQ ul {
+  margin: 0;
 }
 
 .NxQS7gqS5tRzbUjcVAGe {
@@ -3815,6 +3855,38 @@ Altinn, and making sure they are consistent. */
   gap: var(--fds-spacing-4);
 }
 
+.hTXGkYjVNgPwG943ijAz button {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.hTXGkYjVNgPwG943ijAz code {
+  font-size: 0.8rem;
+  color: white;
+  background-color: #00315d;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.bDETDX4tKq7MCbfcsDH9 {
+  max-width: 1200px;
+  height: 90vh;
+  overflow: hidden;
+}
+.TVooSFwOX06IIKvjOgK1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.XUYq5o8gRQNhFKcjlbxK {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .M4oXbZ5iYGWZsZwBC4HH {
   margin-left: calc(var(--modal-padding-x) * -1);
   margin-right: calc(var(--modal-padding-x) * -1);
@@ -4230,6 +4302,95 @@ table > tbody > tr.hOU04Y5iWFnNKqPGHfRH:hover {
 }
 
 .AqgiFyNDEXqhnvM2x2Mw {
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.tNOxhFNke2IwAASLg1iN {
+  width: 100%;
+}
+
+.l5RKjK7TkfJJwt7l9Cwh {
+  display: flex;
+  justify-content: end;
+  gap: var(--fds-spacing-2);
+}
+
+.UrR9AenoY4i47x333riJ {
+  display: block;
+}
+
+.UrR9AenoY4i47x333riJ caption {
+  display: block;
+}
+
+.UrR9AenoY4i47x333riJ thead {
+  display: none;
+}
+
+.UrR9AenoY4i47x333riJ th {
+  display: block;
+  border: none;
+}
+
+.UrR9AenoY4i47x333riJ tbody,
+.UrR9AenoY4i47x333riJ tr {
+  display: block;
+}
+
+.UrR9AenoY4i47x333riJ td {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: var(--fds-spacing-2) 0;
+}
+
+.UrR9AenoY4i47x333riJ td .Rm3j34nwJqqAv5HkvShy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.UrR9AenoY4i47x333riJ tbody tr:last-child {
+  border-bottom: 2px solid var(--fds-semantic-border-neutral-default);
+}
+
+.UrR9AenoY4i47x333riJ tbody tr:first-child {
+  border-top: 2px solid var(--fds-semantic-border-neutral-default);
+}
+
+.UrR9AenoY4i47x333riJ tr {
+  border-bottom: 1px solid var(--fds-semantic-border-neutral-default);
+  padding-top: var(--fds-spacing-3);
+  padding-bottom: var(--fds-spacing-3);
+}
+
+.UrR9AenoY4i47x333riJ tr:hover td {
+  background-color: unset;
+}
+
+.UrR9AenoY4i47x333riJ td[data-header-title]:not([data-header-title=''])::before,
+.UrR9AenoY4i47x333riJ th[data-header-title]:not([data-header-title=''])::before {
+  content: attr(data-header-title);
+  display: block;
+  text-align: left;
+  font-weight: 500;
+}
+
+.UrR9AenoY4i47x333riJ td .l5RKjK7TkfJJwt7l9Cwh {
+  justify-content: start;
+}
+
+.PxVAVtxBiOBVriOTWtFj {
   border: none;
   padding: 0;
   margin: 0;
@@ -4779,38 +4940,6 @@ input.form-control:focus:not(.a-hasButton) {
   border-radius: 4px;
   color: black;
   padding: 0px 4px;
-}
-
-.hTXGkYjVNgPwG943ijAz button {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-.hTXGkYjVNgPwG943ijAz code {
-  font-size: 0.8rem;
-  color: white;
-  background-color: #00315d;
-  padding: 2px 4px;
-  border-radius: 4px;
-}
-
-.bDETDX4tKq7MCbfcsDH9 {
-  max-width: 1200px;
-  height: 90vh;
-  overflow: hidden;
-}
-.TVooSFwOX06IIKvjOgK1 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.XUYq5o8gRQNhFKcjlbxK {
-  width: 100%;
-  height: 100%;
-  border: none;
 }
 
 .igPY24NV91BC2Jj8kmOE > div > div {

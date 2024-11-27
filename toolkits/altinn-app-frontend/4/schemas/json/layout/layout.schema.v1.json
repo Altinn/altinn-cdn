@@ -14,6 +14,7 @@
             "AccordionGroup",
             "ActionButton",
             "Address",
+            "AddToList",
             "Alert",
             "AttachmentList",
             "Audio",
@@ -49,9 +50,11 @@
             "Paragraph",
             "Payment",
             "PaymentDetails",
+            "PDFPreviewButton",
             "PrintButton",
             "RadioButtons",
             "RepeatingGroup",
+            "SimpleTable",
             "Subform",
             "Summary",
             "Summary2",
@@ -109,6 +112,18 @@
           },
           "then": {
             "$ref": "#/definitions/CompAddress"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "AddToList"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompAddToList"
           }
         },
         {
@@ -535,6 +550,18 @@
           "if": {
             "properties": {
               "type": {
+                "const": "PDFPreviewButton"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompPDFPreviewButton"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
                 "const": "PrintButton"
               }
             }
@@ -565,6 +592,18 @@
           },
           "then": {
             "$ref": "#/definitions/CompRepeatingGroup"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "SimpleTable"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompSimpleTable"
           }
         },
         {
@@ -664,6 +703,9 @@
     },
     "CompAddress": {
       "$ref": "#/definitions/CompAddressExternal"
+    },
+    "CompAddToList": {
+      "$ref": "#/definitions/CompAddToListExternal"
     },
     "CompAlert": {
       "$ref": "#/definitions/CompAlertExternal"
@@ -770,6 +812,9 @@
     "CompPaymentDetails": {
       "$ref": "#/definitions/CompPaymentDetailsExternal"
     },
+    "CompPDFPreviewButton": {
+      "$ref": "#/definitions/CompPDFPreviewButtonExternal"
+    },
     "CompPrintButton": {
       "$ref": "#/definitions/CompPrintButtonExternal"
     },
@@ -778,6 +823,9 @@
     },
     "CompRepeatingGroup": {
       "$ref": "#/definitions/CompRepeatingGroupExternal"
+    },
+    "CompSimpleTable": {
+      "$ref": "#/definitions/CompSimpleTableExternal"
     },
     "CompSubform": {
       "$ref": "#/definitions/CompSubformExternal"
@@ -1082,6 +1130,73 @@
       "required": [
         "id",
         "type"
+      ],
+      "additionalProperties": false
+    },
+    "Columns": {
+      "title": "Columns",
+      "type": "object",
+      "properties": {
+        "header": {
+          "type": "string"
+        },
+        "accessors": {
+          "title": "Accessors",
+          "description": "List of fields that should be included in the cell",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "component": {
+          "title": "Specify component to render",
+          "type": "object",
+          "properties": {
+            "type": {
+              "enum": [
+                "radio",
+                "date"
+              ]
+            },
+            "format": {
+              "title": "Date format",
+              "description": "Date format used when displaying the date to the user",
+              "examples": [
+                "dd/MM/yyyy",
+                "MM/dd/yyyy",
+                "yyyy-MM-dd"
+              ],
+              "type": "string"
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "label",
+                  "value"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "header",
+        "accessors"
       ],
       "additionalProperties": false
     },
@@ -1433,6 +1548,94 @@
           "required": [
             "id",
             "type",
+            "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompAddToListExternal": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "title": "CompAddToListExternal",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "AddToList"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "dataModelBindings": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "$ref": "#/definitions/IRawDataModelBinding"
+                }
+              },
+              "required": [
+                "data"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "type",
+            "title",
+            "dataModelBindings"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "forceShowInSummary": true,
+            "type": true,
+            "textResourceBindings": true,
+            "title": true,
+            "dataModelBindings": true
+          },
+          "required": [
+            "id",
+            "type",
+            "title",
             "dataModelBindings"
           ],
           "additionalProperties": false
@@ -4418,6 +4621,58 @@
         }
       ]
     },
+    "CompPDFPreviewButtonExternal": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompPDFPreviewButtonExternal",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "PDFPreviewButton"
+            },
+            "textResourceBindings": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "title": "Button title/text",
+                  "description": "The text to display on the button.",
+                  "$ref": "expression.schema.v1.json#/definitions/string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "buttonStyle": {
+              "$ref": "#/definitions/ActionButtonStyle"
+            }
+          },
+          "required": [
+            "type",
+            "buttonStyle"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true,
+            "textResourceBindings": true,
+            "buttonStyle": true
+          },
+          "required": [
+            "id",
+            "type",
+            "buttonStyle"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
     "CompPrintButtonExternal": {
       "allOf": [
         {
@@ -4722,12 +4977,14 @@
               "title": "Max number of rows",
               "description": "Maximum number of rows that can be added.",
               "type": "integer",
-              "minimum": 2
+              "minimum": 1
             },
             "minCount": {
               "title": "Min number of rows",
               "description": "Minimum number of rows that should be added. If the user has not added enough rows, the repeating group will show a validation error",
-              "type": "integer"
+              "default": 0,
+              "type": "integer",
+              "minimum": 0
             },
             "tableHeaders": {
               "title": "Table headers",
@@ -4805,6 +5062,132 @@
             "type",
             "children",
             "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompSimpleTableExternal": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/FormComponentProps"
+        },
+        {
+          "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/LabeledComponentProps"
+        },
+        {
+          "title": "CompSimpleTableExternal",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "SimpleTable"
+            },
+            "textResourceBindings": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/TRBFormComp"
+                },
+                {
+                  "$ref": "#/definitions/TRBSummarizable"
+                },
+                {
+                  "$ref": "#/definitions/TRBLabel"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "tableTitle": true,
+                    "shortName": true,
+                    "requiredValidation": true,
+                    "summaryTitle": true,
+                    "summaryAccessibleTitle": true,
+                    "title": true,
+                    "description": true,
+                    "help": true
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "dataModelBindings": {
+              "$ref": "#/definitions/IDataModelBindingsForTable"
+            },
+            "columns": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Columns"
+              }
+            },
+            "zebra": {
+              "title": "Size",
+              "description": "If true, the table will have zebra striping",
+              "type": "boolean"
+            },
+            "enableDelete": {
+              "title": "Enable delete",
+              "description": "If true, will allow user to delete row",
+              "type": "boolean"
+            },
+            "enableEdit": {
+              "title": "Enable delete",
+              "description": "If true, will allow user to edit row",
+              "type": "boolean"
+            },
+            "size": {
+              "title": "Size",
+              "description": "Size of table.",
+              "enum": [
+                "sm",
+                "md",
+                "lg"
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "title",
+            "dataModelBindings",
+            "columns"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "readOnly": true,
+            "required": true,
+            "showValidations": true,
+            "renderAsSummary": true,
+            "forceShowInSummary": true,
+            "labelSettings": true,
+            "type": true,
+            "textResourceBindings": true,
+            "title": true,
+            "dataModelBindings": true,
+            "columns": true,
+            "zebra": true,
+            "enableDelete": true,
+            "enableEdit": true,
+            "size": true
+          },
+          "required": [
+            "id",
+            "type",
+            "title",
+            "dataModelBindings",
+            "columns"
           ],
           "additionalProperties": false
         }
@@ -5812,6 +6195,19 @@
           "$ref": "#/definitions/IRawDataModelBinding"
         }
       },
+      "additionalProperties": false
+    },
+    "IDataModelBindingsForTable": {
+      "title": "IDataModelBindingsForTable",
+      "type": "object",
+      "properties": {
+        "tableData": {
+          "$ref": "#/definitions/IRawDataModelBinding"
+        }
+      },
+      "required": [
+        "tableData"
+      ],
       "additionalProperties": false
     },
     "IDataModelBindingsLikert": {
@@ -6909,31 +7305,118 @@
     },
     "MapLayer": {
       "title": "MapLayer",
-      "type": "object",
-      "properties": {
-        "url": {
-          "title": "Map layer url",
-          "description": "Url to a map tile. {z}/{x}/{y} will be replaced with tile coordinates, {s} will be replaced with a random subdomain if subdomains are given",
-          "type": "string"
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "url": {
+              "title": "Map layer url",
+              "description": "Url to a map tile. {z}/{x}/{y} will be replaced with tile coordinates, {s} will be replaced with a random subdomain if subdomains are given",
+              "type": "string"
+            },
+            "attribution": {
+              "title": "Attribution",
+              "description": "Ascribing a work or remark to a particular unit for recognition",
+              "type": "string"
+            },
+            "subdomains": {
+              "title": "Subdomains",
+              "description": "List of subdomains. Used for balancing the load on different map tiling servers. A random one will replace {s} in the defined url.",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "type": {
+              "title": "Layer Type",
+              "description": "Type of the map layer",
+              "default": "TileLayer",
+              "const": "TileLayer"
+            },
+            "minZoom": {
+              "title": "Minimum Zoom Level",
+              "description": "The minimum zoom level for the layer",
+              "default": 0,
+              "type": "number"
+            },
+            "maxZoom": {
+              "title": "Maximum Zoom Level",
+              "description": "The maximum zoom level for the layer",
+              "default": 18,
+              "type": "number"
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false
         },
-        "attribution": {
-          "title": "Attribution",
-          "description": "Ascribing a work or remark to a particular unit for recognition",
-          "type": "string"
-        },
-        "subdomains": {
-          "title": "Subdomains",
-          "description": "List of subdomains. Used for balancing the load on different map tiling servers. A random one will replace {s} in the defined url.",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+        {
+          "type": "object",
+          "properties": {
+            "url": {
+              "title": "Map layer url",
+              "description": "Url to a wms-type map server",
+              "type": "string"
+            },
+            "attribution": {
+              "type": "string"
+            },
+            "subdomains": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "type": {
+              "const": "WMS"
+            },
+            "layers": {
+              "title": "WMS Layers",
+              "description": "Comma-separated list of one or more WMS layers to display. Sent as a prop to the WMS map server.",
+              "type": "string"
+            },
+            "format": {
+              "title": "Image Format",
+              "description": "The MIME type of the WMS tiles to request from the WMS server, as specified by the WMS standard. (use 'image/png' for layers with transparency).",
+              "default": "image/jpeg",
+              "type": "string"
+            },
+            "version": {
+              "title": "WMS Version",
+              "description": "The version of the WMS standard to use",
+              "default": "1.1.1",
+              "type": "string"
+            },
+            "transparent": {
+              "title": "Transparency",
+              "description": "Whether the WMS layer should be transparent",
+              "default": false,
+              "type": "boolean"
+            },
+            "uppercase": {
+              "title": "Uppercase",
+              "description": "Whether the WMS parameters should be uppercase",
+              "default": false,
+              "type": "boolean"
+            },
+            "minZoom": {
+              "default": 0,
+              "type": "number"
+            },
+            "maxZoom": {
+              "default": 18,
+              "type": "number"
+            }
+          },
+          "required": [
+            "url",
+            "type",
+            "layers"
+          ],
+          "additionalProperties": false
         }
-      },
-      "required": [
-        "url"
-      ],
-      "additionalProperties": false
+      ]
     },
     "MapSummaryOverrideProps": {
       "$ref": "#/definitions/ISummaryOverridesCommon"
