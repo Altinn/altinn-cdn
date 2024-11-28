@@ -160,7 +160,8 @@
             "orgnr": "986105174",
             "homepage": "https://www.forsvaret.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "gk": {
