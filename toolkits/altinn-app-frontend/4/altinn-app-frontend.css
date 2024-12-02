@@ -2242,13 +2242,13 @@ Altinn, and making sure they are consistent. */
   --rdp-accent-color: blue; /* The accent color used for selected days and UI elements. */
   --rdp-accent-background-color: #f0f0ff; /* The accent background color used for selected days and UI elements. */
 
-  --rdp-day-height: 2.75rem; /* The height of the day cells. */
-  --rdp-day-width: 2.75rem; /* The width of the day cells. */
+  --rdp-day-height: 44px; /* The height of the day cells. */
+  --rdp-day-width: 44px; /* The width of the day cells. */
   
   --rdp-day_button-border-radius: 100%; /* The border radius of the day cells. */
   --rdp-day_button-border: 2px solid transparent; /* The border of the day cells. */
-  --rdp-day_button-height: var(--rdp-day-height); /* The height of the day cells. */
-  --rdp-day_button-width: var(--rdp-day-width); /* The width of the day cells. */
+  --rdp-day_button-height: 42px; /* The height of the day cells. */
+  --rdp-day_button-width: 42px; /* The width of the day cells. */
   
   --rdp-selected-border: 2px solid var(--rdp-accent-color); /* The border of the selected days. */
   --rdp-disabled-opacity: 0.5; /* The opacity of the disabled days. */
@@ -2293,6 +2293,10 @@ Altinn, and making sure they are consistent. */
 
 .rdp-root[dir="rtl"] {
   --rdp-gradient-direction: -90deg;
+}
+
+.rdp-root[data-broadcast-calendar="true"] {
+  --rdp-outside-opacity: unset;
 }
 
 /* Root of the component. */
@@ -2341,6 +2345,11 @@ Altinn, and making sure they are consistent. */
 
   white-space: nowrap;
   border: 0;
+}
+
+.rdp-dropdown:focus-visible ~ .rdp-caption_label {
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .rdp-button_next,
@@ -3283,7 +3292,7 @@ tr > .Hg55k_xZ3rMtkVY8SM6g {
 
 /* breakpoints-xs */
 @media only screen and (min-width: 0) {
-  .KRDpMDJmVm_2QhA88MM4 {
+  .C8nWYLypK4cy5qN65KYl {
     --y-padding: var(--fds-spacing-6);
     --x-padding: var(--fds-spacing-6);
     --content-gap: var(--fds-spacing-3);
@@ -3292,7 +3301,7 @@ tr > .Hg55k_xZ3rMtkVY8SM6g {
 
 /* breakpoints-sm */
 @media only screen and (min-width: 540px) {
-  .KRDpMDJmVm_2QhA88MM4:not(.RBe91UNm6376ymkJNtYw) {
+  .C8nWYLypK4cy5qN65KYl:not(.XTd049kLNRFSKBwNtHj0) {
     --y-padding: var(--fds-spacing-9);
     --x-padding: var(--fds-spacing-22);
     --content-gap: var(--fds-spacing-3);
@@ -3301,67 +3310,67 @@ tr > .Hg55k_xZ3rMtkVY8SM6g {
 
 /* print style */
 @media print {
-  .KRDpMDJmVm_2QhA88MM4 {
+  .C8nWYLypK4cy5qN65KYl {
     --y-padding: var(--fds-spacing-6);
     --x-padding: var(--fds-spacing-6);
     --content-gap: var(--fds-spacing-3);
   }
 }
 
-.KRDpMDJmVm_2QhA88MM4 {
+.C8nWYLypK4cy5qN65KYl {
   width: 100%;
 }
 
-.if9feYLSnywAazGA3IMs {
+.dOHnhDnTWzSZpE206Pmb {
   display: flex;
   gap: var(--content-gap);
   padding: var(--y-padding) var(--x-padding);
 }
 
-.tALANF8_w8ZqAKNMKzW3 {
+.p4n7ZLKUTmHA_ZK_kaQG {
   background-color: var(--fds-semantic-surface-info-subtle);
 }
 
-.LsisPpP2H4VoHXSoSkDh {
+.gI1exFe4YlSNYeEKpXjA {
   background-color: var(--fds-semantic-surface-success-subtle);
 }
 
-._6LkMoYL_QtfEtwtrmnts {
+.cTq4ojgDcPlhr9ekbRPw {
   background-color: var(--fds-semantic-surface-warning-subtle);
 }
 
-.bYGl5Q_bKY95HMzg9vtL {
+.Aa_GWRw_1FsV5BCckwde {
   background-color: var(--fds-semantic-surface-danger-no_fill-active);
 }
 
-.UERBd5xLgSi44iWJXvO3 {
+.oT_P0kukTiCaRiRIxmXe {
   display: flex;
   flex: none;
 }
 
-.PJGIZ06Ic9q05zDNoW8P svg {
+.LbEQ0DdnfFVXfwiai8wb svg {
   color: var(--fds-semantic-surface-success-default);
 }
 
-.njAfG7se_AdVJ9Q7u0fM svg {
+.kL3uTUD18g5jwy8GIris svg {
   color: var(--fds-semantic-border-info-default);
 }
 
-.e1NOrdvPtRyxrqkcnGzn svg {
+.wopDf8OUfui9or6Dhm5N svg {
   color: var(--fds-semantic-surface-danger-default);
 }
 
-.LjSWYhS99VRaQTbDaKnu svg {
+.NOvzfX42rylVDSeCVVhf svg {
   color: var(--fds-semantic-border-warning-default);
 }
 
-.m8zAmy_QPnw5SLwIS0Ly {
+.eQrDI6jrdCy898HMDJtI {
   display: flex;
   flex-direction: column;
   gap: var(--fds-spacing-1);
 }
 
-._WJ2L0S4E1wUKOCorcez {
+.JogNfojE7jd3qpUFWT5L {
   margin: 0;
 }
 
@@ -4314,83 +4323,83 @@ table > tbody > tr.hOU04Y5iWFnNKqPGHfRH:hover {
   white-space: nowrap;
 }
 
-.tNOxhFNke2IwAASLg1iN {
+.s0uxNRb7WL8n3bJ4c2Md {
   width: 100%;
 }
 
-.l5RKjK7TkfJJwt7l9Cwh {
+.xE8w7xLQ1vMWh0fwJP6G {
   display: flex;
   justify-content: end;
   gap: var(--fds-spacing-2);
 }
 
-.UrR9AenoY4i47x333riJ {
+.RxBvwDNYVFarwvSSkdAa {
   display: block;
 }
 
-.UrR9AenoY4i47x333riJ caption {
+.RxBvwDNYVFarwvSSkdAa caption {
   display: block;
 }
 
-.UrR9AenoY4i47x333riJ thead {
+.RxBvwDNYVFarwvSSkdAa thead {
   display: none;
 }
 
-.UrR9AenoY4i47x333riJ th {
+.RxBvwDNYVFarwvSSkdAa th {
   display: block;
   border: none;
 }
 
-.UrR9AenoY4i47x333riJ tbody,
-.UrR9AenoY4i47x333riJ tr {
+.RxBvwDNYVFarwvSSkdAa tbody,
+.RxBvwDNYVFarwvSSkdAa tr {
   display: block;
 }
 
-.UrR9AenoY4i47x333riJ td {
+.RxBvwDNYVFarwvSSkdAa td {
   display: flex;
   flex-direction: column;
   border: none;
   padding: var(--fds-spacing-2) 0;
 }
 
-.UrR9AenoY4i47x333riJ td .Rm3j34nwJqqAv5HkvShy {
+.RxBvwDNYVFarwvSSkdAa td .rkB5k7ZZTkQ0XUpcfvr7 {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
 }
 
-.UrR9AenoY4i47x333riJ tbody tr:last-child {
+.RxBvwDNYVFarwvSSkdAa tbody tr:last-child {
   border-bottom: 2px solid var(--fds-semantic-border-neutral-default);
 }
 
-.UrR9AenoY4i47x333riJ tbody tr:first-child {
+.RxBvwDNYVFarwvSSkdAa tbody tr:first-child {
   border-top: 2px solid var(--fds-semantic-border-neutral-default);
 }
 
-.UrR9AenoY4i47x333riJ tr {
+.RxBvwDNYVFarwvSSkdAa tr {
   border-bottom: 1px solid var(--fds-semantic-border-neutral-default);
   padding-top: var(--fds-spacing-3);
   padding-bottom: var(--fds-spacing-3);
 }
 
-.UrR9AenoY4i47x333riJ tr:hover td {
+.RxBvwDNYVFarwvSSkdAa tr:hover td {
   background-color: unset;
 }
 
-.UrR9AenoY4i47x333riJ td[data-header-title]:not([data-header-title=''])::before,
-.UrR9AenoY4i47x333riJ th[data-header-title]:not([data-header-title=''])::before {
+.RxBvwDNYVFarwvSSkdAa td[data-header-title]:not([data-header-title=''])::before,
+.RxBvwDNYVFarwvSSkdAa th[data-header-title]:not([data-header-title=''])::before {
   content: attr(data-header-title);
   display: block;
   text-align: left;
   font-weight: 500;
 }
 
-.UrR9AenoY4i47x333riJ td .l5RKjK7TkfJJwt7l9Cwh {
+.RxBvwDNYVFarwvSSkdAa td .xE8w7xLQ1vMWh0fwJP6G {
   justify-content: start;
 }
 
-.PxVAVtxBiOBVriOTWtFj {
+.dfPvJJ7oedeUmv7E7btA {
   border: none;
   padding: 0;
   margin: 0;

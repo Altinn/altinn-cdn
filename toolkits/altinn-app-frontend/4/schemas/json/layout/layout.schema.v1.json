@@ -935,6 +935,15 @@
         },
         {
           "$ref": "#/definitions/ParagraphSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/TextSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/NumberSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/DateSummaryOverrideProps"
         }
       ]
     },
@@ -1149,49 +1158,81 @@
           }
         },
         "component": {
-          "title": "Specify component to render",
-          "type": "object",
-          "properties": {
-            "type": {
-              "enum": [
-                "radio",
-                "date"
-              ]
-            },
-            "format": {
-              "title": "Date format",
-              "description": "Date format used when displaying the date to the user",
-              "examples": [
-                "dd/MM/yyyy",
-                "MM/dd/yyyy",
-                "yyyy-MM-dd"
-              ],
-              "type": "string"
-            },
-            "options": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "label": {
-                    "type": "string"
-                  },
-                  "value": {
-                    "type": "string"
-                  }
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "const": "link"
                 },
-                "required": [
-                  "label",
-                  "value"
-                ],
-                "additionalProperties": false
-              }
+                "hrefPath": {
+                  "type": "string"
+                },
+                "textPath": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type",
+                "hrefPath",
+                "textPath"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "const": "date"
+                },
+                "format": {
+                  "title": "Date format",
+                  "description": "Date format used when displaying the date to the user",
+                  "examples": [
+                    "dd/MM/yyyy",
+                    "MM/dd/yyyy",
+                    "yyyy-MM-dd"
+                  ],
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "const": "radio"
+                },
+                "options": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "additionalProperties": false
             }
-          },
-          "required": [
-            "type"
-          ],
-          "additionalProperties": false
+          ]
         }
       },
       "required": [
@@ -5150,12 +5191,14 @@
                 "md",
                 "lg"
               ]
+            },
+            "externalApi": {
+              "$ref": "#/definitions/DataConfig"
             }
           },
           "required": [
             "type",
             "title",
-            "dataModelBindings",
             "columns"
           ]
         },
@@ -5180,13 +5223,13 @@
             "zebra": true,
             "enableDelete": true,
             "enableEdit": true,
-            "size": true
+            "size": true,
+            "externalApi": true
           },
           "required": [
             "id",
             "type",
             "title",
-            "dataModelBindings",
             "columns"
           ],
           "additionalProperties": false
@@ -5784,7 +5827,27 @@
         }
       ]
     },
+    "DataConfig": {
+      "title": "DataConfig",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "path"
+      ],
+      "additionalProperties": false
+    },
     "DatepickerSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
+    "DateSummaryOverrideProps": {
       "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "DropdownSummaryOverrideProps": {
@@ -7563,6 +7626,9 @@
       },
       "additionalProperties": false
     },
+    "NumberSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
     "PageValidation": {
       "title": "PageValidation",
       "type": "object",
@@ -7859,6 +7925,9 @@
       "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "TextAreaSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
+    "TextSummaryOverrideProps": {
       "$ref": "#/definitions/ISummaryOverridesCommon"
     },
     "TRBFormComp": {
