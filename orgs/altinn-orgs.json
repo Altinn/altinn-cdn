@@ -272,6 +272,17 @@
                 "production"
             ]
         },
+        "ksdigi": {
+            "name": {
+                "en": "KS Digital",
+                "nb": "KS Digitale fellestjenester",
+                "nn": "KS Digitale fellestjenester"
+            },
+            "logo": "https://altinncdn.no/orgs/ksdigi/ksdigi.png",
+            "orgnr": "931796003",
+            "homepage": "https://ks-digital.no",
+            "environments": []
+        },
         "kv": {
             "name": {
                 "en": "Norwegian Mapping Authority",
