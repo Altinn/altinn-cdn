@@ -106,7 +106,9 @@
             "logo": "https://altinncdn.no/orgs/din/din.jpg",
             "orgnr": "984195796",
             "homepage": "https://www.domstol.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "dsb": {
             "name": {
