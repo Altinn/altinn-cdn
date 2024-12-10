@@ -1135,10 +1135,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .n33zu9Xwb8tzejDeCHVM {
   word-break: break-word;
-  line-height: 1.5rem;
+  line-height: var(--fds-sizing-6);
   color: var(--semantic-text-neutral-subtle);
   display: inline-block;
   font-weight: normal;
+  font-size: var(--fds-sizing-4);
 }
 
 .Wy37_2VHtHN1yV2DBfyI {
@@ -1476,14 +1477,10 @@ input[type='search'] {
   border-radius: var(--fds-border_radius-medium);
 }
 
-.FhhoRMV4H02Mdoqz30t2 {
+.GlN3z2OKB73IMQeAR4BK {
   display: flex;
   gap: var(--fds-spacing-2);
   align-items: center;
-}
-
-.g5VAlBJU55qBDDaaNpJt {
-  padding-bottom: var(--fds-spacing-2);
 }
 
 .qlBoh3NGn6INgyMo3FrX {
@@ -1491,6 +1488,10 @@ input[type='search'] {
   flex-direction: column;
   gap: var(--fds-spacing-1);
   align-items: flex-start;
+}
+
+.g5VAlBJU55qBDDaaNpJt {
+  padding-bottom: var(--fds-spacing-2);
 }
 
 .ShCBu1erDKk6jDgb5LxF {
@@ -2265,7 +2266,6 @@ Altinn, and making sure they are consistent. */
   --rdp-nav-height: 2.75rem; /* The height of the navigation bar. */
   
   --rdp-range_middle-background-color: var(--rdp-accent-background-color); /* The color of the background for days in the middle of a range. */
-  --rdp-range_middle-foreground-color: white; /* The foregraound color for days in the middle of a range. */
   --rdp-range_middle-color: inherit;/* The color of the range text. */
   
   --rdp-range_start-color: white; /* The color of the range text. */
@@ -2881,19 +2881,6 @@ tr.GgQeJQ04_MMeJGzsE69j td {
   }
 }
 
-.KpDByyLtURI9K0Mu9I2n {
-  font-size: 1.125rem;
-  display: flex;
-  gap: 0.25rem;
-  align-items: center;
-}
-
-.bFELrgF7q80rgtqb1Zla {
-  font-size: 1.125rem;
-  margin: 0;
-  padding-bottom: var(--fds-spacing-3);
-}
-
 @media only screen {
   .WICecnxz8cXwU1RmjRt9 {
     margin-left: calc(var(--modal-padding-x) * -1);
@@ -3177,119 +3164,6 @@ tr > .Hg55k_xZ3rMtkVY8SM6g {
   white-space: nowrap;
 }
 
-.S2XNO8d7yW1QJ3lNSsKL {
-  width: 100%;
-  padding: var(--fds-spacing-3);
-}
-
-.c_nfaHX3Sc4mW5G5DOwc {
-  width: 100%;
-}
-
-.mPIm5422nERIoVVZvDV_ {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: var(--fds-spacing-9);
-  margin-right: calc(var(--fds-spacing-3) * -1);
-  margin-left: calc(var(--fds-spacing-3) * -1);
-}
-
-.mPIm5422nERIoVVZvDV_ > * {
-  padding: var(--fds-spacing-3);
-}
-
-.w7Kzu1AJURDwOaHvQqea {
-  width: auto;
-  padding-left: var(--panel-x-padding);
-  padding-right: var(--panel-x-padding);
-  background-color: var(--component-panel-color-background-default);
-}
-
-.w7Kzu1AJURDwOaHvQqea > legend {
-  padding-top: var(--fds-spacing-9);
-}
-
-.OpRrmKzB2VKPvHLviKRn > .w7Kzu1AJURDwOaHvQqea {
-  --panel-x-padding: var(--modal-padding-x);
-  margin-right: var(--fds-spacing-3);
-  margin-left: var(--fds-spacing-3);
-}
-
-.N3x6MuBtDLnwWFXFJhfL.w7Kzu1AJURDwOaHvQqea {
-  padding-left: calc(var(--panel-x-padding) - var(--fds-spacing-3));
-  padding-right: calc(var(--panel-x-padding) - var(--fds-spacing-3));
-}
-
-.ky0H0ZDXHdDCqOQ5vqp3 {
-  border-left: 2px solid #949494;
-  margin-left: 0;
-  padding: var(--fds-spacing-3) 0 var(--fds-spacing-3) var(--fds-spacing-3);
-}
-
-.N3x6MuBtDLnwWFXFJhfL.ky0H0ZDXHdDCqOQ5vqp3 {
-  margin-left: var(--fds-spacing-3);
-}
-
-.WBdHeCog2Tx8r10C8Gs4 {
-  color: var(--semantic-text-neutral-subtle);
-  display: flex;
-  flex-direction: column;
-  gap: var(--fds-spacing-6);
-}
-
-.pLwZzgSSrSJJzVYgIBxa {
-  border-width: var(--fds-border_width-default);
-  border-radius: var(--fds-border_radius-medium);
-  border-color: var(--fds-semantic-border-neutral-default);
-  border-style: dashed;
-  padding: var(--fds-spacing-6) var(--fds-spacing-4);
-}
-
-.w_EyJqMIVdJyotnCyHfq {
-  padding-top: 12px;
-}
-
-.SOvNWNKG6g_p2cRPdr1v {
-  border: 2px solid #efefef;
-  margin: 12px 0;
-  padding: 12px;
-}
-@media print {
-  .SOvNWNKG6g_p2cRPdr1v {
-    break-inside: avoid;
-  }
-}
-
-.bOKM7Ur_mxYaZW28U35G {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.kKLUgANC7vMz0G5LP99A {
-  font-weight: 500;
-  font-size: 1.125rem;
-}
-
-.x_2BMwCheNfIHvAZwkPA {
-  color: #d5203b;
-}
-.wZp1uhQ2pXgRgSiMMllu {
-  background: none;
-  border: none;
-  border-bottom: var(--solid-border-primary);
-  cursor: pointer;
-  padding-left: 0px;
-}
-
-.y2VUUtQh9iCnGiDflrXY {
-  font-style: italic;
-  font-size: 1rem;
-  line-height: 1.6875;
-  margin-top: 4px;
-}
-
 /* breakpoints-xs */
 @media only screen and (min-width: 0) {
   .C8nWYLypK4cy5qN65KYl {
@@ -3368,10 +3242,125 @@ tr > .Hg55k_xZ3rMtkVY8SM6g {
   display: flex;
   flex-direction: column;
   gap: var(--fds-spacing-1);
+  width: 100%;
 }
 
 .JogNfojE7jd3qpUFWT5L {
   margin: 0;
+}
+
+.JgT0o68AVV3ieOdYLA_2 {
+  padding-top: var(--fds-spacing-3);
+  padding-bottom: var(--fds-spacing-9);
+  width: 100%;
+
+  .J5vHlDywlNb7LEKoY2E5,
+  .MEs8y5b5XX_UINuVaukk {
+    padding: 0 var(--fds-spacing-3);
+  }
+}
+
+.MrwbGPDOXg5yoGe1hkwF {
+  padding: var(--fds-spacing-3);
+  padding-bottom: 0;
+  width: 100%;
+
+  &.c_nfaHX3Sc4mW5G5DOwc {
+    padding: 0;
+  }
+}
+
+.mPIm5422nERIoVVZvDV_ {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    padding: var(--fds-spacing-3);
+  }
+}
+
+.WymenwDE6OFvDg0DG9LN {
+  border-left: 2px solid #949494;
+  padding: var(--fds-spacing-3);
+  padding-right: 0;
+  margin-left: var(--fds-spacing-3);
+}
+
+.c_nfaHX3Sc4mW5G5DOwc {
+  width: 100%;
+
+  .mPIm5422nERIoVVZvDV_ > * {
+    padding: var(--fds-spacing-3) 0;
+  }
+
+  .J5vHlDywlNb7LEKoY2E5,
+  .MEs8y5b5XX_UINuVaukk {
+    padding: 0;
+  }
+
+  .WymenwDE6OFvDg0DG9LN {
+    margin-left: 0;
+  }
+}
+
+.WBdHeCog2Tx8r10C8Gs4 {
+  color: var(--semantic-text-neutral-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-6);
+}
+
+.pLwZzgSSrSJJzVYgIBxa {
+  border-width: var(--fds-border_width-default);
+  border-radius: var(--fds-border_radius-medium);
+  border-color: var(--fds-semantic-border-neutral-default);
+  border-style: dashed;
+  padding: var(--fds-spacing-6) var(--fds-spacing-4);
+}
+
+.w_EyJqMIVdJyotnCyHfq {
+  padding-top: 12px;
+}
+
+.SOvNWNKG6g_p2cRPdr1v {
+  border: 2px solid #efefef;
+  margin: 12px 0;
+  padding: 12px;
+}
+@media print {
+  .SOvNWNKG6g_p2cRPdr1v {
+    break-inside: avoid;
+  }
+}
+
+.bOKM7Ur_mxYaZW28U35G {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.kKLUgANC7vMz0G5LP99A {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.x_2BMwCheNfIHvAZwkPA {
+  color: #d5203b;
+}
+.wZp1uhQ2pXgRgSiMMllu {
+  background: none;
+  border: none;
+  border-bottom: var(--solid-border-primary);
+  cursor: pointer;
+  padding-left: 0px;
+}
+
+.y2VUUtQh9iCnGiDflrXY {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6875;
+  margin-top: 4px;
 }
 
 .LZr4HcFL7oIkXPRe7LYl,
@@ -3579,7 +3568,6 @@ Altinn, and making sure they are consistent. */
 
 .UISeADptCqq59IUi0sYP {
   width: 100%;
-  table-layout: fixed;
 }
 
 .UISeADptCqq59IUi0sYP caption {
@@ -3788,6 +3776,93 @@ Altinn, and making sure they are consistent. */
   flex-direction: column;
 }
 
+/* breakpoints-xs */
+@media only screen and (min-width: 0) {
+  .unD1ogQs1fXGQUlBr2Dg {
+    grid-template-areas:
+      'orgnrLabel'
+      'orgnr'
+      'orgname'
+      'submit'
+      'apiError';
+  }
+  .HWzvV8JVtm3cRdTl46AD {
+    margin-top: var(--fds-spacing-6);
+  }
+}
+
+/* breakpoints-md */
+@media only screen and (min-width: 840px) {
+  .unD1ogQs1fXGQUlBr2Dg {
+    grid-template-columns: repeat(2, minmax(250px, 250px)) auto;
+    grid-template-areas:
+      'orgnrLabel .'
+      'orgnr submit'
+      'orgname .'
+      'apiError .';
+    align-items: end;
+    column-gap: var(--fds-spacing-6);
+  }
+  .HWzvV8JVtm3cRdTl46AD {
+    margin-top: 0;
+  }
+}
+
+.unD1ogQs1fXGQUlBr2Dg {
+  display: grid;
+
+  .sjDWJpIFim3OWr_FH6_1 {
+    grid-area: orgnrLabel;
+    align-self: start;
+  }
+
+  .WOcVztc87Lc_bYTygiWI {
+    grid-area: orgnr;
+    align-self: start;
+  }
+
+  .NOlSp0LHlS0JmrFBT8xG {
+    grid-area: orgname;
+    align-self: start;
+  }
+
+  .HWzvV8JVtm3cRdTl46AD {
+    grid-area: submit;
+    align-self: start;
+    white-space: nowrap;
+  }
+}
+
+/* breakpoints-xs */
+@media only screen and (min-width: 0) {
+  .rVUaQt3gVEIVlYEBcEbQ {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* breakpoints-md */
+@media only screen and (min-width: 840px) {
+  .rVUaQt3gVEIVlYEBcEbQ {
+    flex-direction: row;
+  }
+}
+
+.Ba2HzczYgHqjinobKG45 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-6);
+  width: 100%;
+}
+
+.taAfqPabGOtXaHD1mdaQ {
+  flex-grow: 5;
+}
+.QBu0PtYa6a4Ab9NWcAgt {
+  flex-grow: 4;
+}
+
 .cFDYrg2UlS0rDiQKa0J5 {
   display: flex;
 }
@@ -3894,6 +3969,92 @@ Altinn, and making sure they are consistent. */
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* breakpoints-xs */
+@media only screen and (min-width: 0) {
+  .OM1sPuDgQiaY_DmicMM5 {
+    grid-template-areas: 'ssnLabel' 'ssn' 'nameLabel' 'name' 'submit' 'apiError';
+  }
+
+  .ZQAsaCCRLuhbHLvrH3N7,
+  .c6BdROkqd7UCkcRczONi {
+    margin-top: var(--fds-spacing-6);
+  }
+}
+
+/* breakpoints-md */
+@media only screen and (min-width: 840px) {
+  .OM1sPuDgQiaY_DmicMM5 {
+    grid-template-columns: repeat(2, minmax(250px, 250px)) auto;
+    grid-template-areas: 'ssnLabel nameLabel .' 'ssn name submit' 'apiError apiError .';
+    align-items: end;
+    column-gap: var(--fds-spacing-6);
+  }
+  .ZQAsaCCRLuhbHLvrH3N7,
+  .c6BdROkqd7UCkcRczONi {
+    margin-top: 0;
+  }
+}
+
+.OM1sPuDgQiaY_DmicMM5 {
+  display: grid;
+
+  .t_7fccg4j4YAwoaE19PF {
+    grid-area: ssnLabel;
+    align-self: start;
+  }
+
+  .rHBfWOAcZoZxeYuyvT0t {
+    grid-area: ssn;
+    align-self: start;
+  }
+
+  .ZQAsaCCRLuhbHLvrH3N7 {
+    grid-area: nameLabel;
+    align-self: start;
+  }
+
+  .eqAjyUbZGL06qb9CqZAY {
+    grid-area: name;
+    align-self: start;
+  }
+
+  .c6BdROkqd7UCkcRczONi {
+    grid-area: submit;
+    align-self: start;
+    white-space: nowrap;
+  }
+}
+
+/* breakpoints-xs */
+@media only screen and (min-width: 0) {
+  .qVIIq60orARyCodmUo7Q {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* breakpoints-md */
+@media only screen and (min-width: 840px) {
+  .qVIIq60orARyCodmUo7Q {
+    flex-direction: row;
+  }
+}
+
+.ThWZoDH4VadOykLmfvrH {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-6);
+  width: 100%;
+}
+
+.MznC23O8cOamiFF456Gd {
+  flex-grow: 5;
+}
+.JrpRVkigCCOWphPy9vOv {
+  flex-grow: 4;
 }
 
 .M4oXbZ5iYGWZsZwBC4HH {
