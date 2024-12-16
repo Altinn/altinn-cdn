@@ -871,7 +871,17 @@
                 "nn": "Politiet"
             },
             "orgnr": "982531950",
-            "homepage": "https://www.datatilsynet.no/",
+            "homepage": "https://www.politiet.no/",
+            "environments": []
+        },
+        "pol": {
+            "name": {
+                "en": "Police",
+                "nb": "Politi- og lensmannsetaten",
+                "nn": "Politi- og lensmannsetaten"
+            },
+            "orgnr": "915429785",
+            "homepage": "https://www.politiet.no/",
             "environments": []
         },
         "sht": {
