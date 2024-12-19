@@ -2189,6 +2189,7 @@
             "secure": true,
             "sortOrder": true,
             "source": true,
+            "optionFilter": true,
             "preselectedOptionIndex": true,
             "labelSettings": true,
             "type": true,
@@ -2617,6 +2618,65 @@
               "default": false,
               "$ref": "expression.schema.v1.json#/definitions/boolean"
             },
+            "autocomplete": {
+              "title": "Autocomplete",
+              "description": "The HTML autocomplete attribute helps browsers suggest or autofill input values based on the expected type of data.",
+              "enum": [
+                "on",
+                "off",
+                "name",
+                "honorific-prefix",
+                "given-name",
+                "additional-name",
+                "family-name",
+                "honorific-suffix",
+                "nickname",
+                "email",
+                "username",
+                "new-password",
+                "current-password",
+                "one-time-code",
+                "organization-title",
+                "organization",
+                "street-address",
+                "address-line1",
+                "address-line2",
+                "address-line3",
+                "address-level4",
+                "address-level3",
+                "address-level2",
+                "address-level1",
+                "country",
+                "country-name",
+                "postal-code",
+                "cc-name",
+                "cc-given-name",
+                "cc-additional-name",
+                "cc-family-name",
+                "cc-number",
+                "cc-exp",
+                "cc-exp-month",
+                "cc-exp-year",
+                "cc-csc",
+                "cc-type",
+                "transaction-currency",
+                "transaction-amount",
+                "language",
+                "bday",
+                "bday-day",
+                "bday-month",
+                "bday-year",
+                "sex",
+                "tel",
+                "tel-country-code",
+                "tel-national",
+                "tel-area-code",
+                "tel-local",
+                "tel-extension",
+                "url",
+                "photo"
+              ]
+            },
             "dataModelBindings": {
               "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
             }
@@ -2645,11 +2705,13 @@
             "secure": true,
             "sortOrder": true,
             "source": true,
+            "optionFilter": true,
             "preselectedOptionIndex": true,
             "labelSettings": true,
             "type": true,
             "textResourceBindings": true,
             "alertOnChange": true,
+            "autocomplete": true,
             "dataModelBindings": true
           },
           "required": [
@@ -2979,6 +3041,7 @@
             "secure": true,
             "sortOrder": true,
             "source": true,
+            "optionFilter": true,
             "type": true,
             "textResourceBindings": true,
             "dataModelBindings": true,
@@ -3433,7 +3496,63 @@
               ]
             },
             "autocomplete": {
-              "$ref": "#/definitions/HTMLAutoCompleteValues"
+              "title": "Autocomplete",
+              "description": "The HTML autocomplete attribute helps browsers suggest or autofill input values based on the expected type of data.",
+              "enum": [
+                "on",
+                "off",
+                "name",
+                "honorific-prefix",
+                "given-name",
+                "additional-name",
+                "family-name",
+                "honorific-suffix",
+                "nickname",
+                "email",
+                "username",
+                "new-password",
+                "current-password",
+                "one-time-code",
+                "organization-title",
+                "organization",
+                "street-address",
+                "address-line1",
+                "address-line2",
+                "address-line3",
+                "address-level4",
+                "address-level3",
+                "address-level2",
+                "address-level1",
+                "country",
+                "country-name",
+                "postal-code",
+                "cc-name",
+                "cc-given-name",
+                "cc-additional-name",
+                "cc-family-name",
+                "cc-number",
+                "cc-exp",
+                "cc-exp-month",
+                "cc-exp-year",
+                "cc-csc",
+                "cc-type",
+                "transaction-currency",
+                "transaction-amount",
+                "language",
+                "bday",
+                "bday-day",
+                "bday-month",
+                "bday-year",
+                "sex",
+                "tel",
+                "tel-country-code",
+                "tel-national",
+                "tel-area-code",
+                "tel-local",
+                "tel-extension",
+                "url",
+                "photo"
+              ]
             },
             "maxLength": {
               "title": "Max length",
@@ -3602,6 +3721,9 @@
           "$ref": "#/definitions/SummarizableComponentProps"
         },
         {
+          "$ref": "#/definitions/ILikertColumnProperties"
+        },
+        {
           "$ref": "#/definitions/ISelectionComponent"
         },
         {
@@ -3697,6 +3819,7 @@
             "showValidations": true,
             "renderAsSummary": true,
             "forceShowInSummary": true,
+            "columns": true,
             "optionsId": true,
             "mapping": true,
             "queryParameters": true,
@@ -3704,6 +3827,7 @@
             "secure": true,
             "sortOrder": true,
             "source": true,
+            "optionFilter": true,
             "type": true,
             "textResourceBindings": true,
             "dataModelBindings": true,
@@ -3728,6 +3852,9 @@
         },
         {
           "$ref": "#/definitions/SummarizableComponentProps"
+        },
+        {
+          "$ref": "#/definitions/ILikertColumnProperties"
         },
         {
           "$ref": "#/definitions/ISelectionComponentFull"
@@ -3813,6 +3940,7 @@
             "showValidations": true,
             "renderAsSummary": true,
             "forceShowInSummary": true,
+            "columns": true,
             "optionsId": true,
             "mapping": true,
             "queryParameters": true,
@@ -3820,6 +3948,7 @@
             "secure": true,
             "sortOrder": true,
             "source": true,
+            "optionFilter": true,
             "preselectedOptionIndex": true,
             "type": true,
             "textResourceBindings": true,
@@ -4222,6 +4351,65 @@
               "default": false,
               "$ref": "expression.schema.v1.json#/definitions/boolean"
             },
+            "autocomplete": {
+              "title": "Autocomplete",
+              "description": "The HTML autocomplete attribute helps browsers suggest or autofill input values based on the expected type of data.",
+              "enum": [
+                "on",
+                "off",
+                "name",
+                "honorific-prefix",
+                "given-name",
+                "additional-name",
+                "family-name",
+                "honorific-suffix",
+                "nickname",
+                "email",
+                "username",
+                "new-password",
+                "current-password",
+                "one-time-code",
+                "organization-title",
+                "organization",
+                "street-address",
+                "address-line1",
+                "address-line2",
+                "address-line3",
+                "address-level4",
+                "address-level3",
+                "address-level2",
+                "address-level1",
+                "country",
+                "country-name",
+                "postal-code",
+                "cc-name",
+                "cc-given-name",
+                "cc-additional-name",
+                "cc-family-name",
+                "cc-number",
+                "cc-exp",
+                "cc-exp-month",
+                "cc-exp-year",
+                "cc-csc",
+                "cc-type",
+                "transaction-currency",
+                "transaction-amount",
+                "language",
+                "bday",
+                "bday-day",
+                "bday-month",
+                "bday-year",
+                "sex",
+                "tel",
+                "tel-country-code",
+                "tel-national",
+                "tel-area-code",
+                "tel-local",
+                "tel-extension",
+                "url",
+                "photo"
+              ]
+            },
             "dataModelBindings": {
               "$ref": "#/definitions/IDataModelBindingsOptionsSimple"
             }
@@ -4250,11 +4438,13 @@
             "secure": true,
             "sortOrder": true,
             "source": true,
+            "optionFilter": true,
             "preselectedOptionIndex": true,
             "labelSettings": true,
             "type": true,
             "textResourceBindings": true,
             "alertOnChange": true,
+            "autocomplete": true,
             "dataModelBindings": true
           },
           "required": [
@@ -5095,6 +5285,7 @@
             "secure": true,
             "sortOrder": true,
             "source": true,
+            "optionFilter": true,
             "preselectedOptionIndex": true,
             "labelSettings": true,
             "type": true,
@@ -7175,6 +7366,48 @@
       ],
       "additionalProperties": false
     },
+    "ILikertColumnProperties": {
+      "title": "ILikertColumnProperties",
+      "type": "object",
+      "properties": {
+        "columns": {
+          "title": "Columns",
+          "description": "Add customization to the columns of the likert component",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "title": "Value",
+                "description": "The value of the answer column",
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^\\d+$"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              },
+              "divider": {
+                "title": "Divider",
+                "description": "Choose if the divider should be shown 'before', 'after' or on 'both' sides of the column.",
+                "enum": [
+                  "before",
+                  "after",
+                  "both"
+                ]
+              }
+            },
+            "required": [
+              "value"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
     "ILikertFilter": {
       "title": "Filter",
       "description": "Optionally filter specific rows within the likert group using start/stop indexes for displaying the desired ones(beware that start index starts at zero, and stop index starts at one, so {start, stop} = {0, 3} will display 3 rows, not 4)",
@@ -7455,6 +7688,11 @@
         },
         "source": {
           "$ref": "#/definitions/IOptionSource"
+        },
+        "optionFilter": {
+          "title": "Filter options (using an expression)",
+          "description": "Setting this to an expression allows you to filter the list of options (the expression should return true to keep the option, false to remove it). To get the option value, use [\"value\"]. You can also use [\"value\", \"label\"] to get the label text resource id, likewise also \"description\" and \"helpText\".",
+          "$ref": "expression.schema.v1.json#/definitions/boolean"
         }
       }
     },

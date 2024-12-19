@@ -908,12 +908,27 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 @media print {
-  .BeNPOqtWPGogZw1NdOdQ {
-    display: contents;
+  .UgyCY5DtRmNZbKQ8DwQZ {
+    display: none;
   }
   .Pybuuclpo61FfISRRhRx {
     display: none;
   }
+}
+
+.Tkw0kb_srIBKXrELPTbi > * {
+  margin-top: 0;
+}
+.Tkw0kb_srIBKXrELPTbi {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: var(--fds-colors-red-600);
+  border: 3px solid var(--fds-colors-red-600);
 }
 
 .Pybuuclpo61FfISRRhRx {
@@ -1491,6 +1506,10 @@ input[type='search'] {
 }
 
 .g5VAlBJU55qBDDaaNpJt {
+  padding-bottom: var(--fds-spacing-2);
+}
+
+.USX0J6trQmWYm2aDy41X {
   padding-bottom: var(--fds-spacing-2);
 }
 
@@ -3455,6 +3474,19 @@ Altinn, and making sure they are consistent. */
   gap: 0;
 }
 
+.K8xW1HYwqD2F1HJdA2y0 {
+  border-inline-start: 1px solid #dde3e5;
+}
+
+.SwrOG1kJ6ZzI8NqFlyMc {
+  border-inline-end: 1px solid #dde3e5;
+}
+
+.zdZIe9mMQEk3dvlmOpw8 {
+  border-inline-start: 1px solid #dde3e5;
+  border-inline-end: 1px solid #dde3e5;
+}
+
 ._e07pgWBsTTGNXmK_Xw0 {
   padding-top: 12px;
 }
@@ -3794,13 +3826,13 @@ Altinn, and making sure they are consistent. */
 /* breakpoints-md */
 @media only screen and (min-width: 840px) {
   .unD1ogQs1fXGQUlBr2Dg {
-    grid-template-columns: repeat(2, minmax(250px, 250px)) auto;
+    grid-template-columns: minmax(250px, 250px) auto;
+    grid-template-rows: repeat(4, min-content);
     grid-template-areas:
       'orgnrLabel .'
       'orgnr submit'
       'orgname .'
       'apiError .';
-    align-items: end;
     column-gap: var(--fds-spacing-6);
   }
   .HWzvV8JVtm3cRdTl46AD {
@@ -3810,26 +3842,29 @@ Altinn, and making sure they are consistent. */
 
 .unD1ogQs1fXGQUlBr2Dg {
   display: grid;
+  align-items: start;
 
   .sjDWJpIFim3OWr_FH6_1 {
     grid-area: orgnrLabel;
-    align-self: start;
   }
 
   .WOcVztc87Lc_bYTygiWI {
     grid-area: orgnr;
-    align-self: start;
   }
 
   .NOlSp0LHlS0JmrFBT8xG {
+    padding-top: var(--fds-spacing-2);
     grid-area: orgname;
-    align-self: start;
   }
 
   .HWzvV8JVtm3cRdTl46AD {
     grid-area: submit;
-    align-self: start;
     white-space: nowrap;
+  }
+
+  .LJbBTXFxYhS9vs9zaJ7o {
+    grid-area: apiError;
+    padding-top: var(--fds-spacing-2);
   }
 }
 
@@ -3988,7 +4023,7 @@ Altinn, and making sure they are consistent. */
   .OM1sPuDgQiaY_DmicMM5 {
     grid-template-columns: repeat(2, minmax(250px, 250px)) auto;
     grid-template-areas: 'ssnLabel nameLabel .' 'ssn name submit' 'apiError apiError .';
-    align-items: end;
+    align-items: start;
     column-gap: var(--fds-spacing-6);
   }
   .ZQAsaCCRLuhbHLvrH3N7,
@@ -3999,31 +4034,32 @@ Altinn, and making sure they are consistent. */
 
 .OM1sPuDgQiaY_DmicMM5 {
   display: grid;
+  align-items: start;
 
   .t_7fccg4j4YAwoaE19PF {
     grid-area: ssnLabel;
-    align-self: start;
   }
 
   .rHBfWOAcZoZxeYuyvT0t {
     grid-area: ssn;
-    align-self: start;
   }
 
   .ZQAsaCCRLuhbHLvrH3N7 {
     grid-area: nameLabel;
-    align-self: start;
   }
 
   .eqAjyUbZGL06qb9CqZAY {
     grid-area: name;
-    align-self: start;
   }
 
   .c6BdROkqd7UCkcRczONi {
     grid-area: submit;
-    align-self: start;
     white-space: nowrap;
+  }
+
+  .kTGos6FE1u8fAq5YyQk2 {
+    grid-area: apiError;
+    padding-top: var(--fds-spacing-2);
   }
 }
 
