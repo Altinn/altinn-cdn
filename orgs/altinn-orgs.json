@@ -654,7 +654,8 @@
             "orgnr": "921627009",
             "homepage": "https://www.statsforvalteren.no/staf/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "stami": {
