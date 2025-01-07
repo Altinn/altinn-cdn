@@ -550,6 +550,17 @@
             "homepage": "https://www.rir.no/",
             "environments": []
         },
+        "ssikt": {
+            "name": {
+                "en": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP",
+                "nb": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP",
+                "nn": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP"
+            },
+            "logo": "https://altinncdn.no/orgs/ssikt/ssikt.png",
+            "orgnr": "919824573",
+            "homepage": "https://www.ssikt.no",
+            "environments": []
+        },
         "sfd": {
             "name": {
                 "en": "Norwegian Maritime Authority",
