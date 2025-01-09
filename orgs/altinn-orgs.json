@@ -721,7 +721,8 @@
             "orgnr": "914459265",
             "homepage": "https://tilsynet.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "ttd": {
