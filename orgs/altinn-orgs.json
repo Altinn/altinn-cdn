@@ -106,7 +106,9 @@
             "logo": "https://altinncdn.no/orgs/din/din.jpg",
             "orgnr": "984195796",
             "homepage": "https://www.domstol.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "dsb": {
             "name": {
@@ -271,6 +273,17 @@
                 "tt02",
                 "production"
             ]
+        },
+        "ksdigi": {
+            "name": {
+                "en": "KS Digital",
+                "nb": "KS Digitale fellestjenester",
+                "nn": "KS Digitale fellestjenester"
+            },
+            "logo": "https://altinncdn.no/orgs/ksdigi/ksdigi.png",
+            "orgnr": "931796003",
+            "homepage": "https://ksdigital.no",
+            "environments": []
         },
         "kv": {
             "name": {
@@ -537,6 +550,17 @@
             "homepage": "https://www.rir.no/",
             "environments": []
         },
+        "ssikt": {
+            "name": {
+                "en": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP",
+                "nb": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP",
+                "nn": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP"
+            },
+            "logo": "https://altinncdn.no/orgs/ssikt/ssikt.png",
+            "orgnr": "919824573",
+            "homepage": "https://www.ssikt.no",
+            "environments": []
+        },
         "sfd": {
             "name": {
                 "en": "Norwegian Maritime Authority",
@@ -641,7 +665,8 @@
             "orgnr": "921627009",
             "homepage": "https://www.statsforvalteren.no/staf/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "stami": {
