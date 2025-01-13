@@ -243,7 +243,9 @@
             "logo": "https://altinncdn.no/orgs/ikta/ikta.png",
             "orgnr": "985359385",
             "homepage": "https://www.ikt-agder.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "indi": {
             "name": {
@@ -570,7 +572,9 @@
             "logo": "https://altinncdn.no/orgs/ssikt/ssikt.png",
             "orgnr": "919824573",
             "homepage": "https://www.ssikt.no",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "sfd": {
             "name": {
