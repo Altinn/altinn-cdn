@@ -234,6 +234,17 @@
                 "production"
             ]
         },
+        "ikta": {
+            "name": {
+                "en": "IKT Agder IKS",
+                "nb": "IKT Agder IKS",
+                "nn": "IKT Agder IKS"
+            },
+            "logo": "https://altinncdn.no/orgs/ikta/ikta.png",
+            "orgnr": "985359385",
+            "homepage": "https://www.ikt-agder.no/",
+            "environments": []
+        },
         "indi": {
             "name": {
                 "en": "Indigo IKT IKS",
@@ -925,16 +936,6 @@
             },
             "orgnr": "820710592",
             "homepage": "https://www.lillestrom.kommune.no/",
-            "environments": []
-        },
-        "ikta": {
-            "name": {
-                "en": "IKT Agder IKS",
-                "nb": "IKT Agder IKS",
-                "nn": "IKT Agder IKS"
-            },
-            "orgnr": "985359385",
-            "homepage": "https://www.ikt-agder.no/",
             "environments": []
         },
         "nokut": {
