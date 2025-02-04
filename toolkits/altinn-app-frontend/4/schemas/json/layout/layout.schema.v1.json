@@ -46,6 +46,7 @@
             "NavigationBar",
             "NavigationButtons",
             "Number",
+            "Option",
             "OrganisationLookup",
             "Panel",
             "Paragraph",
@@ -504,6 +505,18 @@
           "if": {
             "properties": {
               "type": {
+                "const": "Option"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompOption"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
                 "const": "OrganisationLookup"
               }
             }
@@ -825,6 +838,9 @@
     },
     "CompNumber": {
       "$ref": "#/definitions/CompNumberExternal"
+    },
+    "CompOption": {
+      "$ref": "#/definitions/CompOptionExternal"
     },
     "CompOrganisationLookup": {
       "$ref": "#/definitions/CompOrganisationLookupExternal"
@@ -4658,6 +4674,76 @@
       },
       "required": [
         "id"
+      ]
+    },
+    "CompOptionExternal": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "$ref": "#/definitions/ISelectionComponent"
+        },
+        {
+          "title": "CompOptionExternal",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Option"
+            },
+            "textResourceBindings": {
+              "$ref": "#/definitions/TRBLabel"
+            },
+            "value": {
+              "$ref": "expression.schema.v1.json#/definitions/string"
+            },
+            "direction": {
+              "default": "horizontal",
+              "enum": [
+                "horizontal",
+                "vertical"
+              ]
+            },
+            "icon": {
+              "examples": [
+                "https://example.com/icon.svg"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "optionsId": true,
+            "mapping": true,
+            "queryParameters": true,
+            "options": true,
+            "secure": true,
+            "sortOrder": true,
+            "source": true,
+            "optionFilter": true,
+            "type": true,
+            "textResourceBindings": true,
+            "value": true,
+            "direction": true,
+            "icon": true
+          },
+          "required": [
+            "id",
+            "type",
+            "value"
+          ],
+          "additionalProperties": false
+        }
       ]
     },
     "CompOrganisationLookupExternal": {
