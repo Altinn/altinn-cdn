@@ -4084,6 +4084,27 @@ Altinn, and making sure they are consistent. */
   outline-offset: var(--fds-focus-border-width);
 }
 
+.CCv8NLhIWpbgEy82wbdm {
+  visibility: hidden;
+}
+.j2IMOMEyQLqeCa_vqmrL {
+  ul[class*='fds-pagination'] {
+    padding: 0;
+  }
+}
+.HNPhaZAoKbeIODddOYHv {
+  display: flex;
+  flex-direction: row-reverse;
+
+  div[class*='fds-combobox__input__wrapper'] {
+    width: 80px;
+  }
+
+  div[class*='fds-combobox__chip-and-input'] {
+    width: 34px;
+  }
+}
+
 .UISeADptCqq59IUi0sYP {
   width: 100%;
 }
@@ -4123,12 +4144,11 @@ Altinn, and making sure they are consistent. */
 .xA3EN536EQwoY7Vi4hOi {
   min-height: 60px;
   display: flex;
-  justify-content: end;
+  justify-content: right;
   align-items: center;
   background-color: var(--fds-colors-grey-100);
   width: 100%;
 }
-
 .Gv6_LCsVooJtLW5W3uBO {
   justify-content: center;
 }
@@ -4293,8 +4313,15 @@ Altinn, and making sure they are consistent. */
   margin: 2px;
 }
 
-.hMlcdlBgIsibvzmF7X4A:active {
-  background-color: var(--colors-primary-blueDark);
+.yBDnWTKRC2vsA7GbT78A {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.XsIVtLEbQm8ub9O4G6wf {
+  width: 17px !important;
+  height: 17px !important;
 }
 
 .jBBH27HFXw87hItKu9P4 {
@@ -4312,14 +4339,26 @@ Altinn, and making sure they are consistent. */
   font-size: 1rem;
 }
 
-.jBBH27HFXw87hItKu9P4:hover {
-  outline: 3px solid var(--colors-primary-blueMedium);
-}
-
 .jBBH27HFXw87hItKu9P4:focus-within {
   outline: var(--fds-focus-border-width) solid var(--fds-outer-focus-border-color);
   outline-offset: var(--fds-focus-border-width);
   box-shadow: 0 0 0 var(--fds-focus-border-width) var(--fds-inner-focus-border-color);
+}
+
+.jBBH27HFXw87hItKu9P4:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.jBBH27HFXw87hItKu9P4:active:not(:disabled) {
+  background-color: var(--colors-primary-blueLight);
+  outline: 3px solid var(--colors-primary-blueMedium);
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+.jBBH27HFXw87hItKu9P4:hover:not(:disabled) {
+  outline: 3px solid var(--colors-primary-blueMedium);
 }
 
 .xmBwu638ymo52r4KmOBf {
