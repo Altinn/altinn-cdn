@@ -107,7 +107,8 @@
             "orgnr": "984195796",
             "homepage": "https://www.domstol.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "dsb": {
