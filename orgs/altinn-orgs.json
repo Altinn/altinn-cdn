@@ -1018,18 +1018,16 @@
                 "tt02"
             ]
         },
-		"tffa": {
+        "tffa": {
             "name": {
                 "en": "Norwegian Motor Insurers’ Bureau",
                 "nb": "Trafikkforsikringsforeningen",
                 "nn": "Trafikkforsikringsforeningen"
             },
-			"logo": "https://altinncdn.no/orgs/tffa/tffa.png",
+            "logo": "https://altinncdn.no/orgs/tffa/tffa.png",
             "orgnr": "960509811",
             "homepage": "https://www.tff.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         }
     }
 }
