@@ -1322,15 +1322,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
   width: 100%;
 }
 
-.y5iSaItiafyjQDd_J1RC > button {
+.ppLWuLomsAaTi8jytGjS {
+  position: relative;
+}
+
+.QvOnsI3VRq_tKiBugOBA {
+  background-color: var(--colors-primary-greyLight);
+  position: absolute;
+  right: 0;
+  z-index: 1001;
+}
+
+.JPMcRYhLdua2sGQ9GAnQ {
   height: 37px;
   width: 37px;
   min-width: 0;
   min-height: 0;
-  position: absolute;
-  top: 10px;
-  right: 0;
-  z-index: 1001;
 }
 
 .MEfcBrsKJod824Z5mTN_ {
@@ -1344,6 +1351,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .bdFKDQ_mTmHf28x8Z4MK {
   overflow-y: hidden;
   overflow-x: auto;
+  padding-right: 40px;
   flex-shrink: 0;
 }
 
@@ -4194,11 +4202,11 @@ Altinn, and making sure they are consistent. */
 
 .SWQLSUAGktZ4s_Nsw_JX {
   position: relative;
-  height: 40rem;
+  height: 600px;
 }
 
 /**
-* This will give the map an (almost) square aspect ratio when loading the print page
+* This will give the map an (almost) correct width for A4 paper before calling print.
 * Since it has @media only screen it will still scale to fit the page,
 * but the initial fitBounds will not depend on the PDF-service's browser viewport
 * Ideally, the browser's viewport would match the pages aspect ratio, as
@@ -4209,9 +4217,15 @@ Altinn, and making sure they are consistent. */
 * load before the page prints, but you should at least see the relevant area.
 **/
 @media only screen {
-  .uWhXWYFfUvncGaWYNak7 {
-    width: 42rem;
+  .Wa7P8Y3FcwXViC3qOT0Z {
+    width: 670px;
   }
+}
+/**
+* This will give the map approximately the same aspect ratio in the PDF as it is shown on a desktop screen
+*/
+.Wa7P8Y3FcwXViC3qOT0Z {
+  height: 470px;
 }
 
 /* We do not want the map to look faded in PDF, so using @media only screen */
@@ -5696,19 +5710,20 @@ input.form-control:focus:not(.a-hasButton) {
   position: relative;
 }
 
-.nX6H_gOvPiECwhBvydtS h3 {
-  margin-top: 0;
-  margin-right: 36px;
+.ENJkQjDIRxF4Q7y7hGcc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.ENJkQjDIRxF4Q7y7hGcc h3 {
+  word-break: break-all;
+  margin: 0;
   font-size: 1rem;
 }
-
-.nX6H_gOvPiECwhBvydtS button {
-  height: 32px;
-  width: 32px;
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  z-index: 1001;
+.ENJkQjDIRxF4Q7y7hGcc button {
+  margin-top: -4px;
+  margin-right: -4px;
 }
 
 .dUZ73MkghIPivOtSzgjT {
@@ -5742,19 +5757,29 @@ input.form-control:focus:not(.a-hasButton) {
   flex-direction: column;
 }
 
-.D5_ThEfAi4jOo3HqR51d {
+.C0sBOzyR6YzUycvpnvO8 {
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding-right: 40px;
+  flex-shrink: 0;
+}
+
+.JS0v6ypgYquxsuFsX8s8 {
   position: relative;
 }
 
-.D5_ThEfAi4jOo3HqR51d > button {
+.Y0NENhiXwrxxKCHT8NFT {
+  background-color: var(--colors-primary-greyLight);
+  position: absolute;
+  right: 0;
+  z-index: 1001;
+}
+
+.dHH4tuMKsV6TE5nntmV1 {
   height: 37px;
   width: 37px;
   min-width: 0;
   min-height: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1001;
 }
 
 .MH4sLMFWp4UWEtuKD9UX {
