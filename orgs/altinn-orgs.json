@@ -412,6 +412,17 @@
                 "production"
             ]
         },
+        "nfk": {
+            "name": {
+                "en": "Nordre Follo kommune",
+                "nb": "Nordre Follo kommune",
+                "nn": "Nordre Follo kommune"
+            },
+            "logo": "https://altinncdn.no/orgs/nfk/nordre-follo-kommune-navnetrekk-bredde-2-linje-rgb.svg",
+            "orgnr": "922092648",
+            "homepage": "https://www.nordrefollo.kommune.no/",
+            "environments": []
+        },
         "nhn": {
             "name": {
                 "en": "Norwegian Healthnet",
