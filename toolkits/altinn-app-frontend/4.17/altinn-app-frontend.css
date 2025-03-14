@@ -2618,6 +2618,20 @@ Altinn, and making sure they are consistent. */
   gap: var(--button-gap);
 }
 
+.TUswAjqxjdOYzBqytyjz {
+  height: 100%;
+}
+
+.AmDFWqjFlf68Fg5KPQfB img,
+audio,
+video {
+  object-fit: cover;
+}
+
+.AmDFWqjFlf68Fg5KPQfB:last-of-type {
+  margin-top: auto;
+}
+
 /* Override design system component to enable horizontal layout
   No longer supported with horizontal layout in design system.
   Possible breaking change if we remove this option of styling.
