@@ -107,7 +107,8 @@
             "orgnr": "984195796",
             "homepage": "https://www.domstol.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "dsb": {
@@ -190,7 +191,8 @@
             "orgnr": "983544622",
             "homepage": "https://www.helsedirektoratet.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "hemit": {
@@ -409,6 +411,17 @@
                 "tt02",
                 "production"
             ]
+        },
+        "nfk": {
+            "name": {
+                "en": "Nordre Follo kommune",
+                "nb": "Nordre Follo kommune",
+                "nn": "Nordre Follo kommune"
+            },
+            "logo": "https://altinncdn.no/orgs/nfk/nordre-follo-kommune-navnetrekk-bredde-2-linje-rgb.svg",
+            "orgnr": "922092648",
+            "homepage": "https://www.nordrefollo.kommune.no/",
+            "environments": []
         },
         "nhn": {
             "name": {
@@ -1015,6 +1028,17 @@
             "environments": [
                 "tt02"
             ]
+        },
+        "tffa": {
+            "name": {
+                "en": "Norwegian Motor Insurers’ Bureau",
+                "nb": "Trafikkforsikringsforeningen",
+                "nn": "Trafikkforsikringsforeningen"
+            },
+            "logo": "https://altinncdn.no/orgs/tffa/tffa.png",
+            "orgnr": "960509811",
+            "homepage": "https://www.tff.no/",
+            "environments": []
         }
     }
 }

@@ -1,0 +1,149 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://altinncdn.no/schemas/json/layout/layout-sets.schema.v1.json",
+  "title": "Altinn layout sets",
+  "description": "Schema that describes the different layout sets for an Altinn application and when to use them",
+  "$ref": "#/definitions/ILayoutSets",
+  "definitions": {
+    "GlobalPageSettings": {
+      "title": "GlobalPageSettings",
+      "type": "object",
+      "properties": {
+        "hideCloseButton": {
+          "title": "Hide close button",
+          "description": "Hide the close button in the upper right corner of the app",
+          "default": false,
+          "type": "boolean"
+        },
+        "showLanguageSelector": {
+          "title": "Show language selector",
+          "description": "Show the language selector in the upper right corner of the app",
+          "default": false,
+          "type": "boolean"
+        },
+        "showExpandWidthButton": {
+          "title": "Show expand width button",
+          "description": "Show the expand width button in the upper right corner of the app",
+          "default": false,
+          "type": "boolean"
+        },
+        "expandedWidth": {
+          "title": "Expanded width",
+          "description": "Sets expanded width for pages",
+          "default": false,
+          "type": "boolean"
+        },
+        "showProgress": {
+          "title": "Show progress indicator",
+          "description": "Enables a progress indicator in the upper right corner of the app (when on data tasks/forms)",
+          "default": false,
+          "type": "boolean"
+        },
+        "autoSaveBehavior": {
+          "title": "Auto save behavior",
+          "description": "An attribute specifying when the application will save form data. onChangeFormData saves on every interaction with form elements. onChangePage saves on every page change.",
+          "default": "onChangeFormData",
+          "enum": [
+            "onChangeFormData",
+            "onChangePage"
+          ]
+        }
+      }
+    },
+    "ILayoutSet": {
+      "title": "Layout Set Union",
+      "description": "todo",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/ILayoutSetDefault"
+        },
+        {
+          "$ref": "#/definitions/ILayoutSetSubform"
+        }
+      ]
+    },
+    "ILayoutSetDefault": {
+      "title": "Default Layout Set",
+      "description": "Settings regarding a default layout-set",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "description": "The layout-set ID. Must be unique within a given application.",
+          "type": "string"
+        },
+        "dataType": {
+          "title": "Data type",
+          "description": "The datatype to use this layout.",
+          "type": "string"
+        },
+        "tasks": {
+          "title": "Tasks",
+          "description": "An array specifying which task to use a layout-set",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "dataType"
+      ],
+      "additionalProperties": false
+    },
+    "ILayoutSets": {
+      "title": "Layout sets",
+      "description": "Settings regarding layout pages and components",
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "sets": {
+          "title": "Layout sets",
+          "description": "List of layout sets for different data types",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ILayoutSet"
+          }
+        },
+        "uiSettings": {
+          "$ref": "#/definitions/GlobalPageSettings"
+        }
+      },
+      "required": [
+        "sets"
+      ],
+      "additionalProperties": false
+    },
+    "ILayoutSetSubform": {
+      "title": "Layout Set",
+      "description": "A layout set with either tasks or type, but not both.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "description": "The layout-set ID. Must be unique within a given application.",
+          "type": "string"
+        },
+        "dataType": {
+          "title": "Data type",
+          "description": "The datatype to use this layout.",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "description": "The type of layout set, here subform.",
+          "const": "subform"
+        }
+      },
+      "required": [
+        "id",
+        "dataType",
+        "type"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
