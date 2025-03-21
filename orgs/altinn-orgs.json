@@ -421,7 +421,9 @@
             "logo": "https://altinncdn.no/orgs/nfk/nordre-follo-kommune-navnetrekk-bredde-2-linje-rgb.svg",
             "orgnr": "922092648",
             "homepage": "https://www.nordrefollo.kommune.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "nhn": {
             "name": {
