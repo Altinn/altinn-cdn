@@ -14,6 +14,17 @@
                 "production"
             ]
         },
+        "brm": {
+            "name": {
+                "en": "Brannvesenet Midt IKS",
+                "nb": "Brannvesenet Midt IKS",
+                "nn": "Brannvesenet Midt IKS"
+            },
+            "logo": "https://altinncdn.no/orgs/brm/brm.svg",
+            "orgnr": "989023578",
+            "homepage": "https://brannmidt.no/",
+            "environments": []
+        },
         "buf": {
             "name": {
                 "en": "The Norwegian Directorate for Children, Youth and Family Affairs",
