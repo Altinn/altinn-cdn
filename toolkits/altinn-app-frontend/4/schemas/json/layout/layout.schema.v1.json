@@ -26,6 +26,7 @@
             "CustomButton",
             "Date",
             "Datepicker",
+            "Divider",
             "Dropdown",
             "FileUpload",
             "FileUploadWithTag",
@@ -259,6 +260,18 @@
           },
           "then": {
             "$ref": "#/definitions/CompDatepicker"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "Divider"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/CompDivider"
           }
         },
         {
@@ -779,6 +792,9 @@
     "CompDatepicker": {
       "$ref": "#/definitions/CompDatepickerExternal"
     },
+    "CompDivider": {
+      "$ref": "#/definitions/CompDividerExternal"
+    },
     "CompDropdown": {
       "$ref": "#/definitions/CompDropdownExternal"
     },
@@ -992,6 +1008,9 @@
         },
         {
           "$ref": "#/definitions/DateSummaryOverrideProps"
+        },
+        {
+          "$ref": "#/definitions/DividerSummaryOverrideProps"
         }
       ]
     },
@@ -2532,7 +2551,7 @@
             },
             "format": {
               "title": "Date format",
-              "description": "Date format used when displaying the date to the user. The user date format from the locale will be prioritized over this setting.",
+              "description": "Date format used when filling out and displaying the date to the user. If not set the format will be based on the user's selected language.",
               "examples": [
                 "dd/MM/yyyy",
                 "MM/dd/yyyy",
@@ -2572,6 +2591,40 @@
             "id",
             "type",
             "dataModelBindings"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "CompDividerExternal": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ComponentBase"
+        },
+        {
+          "title": "CompDividerExternal",
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Divider"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": true,
+            "hidden": true,
+            "grid": true,
+            "pageBreak": true,
+            "type": true
+          },
+          "required": [
+            "id",
+            "type"
           ],
           "additionalProperties": false
         }
@@ -5824,6 +5877,9 @@
               "default": true,
               "type": "boolean"
             },
+            "entryDisplayName": {
+              "$ref": "expression.schema.v1.json#/definitions/string"
+            },
             "tableColumns": {
               "type": "array",
               "items": {
@@ -5835,23 +5891,7 @@
                     "type": "string"
                   },
                   "cellContent": {
-                    "type": "object",
-                    "properties": {
-                      "query": {
-                        "title": "The cell value via data model lookup",
-                        "description": "The cell value to display from a data model lookup (dot notation).",
-                        "type": "string"
-                      },
-                      "default": {
-                        "title": "The default cell value",
-                        "description": "The cell value to display if `query` returns no result.",
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "query"
-                    ],
-                    "additionalProperties": false
+                    "$ref": "#/definitions/ISubformCellContent"
                   }
                 },
                 "required": [
@@ -5891,6 +5931,7 @@
             "layoutSet": true,
             "showAddButton": true,
             "showDeleteButton": true,
+            "entryDisplayName": true,
             "tableColumns": true,
             "summaryDelimiter": true
           },
@@ -6363,6 +6404,9 @@
     "DateSummaryOverrideProps": {
       "$ref": "#/definitions/ISummaryOverridesCommon"
     },
+    "DividerSummaryOverrideProps": {
+      "$ref": "#/definitions/ISummaryOverridesCommon"
+    },
     "DropdownSummaryOverrideProps": {
       "$ref": "#/definitions/ISummaryOverridesCommon"
     },
@@ -6755,7 +6799,11 @@
     "IDataModelBindingsForList": {
       "title": "IDataModelBindingsForList",
       "type": "object",
-      "properties": {},
+      "properties": {
+        "group": {
+          "$ref": "#/definitions/IRawDataModelBinding"
+        }
+      },
       "additionalProperties": {
         "$ref": "#/definitions/IRawDataModelBinding"
       }
@@ -7797,6 +7845,50 @@
               "type": "integer"
             }
           }
+        }
+      ]
+    },
+    "ISubformCellContent": {
+      "title": "ISubformCellContent",
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "title": "The cell value",
+              "description": "The cell value to display from an expression or static value",
+              "$ref": "expression.schema.v1.json#/definitions/string"
+            },
+            "default": {
+              "title": "The default cell value",
+              "description": "The cell value to display if `query` or `value` returns no result.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "query": {
+              "title": "The cell value via data model lookup",
+              "description": "**Deprecated**: Use \"value\" with a dataModel-expression instead\nThe cell value to display from a data model lookup (dot notation).",
+              "deprecated": true,
+              "type": "string"
+            },
+            "default": {
+              "title": "The default cell value",
+              "description": "The cell value to display if `query` or `value` returns no result.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
         }
       ]
     },

@@ -47,24 +47,27 @@
             "onChangeFormData",
             "onChangePage"
           ]
+        },
+        "taskNavigation": {
+          "title": "Task navigation settings",
+          "description": "Shows the listed tasks in the sidebar navigation menu",
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/NavigationTask"
+              },
+              {
+                "$ref": "#/definitions/NavigationReceipt"
+              }
+            ]
+          }
         }
       }
     },
     "ILayoutSet": {
-      "title": "Layout Set Union",
-      "description": "todo",
-      "oneOf": [
-        {
-          "$ref": "#/definitions/ILayoutSetDefault"
-        },
-        {
-          "$ref": "#/definitions/ILayoutSetSubform"
-        }
-      ]
-    },
-    "ILayoutSetDefault": {
-      "title": "Default Layout Set",
-      "description": "Settings regarding a default layout-set",
+      "title": "Layout Set",
+      "description": "Settings regarding a layout-set",
       "type": "object",
       "properties": {
         "id": {
@@ -117,31 +120,35 @@
       ],
       "additionalProperties": false
     },
-    "ILayoutSetSubform": {
-      "title": "Layout Set",
-      "description": "A layout set with either tasks or type, but not both.",
+    "NavigationReceipt": {
+      "title": "NavigationReceipt",
       "type": "object",
       "properties": {
-        "id": {
-          "title": "ID",
-          "description": "The layout-set ID. Must be unique within a given application.",
-          "type": "string"
-        },
-        "dataType": {
-          "title": "Data type",
-          "description": "The datatype to use this layout.",
+        "name": {
           "type": "string"
         },
         "type": {
-          "title": "Type",
-          "description": "The type of layout set, here subform.",
-          "const": "subform"
+          "const": "receipt"
         }
       },
       "required": [
-        "id",
-        "dataType",
         "type"
+      ],
+      "additionalProperties": false
+    },
+    "NavigationTask": {
+      "title": "NavigationTask",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "taskId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "taskId"
       ],
       "additionalProperties": false
     }
