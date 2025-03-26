@@ -313,6 +313,17 @@
                 "tt02"
             ]
         },
+        "kt": {
+            "name": {
+                "en": "Norwegian Competition Authority",
+                "nb": "Konkurransetilsynet",
+                "nn": "Konkurransetilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/kt/kt.jpg",
+            "orgnr": "974761246",
+            "homepage": "https://konkurransetilsynet.no/",
+            "environments": []
+        },
         "kv": {
             "name": {
                 "en": "Norwegian Mapping Authority",
@@ -846,16 +857,6 @@
             },
             "orgnr": "960885406",
             "homepage": "https://lanekassen.no/",
-            "environments": []
-        },
-        "kt": {
-            "name": {
-                "en": "Norwegian Competition Authority",
-                "nb": "Konkurransetilsynet",
-                "nn": "Konkurransetilsynet"
-            },
-            "orgnr": "974761246",
-            "homepage": "https://konkurransetilsynet.no/",
             "environments": []
         },
         "hb": {
