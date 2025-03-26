@@ -859,16 +859,6 @@
             "homepage": "https://lanekassen.no/",
             "environments": []
         },
-        "kt": {
-            "name": {
-                "en": "Norwegian Competition Authority",
-                "nb": "Konkurransetilsynet",
-                "nn": "Konkurransetilsynet"
-            },
-            "orgnr": "974761246",
-            "homepage": "https://konkurransetilsynet.no/",
-            "environments": []
-        },
         "hb": {
             "name": {
                 "en": "Norwegian State Housing Bank",
