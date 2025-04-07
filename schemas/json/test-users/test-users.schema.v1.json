@@ -231,6 +231,6 @@
         }
       }
     },
-    "required": ["persons", "orgs", "systems"],
+    "required": ["persons", "orgs"],
     "additionalProperties": false
 }
