@@ -11,6 +11,11 @@
             "partyId": {
               "type": "integer"
             },
+            "partyUuid": {
+              "type": "string",
+              "format": "uuid",
+              "description": "UUID of the party. Needs to be valid if the party is to be used for instance delegation (e.g. for parallel signing)"
+            },
             "ssn": {
               "type": "string",
               "description": "Empty string is interpreted as self-identified"
@@ -126,6 +131,11 @@
             "partyId": {
               "type": "integer"
             },
+            "partyUuid": {
+              "type": "string",
+              "format": "uuid",
+              "description": "UUID of the party. Needs to be valid if the party is to be used for instance delegation (e.g. for parallel signing)"
+            },
             "parentPartyId": {
               "type": "integer"
             },
@@ -178,8 +188,49 @@
           "required": ["partyId", "orgNumber"],
           "additionalProperties": false
         }
+      },
+      "systems": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "systemUsers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "orgNumber": {
+                    "type": "string",
+                    "description": "The organisation number of the system user, must refer to an organisation in the orgs array"
+                  },
+                  "actions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "List of actions that are delegated to the system users, e. g. ['read', 'write', 'instantiate']"
+                  }
+                },
+                "required": ["id", "orgNumber", "actions"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": ["id", "name", "systemUsers"],
+          "additionalProperties": false
+        }
       }
     },
-    "required": ["Persons", "Orgs"],
+    "required": ["persons", "orgs", "systems"],
     "additionalProperties": false
 }
