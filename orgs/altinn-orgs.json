@@ -269,9 +269,7 @@
             "logo": "https://altinncdn.no/orgs/indi/indi.png",
             "orgnr": "930283487",
             "homepage": "https://www.indigo-ikt.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "k1103": {
             "name": {
