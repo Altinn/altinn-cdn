@@ -457,7 +457,8 @@
             "orgnr": "994598759",
             "homepage": "https://www.nhn.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nkom": {
