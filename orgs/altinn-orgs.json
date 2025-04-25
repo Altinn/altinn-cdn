@@ -257,7 +257,8 @@
             "orgnr": "985359385",
             "homepage": "https://www.ikt-agder.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "indi": {
