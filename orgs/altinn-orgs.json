@@ -1002,16 +1002,6 @@
             "homepage": "https://www.politiet.no/",
             "environments": []
         },
-        "afs": {
-            "name": {
-                "en": "Avfall Sør AS",
-                "nb": "Avfall Sør AS",
-                "nn": "Avfall Sør AS"
-            },
-            "orgnr": "995646137",
-            "homepage": "https://avfallsor.no/",
-            "environments": []
-        },
         "fjel": {
             "name": {
                 "en": "Fjellinjen AS",
