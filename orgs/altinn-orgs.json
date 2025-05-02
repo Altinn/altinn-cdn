@@ -1,5 +1,16 @@
 {
     "orgs": {
+        "afs": {
+            "name": {
+                "en": "Avfall Sør AS",
+                "nb": "Avfall Sør AS",
+                "nn": "Avfall Sør AS"
+            },
+            "logo": "https://altinncdn.no/orgs/afs/afs.svg",
+            "orgnr": "995646137",
+            "homepage": "https://avfallsor.no/",
+            "environments": []
+        },
         "brg": {
             "name": {
                 "en": "Brønnøysund Register Centre",
@@ -989,16 +1000,6 @@
             },
             "orgnr": "915429785",
             "homepage": "https://www.politiet.no/",
-            "environments": []
-        },
-        "afs": {
-            "name": {
-                "en": "Avfall Sør AS",
-                "nb": "Avfall Sør AS",
-                "nn": "Avfall Sør AS"
-            },
-            "orgnr": "995646137",
-            "homepage": "https://avfallsor.no/",
             "environments": []
         },
         "fjel": {
