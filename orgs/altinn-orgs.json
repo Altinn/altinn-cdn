@@ -487,13 +487,13 @@
         },
         "nkr": {
             "name": {
-                "en": "Arts Council Norway",
-                "nb": "Kulturrådet",
-                "nn": "Kulturrådet"
+                "en": "Arts and Culture Norway",
+                "nb": "Kulturdirektoratet",
+                "nn": "Kulturdirektoratet"
             },
             "logo": "https://altinncdn.no/orgs/nkr/kulturradet.png",
             "orgnr": "971527412",
-            "homepage": "https://www.kulturradet.no",
+            "homepage": "https://www.kulturdirektoratet.no/",
             "environments": [
                 "tt02"
             ]
