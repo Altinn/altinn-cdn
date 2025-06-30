@@ -83,7 +83,7 @@
                 "nb": "Digitaliseringsdirektoratet",
                 "nn": "Digitaliseringsdirektoratet"
             },
-            "logo": "",
+            "logo": "https://altinncdn.no/orgs/digdir/digdir.png",
             "orgnr": "991825827",
             "homepage": "https://www.digdir.no",
             "environments": [
@@ -796,7 +796,7 @@
                 "nb": "Testdepartementet",
                 "nn": "Testdepartementet"
             },
-            "logo": "",
+            "logo": "https://altinncdn.no/orgs/ttd/ttd.png",
             "orgnr": "",
             "homepage": "",
             "environments": [
