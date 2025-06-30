@@ -991,7 +991,7 @@
             "logo": "https://altinncdn.no/orgs/nokut/nokut.svg",
             "orgnr": "985042667",
             "homepage": "https://www.nokut.no/",
-            "environments": []
+            "environments": ["tt02"]
         },
         "pol": {
             "name": {
