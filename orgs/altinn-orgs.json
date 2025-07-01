@@ -84,12 +84,17 @@
                 "nn": "Digitaliseringsdirektoratet"
             },
             "logo": "https://altinncdn.no/orgs/digdir/digdir.png",
+            "emblem": "https://altinncdn.no/orgs/digdir/digdir.svg",
             "orgnr": "991825827",
             "homepage": "https://www.digdir.no",
             "environments": [
                 "tt02",
                 "production"
-            ]
+            ],
+            "contact": {
+                "phone": "+4722451000",
+                "url": "https://www.digdir.no/digdir/kontakt-oss/943"
+            }
         },
         "dihe": {
             "name": {
@@ -797,6 +802,7 @@
                 "nn": "Testdepartementet"
             },
             "logo": "https://altinncdn.no/orgs/ttd/ttd.png",
+            "emblem": "https://altinncdn.no/orgs/ttd/ttd.svg",
             "orgnr": "",
             "homepage": "",
             "environments": [
@@ -806,7 +812,11 @@
                 "tt02",
                 "yt01",
                 "production"
-            ]
+            ],
+            "contact": {
+                "phone": "+4722451000",
+                "url": "https://www.digdir.no/digdir/kontakt-oss/943"
+            }
         },
         "udi": {
             "name": {
