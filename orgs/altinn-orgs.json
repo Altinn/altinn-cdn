@@ -762,6 +762,17 @@
                 "production"
             ]
         },
+        "sym": {
+            "name": {
+                "en": "Symfoni AS",
+                "nb": "Symfoni AS",
+                "nn": "Symfoni AS"
+            },
+            "logo": "https://altinncdn.no/orgs/sym/sym.jpg",
+            "orgnr": "915772137",
+            "homepage": "https://www.symfoni.id/",
+            "environments": []
+        },
         "tad": {
             "name": {
                 "en": "Norwegian Customs",
