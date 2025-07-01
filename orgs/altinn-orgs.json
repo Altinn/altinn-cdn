@@ -505,11 +505,16 @@
                 "nn": "Arbeids- og velferdsetaten (NAV)"
             },
             "logo": "https://altinncdn.no/orgs/nav/nav.png",
+            "emblem": "https://altinncdn.no/orgs/nav/nav.svg",
             "orgnr": "889640782",
             "homepage": "https://www.nav.no",
             "environments": [
                 "tt02"
-            ]
+            ],
+            "contact": {
+                "phone": "+4755553333",
+                "url": "https://www.nav.no/kontaktoss"
+            
         },
         "npd": {
             "name": {
@@ -660,13 +665,18 @@
                 "nn": "Skatteetaten"
             },
             "logo": "https://altinncdn.no/orgs/skd/skd.png",
+            "emblem": "https://altinncdn.no/orgs/skd/skd.svg",
             "orgnr": "974761076",
             "homepage": "https://www.skatteetaten.no",
             "environments": [
                 "tt02",
                 "yt01",
                 "production"
-            ]
+            ],
+            "contact": {
+                "phone": "+4780080000",
+                "url": "https://www.skatteetaten.no/kontakt"
+            }
         },
         "slv": {
             "name": {
