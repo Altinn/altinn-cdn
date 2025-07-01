@@ -878,7 +878,9 @@
             },
             "orgnr": "942114184",
             "homepage": "https://www.husbanken.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "slf": {
             "name": {
