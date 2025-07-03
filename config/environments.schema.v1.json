@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "environments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "platformUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://platform\\.(at22|at23|at24|yt01|tt02)\\.altinn\\.(cloud|no)$|^https://platform\\.altinn\\.no$"
+          },
+          "hostname": {
+            "type": "string",
+            "pattern": "^(at22|at23|at24|yt01|tt02)\\.altinn\\.(cloud|no)$|^altinn\\.no$"
+          },
+          "appPrefix": {
+            "type": "string",
+            "const": "apps"
+          },
+          "platformPrefix": {
+            "type": "string",
+            "const": "platform"
+          },
+          "name": {
+            "type": "string",
+            "enum": ["at22", "at23", "at24", "yt01", "tt02", "production"]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["test", "production"]
+          }
+        },
+        "required": ["platformUrl", "hostname", "appPrefix", "platformPrefix", "name", "type"],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": ["environments"],
+  "additionalProperties": false
+}

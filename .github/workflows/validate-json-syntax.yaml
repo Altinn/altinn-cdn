@@ -1,30 +1,48 @@
-name: Validate JSON syntax
+name: Validate JSON syntax and schema
 
 on:
   push:
     paths:
       - 'orgs/altinn-orgs.json'
+      - 'orgs/altinn-orgs.schema.v1.json'
       - 'config/environments.json'
+      - 'config/environments.schema.v1.json'
   pull_request:
     paths:
       - 'orgs/altinn-orgs.json'
+      - 'orgs/altinn-orgs.schema.v1.json'
       - 'config/environments.json'
+      - 'config/environments.schema.v1.json'
 
 jobs:
   validate-json:
-    name: Check JSON syntax
+    name: Check JSON syntax and schema
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Validate orgs/altinn-orgs.json
+      - name: Install check-jsonschema
         run: |
-          echo "Validating orgs/altinn-orgs.json..."
+          pip install check-jsonschema
+
+      - name: Validate orgs/altinn-orgs.json syntax
+        run: |
+          echo "Validating orgs/altinn-orgs.json syntax..."
           jq empty orgs/altinn-orgs.json
 
-      - name: Validate config/environments.json
+      - name: Validate orgs/altinn-orgs.json schema
         run: |
-          echo "Validating config/environments.json..."
+          echo "Validating orgs/altinn-orgs.json against schema..."
+          check-jsonschema --schemafile orgs/altinn-orgs.schema.v1.json orgs/altinn-orgs.json
+
+      - name: Validate config/environments.json syntax
+        run: |
+          echo "Validating config/environments.json syntax..."
           jq empty config/environments.json
+
+      - name: Validate config/environments.json schema
+        run: |
+          echo "Validating config/environments.json against schema..."
+          check-jsonschema --schemafile config/environments.schema.v1.json config/environments.json
