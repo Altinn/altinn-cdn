@@ -1,0 +1,30 @@
+name: Validate JSON syntax
+
+on:
+  push:
+    paths:
+      - 'orgs/altinn-orgs.json'
+      - 'config/environments.json'
+  pull_request:
+    paths:
+      - 'orgs/altinn-orgs.json'
+      - 'config/environments.json'
+
+jobs:
+  validate-json:
+    name: Check JSON syntax
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate orgs/altinn-orgs.json
+        run: |
+          echo "Validating orgs/altinn-orgs.json..."
+          jq empty orgs/altinn-orgs.json
+
+      - name: Validate config/environments.json
+        run: |
+          echo "Validating config/environments.json..."
+          jq empty config/environments.json
