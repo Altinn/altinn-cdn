@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "orgs": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9]+$": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "nb": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "nn": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": ["en", "nb", "nn"],
+              "additionalProperties": false
+            },
+            "logo": {
+              "type": "string",
+              "oneOf": [
+                {"const": ""},
+                {"format": "uri", "minLength": 1}
+              ]
+            },
+            "emblem": {
+              "type": "string",
+              "oneOf": [
+                {"const": ""},
+                {"format": "uri", "minLength": 1}
+              ]
+            },
+            "orgnr": {
+              "type": "string",
+              "oneOf": [
+                {"const": ""},
+                {"pattern": "^[0-9]{9}$"}
+              ]
+            },
+            "homepage": {
+              "type": "string",
+              "oneOf": [
+                {"const": ""},
+                {"format": "uri", "minLength": 1}
+              ]
+            },
+            "environments": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["tt02", "production", "at22", "at23", "at24", "yt01"]
+              },
+              "uniqueItems": true
+            },
+            "contact": {
+              "type": "object",
+              "properties": {
+                "phone": {
+                  "type": "string",
+                  "pattern": "^\\+[0-9]+$"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": ["name", "environments"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["orgs"],
+  "additionalProperties": false
+}
