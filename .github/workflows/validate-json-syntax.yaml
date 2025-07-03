@@ -1,0 +1,22 @@
+name: Validate altinn-orgs.json
+
+on:
+  push:
+    paths:
+      - 'orgs/altinn-orgs.json'
+  pull_request:
+    paths:
+      - 'orgs/altinn-orgs.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Validate altinn-orgs.json syntax
+        run: |
+          echo "Validating orgs/altinn-orgs.json..."
+          jq empty orgs/altinn-orgs.json
