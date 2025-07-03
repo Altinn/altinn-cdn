@@ -4,15 +4,15 @@ on:
   push:
     paths:
       - 'orgs/altinn-orgs.json'
-      - 'orgs/altinn-orgs-schema.json'
+      - 'orgs/altinn-orgs.schema.v1.json'
       - 'config/environments.json'
-      - 'config/environments-schema.json'
+      - 'config/environments.schema.v1.json'
   pull_request:
     paths:
       - 'orgs/altinn-orgs.json'
-      - 'orgs/altinn-orgs-schema.json'
+      - 'orgs/altinn-orgs.schema.v1.json'
       - 'config/environments.json'
-      - 'config/environments-schema.json'
+      - 'config/environments.schema.v1.json'
 
 jobs:
   validate-json:
@@ -35,7 +35,7 @@ jobs:
       - name: Validate orgs/altinn-orgs.json schema
         run: |
           echo "Validating orgs/altinn-orgs.json against schema..."
-          check-jsonschema --schemafile orgs/altinn-orgs-schema.json orgs/altinn-orgs.json
+          check-jsonschema --schemafile orgs/altinn-orgs.schema.v1.json orgs/altinn-orgs.json
 
       - name: Validate config/environments.json syntax
         run: |
@@ -45,4 +45,4 @@ jobs:
       - name: Validate config/environments.json schema
         run: |
           echo "Validating config/environments.json against schema..."
-          check-jsonschema --schemafile config/environments-schema.json config/environments.json
+          check-jsonschema --schemafile config/environments.schema.v1.json config/environments.json
