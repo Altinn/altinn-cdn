@@ -481,6 +481,24 @@
         }
       }
     },
+    "apiScopes": {
+      "type": "object",
+      "title": "API scopes configuration",
+      "description": "Configure app-specific API scopes that are validated against incoming requests.",
+      "additionalProperties": false,
+      "properties": {
+        "read": {
+          "type": "string",
+          "title": "Read scope",
+          "description": "The scope used for read access to the instance data. Replaces 'altinn:instances.read' scope."
+        },
+        "write": {
+          "type": "string",
+          "title": "Write scope",
+          "description": "The scope used for write access to the instance data. Replaces 'altinn:instances.write' scope."
+        }
+      }
+    },
     "title": {
       "type": "object",
       "title": "Title",
