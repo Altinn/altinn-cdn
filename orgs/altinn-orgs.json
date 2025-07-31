@@ -560,13 +560,13 @@
         },
         "oed": {
             "name": {
-                "en": "Ministry of Petroleum and Energy",
-                "nb": "Olje- og energidepartementet",
-                "nn": "Olje- og energidepartementet"
+                "en": "Ministry of Energy",
+                "nb": "Energidepartementet",
+                "nn": "Energidepartementet"
             },
             "logo": "https://altinncdn.no/orgs/oed/oed.png",
             "orgnr": "977161630",
-            "homepage": "https://www.regjeringen.no/no/dep/oed/",
+            "homepage": "https://www.regjeringen.no/no/dep/ed/",
             "environments": [
                 "tt02",
                 "production"
