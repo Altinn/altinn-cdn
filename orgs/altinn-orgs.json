@@ -891,6 +891,17 @@
             "homepage": "https://dfo.no/",
             "environments": []
         },
+        "skm": {
+            "name": {
+                "en": "Norwegian civil security clearance authority",
+                "nb": "Sivil klareringsmyndighet",
+                "nn": "Sivil klareringsmyndigheit"
+            },
+            "logo": "https://altinncdn.no/orgs/skm/skm.png",
+            "orgnr": "918929673",
+            "homepage": "https://sivilklareringsmyndighet.no/",
+            "environments": []
+        },
         "slk": {
             "name": {
                 "en": "Norwegian State Educational Loan Fund",
