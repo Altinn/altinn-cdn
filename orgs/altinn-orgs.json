@@ -258,10 +258,7 @@
             "logo": "https://altinncdn.no/orgs/hmrhf/hmrhf.png",
             "orgnr": "997005562",
             "homepage": "https://helse-mr.no",
-            "environments": [
-                "tt02",
-                "production"
-            ]
+            "environments": []
         },
         "ikta": {
             "name": {
