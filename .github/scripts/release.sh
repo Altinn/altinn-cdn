@@ -17,11 +17,6 @@ while [[ $# -gt 0 ]]; do
       shift # pop option
       shift # pop option
       ;;
-    --azure-sa-token)
-      AZURE_STORAGE_ACCOUNT_TOKEN="$2"
-      shift # pop option
-      shift # pop option
-      ;;
     --azure-sync-cdn )
       SYNC_AZURE_CDN=yes
       shift #pop option
@@ -55,7 +50,7 @@ else
     else
         echo "Publishing files to azure cdn"
     fi
-    azcopy sync "$TMP_DIR/altinn-cdn/" "$AZURE_TARGET_URI/${AZURE_STORAGE_ACCOUNT_TOKEN}" "${AZCOPY_OPTS[@]}"
+    azcopy sync "$TMP_DIR/altinn-cdn/" "$AZURE_TARGET_URI/" "${AZCOPY_OPTS[@]}"
 fi
 
 rm -rf $TMP_DIR
