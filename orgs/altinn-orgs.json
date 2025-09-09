@@ -897,7 +897,9 @@
             "logo": "https://altinncdn.no/orgs/skm/skm.png",
             "orgnr": "918929673",
             "homepage": "https://sivilklareringsmyndighet.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "slk": {
             "name": {
