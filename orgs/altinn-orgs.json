@@ -527,7 +527,9 @@
             "logo": "https://altinncdn.no/orgs/npd/npd.svg",
             "orgnr": "870917732",
             "homepage": "https://www.sodir.no",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "npe": {
             "name": {
