@@ -6,7 +6,6 @@
                 "nb": "Importert av ER",
                 "nn": "Importert av ER"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -17,7 +16,6 @@
                 "nb": "Testetat for Accenture",
                 "nn": "Testetat for Accenture"
             },
-            "logo": "",
             "orgnr": "992037601",
             "homepage": "",
             "environments": []
@@ -39,7 +37,6 @@
                 "nb": "Samlesider",
                 "nn": "Samlesider"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -50,7 +47,6 @@
                 "nb": "Basefarm TEST",
                 "nn": "Basefarm TEST"
             },
-            "logo": "",
             "orgnr": "982211743",
             "homepage": "",
             "environments": []
@@ -146,7 +142,6 @@
                 "nb": "Digitale Helgeland",
                 "nn": "Digitale Helgeland"
             },
-            "logo": "",
             "orgnr": "964983291",
             "homepage": "https://digihelgeland.no/",
             "environments": [
@@ -188,7 +183,6 @@
                 "nb": "Drammen kommune",
                 "nn": "Drammen kommune"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -213,7 +207,6 @@
                 "nb": "Direktoratet for e-helse",
                 "nn": "Direktoratet for e-helse"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -252,7 +245,6 @@
                 "nb": "Fellesordn for avtalefestet pensjon",
                 "nn": "Fellesordn for avtalefestet pensjon"
             },
-            "logo": "",
             "orgnr": "987414502",
             "homepage": "",
             "environments": []
@@ -263,7 +255,6 @@
                 "nb": "Viken Fylkeskommune",
                 "nn": "Viken Fylkeskommune"
             },
-            "logo": "",
             "orgnr": "921693230",
             "homepage": "",
             "environments": []
@@ -354,7 +345,6 @@
                 "nb": "Statens Helsetilsyn",
                 "nn": "Statens Helsetilsyn"
             },
-            "logo": "",
             "orgnr": "974761394",
             "homepage": "",
             "environments": []
@@ -390,7 +380,6 @@
                 "nb": "Asker kommune",
                 "nn": "Asker kommune"
             },
-            "logo": "",
             "orgnr": "944382038",
             "homepage": "",
             "environments": []
@@ -401,7 +390,6 @@
                 "nb": "Skedsmo kommune",
                 "nn": "Skedsmo kommune"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -425,7 +413,6 @@
                 "nb": "Årviksand og Bryknesøy Regnskap",
                 "nn": "Årviksand og Bryknesøy Regnskap"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -474,7 +461,6 @@
                 "nb": "Kursetaten",
                 "nn": "Kursetaten"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -693,7 +679,6 @@
                 "nb": "Post- og teletilsynet",
                 "nn": "Post- og teletilsynet"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -994,11 +979,10 @@
         },
         "tts": {
             "name": {
-                "en": "Test Ministry",
-                "nb": "Testdepartementet",
-                "nn": "Testdepartementet"
+                "en": "Test Ministry (OLD)",
+                "nb": "Testdepartementet (gammel)",
+                "nn": "Testdepartementet (gammel)"
             },
-            "logo": "",
             "orgnr": "",
             "homepage": "",
             "environments": []
@@ -1061,7 +1045,6 @@
                 "nb": "Statens innkrevingssentral",
                 "nn": "Statens innkrevingssentral"
             },
-            "logo": "",
             "orgnr": "971648198",
             "homepage": "",
             "environments": []
