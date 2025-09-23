@@ -628,7 +628,8 @@
                 "nb": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP",
                 "nn": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP"
             },
-            "logo": "https://altinncdn.no/orgs/ssikt/ssikt.png",
+            "logo": "https://altinncdn.no/orgs/ssikt/ssikt-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/ssikt/ssikt-emblem.svg",
             "orgnr": "919824573",
             "homepage": "https://www.ssikt.no",
             "environments": [
