@@ -1,25 +1,5 @@
 {
     "orgs": {
-        "abc": {
-            "name": {
-                "en": "Importert av ER",
-                "nb": "Importert av ER",
-                "nn": "Importert av ER"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
-        },
-        "acn": {
-            "name": {
-                "en": "Testetat for Accenture",
-                "nb": "Testetat for Accenture",
-                "nn": "Testetat for Accenture"
-            },
-            "orgnr": "992037601",
-            "homepage": "",
-            "environments": []
-        },
         "afs": {
             "name": {
                 "en": "Avfall Sør AS",
@@ -29,26 +9,6 @@
             "logo": "https://altinncdn.no/orgs/afs/afs.svg",
             "orgnr": "995646137",
             "homepage": "https://avfallsor.no/",
-            "environments": []
-        },
-        "asf": {
-            "name": {
-                "en": "Samlesider",
-                "nb": "Samlesider",
-                "nn": "Samlesider"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
-        },
-        "bft": {
-            "name": {
-                "en": "Basefarm TEST",
-                "nb": "Basefarm TEST",
-                "nn": "Basefarm TEST"
-            },
-            "orgnr": "982211743",
-            "homepage": "",
             "environments": []
         },
         "brg": {
@@ -139,10 +99,11 @@
         },
         "dihe": {
             "name": {
-                "en": "Digital Helgeland",
+                "en": "Digital Helgeland ",
                 "nb": "Digitale Helgeland",
                 "nn": "Digitale Helgeland"
             },
+            "logo": "",
             "orgnr": "964983291",
             "homepage": "https://digihelgeland.no/",
             "environments": [
@@ -178,16 +139,6 @@
                 "production"
             ]
         },
-        "drm": {
-            "name": {
-                "en": "Drammen kommune",
-                "nb": "Drammen kommune",
-                "nn": "Drammen kommune"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
-        },
         "dsb": {
             "name": {
                 "en": "The Norwegian Directorate for Civil Protection",
@@ -201,16 +152,6 @@
                 "tt02",
                 "production"
             ]
-        },
-        "ehls": {
-            "name": {
-                "en": "Direktoratet for e-helse",
-                "nb": "Direktoratet for e-helse",
-                "nn": "Direktoratet for e-helse"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
         },
         "fd": {
             "name": {
@@ -239,26 +180,6 @@
                 "tt02",
                 "production"
             ]
-        },
-        "fk": {
-            "name": {
-                "en": "Fellesordningen for avtalefestet pensjon",
-                "nb": "Fellesordningen for avtalefestet pensjon",
-                "nn": "Fellesordninga for avtalefesta pensjon"
-            },
-            "orgnr": "987414502",
-            "homepage": "",
-            "environments": []
-        },
-        "fk30": {
-            "name": {
-                "en": "Viken Fylkeskommune",
-                "nb": "Viken Fylkeskommune",
-                "nn": "Viken Fylkeskommune"
-            },
-            "orgnr": "921693230",
-            "homepage": "",
-            "environments": []
         },
         "fors": {
             "name": {
@@ -340,16 +261,6 @@
             "homepage": "https://helse-mr.no",
             "environments": []
         },
-        "htil": {
-            "name": {
-                "en": "Statens Helsetilsyn",
-                "nb": "Statens Helsetilsyn",
-                "nn": "Statens Helsetilsyn"
-            },
-            "orgnr": "974761394",
-            "homepage": "",
-            "environments": []
-        },
         "ikta": {
             "name": {
                 "en": "IKT Agder IKS",
@@ -375,26 +286,6 @@
             "homepage": "https://www.indigo-ikt.no/",
             "environments": []
         },
-        "k0220": {
-            "name": {
-                "en": "Asker kommune",
-                "nb": "Asker kommune",
-                "nn": "Asker kommune"
-            },
-            "orgnr": "944382038",
-            "homepage": "",
-            "environments": []
-        },
-        "k0231": {
-            "name": {
-                "en": "Skedsmo Kommune",
-                "nb": "Skedsmo kommune",
-                "nn": "Skedsmo kommune"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
-        },
         "k1103": {
             "name": {
                 "en": "The municipality of Stavanger",
@@ -407,16 +298,6 @@
             "environments": [
                 "tt02"
             ]
-        },
-        "kmd": {
-            "name": {
-                "en": "Årviksand og Bryknesøy Regnskap",
-                "nb": "Årviksand og Bryknesøy Regnskap",
-                "nn": "Årviksand og Bryknesøy Regnskap"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
         },
         "krt": {
             "name": {
@@ -454,16 +335,6 @@
             "logo": "https://altinncdn.no/orgs/kt/kt.jpg",
             "orgnr": "974761246",
             "homepage": "https://konkurransetilsynet.no/",
-            "environments": []
-        },
-        "kurs": {
-            "name": {
-                "en": "Kursetaten",
-                "nb": "Kursetaten",
-                "nn": "Kursetaten"
-            },
-            "orgnr": "",
-            "homepage": "",
             "environments": []
         },
         "kv": {
@@ -673,16 +544,6 @@
             "environments": [
                 "tt02"
             ]
-        },
-        "npt": {
-            "name": {
-                "en": "Post- og teletilsynet",
-                "nb": "Post- og teletilsynet",
-                "nn": "Post- og teletilsynet"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
         },
         "nsm": {
             "name": {
@@ -979,16 +840,6 @@
                 "url": "https://altinn.studio/info/contact"
             }
         },
-        "tts": {
-            "name": {
-                "en": "Test Ministry (old)",
-                "nb": "Testdepartementet (gammel)",
-                "nn": "Testdepartementet (gammel)"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
-        },
         "udi": {
             "name": {
                 "en": "The Norwegian Directorate of Immigration",
@@ -1041,16 +892,6 @@
             "homepage": "https://dfo.no/",
             "environments": []
         },
-        "si": {
-            "name": {
-                "en": "Statens innkrevingssentral",
-                "nb": "Statens innkrevingssentral",
-                "nn": "Statens innkrevingssentral"
-            },
-            "orgnr": "971648198",
-            "homepage": "",
-            "environments": []
-        },
         "skm": {
             "name": {
                 "en": "Norwegian civil security clearance authority",
@@ -1096,21 +937,11 @@
             "homepage": "https://www.landbruksdirektoratet.no/",
             "environments": []
         },
-        "stfk": {
-            "name": {
-                "en": "Sør-Trøndelag fylkeskommune",
-                "nb": "Sør-Trøndelag fylkeskommune",
-                "nn": "Sør-Trøndelag fylkeskommune"
-            },
-            "orgnr": "",
-            "homepage": "",
-            "environments": []
-        },
         "nve": {
             "name": {
                 "en": "Norwegian Water Resources and Energy Directorate",
                 "nb": "Norges vassdrags- og energidirektorat",
-                "nn": "Norges vassdrags- og energidirektorat"
+                "nn": "Norges vassdrags- og energidirektoratt"
             },
             "orgnr": "970205039",
             "homepage": "https://www.nve.no/",
@@ -1155,7 +986,7 @@
                 "nn": "Politiet"
             },
             "orgnr": "982531950",
-            "homepage": "",
+            "homepage": "https://www.datatilsynet.no/",
             "environments": []
         },
         "sht": {
@@ -1178,7 +1009,7 @@
             "homepage": "https://www.enova.no/",
             "environments": []
         },
-        "k5001": {
+        "k5501": {
             "name": {
                 "en": "Trondheim Municipality",
                 "nb": "Trondheim kommune",
