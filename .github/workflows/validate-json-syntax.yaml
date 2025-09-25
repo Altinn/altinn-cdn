@@ -7,12 +7,14 @@ on:
       - 'orgs/altinn-orgs.schema.v1.json'
       - 'config/environments.json'
       - 'config/environments.schema.v1.json'
+      - '.github/workflows/validate-json-syntax.yaml'
   pull_request:
     paths:
       - 'orgs/altinn-orgs.json'
       - 'orgs/altinn-orgs.schema.v1.json'
       - 'config/environments.json'
       - 'config/environments.schema.v1.json'
+      - '.github/workflows/validate-json-syntax.yaml'
 
 jobs:
   validate-json:
