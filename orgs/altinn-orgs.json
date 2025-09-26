@@ -1099,17 +1099,17 @@
             "contact": {
                 "url": "https://novari.no/kontakt/"
             },
-            "tffa": {
-                "name": {
-                    "en": "Norwegian Motor Insurers’ Bureau",
-                    "nb": "Trafikkforsikringsforeningen",
-                    "nn": "Trafikkforsikringsforeningen"
-                },
-                "logo": "https://altinncdn.no/orgs/tffa/tffa.png",
-                "orgnr": "960509811",
-                "homepage": "https://www.tff.no/",
-                "environments": []
-            }
+        },
+        "tffa": {
+            "name": {
+                "en": "Norwegian Motor Insurers’ Bureau",
+                "nb": "Trafikkforsikringsforeningen",
+                "nn": "Trafikkforsikringsforeningen"
+            },
+            "logo": "https://altinncdn.no/orgs/tffa/tffa.png",
+            "orgnr": "960509811",
+            "homepage": "https://www.tff.no/",
+            "environments": []
         }
     }
 }
