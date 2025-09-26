@@ -234,7 +234,8 @@
             "homepage": "https://www.hemit.no/",
             "environments": [
                 "tt02",
-                "production"]
+                "production"
+            ]
         },
         "hi": {
             "name": {
@@ -1038,7 +1039,9 @@
             "logo": "https://altinncdn.no/orgs/nokut/nokut.svg",
             "orgnr": "985042667",
             "homepage": "https://www.nokut.no/",
-            "environments": ["tt02"]
+            "environments": [
+                "tt02"
+            ]
         },
         "pol": {
             "name": {
@@ -1082,26 +1085,30 @@
         },
         "vigo": {
             "name": {
-                "en": "VIGO IKS",
-                "nb": "VIGO IKS",
-                "nn": "VIGO IKS"
+                "en": "Novari IKS",
+                "nb": "Novari IKS",
+                "nn": "Novari IKS"
             },
+            "logo": "https://altinncdn.no/orgs/vigo/novari_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/vigo/novari_emblem.svg",
             "orgnr": "998283914",
-            "homepage": "https://www.vigoiks.no/",
+            "homepage": "https://www.novari.no/",
             "environments": [
                 "tt02"
-            ]
-        },
-        "tffa": {
-            "name": {
-                "en": "Norwegian Motor Insurers’ Bureau",
-                "nb": "Trafikkforsikringsforeningen",
-                "nn": "Trafikkforsikringsforeningen"
+            ],
+            "contact": {
+                "url": "https://novari.no/kontakt/"
             },
-            "logo": "https://altinncdn.no/orgs/tffa/tffa.png",
-            "orgnr": "960509811",
-            "homepage": "https://www.tff.no/",
-            "environments": []
+            "tffa": {
+                "name": {
+                    "en": "Norwegian Motor Insurers’ Bureau",
+                    "nb": "Trafikkforsikringsforeningen",
+                    "nn": "Trafikkforsikringsforeningen"
+                },
+                "logo": "https://altinncdn.no/orgs/tffa/tffa.png",
+                "orgnr": "960509811",
+                "homepage": "https://www.tff.no/",
+                "environments": []
+            }
         }
     }
-}
