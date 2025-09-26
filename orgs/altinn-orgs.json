@@ -633,9 +633,7 @@
             "emblem": "https://altinncdn.no/orgs/ssikt/ssikt-emblem.svg",
             "orgnr": "919824573",
             "homepage": "https://www.ssikt.no",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "sfd": {
             "name": {
