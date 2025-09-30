@@ -1040,7 +1040,8 @@
             "orgnr": "985042667",
             "homepage": "https://www.nokut.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "pol": {
