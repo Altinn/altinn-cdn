@@ -729,7 +729,8 @@
                 "nb": "Statistisk sentralbyrå",
                 "nn": "Statistisk sentralbyrå"
             },
-            "logo": "https://altinncdn.no/orgs/ssb/ssb_dark.png",
+            "logo": "https://altinncdn.no/orgs/ssb/ssb-logo-dark.svg",
+            "emblem": "https://altinncdn.no/orgs/ssb/ssb-emblem-dark.svg",
             "orgnr": "971526920",
             "homepage": "https://www.ssb.no",
             "environments": [
