@@ -1096,7 +1096,8 @@
             "orgnr": "998283914",
             "homepage": "https://www.novari.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ],
             "contact": {
                 "url": "https://novari.no/kontakt/"
