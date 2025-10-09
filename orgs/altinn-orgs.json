@@ -47,7 +47,8 @@
             "orgnr": "986128433",
             "homepage": "https://www.bufdir.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "dat": {
