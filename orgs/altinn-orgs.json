@@ -399,7 +399,8 @@
                 "nb": "Mattilsynet",
                 "nn": "Mattilsynet"
             },
-            "logo": "https://altinncdn.no/orgs/mat/mat.png",
+            "logo": "https://altinncdn.no/orgs/mat/mat-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/mat/mat-emblem.svg",
             "orgnr": "985399077",
             "homepage": "https://www.mattilsynet.no/",
             "environments": [
