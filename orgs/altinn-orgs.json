@@ -1,5 +1,14 @@
 {
     "orgs": {
+         "acn": {
+            "name": {
+                "en": "ACN Test org",
+                "nb": "ACN Test org",
+                "nn": "ACN Test org"
+            },
+            "orgnr": "999999990",
+            "environments": []
+        },
         "afs": {
             "name": {
                 "en": "Avfall Sør AS",
@@ -9,6 +18,15 @@
             "logo": "https://altinncdn.no/orgs/afs/afs.svg",
             "orgnr": "995646137",
             "homepage": "https://avfallsor.no/",
+            "environments": []
+        },
+        "bft": {
+            "name": {
+                "en": "BFT Test org",
+                "nb": "BFT Test org",
+                "nn": "BFT Test org"
+            },
+            "orgnr": "999999991",
             "environments": []
         },
         "brg": {
