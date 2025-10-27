@@ -532,7 +532,8 @@
             "orgnr": "889640782",
             "homepage": "https://www.nav.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ],
             "contact": {
                 "phone": "+4755553333",
