@@ -518,7 +518,8 @@
             "orgnr": "971527412",
             "homepage": "https://www.kulturdirektoratet.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nav": {
@@ -713,7 +714,8 @@
             "orgnr": "974761122",
             "homepage": "https://www.dmp.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "spk": {
