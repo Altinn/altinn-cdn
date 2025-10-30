@@ -1054,9 +1054,9 @@
         },
         "nokut": {
             "name": {
-                "en": "The Norwegian Agency for Quality Assurance in Education",
-                "nb": "Nasjonalt organ for kvalitet i utdanningen",
-                "nn": "Nasjonalt organ for kvalitet i utdanninga"
+                "en": "NOKUT (The Norwegian Agency for Quality Assurance in Education)",
+                "nb": "NOKUT (Nasjonalt organ for kvalitet i utdanningen)",
+                "nn": "NOKUT (Nasjonalt organ for kvalitet i utdanninga)"
             },
             "logo": "https://altinncdn.no/orgs/nokut/nokut.svg",
             "orgnr": "985042667",
