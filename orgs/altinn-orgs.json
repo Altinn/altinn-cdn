@@ -477,7 +477,8 @@
             "orgnr": "922092648",
             "homepage": "https://www.nordrefollo.kommune.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nhn": {
