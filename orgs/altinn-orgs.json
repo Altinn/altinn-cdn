@@ -911,7 +911,9 @@
             },
             "orgnr": "986252932",
             "homepage": "https://dfo.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "skm": {
             "name": {
