@@ -972,7 +972,8 @@
             "orgnr": "970205039",
             "homepage": "https://www.nve.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "bk": {
