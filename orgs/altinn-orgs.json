@@ -35,11 +35,10 @@
                 "nb": "BITS AS",
                 "nn": "BITS AS"
             },
-            "logo": null,
+            "logo": "https://altinncdn.no/orgs/bits/bits.png",
             "orgnr": "916960190",
             "homepage": "https://bits.no/",
-            "environments": [
-            ]
+            "environments": []
         },
         "brg": {
             "name": {
