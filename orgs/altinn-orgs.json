@@ -29,6 +29,17 @@
             "orgnr": "999999991",
             "environments": []
         },
+        "bits": {
+            "name": {
+                "en": "BITS AS",
+                "nb": "BITS AS",
+                "nn": "BITS AS"
+            },
+            "logo": "https://altinncdn.no/orgs/bits/bits.png",
+            "orgnr": "916960190",
+            "homepage": "https://bits.no/",
+            "environments": []
+        },
         "brg": {
             "name": {
                 "en": "Brønnøysund Register Centre",
