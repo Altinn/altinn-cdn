@@ -939,7 +939,8 @@
             "orgnr": "918929673",
             "homepage": "https://sivilklareringsmyndighet.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "slk": {
