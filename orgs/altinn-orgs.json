@@ -1168,6 +1168,96 @@
             "orgnr": "960509811",
             "homepage": "https://www.tff.no/",
             "environments": []
+        },
+        "asf": {
+            "name": {
+                "en": "Altinn Sentralforvaltning",
+                "nb": "Altinn Sentralforvaltning",
+                "nn": "Altinn Sentralforvaltning"
+            },
+            "orgnr": "974706121",
+            "environments": []
+        },
+        "ehls": {
+            "name": {
+                "en": "Direktoratet for e-helse",
+                "nb": "Direktoratet for e-helse",
+                "nn": "Direktoratet for e-helse"
+            },
+            "orgnr": "915933149",
+            "environments": []
+            },
+        "fk": {
+            "name": {
+                "en": "Fellesordning for avtalefestet pensjon",
+                "nb": "Fellesordning for avtalefestet pensjon",
+                "nn": "Fellesordning for avtalefestet pensjon"
+            },
+            "orgnr": "987414502",
+            "environments": []
+        },
+        "fkd": {
+            "name": {
+                "en": "Fiskeri- og kystdepartementet",
+                "nb": "Fiskeri- og kystdepartementet",
+                "nn": "Fiskeri- og kystdepartementet"
+            },
+            "orgnr": "972417815",
+            "environments": []
+        },
+        "htil": {
+            "name": {
+                "en": "Statens Helsetilsyn",
+                "nb": "Statens Helsetilsyn",
+                "nn": "Statens Helsetilsyn"
+            },
+            "orgnr": "974761394",
+            "environments": []
+        },
+        "k0231": {
+            "name": {
+                "en": "Skedsmo kommune",
+                "nb": "Skedsmo kommune",
+                "nn": "Skedsmo kommune"
+            },
+            "orgnr": "938275130",
+            "environments": []
+        },
+        "klif": {
+            "name": {
+                "en": "Statens forurensningstilsyn",
+                "nb": "Statens forurensningstilsyn",
+                "nn": "Statens forurensningstilsyn"
+            },
+            "orgnr": "970935657",
+            "environments": []
+        },
+        "lat": {
+            "name": {
+                "en": "Luftambulansetjenesten HF",
+                "nb": "Luftambulansetjenesten HF",
+                "nn": "Luftambulansetjenesten HF"
+            },
+            "orgnr": "818711832",
+            "environments": []
+        },
+        "si": {
+            "name": {
+                "en": "Statens innkrevingssentral",
+                "nb": "Statens innkrevingssentral",
+                "nn": "Statens innkrevingssentral"
+            },
+            "orgnr": "971648198",
+            "environments": []
+        },
+        "sft": {
+            "name": {
+                "en": "Klima- og forurensningsdirektoratet",
+                "nb": "Klima- og forurensningsdirektoratet",
+                "nn": "Klima- og forurensningsdirektoratet"
+            },
+            "orgnr": "999999992",
+            "environments": []
         }
     }
 }
