@@ -677,9 +677,7 @@
             "emblem": "https://altinncdn.no/orgs/ssikt/ssikt-emblem.svg",
             "orgnr": "919824573",
             "homepage": "https://www.ssikt.no",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "sfd": {
             "name": {
@@ -950,7 +948,8 @@
             "orgnr": "918929673",
             "homepage": "https://sivilklareringsmyndighet.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "slk": {
@@ -1150,6 +1149,15 @@
                 "url": "https://novari.no/kontakt/"
             }
         },
+        "fk30": {
+            "name": {
+                "en": "Viken Fylkeskommune",
+                "nb": "Viken Fylkeskommune",
+                "nn": "Viken Fylkeskommune"
+            },
+            "orgnr": "921693230",
+            "environments": []
+        },        
         "tffa": {
             "name": {
                 "en": "Norwegian Motor Insurers’ Bureau",
