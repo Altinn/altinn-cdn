@@ -1249,6 +1249,15 @@
             },
             "orgnr": "971648198",
             "environments": []
+        },
+        "sft": {
+            "name": {
+                "en": "Klima- og forurensningsdirektoratet",
+                "nb": "Klima- og forurensningsdirektoratet",
+                "nn": "Klima- og forurensningsdirektoratet"
+            },
+            "orgnr": "999999992",
+            "environments": []
         }
     }
 }
