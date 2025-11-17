@@ -281,6 +281,17 @@
                 "production"
             ]
         },
+        "hko": {
+            "name": {
+                "en": "Horten municipality",
+                "nb": "Horten kommune",
+                "nn": "Horten kommune"
+            },
+            "logo": "https://altinncdn.no/orgs/hko/horten-logo.svg",
+            "orgnr": "964951284",
+            "homepage": "https://www.horten.kommune.no",
+            "environments": []
+        },
         "hmrhf": {
             "name": {
                 "en": "Helse Møre og Romsdal",
