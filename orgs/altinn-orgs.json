@@ -1023,9 +1023,12 @@
                 "nb": "Datatilsynet",
                 "nn": "Datatilsynet"
             },
+            "logo": "https://altinncdn.no/orgs/dpa/datatilsynet-logo.svg",
             "orgnr": "974761467",
             "homepage": "https://www.datatilsynet.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "pod": {
             "name": {
