@@ -981,6 +981,8 @@
                 "nb": "Landbruksdirektoratet",
                 "nn": "Landbruksdirektoratet"
             },
+            "logo": "https://altinncdn.no/orgs/slf/slf_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/slf/slf_emblem.svg",
             "orgnr": "981544315",
             "homepage": "https://www.landbruksdirektoratet.no/",
             "environments": []
