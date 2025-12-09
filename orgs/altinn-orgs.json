@@ -1133,7 +1133,9 @@
             },
             "orgnr": "957387969",
             "homepage": "https://mna.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "vigo": {
             "name": {
