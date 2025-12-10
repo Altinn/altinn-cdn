@@ -365,7 +365,8 @@
             "orgnr": "931796003",
             "homepage": "https://ksdigital.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "kt": {
