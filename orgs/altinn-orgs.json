@@ -428,7 +428,8 @@
                 "nb": "Lotteri- og stiftelsestilsynet",
                 "nn": "Lotteri- og stiftelsestilsynet"
             },
-            "logo": "https://altinncdn.no/orgs/lts/lts.png",
+            "logo": "https://altinncdn.no/orgs/lts/lts_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/lts/lts_emblem.svg",
             "orgnr": "982391490",
             "homepage": "https://lottstift.no/",
             "environments": [
