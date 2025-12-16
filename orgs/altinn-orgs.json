@@ -760,7 +760,8 @@
                 "nb": "Statens Sivilrettsforvaltning",
                 "nn": "Statens Sivilrettsforvaltning"
             },
-            "logo": "https://altinncdn.no/orgs/srf/srf.png",
+            "logo": "https://altinncdn.no/orgs/srf/srf_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/srf/srf_emblem.svg",
             "orgnr": "986186999",
             "homepage": "https://www.sivilrett.no",
             "environments": [
