@@ -169,6 +169,18 @@
                 "production"
             ]
         },
+        "dsa": {
+            "name": {
+                "en": "Norwegian Radiation and Nuclear Safety Authority",
+                "nb": "Direktoratet for Strålevern og Atomsikkerhet",
+                "nn": "Direktoratet for Strålevern og Atomsikkerhet"
+            },
+            "logo": "https://altinncdn.no/orgs/dsa/DSA_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/dsa/DSA_symbol.svg",
+            "orgnr": "867668292",
+            "homepage": "https://www.dsa.no/",
+            "environments": []
+         },
         "dsb": {
             "name": {
                 "en": "The Norwegian Directorate for Civil Protection",
