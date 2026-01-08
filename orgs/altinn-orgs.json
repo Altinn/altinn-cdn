@@ -209,6 +209,16 @@
                 "production"
             ]
         },
+                "fjel": {
+            "name": {
+                "en": "Fjellinjen AS",
+                "nb": "Fjellinjen AS",
+                "nn": "Fjellinjen AS"
+            },
+            "orgnr": "941856543",
+            "homepage": "https://www.fjellinjen.no/",
+            "environments": []
+        },
         "fhi": {
             "name": {
                 "en": "The Norwegian Institute of Public Health",
@@ -1120,16 +1130,6 @@
             },
             "orgnr": "915429785",
             "homepage": "https://www.politiet.no/",
-            "environments": []
-        },
-        "fjel": {
-            "name": {
-                "en": "Fjellinjen AS",
-                "nb": "Fjellinjen AS",
-                "nn": "Fjellinjen AS"
-            },
-            "orgnr": "941856543",
-            "homepage": "https://www.fjellinjen.no/",
             "environments": []
         },
         "rmt": {
