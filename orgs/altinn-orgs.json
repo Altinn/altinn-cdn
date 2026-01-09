@@ -1,6 +1,6 @@
 {
     "orgs": {
-         "acn": {
+        "acn": {
             "name": {
                 "en": "ACN Test org",
                 "nb": "ACN Test org",
@@ -180,7 +180,7 @@
             "orgnr": "867668292",
             "homepage": "https://www.dsa.no/",
             "environments": []
-         },
+        },
         "dsb": {
             "name": {
                 "en": "The Norwegian Directorate for Civil Protection",
@@ -222,6 +222,18 @@
                 "tt02",
                 "production"
             ]
+        },
+        "fjel": {
+            "name": {
+                "en": "Fjellinjen AS",
+                "nb": "Fjellinjen AS",
+                "nn": "Fjellinjen AS"
+            },
+            "logo": "https://altinncdn.no/orgs/fjel/fjel_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/fjel/fjel_emblem.svg",
+            "orgnr": "941856543",
+            "homepage": "https://www.fjellinjen.no/",
+            "environments": []
         },
         "fors": {
             "name": {
@@ -1122,18 +1134,6 @@
             "homepage": "https://www.politiet.no/",
             "environments": []
         },
-        "fjel": {
-            "name": {
-                "en": "Fjellinjen AS",
-                "nb": "Fjellinjen AS",
-                "nn": "Fjellinjen AS"
-            },
-            "logo": "https://altinncdn.no/orgs/fjel/fjel_logo.svg",
-            "emblem": "https://altinncdn.no/orgs/fjel/fjel_emblem.svg",
-            "orgnr": "941856543",
-            "homepage": "https://www.fjellinjen.no/",
-            "environments": []
-        },
         "rmt": {
             "name": {
                 "en": "Remidt IKS",
@@ -1182,7 +1182,7 @@
             },
             "orgnr": "921693230",
             "environments": []
-        },        
+        },
         "tffa": {
             "name": {
                 "en": "Norwegian Motor Insurers’ Bureau",
@@ -1211,7 +1211,7 @@
             },
             "orgnr": "915933149",
             "environments": []
-            },
+        },
         "fk": {
             "name": {
                 "en": "Fellesordning for avtalefestet pensjon",
