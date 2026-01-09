@@ -209,6 +209,16 @@
                 "production"
             ]
         },
+                "fjel": {
+            "name": {
+                "en": "Fjellinjen AS",
+                "nb": "Fjellinjen AS",
+                "nn": "Fjellinjen AS"
+            },
+            "orgnr": "941856543",
+            "homepage": "https://www.fjellinjen.no/",
+            "environments": []
+        },
         "fhi": {
             "name": {
                 "en": "The Norwegian Institute of Public Health",
@@ -481,7 +491,8 @@
                 "nb": "Miljødirektoratet",
                 "nn": "Miljødirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/mdir/mdir.png",
+            "logo": "https://altinncdn.no/orgs/mdir/mdir_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/mdir/mdir_emblem.svg",
             "orgnr": "999601391",
             "homepage": "https://www.miljodirektoratet.no/",
             "environments": [
