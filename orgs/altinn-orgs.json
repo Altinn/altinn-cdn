@@ -269,7 +269,8 @@
                 "nb": "Helsedirektoratet",
                 "nn": "Helsedirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/hdir/helsedirektoratet.png",
+            "logo": "https://altinncdn.no/orgs/hdir/hdir-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/hdir/hdir-emblem.svg",
             "orgnr": "983544622",
             "homepage": "https://www.helsedirektoratet.no",
             "environments": [
