@@ -28,7 +28,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet postcodes/registry.json; then
+          if [ -n "$(git status --porcelain postcodes/registry.json)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No changes to postcodes registry"
           else
