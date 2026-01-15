@@ -1,0 +1,52 @@
+name: Update postcodes registry
+
+on:
+  schedule:
+    # Run every Tuesday at 09:00 UTC
+    - cron: '0 9 * * 2'
+  workflow_dispatch:
+
+jobs:
+  update-postcodes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Download and process postcodes
+        run: node .github/scripts/download-postcodes.js
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet postcodes/registry.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to postcodes registry"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Postcodes registry has changed"
+          fi
+
+      - name: Create Pull Request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: Update postcodes registry
+          title: Update postcodes registry
+          body: |
+            This PR updates the Norwegian postal code registry from Posten/Bring.
+
+            This is an automated update triggered by the weekly scheduled workflow.
+            
+            The file on CDN is pulled when a user types in a postal code in the Address component in Altinn 3 apps.
+          branch: automated/update-postcodes
+          delete-branch: true
