@@ -552,7 +552,8 @@
                 "nb": "Nasjonal kommunikasjonsmyndighet",
                 "nn": "Nasjonal kommunikasjonsmyndighet"
             },
-            "logo": "https://altinncdn.no/orgs/nkom/nkom.png",
+            "logo": "https://altinncdn.no/orgs/nkom/nkom_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/nkom/nkom_emblem.svg",
             "orgnr": "974446871",
             "homepage": "https://www.nkom.no/",
             "environments": [
