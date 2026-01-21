@@ -729,7 +729,8 @@
                 "nb": "Statsforvalteren i Vestfold og Telemark",
                 "nn": "Statsforvaltaren i Vestfold og Telemark"
             },
-            "logo": "https://altinncdn.no/orgs/sfvt/sfvt.png",
+            "logo": "https://altinncdn.no/orgs/sfvt/sfvt_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/sfvt/sfvt_emblem.svg",
             "orgnr": "974762501",
             "homepage": "https://www.statsforvalteren.no/nb/vestfold-og-telemark/",
             "environments": [
