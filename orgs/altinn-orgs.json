@@ -882,9 +882,9 @@
         },
         "tra": {
             "name": {
-                "en": "The Supervisory Council for Legal Practice",
-                "nb": "Tilsynsrådet for advokatvirksomhet",
-                "nn": "Tilsynsrådet for advokatverksemd"
+                "en": "Supervisory Authority for Legal Services",
+                "nb": "Advokattilsynet",
+                "nn": "Advokattilsynet"
             },
             "logo": "https://altinncdn.no/orgs/tra/tra.svg",
             "orgnr": "914459265",
