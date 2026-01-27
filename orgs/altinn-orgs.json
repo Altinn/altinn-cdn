@@ -1158,7 +1158,8 @@
             "orgnr": "957387969",
             "homepage": "https://mna.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "vigo": {
