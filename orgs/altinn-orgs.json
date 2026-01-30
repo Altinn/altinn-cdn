@@ -180,7 +180,9 @@
             "emblem": "https://altinncdn.no/orgs/dsa/DSA_symbol.svg",
             "orgnr": "867668292",
             "homepage": "https://www.dsa.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "dsb": {
             "name": {
