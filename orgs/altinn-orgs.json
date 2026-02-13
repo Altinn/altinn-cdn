@@ -1095,7 +1095,9 @@
             },
             "orgnr": "983609155",
             "homepage": "https://www.enova.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "k5501": {
             "name": {
