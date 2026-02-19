@@ -450,6 +450,19 @@
                 "production"
             ]
         },
+        "lat": {
+            "name": {
+                "en": "AirAmbulance Services of Norway",
+                "nb": "Luftambulansetjenesten HF",
+                "nn": "Luftambulansetjenesten HF"
+            },
+            "orgnr": "818711832",
+            "homepage": "https://www.luftambulanse.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
         "lts": {
             "name": {
                 "en": "Norwegian Gaming and Foundation Authority",
