@@ -1,0 +1,19 @@
+[
+    {
+        "label": "Kjøkkenhage",
+        "value": "kjøkkenhage"
+    },
+    {
+        "label": "Blomsterbed",
+        "value": "blomsterbed"
+    },
+    {
+        "label": "Dyrket mark/jorde",
+        "value": "dyrketMarkJorde"
+    },
+    {
+        "label": "Annet",
+        "value": "annet",
+        "description": "Beskriv i kommentarfeltet"
+    }
+]

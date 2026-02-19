@@ -1,5 +1,46 @@
 {
     "orgs": {
+        "acn": {
+            "name": {
+                "en": "ACN Test org",
+                "nb": "ACN Test org",
+                "nn": "ACN Test org"
+            },
+            "orgnr": "999999990",
+            "environments": []
+        },
+        "afs": {
+            "name": {
+                "en": "Avfall Sør AS",
+                "nb": "Avfall Sør AS",
+                "nn": "Avfall Sør AS"
+            },
+            "logo": "https://altinncdn.no/orgs/afs/afs.svg",
+            "emblem": "https://altinncdn.no/orgs/afs/afs-emblem.svg",
+            "orgnr": "995646137",
+            "homepage": "https://avfallsor.no/",
+            "environments": []
+        },
+        "bft": {
+            "name": {
+                "en": "BFT Test org",
+                "nb": "BFT Test org",
+                "nn": "BFT Test org"
+            },
+            "orgnr": "999999991",
+            "environments": []
+        },
+        "bits": {
+            "name": {
+                "en": "BITS AS",
+                "nb": "BITS AS",
+                "nn": "BITS AS"
+            },
+            "logo": "https://altinncdn.no/orgs/bits/bits.png",
+            "orgnr": "916960190",
+            "homepage": "https://bits.no/",
+            "environments": []
+        },
         "brg": {
             "name": {
                 "en": "Brønnøysund Register Centre",
@@ -14,6 +55,18 @@
                 "production"
             ]
         },
+        "brm": {
+            "name": {
+                "en": "Brannvesenet Midt IKS",
+                "nb": "Brannvesenet Midt IKS",
+                "nn": "Brannvesenet Midt IKS"
+            },
+            "logo": "https://altinncdn.no/orgs/brm/brm.svg",
+            "emblem": "https://altinncdn.no/orgs/brm/brm_emblem.svg",
+            "orgnr": "989023578",
+            "homepage": "https://brannmidt.no/",
+            "environments": []
+        },
         "buf": {
             "name": {
                 "en": "The Norwegian Directorate for Children, Youth and Family Affairs",
@@ -24,7 +77,8 @@
             "orgnr": "986128433",
             "homepage": "https://www.bufdir.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "dat": {
@@ -61,13 +115,18 @@
                 "nb": "Digitaliseringsdirektoratet",
                 "nn": "Digitaliseringsdirektoratet"
             },
-            "logo": "",
+            "logo": "https://altinncdn.no/orgs/digdir/digdir.png",
+            "emblem": "https://altinncdn.no/orgs/digdir/digdir.svg",
             "orgnr": "991825827",
             "homepage": "https://www.digdir.no",
             "environments": [
                 "tt02",
                 "production"
-            ]
+            ],
+            "contact": {
+                "phone": "+4722451000",
+                "url": "https://www.digdir.no/digdir/kontakt-oss/943"
+            }
         },
         "dihe": {
             "name": {
@@ -95,6 +154,34 @@
             "environments": [
                 "tt02",
                 "production"
+            ]
+        },
+        "din": {
+            "name": {
+                "en": "The Norwegian Courts",
+                "nb": "Domstolene i Norge",
+                "nn": "Domstolane i Noreg"
+            },
+            "logo": "https://altinncdn.no/orgs/din/din.jpg",
+            "orgnr": "984195796",
+            "homepage": "https://www.domstol.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
+        "dsa": {
+            "name": {
+                "en": "Norwegian Radiation and Nuclear Safety Authority",
+                "nb": "Direktoratet for Strålevern og Atomsikkerhet",
+                "nn": "Direktoratet for Strålevern og Atomsikkerhet"
+            },
+            "logo": "https://altinncdn.no/orgs/dsa/DSA_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/dsa/DSA_symbol.svg",
+            "orgnr": "867668292",
+            "homepage": "https://www.dsa.no/",
+            "environments": [
+                "tt02"
             ]
         },
         "dsb": {
@@ -139,6 +226,18 @@
                 "production"
             ]
         },
+        "fjel": {
+            "name": {
+                "en": "Fjellinjen AS",
+                "nb": "Fjellinjen AS",
+                "nn": "Fjellinjen AS"
+            },
+            "logo": "https://altinncdn.no/orgs/fjel/fjel_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/fjel/fjel_emblem.svg",
+            "orgnr": "941856543",
+            "homepage": "https://www.fjellinjen.no/",
+            "environments": []
+        },
         "fors": {
             "name": {
                 "en": "The Norwegian Armed Forces",
@@ -149,7 +248,8 @@
             "orgnr": "986105174",
             "homepage": "https://www.forsvaret.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "gk": {
@@ -172,11 +272,27 @@
                 "nb": "Helsedirektoratet",
                 "nn": "Helsedirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/hdir/helsedirektoratet.png",
+            "logo": "https://altinncdn.no/orgs/hdir/hdir-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/hdir/hdir-emblem.svg",
             "orgnr": "983544622",
             "homepage": "https://www.helsedirektoratet.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
+            ]
+        },
+        "hemit": {
+            "name": {
+                "en": "Central Norway Regional Health Authority's IT department",
+                "nb": "Hemit HF",
+                "nn": "Hemit HF"
+            },
+            "logo": "https://altinncdn.no/orgs/hemit/hemit.svg",
+            "orgnr": "928033821",
+            "homepage": "https://www.hemit.no/",
+            "environments": [
+                "tt02",
+                "production"
             ]
         },
         "hi": {
@@ -193,6 +309,17 @@
                 "production"
             ]
         },
+        "hko": {
+            "name": {
+                "en": "Horten municipality",
+                "nb": "Horten kommune",
+                "nn": "Horten kommune"
+            },
+            "logo": "https://altinncdn.no/orgs/hko/horten-logo.svg",
+            "orgnr": "964951284",
+            "homepage": "https://www.horten.kommune.no",
+            "environments": []
+        },
         "hmrhf": {
             "name": {
                 "en": "Helse Møre og Romsdal",
@@ -202,6 +329,17 @@
             "logo": "https://altinncdn.no/orgs/hmrhf/hmrhf.png",
             "orgnr": "997005562",
             "homepage": "https://helse-mr.no",
+            "environments": []
+        },
+        "ikta": {
+            "name": {
+                "en": "IKT Agder IKS",
+                "nb": "IKT Agder IKS",
+                "nn": "IKT Agder IKS"
+            },
+            "logo": "https://altinncdn.no/orgs/ikta/ikta.png",
+            "orgnr": "985359385",
+            "homepage": "https://www.ikt-agder.no/",
             "environments": [
                 "tt02",
                 "production"
@@ -216,9 +354,7 @@
             "logo": "https://altinncdn.no/orgs/indi/indi.png",
             "orgnr": "930283487",
             "homepage": "https://www.indigo-ikt.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "k1103": {
             "name": {
@@ -246,6 +382,31 @@
                 "tt02",
                 "production"
             ]
+        },
+        "ksdigi": {
+            "name": {
+                "en": "KS Digital",
+                "nb": "KS Digitale fellestjenester",
+                "nn": "KS Digitale fellestjenester"
+            },
+            "logo": "https://altinncdn.no/orgs/ksdigi/ksdigi.png",
+            "orgnr": "931796003",
+            "homepage": "https://ksdigital.no",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
+        "kt": {
+            "name": {
+                "en": "Norwegian Competition Authority",
+                "nb": "Konkurransetilsynet",
+                "nn": "Konkurransetilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/kt/kt.jpg",
+            "orgnr": "974761246",
+            "homepage": "https://konkurransetilsynet.no/",
+            "environments": []
         },
         "kv": {
             "name": {
@@ -289,13 +450,28 @@
                 "production"
             ]
         },
+        "lts": {
+            "name": {
+                "en": "Norwegian Gaming and Foundation Authority",
+                "nb": "Lotteri- og stiftelsestilsynet",
+                "nn": "Lotteri- og stiftelsestilsynet"
+            },
+            "logo": "https://altinncdn.no/orgs/lts/lts_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/lts/lts_emblem.svg",
+            "orgnr": "982391490",
+            "homepage": "https://lottstift.no/",
+            "environments": [
+                "tt02"
+            ]
+        },
         "mat": {
             "name": {
                 "en": "Norwegian Food Safety Authority",
                 "nb": "Mattilsynet",
                 "nn": "Mattilsynet"
             },
-            "logo": "https://altinncdn.no/orgs/mat/mat.png",
+            "logo": "https://altinncdn.no/orgs/mat/mat_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/mat/mat_emblem.svg",
             "orgnr": "985399077",
             "homepage": "https://www.mattilsynet.no/",
             "environments": [
@@ -309,7 +485,8 @@
                 "nb": "Miljødirektoratet",
                 "nn": "Miljødirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/mdir/mdir.png",
+            "logo": "https://altinncdn.no/orgs/mdir/mdir_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/mdir/mdir_emblem.svg",
             "orgnr": "999601391",
             "homepage": "https://www.miljodirektoratet.no/",
             "environments": [
@@ -322,11 +499,12 @@
                 "nb": "Norges Bank",
                 "nn": "Noregs Bank"
             },
-            "logo": "https://altinncdn.no/orgs/nb/norgesbank.png",
+            "logo": "https://altinncdn.no/orgs/nb/norgesbank.svg",
             "orgnr": "937884117",
             "homepage": "https://www.norges-bank.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nbib": {
@@ -343,6 +521,20 @@
                 "production"
             ]
         },
+        "nfk": {
+            "name": {
+                "en": "Nordre Follo kommune",
+                "nb": "Nordre Follo kommune",
+                "nn": "Nordre Follo kommune"
+            },
+            "logo": "https://altinncdn.no/orgs/nfk/nordre-follo-kommune-navnetrekk-bredde-2-linje-rgb.svg",
+            "orgnr": "922092648",
+            "homepage": "https://www.nordrefollo.kommune.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
         "nhn": {
             "name": {
                 "en": "Norwegian Healthnet",
@@ -353,7 +545,8 @@
             "orgnr": "994598759",
             "homepage": "https://www.nhn.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nkom": {
@@ -362,7 +555,8 @@
                 "nb": "Nasjonal kommunikasjonsmyndighet",
                 "nn": "Nasjonal kommunikasjonsmyndighet"
             },
-            "logo": "https://altinncdn.no/orgs/nkom/nkom.png",
+            "logo": "https://altinncdn.no/orgs/nkom/nkom_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/nkom/nkom_emblem.svg",
             "orgnr": "974446871",
             "homepage": "https://www.nkom.no/",
             "environments": [
@@ -372,15 +566,16 @@
         },
         "nkr": {
             "name": {
-                "en": "Arts Council Norway",
-                "nb": "Kulturrådet",
-                "nn": "Kulturrådet"
+                "en": "Arts and Culture Norway",
+                "nb": "Kulturdirektoratet",
+                "nn": "Kulturdirektoratet"
             },
             "logo": "https://altinncdn.no/orgs/nkr/kulturradet.png",
             "orgnr": "971527412",
-            "homepage": "https://www.kulturradet.no",
+            "homepage": "https://www.kulturdirektoratet.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "nav": {
@@ -390,8 +585,26 @@
                 "nn": "Arbeids- og velferdsetaten (NAV)"
             },
             "logo": "https://altinncdn.no/orgs/nav/nav.png",
+            "emblem": "https://altinncdn.no/orgs/nav/nav.svg",
             "orgnr": "889640782",
             "homepage": "https://www.nav.no",
+            "environments": [
+                "tt02"
+            ],
+            "contact": {
+                "phone": "+4755553333",
+                "url": "https://www.nav.no/kontaktoss"
+            }
+        },
+        "npd": {
+            "name": {
+                "en": "Norwegian Offshore Directorate",
+                "nb": "Sokkeldirektoratet",
+                "nn": "Sokkeldirektoratet"
+            },
+            "logo": "https://altinncdn.no/orgs/npd/npd.svg",
+            "orgnr": "870917732",
+            "homepage": "https://www.sodir.no",
             "environments": [
                 "tt02"
             ]
@@ -424,16 +637,29 @@
         },
         "oed": {
             "name": {
-                "en": "Ministry of Petroleum and Energy",
-                "nb": "Olje- og energidepartementet",
-                "nn": "Olje- og energidepartementet"
+                "en": "Ministry of Energy",
+                "nb": "Energidepartementet",
+                "nn": "Energidepartementet"
             },
             "logo": "https://altinncdn.no/orgs/oed/oed.png",
             "orgnr": "977161630",
-            "homepage": "https://www.regjeringen.no/no/dep/oed/",
+            "homepage": "https://www.regjeringen.no/no/dep/ed/",
             "environments": [
                 "tt02",
                 "production"
+            ]
+        },
+        "ok": {
+            "name": {
+                "en": "City of Oslo",
+                "nb": "Oslo kommune",
+                "nn": "Oslo kommune"
+            },
+            "logo": "https://altinncdn.no/orgs/ok/ok.png",
+            "orgnr": "971183675",
+            "homepage": "https://www.oslo.kommune.no/",
+            "environments": [
+                "tt02"
             ]
         },
         "oko": {
@@ -463,6 +689,29 @@
                 "production"
             ]
         },
+        "rir": {
+            "name": {
+                "en": "ROMSDALSHALVØYA INTERKOMMUNALE RENOVASJONSSELSKAP IKS",
+                "nb": "ROMSDALSHALVØYA INTERKOMMUNALE RENOVASJONSSELSKAP IKS",
+                "nn": "ROMSDALSHALVØYA INTERKOMMUNALE RENOVASJONSSELSKAP IKS"
+            },
+            "logo": "https://altinncdn.no/orgs/rir/rir.svg",
+            "orgnr": "971042656",
+            "homepage": "https://www.rir.no/",
+            "environments": []
+        },
+        "ssikt": {
+            "name": {
+                "en": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP",
+                "nb": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP",
+                "nn": "SØRE SUNNMØRE IKT KOMMUNALT OPPGÅVEFELLESSKAP"
+            },
+            "logo": "https://altinncdn.no/orgs/ssikt/ssikt-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/ssikt/ssikt-emblem.svg",
+            "orgnr": "919824573",
+            "homepage": "https://www.ssikt.no",
+            "environments": []
+        },
         "sfd": {
             "name": {
                 "en": "Norwegian Maritime Authority",
@@ -482,7 +731,8 @@
                 "nb": "Statsforvalteren i Vestfold og Telemark",
                 "nn": "Statsforvaltaren i Vestfold og Telemark"
             },
-            "logo": "https://altinncdn.no/orgs/sfvt/sfvt.png",
+            "logo": "https://altinncdn.no/orgs/sfvt/sfvt_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/sfvt/sfvt_emblem.svg",
             "orgnr": "974762501",
             "homepage": "https://www.statsforvalteren.no/nb/vestfold-og-telemark/",
             "environments": [
@@ -497,12 +747,42 @@
                 "nn": "Skatteetaten"
             },
             "logo": "https://altinncdn.no/orgs/skd/skd.png",
+            "emblem": "https://altinncdn.no/orgs/skd/skd.svg",
             "orgnr": "974761076",
             "homepage": "https://www.skatteetaten.no",
             "environments": [
                 "tt02",
                 "yt01",
                 "production"
+            ],
+            "contact": {
+                "phone": "+4780080000",
+                "url": "https://www.skatteetaten.no/kontakt"
+            }
+        },
+        "slv": {
+            "name": {
+                "en": "The Norwegian Medical Products Agency",
+                "nb": "Direktoratet for medisinske produkter",
+                "nn": "Direktoratet for medisinske produkter"
+            },
+            "orgnr": "974761122",
+            "homepage": "https://www.dmp.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
+        "spk": {
+            "name": {
+                "en": "Norwegian Public Service Pension Fund",
+                "nb": "Statens pensjonskasse",
+                "nn": "Statens pensjonskasse"
+            },
+            "orgnr": "974760967",
+            "homepage": "https://www.spk.no/",
+            "environments": [
+                "tt02"
             ]
         },
         "srf": {
@@ -511,7 +791,8 @@
                 "nb": "Statens Sivilrettsforvaltning",
                 "nn": "Statens Sivilrettsforvaltning"
             },
-            "logo": "https://altinncdn.no/orgs/srf/srf.png",
+            "logo": "https://altinncdn.no/orgs/srf/srf_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/srf/srf_emblem.svg",
             "orgnr": "986186999",
             "homepage": "https://www.sivilrett.no",
             "environments": [
@@ -525,7 +806,8 @@
                 "nb": "Statistisk sentralbyrå",
                 "nn": "Statistisk sentralbyrå"
             },
-            "logo": "https://altinncdn.no/orgs/ssb/ssb_dark.png",
+            "logo": "https://altinncdn.no/orgs/ssb/ssb-logo-dark.svg",
+            "emblem": "https://altinncdn.no/orgs/ssb/ssb-emblem-dark.svg",
             "orgnr": "971526920",
             "homepage": "https://www.ssb.no",
             "environments": [
@@ -543,7 +825,8 @@
             "orgnr": "921627009",
             "homepage": "https://www.statsforvalteren.no/staf/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "stami": {
@@ -574,6 +857,17 @@
                 "production"
             ]
         },
+        "sym": {
+            "name": {
+                "en": "Symfoni AS",
+                "nb": "Symfoni AS",
+                "nn": "Symfoni AS"
+            },
+            "logo": "https://altinncdn.no/orgs/sym/sym.jpg",
+            "orgnr": "915772137",
+            "homepage": "https://www.symfoni.id/",
+            "environments": []
+        },
         "tad": {
             "name": {
                 "en": "Norwegian Customs",
@@ -590,15 +884,16 @@
         },
         "tra": {
             "name": {
-                "en": "The Supervisory Council for Legal Practice",
-                "nb": "Tilsynsrådet for advokatvirksomhet",
-                "nn": "Tilsynsrådet for advokatverksemd"
+                "en": "Supervisory Authority for Legal Services",
+                "nb": "Advokattilsynet",
+                "nn": "Advokattilsynet"
             },
-            "logo": "https://altinncdn.no/orgs/tra/tra.png",
+            "logo": "https://altinncdn.no/orgs/tra/tra.svg",
             "orgnr": "914459265",
             "homepage": "https://tilsynet.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "ttd": {
@@ -607,18 +902,22 @@
                 "nb": "Testdepartementet",
                 "nn": "Testdepartementet"
             },
-            "logo": "",
+            "logo": "https://altinncdn.no/orgs/ttd/ttd.png",
+            "emblem": "https://altinncdn.no/orgs/ttd/ttd.svg",
             "orgnr": "",
             "homepage": "",
             "environments": [
-                "at21",
                 "at22",
                 "at23",
                 "at24",
                 "tt02",
                 "yt01",
                 "production"
-            ]
+            ],
+            "contact": {
+                "phone": "+4722451000",
+                "url": "https://altinn.studio/info/contact"
+            }
         },
         "udi": {
             "name": {
@@ -670,7 +969,23 @@
             },
             "orgnr": "986252932",
             "homepage": "https://dfo.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
+        },
+        "skm": {
+            "name": {
+                "en": "Norwegian civil security clearance authority",
+                "nb": "Sivil klareringsmyndighet",
+                "nn": "Sivil klareringsmyndigheit"
+            },
+            "logo": "https://altinncdn.no/orgs/skm/skm.png",
+            "orgnr": "918929673",
+            "homepage": "https://sivilklareringsmyndighet.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
         },
         "slk": {
             "name": {
@@ -682,16 +997,6 @@
             "homepage": "https://lanekassen.no/",
             "environments": []
         },
-        "kt": {
-            "name": {
-                "en": "Norwegian Competition Authority",
-                "nb": "Konkurransetilsynet",
-                "nn": "Konkurransetilsynet"
-            },
-            "orgnr": "974761246",
-            "homepage": "https://konkurransetilsynet.no/",
-            "environments": []
-        },
         "hb": {
             "name": {
                 "en": "Norwegian State Housing Bank",
@@ -700,17 +1005,9 @@
             },
             "orgnr": "942114184",
             "homepage": "https://www.husbanken.no/",
-            "environments": []
-        },
-        "lts": {
-            "name": {
-                "en": "Norwegian Gaming and Foundation Authority",
-                "nb": "Lotteri- og stiftelsestilsynet",
-                "nn": "Lotteri- og stiftelsestilsynet"
-            },
-            "orgnr": "982391490",
-            "homepage": "https://lottstift.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "slf": {
             "name": {
@@ -718,6 +1015,8 @@
                 "nb": "Landbruksdirektoratet",
                 "nn": "Landbruksdirektoratet"
             },
+            "logo": "https://altinncdn.no/orgs/slf/slf_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/slf/slf_emblem.svg",
             "orgnr": "981544315",
             "homepage": "https://www.landbruksdirektoratet.no/",
             "environments": []
@@ -730,17 +1029,10 @@
             },
             "orgnr": "970205039",
             "homepage": "https://www.nve.no/",
-            "environments": []
-        },
-        "ok": {
-            "name": {
-                "en": "City of Oslo",
-                "nb": "Oslo kommune",
-                "nn": "Oslo kommune"
-            },
-            "orgnr": "971183675",
-            "homepage": "https://www.oslo.kommune.no/",
-            "environments": []
+            "environments": [
+                "tt02",
+                "production"
+            ]
         },
         "bk": {
             "name": {
@@ -750,16 +1042,6 @@
             },
             "orgnr": "964338531",
             "homepage": "https://www.bergen.kommune.no/",
-            "environments": []
-        },
-        "spk": {
-            "name": {
-                "en": "Norwegian Public Service Pension Fund",
-                "nb": "Statens pensjonskasse",
-                "nn": "Statens pensjonskasse"
-            },
-            "orgnr": "974760967",
-            "homepage": "https://www.spk.no/",
             "environments": []
         },
         "ks": {
@@ -778,9 +1060,12 @@
                 "nb": "Datatilsynet",
                 "nn": "Datatilsynet"
             },
+            "logo": "https://altinncdn.no/orgs/dpa/datatilsynet-logo.svg",
             "orgnr": "974761467",
             "homepage": "https://www.datatilsynet.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "pod": {
             "name": {
@@ -810,9 +1095,11 @@
             },
             "orgnr": "983609155",
             "homepage": "https://www.enova.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
-        "k5501": {
+        "k5001": {
             "name": {
                 "en": "Trondheim Municipality",
                 "nb": "Trondheim kommune",
@@ -832,25 +1119,19 @@
             "homepage": "https://www.lillestrom.kommune.no/",
             "environments": []
         },
-        "ikta": {
-            "name": {
-                "en": "IKT Agder IKS",
-                "nb": "IKT Agder IKS",
-                "nn": "IKT Agder IKS"
-            },
-            "orgnr": "985359385",
-            "homepage": "https://www.ikt-agder.no/",
-            "environments": []
-        },
         "nokut": {
             "name": {
-                "en": "The Norwegian Agency for Quality Assurance in Education",
-                "nb": "Nasjonalt organ for kvalitet i utdanningen",
-                "nn": "Nasjonalt organ for kvalitet i utdanninga"
+                "en": "NOKUT (The Norwegian Agency for Quality Assurance in Education)",
+                "nb": "NOKUT (Nasjonalt organ for kvalitet i utdanningen)",
+                "nn": "NOKUT (Nasjonalt organ for kvalitet i utdanninga)"
             },
+            "logo": "https://altinncdn.no/orgs/nokut/nokut.svg",
             "orgnr": "985042667",
             "homepage": "https://www.nokut.no/",
-            "environments": []
+            "environments": [
+                "tt02",
+                "production"
+            ]
         },
         "pol": {
             "name": {
@@ -860,36 +1141,6 @@
             },
             "orgnr": "915429785",
             "homepage": "https://www.politiet.no/",
-            "environments": []
-        },
-        "afs": {
-            "name": {
-                "en": "Avfall Sør AS",
-                "nb": "Avfall Sør AS",
-                "nn": "Avfall Sør AS"
-            },
-            "orgnr": "995646137",
-            "homepage": "https://avfallsor.no/",
-            "environments": []
-        },
-        "fjel": {
-            "name": {
-                "en": "Fjellinjen AS",
-                "nb": "Fjellinjen AS",
-                "nn": "Fjellinjen AS"
-            },
-            "orgnr": "941856543",
-            "homepage": "https://www.fjellinjen.no/",
-            "environments": []
-        },
-        "vigo": {
-            "name": {
-                "en": "VIGO IKS",
-                "nb": "VIGO IKS",
-                "nn": "VIGO IKS"
-            },
-            "orgnr": "998283914",
-            "homepage": "https://www.vigoiks.no/",
             "environments": []
         },
         "rmt": {
@@ -910,6 +1161,137 @@
             },
             "orgnr": "957387969",
             "homepage": "https://mna.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ]
+        },
+        "vigo": {
+            "name": {
+                "en": "Novari IKS",
+                "nb": "Novari IKS",
+                "nn": "Novari IKS"
+            },
+            "logo": "https://altinncdn.no/orgs/vigo/novari_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/vigo/novari_emblem.svg",
+            "orgnr": "998283914",
+            "homepage": "https://www.novari.no/",
+            "environments": [
+                "tt02",
+                "production"
+            ],
+            "contact": {
+                "url": "https://novari.no/kontakt/"
+            }
+        },
+        "fk30": {
+            "name": {
+                "en": "Viken Fylkeskommune",
+                "nb": "Viken Fylkeskommune",
+                "nn": "Viken Fylkeskommune"
+            },
+            "orgnr": "921693230",
+            "environments": []
+        },
+        "tffa": {
+            "name": {
+                "en": "Norwegian Motor Insurers’ Bureau",
+                "nb": "Trafikkforsikringsforeningen",
+                "nn": "Trafikkforsikringsforeningen"
+            },
+            "logo": "https://altinncdn.no/orgs/tffa/tffa.png",
+            "orgnr": "960509811",
+            "homepage": "https://www.tff.no/",
+            "environments": []
+        },
+        "asf": {
+            "name": {
+                "en": "Altinn Sentralforvaltning",
+                "nb": "Altinn Sentralforvaltning",
+                "nn": "Altinn Sentralforvaltning"
+            },
+            "orgnr": "974706121",
+            "environments": []
+        },
+        "ehls": {
+            "name": {
+                "en": "Direktoratet for e-helse",
+                "nb": "Direktoratet for e-helse",
+                "nn": "Direktoratet for e-helse"
+            },
+            "orgnr": "915933149",
+            "environments": []
+        },
+        "fk": {
+            "name": {
+                "en": "Fellesordning for avtalefestet pensjon",
+                "nb": "Fellesordning for avtalefestet pensjon",
+                "nn": "Fellesordning for avtalefestet pensjon"
+            },
+            "orgnr": "987414502",
+            "environments": []
+        },
+        "fkd": {
+            "name": {
+                "en": "Fiskeri- og kystdepartementet",
+                "nb": "Fiskeri- og kystdepartementet",
+                "nn": "Fiskeri- og kystdepartementet"
+            },
+            "orgnr": "972417815",
+            "environments": []
+        },
+        "htil": {
+            "name": {
+                "en": "Statens Helsetilsyn",
+                "nb": "Statens Helsetilsyn",
+                "nn": "Statens Helsetilsyn"
+            },
+            "orgnr": "974761394",
+            "environments": []
+        },
+        "k0231": {
+            "name": {
+                "en": "Skedsmo kommune",
+                "nb": "Skedsmo kommune",
+                "nn": "Skedsmo kommune"
+            },
+            "orgnr": "938275130",
+            "environments": []
+        },
+        "klif": {
+            "name": {
+                "en": "Statens forurensningstilsyn",
+                "nb": "Statens forurensningstilsyn",
+                "nn": "Statens forurensningstilsyn"
+            },
+            "orgnr": "970935657",
+            "environments": []
+        },
+        "lat": {
+            "name": {
+                "en": "Luftambulansetjenesten HF",
+                "nb": "Luftambulansetjenesten HF",
+                "nn": "Luftambulansetjenesten HF"
+            },
+            "orgnr": "818711832",
+            "environments": []
+        },
+        "si": {
+            "name": {
+                "en": "Statens innkrevingssentral",
+                "nb": "Statens innkrevingssentral",
+                "nn": "Statens innkrevingssentral"
+            },
+            "orgnr": "971648198",
+            "environments": []
+        },
+        "sft": {
+            "name": {
+                "en": "Klima- og forurensningsdirektoratet",
+                "nb": "Klima- og forurensningsdirektoratet",
+                "nn": "Klima- og forurensningsdirektoratet"
+            },
+            "orgnr": "999999992",
             "environments": []
         }
     }
