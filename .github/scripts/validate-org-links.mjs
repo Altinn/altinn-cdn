@@ -34,7 +34,14 @@ function validate() {
         }
 
         const relativePath = url.substring(CDN_BASE_URL.length);
-        const filePath = path.join(REPO_ROOT, relativePath);
+        const absoluteRepoRoot = path.resolve(REPO_ROOT);
+        const filePath = path.resolve(absoluteRepoRoot, relativePath);
+
+        if (!filePath.startsWith(absoluteRepoRoot + path.sep)) {
+          console.error(`Error: Org '${orgKey}' has ${field} URL with invalid path (traversal detected): ${url}`);
+          errors++;
+          continue;
+        }
 
         if (!fs.existsSync(filePath)) {
           console.error(`Error: Org '${orgKey}' has ${field} link to missing file: ${url} (Expected file at: ${relativePath})`);
