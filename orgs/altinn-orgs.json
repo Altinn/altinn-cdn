@@ -101,7 +101,8 @@
                 "nb": "Direktoratet for byggkvalitet",
                 "nn": "Direktoratet for byggkvalitet"
             },
-            "logo": "https://altinncdn.no/orgs/dibk/dibk.png",
+            "logo": "https://altinncdn.no/orgs/dibk/dibk.svg",
+            "emblem": "https://altinncdn.no/orgs/dibk/dibk_symbol.svg",
             "orgnr": "974760223",
             "homepage": "https://dibk.no",
             "environments": [
