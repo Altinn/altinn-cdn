@@ -199,6 +199,17 @@
                 "production"
             ]
         },
+        "elh": {
+            "name": {
+                "en": "Elhub",
+                "nb": "Elhub",
+                "nn": "Elhub"
+            },
+            "logo": "https://altinncdn.no/orgs/elh/elh.svg",
+            "orgnr": "915925529",
+            "homepage": "https://elhub.no/",
+            "environments": []
+        },
         "fd": {
             "name": {
                 "en": "The Norwegian Directorate of Fisheries",
