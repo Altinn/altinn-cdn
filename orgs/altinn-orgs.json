@@ -908,6 +908,24 @@
                 "production"
             ]
         },
+        "trr": {
+            "name": {
+                "en": "The National Insurance Court",
+                "nb": "Trygderetten",
+                "nn": "Trygderetten"
+            },
+            "logo": "https://altinncdn.no/orgs/ttd.svg",
+            "emblem": "https://altinncdn.no/orgs/ttd-emblem.svg",
+            "homepage": "https://www.trygderetten.no/",
+            "environments": [
+                "at22",
+                "at23",
+                "at24",
+                "tt02",
+                "yt01",
+                "production"
+            ]
+        },
         "ttd": {
             "name": {
                 "en": "Test Ministry",
