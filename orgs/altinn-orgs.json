@@ -917,7 +917,7 @@
             "logo": "https://altinncdn.no/orgs/trr/trr.svg",
             "emblem": "https://altinncdn.no/orgs/trr/trr-emblem.svg",
             "homepage": "https://www.trygderetten.no/",
-            "environments": [
+            "environments": []
                 "at22",
                 "at23",
                 "at24",
