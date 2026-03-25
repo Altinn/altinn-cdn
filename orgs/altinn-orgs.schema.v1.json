@@ -78,7 +78,7 @@
               "additionalProperties": false
             }
           },
-          "required": ["name", "environments"],
+          "required": ["name", "environments", "orgnr"],
           "additionalProperties": false
         }
       },
