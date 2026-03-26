@@ -1211,7 +1211,8 @@
                 "nb": "Trafikkforsikringsforeningen",
                 "nn": "Trafikkforsikringsforeningen"
             },
-            "logo": "https://altinncdn.no/orgs/tffa/tffa.png",
+            "logo": "https://altinncdn.no/orgs/tffa/tffa-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/tffa/tffa-emblem.svg",
             "orgnr": "960509811",
             "homepage": "https://www.tff.no/",
             "environments": []
