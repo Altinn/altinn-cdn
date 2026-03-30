@@ -182,7 +182,7 @@
       "description": "A contact point for the application.",
       "additionalProperties": false,
       "properties": {
-        "name": {
+        "category": {
           "type": "string",
           "title": "Category",
           "description": "The category of the contact point."
@@ -584,7 +584,7 @@
     "Text": {
       "type": "object",
       "title": "Text",
-      "description": "An application metadata text that supports multiple languges.",
+      "description": "An application metadata text that supports multiple languages.",
       "additionalProperties": {
         "type": "string",
         "title": "Other language"
