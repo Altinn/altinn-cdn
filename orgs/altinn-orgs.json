@@ -83,11 +83,11 @@
         },
         "dat": {
             "name": {
-                "en": "Norwegian Labour Inspection Authority",
+                "en": "The Norwegian Labour Inspection Authority",
                 "nb": "Arbeidstilsynet",
                 "nn": "Arbeidstilsynet"
             },
-            "logo": "https://altinncdn.no/orgs/dat/arbeidstilsynet.png",
+            "logo": "https://altinncdn.no/orgs/dat/dat-logo.svg",
             "orgnr": "974761211",
             "homepage": "https://www.arbeidstilsynet.no",
             "environments": [
