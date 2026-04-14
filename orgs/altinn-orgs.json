@@ -920,7 +920,9 @@
             "emblem": "https://altinncdn.no/orgs/trr/trr-emblem.svg",
             "orgnr": "974761084",
             "homepage": "https://www.trygderetten.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "ttd": {
             "name": {
