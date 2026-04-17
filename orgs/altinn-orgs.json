@@ -1092,7 +1092,8 @@
             "orgnr": "974761467",
             "homepage": "https://www.datatilsynet.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "pod": {
