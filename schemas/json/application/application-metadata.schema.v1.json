@@ -8,11 +8,13 @@
   "required": [
     "id",
     "title",
+    "description",
     "org",
     "created",
     "createdBy",
     "partyTypesAllowed",
-    "dataTypes"
+    "dataTypes",
+    "access"
   ],
   "properties": {
     "$schema": {
@@ -79,7 +81,44 @@
       "format": "date-time"
     },
     "title": {
-      "$ref": "#/definitions/title"
+      "title": "The title of the application.",
+      "$ref": "#/definitions/translatedText"
+    },
+    "description": {
+      "title": "A description of the application.",
+      "$ref": "#/definitions/translatedText"
+    },
+    "access": {
+      "type": "object",
+      "title": "Access settings",
+      "description": "Settings related to access control for the application.",
+      "additionalProperties": false,
+      "properties": {
+        "delegable": {
+          "type": "boolean",
+          "title": "Delegable",
+          "description": "If true, access to the application can be delegated to other users."
+        },
+        "visible": {
+          "type": "boolean",
+          "title": "Visible",
+          "description": "If false, the application will not be visible in the access management view in the Altinn portal. Instances of the application will still be visible in the message box and accessible via direct link if the user has access to them."
+        },
+        "rightDescription": {
+          "title": "Right description",
+          "$ref": "#/definitions/translatedText"
+        }
+      },
+      "if": {
+        "properties": {
+          "delegable": { "const": true }
+        },
+        "required": ["delegable"]
+      },
+      "then": {
+        "required": ["rightDescription"]
+      },
+      "required": ["delegable", "visible"]
     },
     "org": {
       "type": "string",
@@ -123,6 +162,14 @@
     },
     "logo": {
       "$ref": "#/definitions/logo"
+    },
+    "contactPoints": {
+      "type": "array",
+      "title": "Contact points",
+      "description": "A list of contact points for the application.",
+      "items": {
+        "$ref": "#/contactPoint"
+      }
     }
   },
   "definitions": {
@@ -481,10 +528,10 @@
         }
       }
     },
-    "title": {
+    "translatedText": {
       "type": "object",
-      "title": "Title",
-      "description": "The title of the application",
+      "title": "Translated text",
+      "description": "A collection of translated text in different languages.",
       "additionalProperties": {
         "type": "string",
         "title": "Other language"
@@ -493,12 +540,17 @@
         "nb": {
           "type": "string",
           "title": "Norwegian",
-          "description": "The title in Norwegian"
+          "description": "The text in Norwegian"
+        },
+        "nn": {
+          "type": "string",
+          "title": "Nynorsk",
+          "description": "The text in Nynorsk"
         },
         "en": {
           "type": "string",
           "title": "English",
-          "description": "The title in English"
+          "description": "The text in English"
         }
       },
       "examples": [
@@ -576,6 +628,34 @@
       },
       "required": ["source"],
       "additionalProperties": false
+    }
+  },
+  "contactPoint": {
+    "title": "Contact point",
+    "description": "Contact information for the application maintainer.",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "category": {
+        "type": "string",
+        "title": "Category",
+        "description": "The category of the contact point."
+      },
+      "email": {
+        "type": "string",
+        "title": "Email",
+        "description": "The email address of the contact point."
+      },
+      "telephone": {
+        "type": "string",
+        "title": "Telephone",
+        "description": "The telephone number of the contact point."
+      },
+      "contactPage": {
+        "type": "string",
+        "title": "Contact page",
+        "description": "The URL of the contact page for the contact point."
+      }
     }
   }
 }
