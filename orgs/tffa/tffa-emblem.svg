@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="260"
+   height="170"
+   viewBox="0 0 260 170"
+   fill="none"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="TFF logo - mindre canvas.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.7755556"
+     inkscape:cx="274.84355"
+     inkscape:cy="225"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 48.231183,5.4425707 V 31.843571 c 0,4.138 3.355,7.493 7.493,7.493 h 26.402 v 41.211 h -26.402 c -26.898,0 -48.7040003,-21.805 -48.7040003,-48.704 V 5.4425707 Z"
+     fill="#181714"
+     id="path1" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 48.231183,80.123571 v 26.401999 c 0,4.138 3.355,7.492 7.493,7.492 h 26.402 v 41.212 h -26.402 c -26.898,0 -48.7040003,-21.806 -48.7040003,-48.704 V 80.123571 Z"
+     fill="#181714"
+     id="path2" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 135.61218,154.80457 v -26.401 c 0,-4.138 3.355,-7.493 7.493,-7.493 h 26.402 V 79.699571 h -26.402 c -26.898,0 -48.703997,21.804999 -48.703997,48.703999 v 26.401 z"
+     fill="#181714"
+     id="path3" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 135.61218,80.123571 v -26.401 c 0,-4.138 3.355,-7.493 7.493,-7.493 h 26.402 V 5.0185707 h -26.402 c -26.898,0 -48.703997,21.8050003 -48.703997,48.7040003 v 26.401 z"
+     fill="#181714"
+     id="path4" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 222.98518,154.80457 v -26.401 c 0,-4.138 3.355,-7.493 7.493,-7.493 h 26.402 V 79.699571 h -26.402 c -26.898,0 -48.704,21.804999 -48.704,48.703999 v 26.401 z"
+     fill="#181714"
+     id="path5" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 222.98518,80.123571 v -26.401 c 0,-4.138 3.355,-7.493 7.493,-7.493 h 26.402 V 5.0185707 h -26.402 c -26.898,0 -48.704,21.8050003 -48.704,48.7040003 v 26.401 z"
+     fill="#181714"
+     id="path6" />
+</svg>
