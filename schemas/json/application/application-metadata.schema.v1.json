@@ -635,6 +635,11 @@
     "description": "Contact information for the application maintainer.",
     "type": "object",
     "additionalProperties": false,
+    "anyOf": [
+      { "required": ["email"] },
+      { "required": ["telephone"] },
+      { "required": ["contactPage"] }
+    ],
     "properties": {
       "category": {
         "type": "string",
