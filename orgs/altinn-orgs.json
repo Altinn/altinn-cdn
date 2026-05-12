@@ -209,7 +209,9 @@
             "logo": "https://altinncdn.no/orgs/elh/elh.svg",
             "orgnr": "915925529",
             "homepage": "https://elhub.no/",
-            "environments": []
+            "environments": [
+                "tt02"
+            ]
         },
         "fd": {
             "name": {
