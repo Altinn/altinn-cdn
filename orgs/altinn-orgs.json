@@ -872,6 +872,16 @@
                 "production"
             ]
         },
+        "sb": {
+            "name": {
+                "en": "Statsbygg",
+                "nb": "Statsbygg",
+                "nn": "Statsbygg"
+            },
+            "orgnr": "971278374",
+            "homepage": "https://www.statsbygg.no/",
+            "environments": []
+        },
         "sym": {
             "name": {
                 "en": "Symfoni AS",
