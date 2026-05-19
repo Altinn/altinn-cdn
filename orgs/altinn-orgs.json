@@ -413,6 +413,16 @@
                 "production"
             ]
         },
+        "ks": {
+            "name": {
+                "en": "The Norwegian Association of Local and Reginoal Authorities",
+                "nb": "KS-Kommunesektorens organisasjon",
+                "nn": "KS-Kommunesektorens organisasjon"
+            },
+            "orgnr": "971032146",
+            "homepage": "https://www.ks.no/",
+            "environments": []
+        },
         "kt": {
             "name": {
                 "en": "Norwegian Competition Authority",
