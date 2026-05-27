@@ -219,7 +219,8 @@
                 "nb": "Fiskeridirektoratet",
                 "nn": "Fiskeridirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/fd/fiskeridirektoratet.png",
+            "logo": "https://altinncdn.no/orgs/fd/fd_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/fd/fd_emblem.svg",
             "orgnr": "971203420",
             "homepage": "https://www.fiskeridir.no/",
             "environments": [
