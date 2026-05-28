@@ -706,6 +706,16 @@
                 "production"
             ]
         },
+        "reit": {
+            "name": {
+                "en": "ReIT AS",
+                "nb": "ReIT AS",
+                "nn": "ReIT AS"
+            },
+            "orgnr": "993474118",
+            "homepage": "https://www.reit.no/",
+            "environments": []
+        },
         "rir": {
             "name": {
                 "en": "ROMSDALSHALVØYA INTERKOMMUNALE RENOVASJONSSELSKAP IKS",
