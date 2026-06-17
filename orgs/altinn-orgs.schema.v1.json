@@ -31,14 +31,14 @@
               "type": "string",
               "oneOf": [
                 {"const": ""},
-                {"format": "uri", "minLength": 1}
+                {"pattern": "^https://altinncdn\\.no/", "format": "uri"}
               ]
             },
             "emblem": {
               "type": "string",
               "oneOf": [
                 {"const": ""},
-                {"format": "uri", "minLength": 1}
+                {"pattern": "^https://altinncdn\\.no/", "format": "uri"}
               ]
             },
             "orgnr": {
