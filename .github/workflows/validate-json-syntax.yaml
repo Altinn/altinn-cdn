@@ -31,6 +31,10 @@ jobs:
         run: |
           echo "Validating orgs/altinn-orgs.json syntax..."
           jq empty orgs/altinn-orgs.json
+      
+      - name: Validate all orgs have orgnr except ttd
+        run: |
+          jq '.orgs | to_entries | map(select(.key != "ttd" and (.value.orgnr | (type == "string" and test("^[0-9]{9}$")) | not)) | "Org '\''\(.key)'\'' has invalid orgnr: '\''\(.value.orgnr)'\''") | if length > 0 then error("Validation failed:\n" + join("\n")) else "All orgs are valid." end' orgs/altinn-orgs.json
 
       - name: Validate orgs/altinn-orgs.json schema
         run: |
