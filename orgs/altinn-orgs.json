@@ -870,6 +870,23 @@
                 "tt02",
                 "production"
             ]
+        },        
+        "stped": {
+            "name": {
+                "en": "Statped",
+                "nb": "Statped",
+                "nn": "Statped"
+            },
+            "logo": "https://altinncdn.no/orgs/stped/stped-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/stped/stped-emblem.svg",
+            "orgnr": "998554640",
+            "homepage": "https://www.statped.no/",
+            "environments": [
+            ],
+            "contact": {
+                "phone": "02196",
+                "url": "https://www.statped.no/kontakt-oss/"
+            }
         },
         "svv": {
             "name": {
