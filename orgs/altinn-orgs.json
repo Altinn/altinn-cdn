@@ -624,7 +624,8 @@
             "orgnr": "870917732",
             "homepage": "https://www.sodir.no",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ]
         },
         "npe": {
