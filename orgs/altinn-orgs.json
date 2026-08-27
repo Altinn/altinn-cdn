@@ -96,6 +96,20 @@
                 "production"
             ]
         },
+        "ddlabs": {
+            "name":{
+                "en": "Digdir Labs",
+                "nb": "Digdir Labs",
+                "nn": "Digdir Labs"
+            },
+            "logo": "https://altinncdn.no/orgs/digdir/digdir.png",
+            "emblem": "https://altinncdn.no/orgs/digdir/digdir.svg",
+            "orgnr": "310797510",
+            "homepage": "https://www.digdir.no",
+            "environments": [
+                "tt02"
+            ]
+        },
         "dibk": {
             "name": {
                 "en": "Norwegian Building Authority",
