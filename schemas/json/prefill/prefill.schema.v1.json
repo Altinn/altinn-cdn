@@ -83,6 +83,11 @@
                     "title": "Party.PartyId",
                     "description": "The if of the users party."
                 },
+                "Party.PartyUuid": {
+                    "type": "string",
+                    "title": "Party.PartyUuid",
+                    "description": "The UUID of the users party."
+                },
                 "Party.ExternalUrn": {
                     "type": "string",
                     "title": "Party.ExternalUrn",
