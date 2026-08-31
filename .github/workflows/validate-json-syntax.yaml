@@ -46,3 +46,8 @@ jobs:
         run: |
           echo "Validating config/environments.json against schema..."
           check-jsonschema --schemafile config/environments.schema.v1.json config/environments.json
+
+      - name: Validate logo and emblem links
+        run: |
+          echo "Validating logo and emblem links in altinn-orgs.json..."
+          node .github/scripts/validate-org-links.mjs
