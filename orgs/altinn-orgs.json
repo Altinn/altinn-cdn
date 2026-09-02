@@ -196,9 +196,7 @@
             "emblem": "https://altinncdn.no/orgs/dsa/DSA_symbol.svg",
             "orgnr": "867668292",
             "homepage": "https://www.dsa.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "dsb": {
             "name": {
@@ -462,10 +460,7 @@
             "logo": "https://altinncdn.no/orgs/kyv/kyv.png",
             "orgnr": "874783242",
             "homepage": "https://www.kystverket.no/",
-            "environments": [
-                "tt02",
-                "production"
-            ]
+            "environments": []
         },
         "lt": {
             "name": {
@@ -521,9 +516,7 @@
             "emblem": "https://altinncdn.no/orgs/mdir/mdir_emblem.svg",
             "orgnr": "999601391",
             "homepage": "https://www.miljodirektoratet.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "nb": {
             "name": {
@@ -620,9 +613,7 @@
             "emblem": "https://altinncdn.no/orgs/nav/nav.svg",
             "orgnr": "889640782",
             "homepage": "https://www.nav.no",
-            "environments": [
-                "tt02"
-            ],
+            "environments": [],
             "contact": {
                 "phone": "+4755553333",
                 "url": "https://www.nav.no/kontaktoss"
@@ -651,9 +642,7 @@
             "logo": "https://altinncdn.no/orgs/npe/npe.png",
             "orgnr": "984936923",
             "homepage": "https://www.npe.no",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "nsm": {
             "name": {
@@ -704,9 +693,7 @@
             "logo": "https://altinncdn.no/orgs/oko/oko.png",
             "orgnr": "874761532",
             "homepage": "https://www.okokrim.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "pat": {
             "name": {
@@ -764,9 +751,7 @@
             "logo": "https://altinncdn.no/orgs/sfd/sfd.png",
             "orgnr": "974761262",
             "homepage": "https://www.sdir.no",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "sfvt": {
             "name": {
@@ -824,9 +809,7 @@
             },
             "orgnr": "974760967",
             "homepage": "https://www.spk.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "srf": {
             "name": {
@@ -1090,9 +1073,7 @@
             },
             "orgnr": "942114184",
             "homepage": "https://www.husbanken.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "slf": {
             "name": {
