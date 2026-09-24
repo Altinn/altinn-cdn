@@ -626,6 +626,7 @@
                 "nn": "Sokkeldirektoratet"
             },
             "logo": "https://altinncdn.no/orgs/npd/npd.svg",
+            "emblem": "https://altinncdn.no/orgs/npd/emblemnpd_dark.svg",
             "orgnr": "870917732",
             "homepage": "https://www.sodir.no",
             "environments": [
@@ -880,7 +881,8 @@
             "orgnr": "998554640",
             "homepage": "https://www.statped.no/",
             "environments": [
-                "tt02"
+                "tt02",
+                "production"
             ],
             "contact": {
                 "phone": "+4793402196",
