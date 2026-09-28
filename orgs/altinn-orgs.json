@@ -998,10 +998,7 @@
             "logo": "https://altinncdn.no/orgs/udi/udi.png",
             "orgnr": "974760746",
             "homepage": "https://www.udi.no",
-            "environments": [
-                "tt02",
-                "production"
-            ]
+            "environments": []
         },
         "udir": {
             "name": {
