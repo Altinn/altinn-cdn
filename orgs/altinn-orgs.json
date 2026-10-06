@@ -678,9 +678,7 @@
             "logo": "https://altinncdn.no/orgs/ok/ok.png",
             "orgnr": "971183675",
             "homepage": "https://www.oslo.kommune.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "oko": {
             "name": {
@@ -1158,9 +1156,7 @@
             },
             "orgnr": "983609155",
             "homepage": "https://www.enova.no/",
-            "environments": [
-                "tt02"
-            ]
+            "environments": []
         },
         "k5001": {
             "name": {
