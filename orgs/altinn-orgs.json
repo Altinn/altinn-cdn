@@ -235,10 +235,7 @@
             "emblem": "https://altinncdn.no/orgs/fd/fd_emblem.svg",
             "orgnr": "971203420",
             "homepage": "https://www.fiskeridir.no/",
-            "environments": [
-                "tt02",
-                "production"
-            ]
+            "environments": []
         },
         "fhi": {
             "name": {
