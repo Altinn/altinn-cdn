@@ -104,11 +104,23 @@
             },
             "logo": "https://altinncdn.no/orgs/digdir/digdir.png",
             "emblem": "https://altinncdn.no/orgs/digdir/digdir.svg",
-            "orgnr": "310797510",
+            "orgnr": "11117000631",
             "homepage": "https://www.digdir.no",
             "environments": [
                 "tt02"
             ]
+        },
+        "ddlabstmp": {
+            "name":{
+                "en": "Digdir Labs - Gammelt orgnummer",
+                "nb": "Digdir Labs - Gammelt orgnummer",
+                "nn": "Digdir Labs - Gammelt orgnummer"
+            },
+            "logo": "https://altinncdn.no/orgs/digdir/digdir.png",
+            "emblem": "https://altinncdn.no/orgs/digdir/digdir.svg",
+            "orgnr": "310797510",
+            "homepage": "https://www.digdir.no",
+            "environments": []
         },
         "dibk": {
             "name": {
