@@ -1011,7 +1011,8 @@
                 "nb": "Utdanningsdirektoratet",
                 "nn": "Utdanningsdirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/udir/udir.png",
+            "logo": "https://altinncdn.no/orgs/udir/udir_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/udir/udir_emblem.svg",
             "orgnr": "970018131",
             "homepage": "https://www.udir.no",
             "environments": [
