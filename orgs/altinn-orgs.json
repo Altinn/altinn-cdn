@@ -341,10 +341,7 @@
             "logo": "https://altinncdn.no/orgs/hi/havforskningsinstituttet.png",
             "orgnr": "971349077",
             "homepage": "https://www.hi.no/",
-            "environments": [
-                "tt02",
-                "production"
-            ]
+            "environments": []
         },
         "hko": {
             "name": {
