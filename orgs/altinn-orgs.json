@@ -1041,7 +1041,9 @@
             "emblem": "https://altinncdn.no/orgs/vlfk/vlfk_emblem.svg",
             "orgnr": "821311632",
             "homepage": "https://www.vestlandfylke.no/",
-            "environments": []
+            "environments": [
+                "tt02"            
+            ]
         },
         "dfo": {
             "name": {
