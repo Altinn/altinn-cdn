@@ -73,7 +73,8 @@
                 "nb": "Barne-, ungdoms- og familiedirektoratet",
                 "nn": "Barne-, ungdoms- og familiedirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/buf/buf.png",
+            "logo": "https://altinncdn.no/orgs/buf/buf-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/buf/buf-emblem.svg",
             "orgnr": "986128433",
             "homepage": "https://www.bufdir.no",
             "environments": [
