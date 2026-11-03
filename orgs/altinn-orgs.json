@@ -908,10 +908,12 @@
         },
         "sb": {
             "name": {
-                "en": "Statsbygg",
+                "en": "Norwegian Directorate of Public Construction and Property",
                 "nb": "Statsbygg",
                 "nn": "Statsbygg"
             },
+            "logo": "https://altinncdn.no/orgs/sb/sb-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/sb/sb-emblem.svg",
             "orgnr": "971278374",
             "homepage": "https://www.statsbygg.no/",
             "environments": []
