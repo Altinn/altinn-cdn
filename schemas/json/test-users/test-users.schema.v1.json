@@ -232,7 +232,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "List of actions that are delegated to the system users, e. g. ['read', 'write', 'instantiate']"
+                    "description": "Optional localtest shortcut: actions the system user may perform, e. g. ['read', 'write', 'instantiate']. Prefer accessPackages, as in the platform"
                   },
                   "accessPackages": {
                     "type": "array",
@@ -243,7 +243,7 @@
                     "description": "Access packages (tilgangspakker) the system user holds for the organisation in orgNumber. Package identifiers such as 'lonn' or full URNs such as 'urn:altinn:accesspackage:lonn'"
                   }
                 },
-                "required": ["id", "orgNumber", "actions"],
+                "required": ["id", "orgNumber"],
                 "additionalProperties": false
               }
             }
