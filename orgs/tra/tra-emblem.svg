@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Advokattilsynet emblem A">
+  <circle cx="256" cy="256" r="248" fill="#062F57"/>
+  <circle cx="256" cy="256" r="207" fill="none" stroke="#FFFFFF" stroke-width="9"/>
+  <text x="256" y="350" font-family="Georgia, 'Times New Roman', serif" font-size="310" font-weight="bold" text-anchor="middle" fill="#FFFFFF">A</text>
+</svg>

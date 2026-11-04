@@ -949,7 +949,8 @@
                 "nb": "Advokattilsynet",
                 "nn": "Advokattilsynet"
             },
-            "logo": "https://altinncdn.no/orgs/tra/tra.svg",
+            "logo": "https://altinncdn.no/orgs/tra/tra-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/tra/tra-emblem.svg",
             "orgnr": "914459265",
             "homepage": "https://tilsynet.no/",
             "environments": [
