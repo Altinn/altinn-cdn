@@ -70,6 +70,20 @@
               },
               "additionalProperties":false
             },
+            "accessPackages": {
+              "type": "object",
+              "description": "Access packages (tilgangspakker) the person holds, keyed by the party id they are held for. Values are package identifiers such as 'lonn' or full URNs such as 'urn:altinn:accesspackage:lonn'",
+              "patternProperties": {
+                "^\\d+$": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^(urn:altinn:accesspackage:)?[a-z0-9-]+$"
+                  }
+                }
+              },
+              "additionalProperties": false
+            },
             "addressCity": {
               "type": "string"
             },
@@ -219,6 +233,14 @@
                       "type": "string"
                     },
                     "description": "List of actions that are delegated to the system users, e. g. ['read', 'write', 'instantiate']"
+                  },
+                  "accessPackages": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^(urn:altinn:accesspackage:)?[a-z0-9-]+$"
+                    },
+                    "description": "Access packages (tilgangspakker) the system user holds for the organisation in orgNumber. Package identifiers such as 'lonn' or full URNs such as 'urn:altinn:accesspackage:lonn'"
                   }
                 },
                 "required": ["id", "orgNumber", "actions"],
