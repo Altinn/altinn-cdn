@@ -1139,11 +1139,12 @@
         },
         "dpa": {
             "name": {
-                "en": "Norwegian Data Protection Authority",
+                "en": "The Norwegian Data Protection Authority",
                 "nb": "Datatilsynet",
                 "nn": "Datatilsynet"
             },
             "logo": "https://altinncdn.no/orgs/dpa/datatilsynet-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/dpa/datatilsynet-emblem.svg",
             "orgnr": "974761467",
             "homepage": "https://www.datatilsynet.no/",
             "environments": [
