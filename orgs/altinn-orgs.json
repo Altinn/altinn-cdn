@@ -1023,11 +1023,12 @@
         },
         "valg": {
             "name": {
-                "en": "Election Directorate",
+                "en": "The Norwegian Directorate of Elections",
                 "nb": "Valgdirektoratet",
                 "nn": "Valdirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/valg/valg.png",
+            "logo": "https://altinncdn.no/orgs/valg/valg-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/valg/valg-emblem.svg",
             "orgnr": "916132727",
             "homepage": "https://www.valg.no",
             "environments": [
