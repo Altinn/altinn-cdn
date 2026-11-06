@@ -256,7 +256,8 @@
                 "nb": "Folkehelseinstituttet",
                 "nn": "Folkehelseinstituttet"
             },
-            "logo": "https://altinncdn.no/orgs/fhi/fhi.png",
+            "logo": "https://altinncdn.no/orgs/fhi/fhi-logo.svg",
+            "emblem": "https://altinncdn.no/orgs/fhi/fhi-emblem.svg",
             "orgnr": "983744516",
             "homepage": "https://www.fhi.no/",
             "environments": [
