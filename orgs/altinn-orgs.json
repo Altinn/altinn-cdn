@@ -562,7 +562,8 @@
                 "nb": "Nordre Follo kommune",
                 "nn": "Nordre Follo kommune"
             },
-            "logo": "https://altinncdn.no/orgs/nfk/nordre-follo-kommune-navnetrekk-bredde-2-linje-rgb.svg",
+            "logo": "https://altinncdn.no/orgs/nfk/nrk_logo.svg",
+            "emblem":"https://altinncdn.no/orgs/nfk/nrk_emblem.svg",
             "orgnr": "922092648",
             "homepage": "https://www.nordrefollo.kommune.no/",
             "environments": [
