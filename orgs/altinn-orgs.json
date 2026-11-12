@@ -939,7 +939,8 @@
                 "nb": "Tolletaten",
                 "nn": "Tolletaten"
             },
-            "logo": "https://altinncdn.no/orgs/tad/tad.png",
+            "logo": "https://altinncdn.no/orgs/tad/tad_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/tad/tad_emblem.svg",
             "orgnr": "880455702",
             "homepage": "https://www.toll.no/",
             "environments": [
