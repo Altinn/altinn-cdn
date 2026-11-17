@@ -476,7 +476,8 @@
                 "nb": "Luftfartstilsynet",
                 "nn": "Luftfartstilsynet"
             },
-            "logo": "https://altinncdn.no/orgs/lt/lt.svg",
+            "logo": "https://altinncdn.no/orgs/lt/lt-logo.svg",
+            "emblem":  "https://altinncdn.no/orgs/lt/lt-emblem.svg",
             "orgnr": "981105516",
             "homepage": "https://luftfartstilsynet.no",
             "environments": [
