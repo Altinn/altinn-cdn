@@ -294,10 +294,10 @@
         "gk": {
             "name": {
                 "en": "The Criminal Cases Review Commission",
-                "nb": "Gjenopptakelseskommisjonen",
+                "nb": "Kommisjonen for gjenopptakelse av straffesaker",
                 "nn": "Gjenopptakingskommisjonen"
             },
-            "logo": "https://altinncdn.no/orgs/gk/gjenopptakelseskommisjonen.png",
+            "logo": "https://altinncdn.no/orgs/gk/gk-logo.svg",
             "orgnr": "985847215",
             "homepage": "https://www.gjenopptakelse.no/",
             "environments": [
