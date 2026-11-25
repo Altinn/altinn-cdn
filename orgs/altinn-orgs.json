@@ -721,7 +721,8 @@
                 "nb": "Patentstyret",
                 "nn": "Patentstyret"
             },
-            "logo": "https://altinncdn.no/orgs/pat/pat.png",
+            "logo": "https://altinncdn.no/orgs/pat/pat_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/pat/pat_emblem.svg",
             "orgnr": "971526157",
             "homepage": "https://www.patentstyret.no/",
             "environments": [
