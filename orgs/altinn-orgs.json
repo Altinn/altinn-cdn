@@ -392,6 +392,18 @@
             "homepage": "https://www.indigo-ikt.no/",
             "environments": []
         },
+        "jv": {
+            "name": {
+                "en": "Norwegian Metrology services",
+                "nb": "Justervesenet",
+                "nn": "Justervesenet"
+            },
+            "logo": "https://altinncdn.no/orgs/jv/jv_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/jv/jv_emblem.svg",
+            "orgnr": "874761192",
+            "homepage": "https://www.justervesenet.no/",
+            "environments": []
+        },
         "k1103": {
             "name": {
                 "en": "The municipality of Stavanger",
