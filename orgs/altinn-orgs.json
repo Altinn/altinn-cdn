@@ -1245,6 +1245,8 @@
                 "nb": "Remidt IKS",
                 "nn": "Remidt IKS"
             },
+            "logo": "https://altinncdn.no/orgs/rmt/rmt_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/rmt/rmt_emblem.svg",
             "orgnr": "975936333",
             "homepage": "https://www.remidt.no/",
             "environments": []
