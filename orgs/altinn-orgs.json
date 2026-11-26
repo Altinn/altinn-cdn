@@ -770,7 +770,8 @@
                 "nb": "Sjøfartsdirektoratet",
                 "nn": "Sjøfartsdirektoratet"
             },
-            "logo": "https://altinncdn.no/orgs/sfd/sfd.png",
+            "logo": "https://altinncdn.no/orgs/sfd/sfd_logo.svg",
+            "emblem": "https://altinncdn.no/orgs/sfd/sfd_emblem.svg",
             "orgnr": "974761262",
             "homepage": "https://www.sdir.no",
             "environments": []
