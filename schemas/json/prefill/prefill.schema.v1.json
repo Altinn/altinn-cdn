@@ -73,9 +73,9 @@
                     "title": "ProfileSettingPreference.PreSelectedPartyId",
                     "description": "The user's preselected party."
                 },
-                "ProfileSettingsPreference.DoNotPromptForParty": {
+                "ProfileSettingPreference.DoNotPromptForParty": {
                     "type": "string",
-                    "title": "ProfileSettingsPreference.DoNotPromptForParty",
+                    "title": "ProfileSettingPreference.DoNotPromptForParty",
                     "description": "Boolean indicating whether the users want to be asked for the party on every form submission."
                 },
                 "Party.PartyId": {
@@ -118,9 +118,9 @@
                     "title": "Party.Name",
                     "description": "The party name."
                 },
-                "Party.isDeleted": {
+                "Party.IsDeleted": {
                     "type": "string",
-                    "title": "Party.isDeleted",
+                    "title": "Party.IsDeleted",
                     "description": "Boolean value indicating if the party is deleted."
                 },
                 "Party.OnlyHierarchyElementWithNoAccess": {
